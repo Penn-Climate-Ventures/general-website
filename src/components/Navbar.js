@@ -2,62 +2,58 @@ import React, { useState } from 'react'
 import s from "styled-components"
 import Button from '../components/shared/Button'
 import Logo from '../images/logo.png'
-import Filled from '../images/svg/arrow-filled.svg'
-import Empty from '../images/svg/arrow-empty.svg'
+import { MIDNIGHT_BLUE } from "../utils/constants"
 
 
-const Toggle = ({ toggleNavbar, visible }) => {
-    const Icon = visible ? Filled : Empty
-    return <a onClick={toggleNavbar}><Icon width="2rem"/></a>;
-}
+export const NavWrapper = s.nav`
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+`
 
-const NavButton = s(Button).attrs(() => ({
-    className: `level-item has-text-centered`,
-    fontSize: `1rem`
-}))`
-    visibility: ${({ visible }) => visible ? `visible` : `hidden`};
-    margin: 1vw;
-    flex: 1;
-    padding: .5rem;
+const NavBrand = s.img`
+  height: 45px;
+  width: auto;
+`
+
+export const NavMenu = s.div`
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+`
+
+export const NavButton = s.a`
+  color: ${MIDNIGHT_BLUE};
+  font-weight: 600;
+  margin: 0 10px;
+  cursor: pointer;
+
+  &:hover {
+    color: hsl(122, 42%, 52%);
+  }
+`
+
+export const SmIcon = s.i`
 `
 
 export const Navbar = () => {
-    const [visible, setVisible] = useState(false);
-    const toggleNavbar = () => setVisible(!visible);
-    return <nav
-        css={`
-            display: flex;
-            width: 100%;
-            overflow-x: auto;
-            ${visible || `overflow-x: hidden;`}
-        `}
-        className="navbar"
-        role="navigation"
-        aria-label="main navigation"
-        >
-        <div className="navbar-brand" css={`margin-left: 1rem;`}>
-            <div className="navbar-item">
-                <Toggle toggleNavbar={toggleNavbar} visible={visible} />
-            </div>
-            {visible || <a href="/" className="navbar-item">
-                <img 
-                    css={`
-                        &&& {
-                            max-height: 100%;
-                        }
-                        margin-left: 1rem;
-                        width: 116px;
-                    `}
-                    src={Logo} 
-                />
-            </a>
-            }
-        </div>
-        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/tracks'>About</NavButton>
-        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/rules'>Rules</NavButton>
-        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/faq'>FAQs</NavButton>
-        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/about'>About</NavButton>
-        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/collaborate'>Collab</NavButton>
-        <NavButton visible={visible} href='mailto: pennclimateventures@gmail.com'>Contact</NavButton>
-    </nav>
+    return <NavWrapper>
+        <NavBrand src={Logo} />
+        <NavMenu>
+          <NavButton target="_blank" rel="noreferrer noopener" href='/tracks'>Membership</NavButton>
+          <NavButton target="_blank" rel="noreferrer noopener" href='/rules'>Calendar</NavButton>
+          <NavButton target="_blank" rel="noreferrer noopener" href='/faq'>Class</NavButton>
+          <NavButton target="_blank" rel="noreferrer noopener" href='/about'>Fellowships</NavButton>
+          <NavButton target="_blank" rel="noreferrer noopener" href='/collaborate'>Prize</NavButton>
+          <NavButton target="_blank" rel="noreferrer noopener" href='/collaborate'>Collaborate</NavButton>
+          <NavButton target="_blank" rel="noreferrer noopener" href='https://www.instagram.com/pennclimateventures/'>IG</NavButton>
+          <NavButton target="_blank" rel="noreferrer noopener" href='https://www.facebook.com/pennclimateventures/'>FB</NavButton>
+          <NavButton target="_blank" rel="noreferrer noopener" href='https://www.linkedin.com/company/penn-climate-ventures/'>LI</NavButton>
+        </NavMenu>
+    </NavWrapper>
 }
