@@ -16,7 +16,10 @@ export const NavWrapper = s.nav`
   z-index: 100;
 `
 
-const NavBrand = s.img`
+const NavBrand = s.a`
+`
+
+const NavBrandImg = s.img`
   height: 45px;
   width: auto;
 `
@@ -43,7 +46,9 @@ export const SmIcon = s.i`
 
 export const Navbar = () => {
     return <NavWrapper>
-        <NavBrand src={Logo} />
+        <NavBrand target="_blank" rel="noreferrer noopener" href='/'>
+          <NavBrandImg src={Logo} />
+        </NavBrand>
         <NavMenu>
           <NavButton target="_blank" rel="noreferrer noopener" href='/tracks'>Membership</NavButton>
           <NavButton target="_blank" rel="noreferrer noopener" href='/rules'>Calendar</NavButton>
