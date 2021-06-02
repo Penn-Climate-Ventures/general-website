@@ -1,26 +1,23 @@
 import React from 'react'
 import s from "styled-components"
-import { Text } from './shared/Typography'
-import Button from './shared/Button'
-import { MIDNIGHT_BLUE, mediaMaxWidth } from '../utils/constants'
-import  { NavWrapper, NavMenu, NavButton, SmIcon } from './Navbar'
+import  { NavMenu, NavButton } from './Navbar'
 
-
-const FooterWrapper = s.footer`
-  bottom: 0;
-  background-color: white;
-  display: flex;
-  text-align: center;
-  margin: 30px auto 60px auto;
-`
 
 const FooterMenu = s(NavMenu)`
   margin: auto;
   color: red;
 `
 
-export const Footer = () => {
-  return <FooterWrapper>
+const FooterWrapper = s.footer`
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  text-align: center;
+  margin: 60px auto 60px auto;
+`
+
+export const FooterLayout = () => (
+  <FooterWrapper>
     <FooterMenu>
       <NavButton target="_blank" rel="noreferrer noopener" href='/tracks'>Membership</NavButton>
       <NavButton target="_blank" rel="noreferrer noopener" href='/rules'>Calendar</NavButton>
@@ -33,4 +30,7 @@ export const Footer = () => {
       <NavButton target="_blank" rel="noreferrer noopener" href='https://www.linkedin.com/company/penn-climate-ventures/'>LI</NavButton>
     </FooterMenu>
   </FooterWrapper>
-}
+)
+
+export const Footer = s(FooterLayout)`
+`

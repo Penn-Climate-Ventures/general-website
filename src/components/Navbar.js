@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import s from "styled-components"
 import Button from '../components/shared/Button'
 import Logo from '../images/logo.png'
-import { MIDNIGHT_BLUE } from "../utils/constants"
+import { MIDNIGHT_BLUE, GREEN } from "../utils/constants"
 
 
 export const NavWrapper = s.nav`
@@ -13,6 +13,8 @@ export const NavWrapper = s.nav`
   display: flex;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
 `
 
@@ -37,7 +39,7 @@ export const NavButton = s.a`
   cursor: pointer;
 
   &:hover {
-    color: hsl(122, 42%, 52%);
+    color: ${GREEN};
   }
 `
 
@@ -45,7 +47,8 @@ export const SmIcon = s.i`
 `
 
 export const Navbar = () => {
-    return <NavWrapper>
+    return <div css={`margin-top: 120px`}>
+    <NavWrapper>
         <NavBrand target="_blank" rel="noreferrer noopener" href='/'>
           <NavBrandImg src={Logo} />
         </NavBrand>
@@ -61,4 +64,5 @@ export const Navbar = () => {
           <NavButton target="_blank" rel="noreferrer noopener" href='https://www.linkedin.com/company/penn-climate-ventures/'>LI</NavButton>
         </NavMenu>
     </NavWrapper>
+    </div>
 }
