@@ -1,0 +1,74 @@
+import React from "react"
+import s from "styled-components"
+import { SectionHeading } from "../components/shared/Layout"
+import Carousel from "../components/shared/Carousel"
+import Tile from "../components/shared/Tile"
+import { STEEL_BLUE, MIDNIGHT_BLUE } from "../utils/constants"
+
+
+const cardItems = [
+  {
+    top: "PCV",
+    mid: "The Description of the Event Would Go Right Here.",
+    bot: "DATE + TIME"
+  },
+  {
+    top: "PCV",
+    mid: "The Description of the Event Would Go Right Here.",
+    bot: "DATE + TIME"
+  },
+  {
+    top: "PCV",
+    mid: "The Description of the Event Would Go Right Here.",
+    bot: "DATE + TIME"
+  },
+  {
+    top: "PCV",
+    mid: "The Description of the Event Would Go Right Here.",
+    bot: "DATE + TIME"
+  },
+  {
+    top: "PCV",
+    mid: "The Description of the Event Would Go Right Here.",
+    bot: "DATE + TIME"
+  },
+  {
+    top: "PCV",
+    mid: "The Description of the Event Would Go Right Here.",
+    bot: "DATE + TIME"
+  },
+  {
+    top: "PCV",
+    mid: "The Description of the Event Would Go Right Here.",
+    bot: "DATE + TIME"
+  },
+  {
+    top: "PCV",
+    mid: "The Description of the Event Would Go Right Here.",
+    bot: "DATE + TIME"
+  }
+];
+
+const PastWorkshopsLayout = () => {
+  const [width, setWidth] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth)
+    console.log(width)
+    window.addEventListener("resize", handleWindowResize)
+  })
+
+  return (
+  <div>
+    <SectionHeading>Past Workshops</SectionHeading>
+    <Carousel show={Math.floor(width / 200)}>
+      { cardItems.map( card => (
+        <Tile topText={card.top} midText={card.mid} botText={card.bot} />
+      )) }
+    </Carousel>
+  </div>
+)
+}
+
+export const PastWorkshops = s(PastWorkshopsLayout)`
+`

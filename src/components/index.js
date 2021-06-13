@@ -5,3 +5,8 @@ export * from './News'
 export * from './Community'
 export * from './Team'
 export * from './Footer'
+
+export * from './shared/Layout'
+// class.js
+export * from './UpcomingWorkshops'
+export * from './PastWorkshops'

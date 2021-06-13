@@ -11,6 +11,12 @@ import {
   Community,
   Team,
   Footer,
+
+  PageTitle,
+  SectionText,
+  // class.js
+  UpcomingWorkshops,
+  PastWorkshops,
 } from "../components"
 
 import {

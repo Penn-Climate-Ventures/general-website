@@ -53,12 +53,12 @@ export const Navbar = () => {
           <NavBrandImg src={Logo} />
         </NavBrand>
         <NavMenu>
-          <NavButton target="_blank" rel="noreferrer noopener" href='/tracks'>Membership</NavButton>
-          <NavButton target="_blank" rel="noreferrer noopener" href='/rules'>Calendar</NavButton>
-          <NavButton target="_blank" rel="noreferrer noopener" href='/faq'>Class</NavButton>
-          <NavButton target="_blank" rel="noreferrer noopener" href='/about'>Fellowships</NavButton>
-          <NavButton target="_blank" rel="noreferrer noopener" href='/collaborate'>Prize</NavButton>
-          <NavButton target="_blank" rel="noreferrer noopener" href='/collaborate'>Collaborate</NavButton>
+          <NavButton rel="noreferrer noopener" href='/membership'>Membership</NavButton>
+          <NavButton rel="noreferrer noopener" href='/rules'>Calendar</NavButton>
+          <NavButton rel="noreferrer noopener" href='/class'>Class</NavButton>
+          <NavButton rel="noreferrer noopener" href='/about'>Fellowships</NavButton>
+          <NavButton rel="noreferrer noopener" href='/collaborate'>Prize</NavButton>
+          <NavButton rel="noreferrer noopener" href='/collaborate'>Collaborate</NavButton>
           <NavButton target="_blank" rel="noreferrer noopener" href='https://www.instagram.com/pennclimateventures/'>IG</NavButton>
           <NavButton target="_blank" rel="noreferrer noopener" href='https://www.facebook.com/pennclimateventures/'>FB</NavButton>
           <NavButton target="_blank" rel="noreferrer noopener" href='https://www.linkedin.com/company/penn-climate-ventures/'>LI</NavButton>
