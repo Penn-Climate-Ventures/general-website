@@ -1,7 +1,6 @@
 import React, { useRef } from "react"
 import Helmet from "react-helmet"
 import s from "styled-components"
-import "./styles.scss"
 
 import {
   Navbar,
@@ -10,15 +9,30 @@ import {
   Footer,
 } from "../components"
 
+import { STEEL_BLUE, MIDNIGHT_BLUE } from "../utils/constants"
 
-const OrientationAndNewsGrid = s.div`
-  display: grid;
-  grid-gap: 1rem;
 
-  @media (min-width: 768px) {
-    grid-template-columns: 2fr 1fr;
+const CenterButtonContainer = s.div`
+  display: flex;
+`
+
+const ApplyButton = s.a`
+  color: ${MIDNIGHT_BLUE};
+  text-align: center;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1.5px solid ${STEEL_BLUE};
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin: auto;
+  display: block;
+
+  &:hover {
+    color: ${STEEL_BLUE};
   }
 `
+
 
 const MembershipPage = () => {
   const sectionRef = useRef(null)
@@ -60,6 +74,9 @@ const MembershipPage = () => {
           </li>
         </ul>
       </SectionText>
+      <CenterButtonContainer>
+        <ApplyButton href="/">Apply Here</ApplyButton>
+      </CenterButtonContainer>
       <SectionText>
         If you are a Penn student and interested in getting involved in the
         behind-the-scenes of PCV, active recruitment of Class, Fellowships,
