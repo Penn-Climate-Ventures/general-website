@@ -19,11 +19,11 @@ const FooterWrapper = s.footer`
 export const FooterLayout = () => (
   <FooterWrapper>
     <FooterMenu>
-      <NavButton target="_blank" rel="noreferrer noopener" href='/tracks'>Membership</NavButton>
+      <NavButton target="_blank" rel="noreferrer noopener" href='/membership'>Membership</NavButton>
       <NavButton target="_blank" rel="noreferrer noopener" href='/rules'>Calendar</NavButton>
-      <NavButton target="_blank" rel="noreferrer noopener" href='/faq'>Class</NavButton>
+      <NavButton target="_blank" rel="noreferrer noopener" href='/class'>Class</NavButton>
       <NavButton target="_blank" rel="noreferrer noopener" href='/about'>Fellowships</NavButton>
-      <NavButton target="_blank" rel="noreferrer noopener" href='/collaborate'>Prize</NavButton>
+      <NavButton target="_blank" rel="noreferrer noopener" href='/prize'>Prize</NavButton>
       <NavButton target="_blank" rel="noreferrer noopener" href='/collaborate'>Collaborate</NavButton>
       <NavButton target="_blank" rel="noreferrer noopener" href='https://www.instagram.com/pennclimateventures/'>IG</NavButton>
       <NavButton target="_blank" rel="noreferrer noopener" href='https://www.facebook.com/pennclimateventures/'>FB</NavButton>
