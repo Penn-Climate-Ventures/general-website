@@ -4,6 +4,7 @@ import s from "styled-components"
 import "./styles.scss"
 
 import {
+  Layout,
   Navbar,
   PageTitle,
   SectionText,
@@ -15,7 +16,7 @@ import {
 
 const ClassPage = () => {
   return (
-    <div css={`margin: auto 3rem;`}>
+    <Layout>
       <Helmet title="Penn Climate Ventures Prize" defer={false} />
       <Navbar />
       <PageTitle>Class</PageTitle>
@@ -34,7 +35,7 @@ const ClassPage = () => {
       <UpcomingWorkshops />
       <PastWorkshops />
       <Footer />
-    </div>
+    </Layout>
   )
 }
 export default ClassPage

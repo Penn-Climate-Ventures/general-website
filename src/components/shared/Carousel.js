@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import s from "styled-components"
 import './carousel-styles.scss'
-import { STEEL_BLUE, MIDNIGHT_BLUE } from "../../utils/constants"
+import { STEEL_BLUE } from "../../utils/constants"
 
+const CarouselContainer = s.div`
+  position: relative;
+`
+
+const CarouselContent = s.div`
+  margin: 0 45px;
+  overflow: hidden;
+`
 
 const NavArrow = s.div`
   border-top: 15px solid transparent;
@@ -58,34 +66,28 @@ const Carousel = (props) => {
   }
 
   return (
-    <div className="carousel-container">
+    <CarouselContainer>
         {
           currIndex > 0 &&
           <NavArrow
             onClick={prev}
-            css={`left: 0;
-                  border-right: 20px solid ${STEEL_BLUE};`}
+            css={`left: 0; border-right: 20px solid ${STEEL_BLUE};`}
           />
         }
-        <div
-          className="content-wrapper"
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          >
+        <CarouselContent onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
           <div className={`content show-${show}`}
-            style={{ transform: `translateX(-${currIndex * (100 / show)}%)` }} >
+            style={{ transform: `translateX(-${100 * (currIndex / show)}%)` }} >
             {children}
           </div>
-        </div>
+        </CarouselContent>
         {
           currIndex < (length - show) &&
           <NavArrow
             onClick={next}
-            css={`right: 0;
-                  border-left: 20px solid ${STEEL_BLUE};`}
+            css={`right: 0; border-left: 20px solid ${STEEL_BLUE};`}
           />
         }
-    </div>
+    </CarouselContainer>
   )
 }
 

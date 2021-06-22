@@ -3,6 +3,7 @@ import s from "styled-components"
 import { SectionHeading } from "../components/shared/Layout"
 import Carousel from "../components/shared/Carousel"
 import Tile from "../components/shared/Tile"
+import {useContainerDimensions} from "./shared/useContainerDimensions";
 
 
 const cardItems = [
@@ -33,18 +34,12 @@ const cardItems = [
   },
 ];
 
-
 const UpcomingLecturesLayout = () => {
-  const [width, setWidth] = React.useState(window.innerWidth);
-
-  React.useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth)
-    console.log(width)
-    window.addEventListener("resize", handleWindowResize)
-  })
+  const componentRef = React.useRef()
+  const { width } = useContainerDimensions(componentRef)
 
   return (
-    <div>
+    <div ref={componentRef}>
       <SectionHeading>Upcoming Lectures</SectionHeading>
       <Carousel show={Math.floor(width / 200)}>
         { cardItems.map( card => (

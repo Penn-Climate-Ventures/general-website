@@ -3,6 +3,7 @@ import s from "styled-components"
 import { SectionHeading, SectionText } from "../components/shared/Layout"
 import Carousel from "../components/shared/Carousel"
 import Tile from "../components/shared/Tile"
+import {useContainerDimensions} from "./shared/useContainerDimensions";
 
 
 const cardItems = [
@@ -35,16 +36,11 @@ const cardItems = [
 
 
 const ConsultingProductDemosLayout = () => {
-  const [width, setWidth] = React.useState(window.innerWidth);
-
-  React.useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth)
-    console.log(width)
-    window.addEventListener("resize", handleWindowResize)
-  })
+  const componentRef = React.useRef()
+  const { width } = useContainerDimensions(componentRef)
 
   return (
-    <div>
+    <div ref={componentRef}>
       <SectionHeading>Consulting Product Demos</SectionHeading>
       <SectionText>
         If your startup is interested in our services, please contact us at

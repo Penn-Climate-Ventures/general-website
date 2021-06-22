@@ -4,6 +4,7 @@ import s from "styled-components"
 import "./styles.scss"
 
 import {
+  Layout,
   Navbar,
   PageTitle,
   SectionText,
@@ -14,7 +15,7 @@ import {
 
 const CollaboratePage = () => {
   return (
-    <div css={`margin: auto 3rem;`}>
+    <Layout>
       <Helmet title="Penn Climate Ventures Prize" defer={false} />
       <Navbar />
       <PageTitle>Collaborate</PageTitle>
@@ -32,7 +33,7 @@ const CollaboratePage = () => {
       </SectionText>
       <News />
       <Footer />
-    </div>
+    </Layout>
   )
 }
 export default CollaboratePage

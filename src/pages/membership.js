@@ -3,6 +3,7 @@ import Helmet from "react-helmet"
 import s from "styled-components"
 
 import {
+  Layout,
   Navbar,
   PageTitle,
   SectionText,
@@ -40,7 +41,7 @@ const MembershipPage = () => {
   const sectionRef = useRef(null)
   const scrollTo = () => sectionRef && sectionRef.current.scrollIntoView()
   return (
-    <div css={`margin: auto 3rem;`}>
+    <Layout>
       <Helmet title="Penn Climate Ventures Prize" defer={false} />
       <Navbar />
       <PageTitle>Membership</PageTitle>
@@ -87,7 +88,7 @@ const MembershipPage = () => {
         space is much more limited - please email us if strongly interested.
       </SectionText>
       <Footer />
-    </div>
+    </Layout>
   )
 }
 export default MembershipPage

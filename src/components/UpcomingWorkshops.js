@@ -3,7 +3,7 @@ import s from "styled-components"
 import { SectionHeading } from "../components/shared/Layout"
 import Carousel from "../components/shared/Carousel"
 import Tile from "../components/shared/Tile"
-import { STEEL_BLUE, MIDNIGHT_BLUE } from "../utils/constants"
+import {useContainerDimensions} from "./shared/useContainerDimensions";
 
 
 const cardItems = [
@@ -48,17 +48,13 @@ const cardItems = [
     bot: "DATE + TIME"
   }
 ];
-const UpcomingWorkshopsLayout = () => {
-  const [width, setWidth] = React.useState(window.innerWidth);
 
-  React.useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth)
-    console.log(width)
-    window.addEventListener("resize", handleWindowResize)
-  })
+const UpcomingWorkshopsLayout = () => {
+  const componentRef = React.useRef()
+  const { width } = useContainerDimensions(componentRef)
 
   return (
-  <div>
+  <div ref={componentRef}>
     <SectionHeading>Upcoming Workshops</SectionHeading>
     <Carousel show={Math.floor(width / 200)}>
       { cardItems.map( card => (

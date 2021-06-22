@@ -4,6 +4,7 @@ import s from "styled-components"
 import "./styles.scss"
 
 import {
+  Layout,
   Navbar,
   PageTitle,
   SectionText,
@@ -48,7 +49,7 @@ const PrizePage = () => {
   const sectionRef = useRef(null)
   const scrollTo = () => sectionRef && sectionRef.current.scrollIntoView()
   return (
-    <div css={`margin: auto 3rem;`}>
+    <Layout>
       <Helmet title="Penn Climate Ventures Prize" defer={false} />
       <Navbar />
       <PageTitle>Prize</PageTitle>
@@ -66,7 +67,7 @@ const PrizePage = () => {
         <PrizeButton to="">PCV Prize Competition</PrizeButton>
       </PrizeButtonContainer>
       <Footer />
-    </div>
+    </Layout>
   )
 }
 export default PrizePage
