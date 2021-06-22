@@ -13,18 +13,7 @@ import {
 } from "../components"
 
 
-const OrientationAndNewsGrid = s.div`
-  display: grid;
-  grid-gap: 1rem;
-
-  @media (min-width: 768px) {
-    grid-template-columns: 2fr 1fr;
-  }
-`
-
 const ClassPage = () => {
-  const sectionRef = useRef(null)
-  const scrollTo = () => sectionRef && sectionRef.current.scrollIntoView()
   return (
     <div css={`margin: auto 3rem;`}>
       <Helmet title="Penn Climate Ventures Prize" defer={false} />

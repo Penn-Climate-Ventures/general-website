@@ -14,6 +14,8 @@ import { STEEL_BLUE, MIDNIGHT_BLUE } from "../utils/constants"
 
 const CenterButtonContainer = s.div`
   display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
 `
 
 const ApplyButton = s.a`

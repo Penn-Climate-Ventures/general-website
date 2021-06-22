@@ -3,7 +3,6 @@ import s from "styled-components"
 import { SectionHeading } from "../components/shared/Layout"
 import Carousel from "../components/shared/Carousel"
 import Tile from "../components/shared/Tile"
-import { STEEL_BLUE, MIDNIGHT_BLUE } from "../utils/constants"
 
 
 const cardItems = [

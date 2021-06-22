@@ -56,7 +56,7 @@ export const Navbar = () => {
           <NavButton rel="noreferrer noopener" href='/membership'>Membership</NavButton>
           <NavButton rel="noreferrer noopener" href='/rules'>Calendar</NavButton>
           <NavButton rel="noreferrer noopener" href='/class'>Class</NavButton>
-          <NavButton rel="noreferrer noopener" href='/about'>Fellowships</NavButton>
+          <NavButton rel="noreferrer noopener" href='/fellowships'>Fellowships</NavButton>
           <NavButton rel="noreferrer noopener" href='/prize'>Prize</NavButton>
           <NavButton rel="noreferrer noopener" href='/collaborate'>Collaborate</NavButton>
           <NavButton target="_blank" rel="noreferrer noopener" href='https://www.instagram.com/pennclimateventures/'>IG</NavButton>
