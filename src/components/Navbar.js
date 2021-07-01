@@ -2,12 +2,13 @@ import React, {Component } from 'react'
 import s from "styled-components"
 import Logo from '../images/logo.png'
 import { MIDNIGHT_BLUE, GREEN } from "../utils/constants"
+import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
 
 
 export const NavWrapper = s.nav`
   background-color: white;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-  height: 90px;
+  height: 75px;
   width: 100%;
   padding: 15px 30px;
   display: flex;
@@ -59,7 +60,7 @@ const IconBar = s.span`
 
 const NavOverlay = s.div`
   position: fixed;
-  top: 90px;
+  top: 75px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -69,7 +70,7 @@ const NavOverlay = s.div`
 
 export const NavMenu = s.div`
   position: fixed;
-  top: 90px;
+  top: 75px;
   right: 0;
   bottom: 0;
   left: 100%;
@@ -79,14 +80,13 @@ export const NavMenu = s.div`
   @media screen and (min-width: 780px) {
     all: unset;
     position: static;
-    display: block;
+    display: flex;
     height: 100%;
   }
 `
 
 const NavLinks = s.div`
   background-color: transparent;
-  list-style-type: none;
   max-height: 0;
   overflow: hidden;
   position: absolute;
@@ -126,9 +126,6 @@ export const NavButton = s.a`
     height: 100%;
     align-items: center;
   }
-`
-
-export const SmIcon = s.i`
 `
 
 export class Navbar extends Component {
@@ -191,11 +188,19 @@ export class Navbar extends Component {
     }
     const navLinksOpenedStyle = {
       padding: '1em',
-      maxHeight: 'none'
+      maxHeight: 'none',
+      top: '0'
+    }
+    const navIconsOpenedStyle = {
+      padding: '1em',
+      maxHeight: 'none',
+      bottom: '0',
+      display: 'flex',
+      flexDirection: 'row'
     }
 
     return (
-      <nav css={`margin-top: 120px`}>
+      <nav css={`margin-top: 90px`}>
         <NavWrapper>
           <NavBrand rel="noreferrer noopener" href='/'>
             <NavBrandImg src={Logo}/>
@@ -215,12 +220,23 @@ export class Navbar extends Component {
               <NavButton rel="noreferrer noopener" href='/fellowships'>Fellowships</NavButton>
               <NavButton rel="noreferrer noopener" href='/prize'>Prize</NavButton>
               <NavButton rel="noreferrer noopener" href='/collaborate'>Collaborate</NavButton>
-              <NavButton target="_blank" rel="noreferrer noopener"
-                         href='https://www.instagram.com/pennclimateventures/'>IG</NavButton>
-              <NavButton target="_blank" rel="noreferrer noopener"
-                         href='https://www.facebook.com/pennclimateventures/'>FB</NavButton>
-              <NavButton target="_blank" rel="noreferrer noopener"
-                         href='https://www.linkedin.com/company/penn-climate-ventures/'>LI</NavButton>
+            </NavLinks>
+            <NavLinks style={this.getOpened() ? navIconsOpenedStyle : null}>
+              <NavButton target="_blank"
+                         rel="noreferrer noopener"
+                         href='https://www.instagram.com/pennclimateventures/'>
+                <FaInstagram fontSize={'20px'}/>
+              </NavButton>
+              <NavButton target="_blank"
+                         rel="noreferrer noopener"
+                         href='https://www.facebook.com/pennclimateventures/'>
+                <FaFacebookF fontSize={'20px'}/>
+              </NavButton>
+              <NavButton target="_blank"
+                         rel="noreferrer noopener"
+                         href='https://www.linkedin.com/company/penn-climate-ventures/'>
+                <FaLinkedinIn fontSize={'20px'}/>
+              </NavButton>
             </NavLinks>
           </NavMenu>
         </NavWrapper>

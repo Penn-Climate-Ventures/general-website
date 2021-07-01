@@ -33,7 +33,7 @@ const ClassPage = () => {
           etc.)
       </SectionText>
       <UpcomingWorkshops />
-      <PastWorkshops />
+      {/*<PastWorkshops />*/}
       <Footer />
     </Layout>
   )

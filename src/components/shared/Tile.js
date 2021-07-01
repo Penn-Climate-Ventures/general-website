@@ -32,10 +32,10 @@ const TileBotText = s.p`
 `
 
 
-const Tile = ({ topText, midText, botText }) => (
+const Tile = ({ topText, midText, midLink, botText }) => (
     <TileBox>
         <TileTopText>{( topText )}</TileTopText>
-        <TileMidText>{( midText )}</TileMidText>
+        <TileMidText href={midLink}>{( midText )}</TileMidText>
         <TileBotText>{( botText )}</TileBotText>
     </TileBox>
 )

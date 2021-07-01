@@ -2,6 +2,7 @@ import React from 'react'
 import s from "styled-components"
 
 import { MIDNIGHT_BLUE, GREEN } from "../utils/constants"
+import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
 
 const FooterMenu = s.div`
   display: flex;
@@ -39,9 +40,21 @@ export const FooterLayout = () => (
       <NavButton rel="noreferrer noopener" href='/fellowships'>Fellowships</NavButton>
       <NavButton rel="noreferrer noopener" href='/prize'>Prize</NavButton>
       <NavButton rel="noreferrer noopener" href='/collaborate'>Collaborate</NavButton>
-      <NavButton target="_blank" rel="noreferrer noopener" href='https://www.instagram.com/pennclimateventures/'>IG</NavButton>
-      <NavButton target="_blank" rel="noreferrer noopener" href='https://www.facebook.com/pennclimateventures/'>FB</NavButton>
-      <NavButton target="_blank" rel="noreferrer noopener" href='https://www.linkedin.com/company/penn-climate-ventures/'>LI</NavButton>
+      <NavButton target="_blank"
+                 rel="noreferrer noopener"
+                 href='https://www.instagram.com/pennclimateventures/'>
+        <FaInstagram fontSize={'20px'}/>
+      </NavButton>
+      <NavButton target="_blank"
+                 rel="noreferrer noopener"
+                 href='https://www.facebook.com/pennclimateventures/'>
+        <FaFacebookF fontSize={'20px'}/>
+      </NavButton>
+      <NavButton target="_blank"
+                 rel="noreferrer noopener"
+                 href='https://www.linkedin.com/company/penn-climate-ventures/'>
+        <FaLinkedinIn fontSize={'20px'}/>
+      </NavButton>
     </FooterMenu>
   </FooterWrapper>
 )

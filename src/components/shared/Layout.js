@@ -8,17 +8,21 @@ export const PageTitle = s.h1`
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 1rem;
 `
 
 export const SectionHeading = s.h2`
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 `
 
 export const SectionText = s.p`
     font-weight: ${({ bold }) => ( bold ? "bold" : "normal")};
     text-align: center;
+    margin-bottom: 1rem;
 `
 
 export const Layout = s.div`

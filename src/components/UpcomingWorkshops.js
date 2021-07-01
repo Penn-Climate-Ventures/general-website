@@ -9,45 +9,71 @@ import {useContainerDimensions} from "./shared/useContainerDimensions";
 const cardItems = [
   {
     top: "PCV",
-    mid: "The Description of the Event Would Go Right Here.",
-    bot: "DATE + TIME"
+    mid: "TBD",
+    bot: "TBD"
   },
   {
     top: "PCV",
-    mid: "The Description of the Event Would Go Right Here.",
-    bot: "DATE + TIME"
+    mid: "TBD",
+    bot: "TBD"
   },
   {
     top: "PCV",
-    mid: "The Description of the Event Would Go Right Here.",
-    bot: "DATE + TIME"
+    mid: "TBD",
+    bot: "TBD"
   },
   {
     top: "PCV",
-    mid: "The Description of the Event Would Go Right Here.",
-    bot: "DATE + TIME"
+    mid: "TBD",
+    bot: "TBD"
   },
   {
     top: "PCV",
-    mid: "The Description of the Event Would Go Right Here.",
-    bot: "DATE + TIME"
+    mid: "TBD",
+    bot: "TBD"
   },
   {
     top: "PCV",
-    mid: "The Description of the Event Would Go Right Here.",
-    bot: "DATE + TIME"
+    mid: "TBD",
+    bot: "TBD"
   },
-  {
-    top: "PCV",
-    mid: "The Description of the Event Would Go Right Here.",
-    bot: "DATE + TIME"
-  },
-  {
-    top: "PCV",
-    mid: "The Description of the Event Would Go Right Here.",
-    bot: "DATE + TIME"
-  }
 ];
+
+const FlexContainer = s.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  & > * {
+    flex-basis: 14%;
+    margin: 5px;
+    max-width: 200px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    & > * {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    & > * {
+      flex-basis: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    & > * {
+      flex-basis: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    & > * {
+      flex-basis: 45%;
+    }
+  }
+`
 
 const UpcomingWorkshopsLayout = () => {
   const componentRef = React.useRef()
@@ -56,11 +82,11 @@ const UpcomingWorkshopsLayout = () => {
   return (
   <div ref={componentRef}>
     <SectionHeading>Upcoming Workshops</SectionHeading>
-    <Carousel show={Math.floor(width / 200)}>
+    <FlexContainer>
       { cardItems.map( card => (
         <Tile topText={card.top} midText={card.mid} botText={card.bot} />
       )) }
-    </Carousel>
+    </FlexContainer>
   </div>
 )
 }

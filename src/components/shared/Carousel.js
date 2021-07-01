@@ -5,6 +5,12 @@ import { STEEL_BLUE } from "../../utils/constants"
 
 const CarouselContainer = s.div`
   position: relative;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -webkit-touch-callout : none
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 `
 
 const CarouselContent = s.div`
