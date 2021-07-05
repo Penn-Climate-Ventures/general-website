@@ -51,18 +51,18 @@ const OrientationLayout = () => (
         <BoxHeading>How to make the most of this website:</BoxHeading>
         <OrientationButton href="/">Massive Events Calendar</OrientationButton>
         <OrientationButton href="/">Startup Resources</OrientationButton>
-        <OrientationButton href="/">Startup Resources</OrientationButton>
+        <OrientationButton href="/">Institution Resources</OrientationButton>
         <OrientationButton href="/">Other Penn Groups!</OrientationButton>
         <OrientationButton href="/">Sustainability</OrientationButton>
       </BoxColumn>
       <BoxColumn round="true">
         <BoxHeading>What our teams are currently working on:</BoxHeading>
-        <OrientationButton href="/">Workshops</OrientationButton>
+        <OrientationButton href="/class">Workshops</OrientationButton>
         <OrientationButton href="/">Consulting</OrientationButton>
         <OrientationButton href="/">Prize Competition</OrientationButton>
         <OrientationButton href="/">Ideathon</OrientationButton>
         <OrientationButton href="/">Discord</OrientationButton>
-        <OrientationButton href="/">Office Hours</OrientationButton>
+        {/*<OrientationButton href="/">Office Hours</OrientationButton>*/}
       </BoxColumn>
     </OrientationGrid>
   </div>

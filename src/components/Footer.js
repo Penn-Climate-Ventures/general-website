@@ -35,7 +35,7 @@ export const FooterLayout = () => (
   <FooterWrapper>
     <FooterMenu>
       <NavButton rel="noreferrer noopener" href='/membership'>Membership</NavButton>
-      <NavButton rel="noreferrer noopener" href='/rules'>Calendar</NavButton>
+      <NavButton rel="noreferrer noopener" href='/calendar'>Calendar</NavButton>
       <NavButton rel="noreferrer noopener" href='/class'>Class</NavButton>
       <NavButton rel="noreferrer noopener" href='/fellowships'>Fellowships</NavButton>
       <NavButton rel="noreferrer noopener" href='/prize'>Prize</NavButton>
