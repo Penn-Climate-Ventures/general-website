@@ -6,9 +6,16 @@ import { MIDNIGHT_BLUE } from "../utils/constants"
 
 
 const CommunityGrid = s.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-  grid-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap
+  align-items: center;
+  justify-content: center;
+  
+  & > * {
+    width: 33%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 `
 
 const CommunityText = s.p`
@@ -53,16 +60,16 @@ const CommunityLayout = () => (
             <CommunityButton href="/">request access</CommunityButton>
          </div>
       </BoxColumn>
-      <BoxColumn center="true">
-        <div>
-          <BoxHeading>Subscribe to Prize Updates</BoxHeading>
-          <CommunityText>
-            Up to date news about the latest that's happening with our Prize
-            Competition.
-           </CommunityText>
-          <CommunityButton href="/">email</CommunityButton>
-        </div>
-      </BoxColumn>
+      {/*<BoxColumn center="true">*/}
+      {/*  <div>*/}
+      {/*    <BoxHeading>Subscribe to Prize Updates</BoxHeading>*/}
+      {/*    <CommunityText>*/}
+      {/*      Up to date news about the latest that's happening with our Prize*/}
+      {/*      Competition.*/}
+      {/*     </CommunityText>*/}
+      {/*    <CommunityButton href="/">email</CommunityButton>*/}
+      {/*  </div>*/}
+      {/*</BoxColumn>*/}
     </CommunityGrid>
   </div>
 )

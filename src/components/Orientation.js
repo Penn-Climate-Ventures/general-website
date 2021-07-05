@@ -50,10 +50,10 @@ const OrientationLayout = () => (
       <BoxColumn round="true">
         <BoxHeading>How to make the most of this website:</BoxHeading>
         <OrientationButton href="/">Massive Events Calendar</OrientationButton>
-        <OrientationButton href="/">Startup Resources</OrientationButton>
-        <OrientationButton href="/">Institution Resources</OrientationButton>
-        <OrientationButton href="/">Other Penn Groups!</OrientationButton>
-        <OrientationButton href="/">Sustainability</OrientationButton>
+        <OrientationButton href="https://docs.google.com/document/d/1BFwgQGAzPigndFDxPXGcU27a1QfNhiVtrrBfvqvpGc4/edit?usp=sharing">Startup Resources</OrientationButton>
+        <OrientationButton href="https://docs.google.com/document/d/1zT0XivDJk6L21ThWqI46bug2xston4dPstrd-9ayJAQ/edit?usp=sharing">Institution Resources</OrientationButton>
+        <OrientationButton href="https://docs.google.com/document/d/1TZKbQ0_FdzxVAlqnNzaP8-wLRAICcr28IeNF0-KXm_M/edit?usp=sharing">Other Penn Groups!</OrientationButton>
+        <OrientationButton href="https://docs.google.com/document/d/1ysFC_p9UXTbkzFUL4lS-6KVQGch1qkahEwJXju9i9rM/edit?usp=sharing">Sustainability</OrientationButton>
       </BoxColumn>
       <BoxColumn round="true">
         <BoxHeading>What our teams are currently working on:</BoxHeading>

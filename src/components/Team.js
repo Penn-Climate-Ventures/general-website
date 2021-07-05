@@ -2,7 +2,138 @@ import React from "react"
 import s from "styled-components"
 import { BoxSectionHeading, BoxColumn } from "../components/shared/BoxColumn"
 import { GREEN } from "../utils/constants"
+import Tile from "./shared/Tile";
+import Carousel from "./shared/Carousel";
 
+
+const classTeamData = [
+  {
+    position: "Lead",
+    name: "Mark Wasuwanich",
+  },
+  {
+    position: "Logistics",
+    name: "Preet Shah",
+  },
+  {
+    position: "Fundraising",
+    name: "Mayank Raghuwanshi",
+  },
+]
+const fellowshipsTeamData = [
+  {
+    position: "Lead",
+    name: "Aliris Tang",
+  },
+  {
+    position: "Consulting Project Lead",
+    name: "Kevin Zhou",
+  },
+  {
+    position: "Consulting Project Lead",
+    name: "Arnav Aggarwal",
+  },
+  {
+    position: "Consulting Project Lead",
+    name: "Rachel Lee",
+  },
+]
+const prizeTeamData = [
+  {
+    position: "Outreach",
+    name: "Omar Ben Kaddour",
+  },
+  {
+    position: "Marketing",
+    name: "Christiana Guan",
+  },
+  {
+    position: "Events",
+    name: "Anjie Wang",
+  },
+  {
+    position: "Events",
+    name: "Aditya Rao",
+  },
+  {
+    position: "Fundraising",
+    name: "Alice Feng",
+  },
+  {
+    position: "Web Dev + Design",
+    name: "Nicole Chau",
+  },
+  {
+    position: "Web Dev",
+    name: "Ryoma Harris",
+  },
+]
+const communityTeamData = [
+  {
+    position: "PR Lead",
+    name: "Angela Sun",
+  },
+  {
+    position: "Content Manager",
+    name: "Preet Shah",
+  },
+  {
+    position: "Writer",
+    name: "Salman Abbas",
+  },
+  {
+    position: "Writer",
+    name: "Aditya Rao",
+  },
+]
+const developmentTeamData = [
+  {
+    position: "Vision",
+    name: "Andrew Yu",
+  },
+  {
+    position: "Operations",
+    name: "Yi-An Hsieh",
+  },
+  {
+    position: "Culture",
+    name: "Aliris Tang",
+  },
+  {
+    position: "HR + Scaling",
+    name: "Aliris Tang",
+  },
+  {
+    position: "Secretary",
+    name: "Rachel Lee",
+  },
+  {
+    position: "Treasurer",
+    name: "Bruce Shen",
+  },
+]
+const advisingTeamData = [
+  {
+    position: "",
+    name: "Helen Wiley @ the Wharton Risk Center",
+  },
+  {
+    position: "",
+    name: "Guatam",
+  },
+  {
+    position: "",
+    name: "Kerry",
+  },
+  {
+    position: "",
+    name: "Christine",
+  },
+  {
+    position: "",
+    name: "Sid",
+  },
+]
 
 const TeamGrid = s.div`
   display: grid;
@@ -17,16 +148,12 @@ const TeamName = s.p`
     font-weight: bold;
 `
 
-const Member = ({ position, firstName, lastName }) => (
+const Member = ({ position, name }) => (
   <div css={`margin: 10px auto;`}>
     <p><b>{( position )}</b></p>
-    <p>{( firstName )} {( lastName )}</p>
+    <p>{( name )}</p>
   </div>
 )
-
-const Advisor = s.p`
-  margin: 10px auto;
-`
 
 const TeamLayout = () => (
   <div>
@@ -38,52 +165,39 @@ const TeamLayout = () => (
     <TeamGrid>
       <BoxColumn round="true">
         <TeamName>Class</TeamName>
-        <Member position="Lead" firstName="Mark" lastName="Wasuwanich"/>
-        <Member position="Logistics" firstName="-" lastName="-"/>
-        <Member position="Research" firstName="-" lastName="-"/>
-        <Member position="Fundarising" firstName="-" lastName="-"/>
-        <Member position="Design + Marketing" firstName="-" lastName="-"/>
+        { classTeamData.map( item => (
+          <Member position={item.position} name={item.name} />
+        )) }
       </BoxColumn>
       <BoxColumn round="true">
         <TeamName>Fellowships</TeamName>
-        <Member position="Lead" firstName="Shalini" lastName="Majumdar"/>
-        <Member position="Sales" firstName="-" lastName="-"/>
-        <Member position="Events" firstName="-" lastName="-"/>
-        <Member position="Recruitment" firstName="-" lastName="-"/>
-        <Member position="Design" firstName="-" lastName="-"/>
+        { fellowshipsTeamData.map( item => (
+          <Member position={item.position} name={item.name} />
+        )) }
       </BoxColumn>
       <BoxColumn round="true">
         <TeamName>Prize</TeamName>
-        <Member position="Lead" firstName="Aditya" lastName="Rao"/>
-        <Member position="Outreach" firstName="-" lastName="-"/>
-        <Member position="Events" firstName="-" lastName="-"/>
-        <Member position="Fundraising" firstName="-" lastName="-"/>
-        <Member position="Design" firstName="-" lastName="-"/>
-        <Member position="Web Dev" firstName="Nicole" lastName="Chau"/>
+        { prizeTeamData.map( item => (
+          <Member position={item.position} name={item.name} />
+        )) }
       </BoxColumn>
       <BoxColumn round="true">
         <TeamName>Community</TeamName>
-        <Member position="PR" firstName="-" lastName="-"/>
-        <Member position="Content" firstName="Angela" lastName="Sun"/>
-        <Member position="Web Dev" firstName="-" lastName="-"/>
-        <Member position="Discord" firstName="-" lastName="-"/>
+        { communityTeamData.map( item => (
+          <Member position={item.position} name={item.name} />
+        )) }
       </BoxColumn>
       <BoxColumn round="true">
         <TeamName>Development</TeamName>
-        <Member position="Vision" firstName="Andrew" lastName="Yu"/>
-        <Member position="Operation" firstName="Yi-An" lastName="Hsieh"/>
-        <Member position="Culture" firstName="Aliris" lastName="Tang"/>
-        <Member position="HR + Scaling" firstName="Aliris" lastName="Tang"/>
-        <Member position="Secretary" firstName="Rachel" lastName="Lee"/>
-        <Member position="Treasurer" firstName="Bruce" lastName="Shen"/>
+        { developmentTeamData.map( item => (
+          <Member position={item.position} name={item.name} />
+        )) }
       </BoxColumn>
       <BoxColumn round="true">
         <TeamName>Advising</TeamName>
-        <Advisor>Helen Wiley @ the Wharton Risk Center</Advisor>
-        <Advisor>Guatam</Advisor>
-        <Advisor>Kerry</Advisor>
-        <Advisor>Christine</Advisor>
-        <Advisor>Sid</Advisor>
+        { advisingTeamData.map( item => (
+          <Member position={item.position} name={item.name} />
+        )) }
       </BoxColumn>
     </TeamGrid>
   </div>
