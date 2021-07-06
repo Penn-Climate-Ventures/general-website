@@ -4,6 +4,15 @@ import s from "styled-components"
 import { MIDNIGHT_BLUE, GREEN } from "../utils/constants"
 import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
 
+
+const FooterWrapper = s.footer`
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  text-align: center;
+  margin: 120px auto 60px auto;
+`
+
 const FooterMenu = s.div`
   display: flex;
   margin: auto;
@@ -23,19 +32,11 @@ const NavButton = s.a`
   }
 `
 
-const FooterWrapper = s.footer`
-  bottom: 0;
-  background-color: white;
-  display: flex;
-  text-align: center;
-  margin: 60px auto 60px auto;
-`
-
 export const FooterLayout = () => (
   <FooterWrapper>
     <FooterMenu>
       <NavButton rel="noreferrer noopener" href='/membership'>Membership</NavButton>
-      <NavButton rel="noreferrer noopener" href='/calendar'>Calendar</NavButton>
+      {/*<NavButton rel="noreferrer noopener" href='/calendar'>Calendar</NavButton>*/}
       <NavButton rel="noreferrer noopener" href='/class'>Class</NavButton>
       <NavButton rel="noreferrer noopener" href='/fellowships'>Fellowships</NavButton>
       <NavButton rel="noreferrer noopener" href='/prize'>Prize</NavButton>

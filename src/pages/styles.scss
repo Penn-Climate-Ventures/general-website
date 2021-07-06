@@ -20,13 +20,24 @@
 // If need, change your variables before importing Bulma
 @import "~bulma/bulma.sass";
 
+ul {
+    margin-left: 1rem;
+    list-style: disc;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 40px;
+}
+
 body {
     color: #05052C;
-    font-family: 'Roboto Condensed ', sans-serif;
+    font-family: 'Avenir', 'Roboto Condensed ', sans-serif;
     max-width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 html {

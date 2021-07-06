@@ -12,6 +12,7 @@ export * from './UpcomingWorkshops'
 export * from './PastWorkshops'
 
 // fellowships.js
+export * from './ProgramDetails'
 export * from './UpcomingLectures'
 export * from './PastLectures'
 export * from './ConsultingProductDemos'

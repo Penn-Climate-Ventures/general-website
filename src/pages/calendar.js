@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React from "react"
 import Helmet from "react-helmet"
 import s from "styled-components"
 
@@ -6,7 +6,7 @@ import {
   Layout,
   Navbar,
   PageTitle,
-  SectionText,
+  TextP,
   Footer,
 } from "../components"
 
@@ -51,19 +51,17 @@ const TextLink = s.a`
 
 
 const CalendarPage = () => {
-  const sectionRef = useRef(null)
-  const scrollTo = () => sectionRef && sectionRef.current.scrollIntoView()
   return (
     <Layout>
       <Helmet title="Penn Climate Ventures Prize" defer={false} />
       <Navbar />
       <PageTitle>Calendar</PageTitle>
-      <SectionText bold="true">
+      <TextP bold="true" center={"center"}>
         Your one stop for all climate and entrepreneurship events at Penn.
-      </SectionText>
-      <SectionText>
+      </TextP>
+      <TextP center={"center"}>
         Please apply for general membership to access our events calendar.
-      </SectionText>
+      </TextP>
       <CenterButtonContainer>
         <CalendarButton href="/">Go to Calendar</CalendarButton>
       </CenterButtonContainer>

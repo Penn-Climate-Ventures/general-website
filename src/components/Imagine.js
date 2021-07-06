@@ -1,7 +1,9 @@
 import React from "react"
 import s from "styled-components"
-import { BoxHeading, BoxColumn } from "../components/shared/BoxColumn"
-import { STEEL_BLUE, MIDNIGHT_BLUE } from "../utils/constants"
+import { BoxColumn } from "../components/shared/BoxColumn"
+import { TextP } from "../components/shared/Layout"
+import { STEEL_BLUE } from "../utils/constants"
+import {Text} from "./shared/Typography";
 
 
 const ImagineGrid = s.div`
@@ -10,23 +12,17 @@ const ImagineGrid = s.div`
   grid-gap: 1rem;
 `
 
-
-const RegularText = s.p`
-  font-size: 1rem;
-  line-height: 1rem;
-  margin-bottom: 0.5rem;
-`
-
-const EmphasizedText = s.p`
+const EmphasizedText = s(TextP)`
   font-weight: bold;
   font-size: 1.2rem;
   line-height: 1.2rem;
 `
 
-const SolutionBox = s(BoxColumn)`
+const SolutionBox = s.div`
   font-size: 1.5rem;
   color: white;
 	-webkit-text-stroke: 1px ${STEEL_BLUE};
+	border: 1px solid ${STEEL_BLUE};
   display: table;
   text-align: center;
   vertical-align: middle;
@@ -39,8 +35,8 @@ const ImagineLayout = () => (
   <div>
     <ImagineGrid>
       <div>
-        <RegularText>Imagine a campus where students line up to work for the biggest moveers in climate innovation.</RegularText>
-        <RegularText>Imagine a campus where sustainability and climate analyses are integrated into our course plans, just like intro statistics or calulus.</RegularText>
+        <TextP>Imagine a campus where students line up to work for the biggest moveers in climate innovation.</TextP>
+        <TextP>Imagine a campus where sustainability and climate analyses are integrated into our course plans, just like intro statistics or calulus.</TextP>
         <EmphasizedText>Imagine a campus where climate is just... common sense.</EmphasizedText>
       </div>
       <SolutionBox>

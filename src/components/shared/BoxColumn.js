@@ -10,7 +10,6 @@ export const BoxSectionHeading = s.p`
   margin: 40px auto 20px auto;
 `
 
-
 export const BoxHeading = s.p`
   font-weight: bold;
   font-size: 1.2rem;
@@ -21,7 +20,9 @@ export const BoxHeading = s.p`
 export const BoxColumn = s.div`
     border: 2px solid ${STEEL_BLUE};
     border-radius: ${({ round }) => ( round ? "10px" : "0")};
-    padding: 10px;
+    // box-shadow: 0 3px 15px 1px #ddd;
+    margin: 10px;
+    padding: 30px 20px;
     text-align: ${({ alignLeft }) => ( alignLeft ? "left" : "center")};
     align-items: center;
     display: ${({ center }) => ( center ? "flex" : "block") };

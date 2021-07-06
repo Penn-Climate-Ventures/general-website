@@ -20,12 +20,13 @@ const OrientationGoals = s.ul`
 
 const OrientationButton = s.a`
   color: ${MIDNIGHT_BLUE};
+  opacity: 0.8;
   font-size: 0.8rem;
-  font-weight: bold;
-  border: 1.5px solid ${STEEL_BLUE};
+  font-weight: 600;
+  border: 1px solid ${STEEL_BLUE};
   border-radius: 25px;
   padding: 3px 15px;
-  margin: 10px auto;
+  margin: 20px auto;
   display: block;
 
   &:hover {
@@ -45,11 +46,11 @@ const OrientationLayout = () => (
           <li>but maybe it will help pull in ppl for the long run</li>
           <li>also funding</li>
         </OrientationGoals>
-        <OrientationButton href="/">Our Values</OrientationButton>
+        <OrientationButton href="/values">Our Values</OrientationButton>
       </BoxColumn>
       <BoxColumn round="true">
         <BoxHeading>How to make the most of this website:</BoxHeading>
-        <OrientationButton href="/">Massive Events Calendar</OrientationButton>
+        {/*<OrientationButton href="/">Massive Events Calendar</OrientationButton>*/}
         <OrientationButton href="https://docs.google.com/document/d/1BFwgQGAzPigndFDxPXGcU27a1QfNhiVtrrBfvqvpGc4/edit?usp=sharing">Startup Resources</OrientationButton>
         <OrientationButton href="https://docs.google.com/document/d/1zT0XivDJk6L21ThWqI46bug2xston4dPstrd-9ayJAQ/edit?usp=sharing">Institution Resources</OrientationButton>
         <OrientationButton href="https://docs.google.com/document/d/1TZKbQ0_FdzxVAlqnNzaP8-wLRAICcr28IeNF0-KXm_M/edit?usp=sharing">Other Penn Groups!</OrientationButton>
@@ -58,9 +59,9 @@ const OrientationLayout = () => (
       <BoxColumn round="true">
         <BoxHeading>What our teams are currently working on:</BoxHeading>
         <OrientationButton href="/class">Workshops</OrientationButton>
-        <OrientationButton href="/">Consulting</OrientationButton>
-        <OrientationButton href="/">Prize Competition</OrientationButton>
-        <OrientationButton href="/">Ideathon</OrientationButton>
+        <OrientationButton href="/fellowships">Consulting</OrientationButton>
+        <OrientationButton href="/soon">Prize Competition</OrientationButton>
+        <OrientationButton href="/soon">Ideathon</OrientationButton>
         <OrientationButton href="/">Discord</OrientationButton>
         {/*<OrientationButton href="/">Office Hours</OrientationButton>*/}
       </BoxColumn>

@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React from "react"
 import Helmet from "react-helmet"
 import s from "styled-components"
 import "./styles.scss"
@@ -7,7 +7,7 @@ import {
   Layout,
   Navbar,
   PageTitle,
-  SectionText,
+  TextP,
   Footer,
 } from "../components"
 
@@ -59,18 +59,18 @@ const PrizePage = () => {
       <Helmet title="Penn Climate Ventures Prize" defer={false} />
       <Navbar />
       <PageTitle>Prize</PageTitle>
-      <SectionText bold="true">
+      <TextP bold="true">
         Catalyzing climate innovation at Penn.
-      </SectionText>
-      <SectionText>
+      </TextP>
+      <TextP>
         The prize team organizes (1) a Penn-only competition focused on climate
         tech ideation in the Fall and (2) a global pitch competition in the
         spring.
-      </SectionText>
+      </TextP>
       <PrizeButtonContainer>
-        <PrizeButton to="">PCV Ideathon</PrizeButton>
+        <PrizeButton href={"/soon"}>PCV Ideathon</PrizeButton>
         <Rule />
-        <PrizeButton to="">PCV Prize Competition</PrizeButton>
+        <PrizeButton href={"/soon"}>PCV Prize Competition</PrizeButton>
       </PrizeButtonContainer>
       <Footer />
     </Layout>

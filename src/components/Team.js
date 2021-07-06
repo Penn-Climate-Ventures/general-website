@@ -1,9 +1,8 @@
 import React from "react"
 import s from "styled-components"
 import { BoxSectionHeading, BoxColumn } from "../components/shared/BoxColumn"
+import { TextP, Email } from "../components/shared/Layout"
 import { GREEN } from "../utils/constants"
-import Tile from "./shared/Tile";
-import Carousel from "./shared/Carousel";
 
 
 const classTeamData = [
@@ -139,11 +138,26 @@ const TeamGrid = s.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-gap: 1rem;
+  justify-content: center;
   margin: 15px auto;
+  
+  @media (min-width: 576px) {
+    grid-template-columns: 70%;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: 45% 45%;
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: 30% 30% 30%;
+  }
 `
 
 const TeamName = s.p`
     color: ${GREEN};
+    font-size: 1.2rem;
+    text-decoration: underline;
     margin: 10px auto;
     font-weight: bold;
 `
@@ -158,10 +172,10 @@ const Member = ({ position, name }) => (
 const TeamLayout = () => (
   <div>
     <BoxSectionHeading>Join a Team</BoxSectionHeading>
-    <p>Recruitment for Class, Fellowships, Prize, and Community Teams is open
-       at the Penn SAC Fairs for all current Penn students.</p>
-    <p>If you are interested in Advising, Partnerships, Sponsorships, or Press,
-       please shoot us an email at pennclimateventures@gmail.com</p>
+    <TextP>Recruitment for Class, Fellowships, Prize, and Community Teams is open
+       at the Penn SAC Fairs for all current Penn students.</TextP>
+    <TextP>If you are interested in Advising, Partnerships, Sponsorships, or Press,
+       please shoot us an email at <Email/>.</TextP>
     <TeamGrid>
       <BoxColumn round="true">
         <TeamName>Class</TeamName>
