@@ -86,6 +86,22 @@ export class ProgramDetails extends Component {
                     software development to strategy and business development. This is largely
                     dependent on:
                   </li>
+                  <li>
+                    Startups will discuss potential actionable projects with PCV that they would
+                    like students to work on.
+                  </li>
+                  <li>
+                    PCV will act as pre-screening recruiters to ensure the student consultants are
+                    both qualified and enthusiastic.
+                  </li>
+                  <li>
+                    After the application process, startups may be matched to a consulting group of
+                    4-5 student with complementary skills and preferences.
+                  </li>
+                  <li>
+                    The consulting group will complete the project, adhering to a predetermined
+                    deadline.
+                  </li>
                 </ul>
               </TextP>
 
@@ -94,6 +110,21 @@ export class ProgramDetails extends Component {
                 <ul>
                   <li>
                     Students apply to be...
+                  </li>
+                  <li>
+                    Startups decide the area(s) they want intern(s) to help with. There areas
+                    include: business development, design, SWE development, research, marketing,
+                    analytics, finance, etc.
+                  </li>
+                  <li>
+                    PCV will act as pre-screening recruiters to ensure the student interns are both
+                    qualified and enthusiastic.
+                  </li>
+                  <li>
+                    Startups will be matched with a predetermined number of interns.
+                  </li>
+                  <li>
+                    Internship will work with the startups for a predetermined amount of time.
                   </li>
                 </ul>
               </TextP>
