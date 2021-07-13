@@ -1,9 +1,7 @@
 import React from "react"
 import s from "styled-components"
-import { BoxColumn } from "../components/shared/BoxColumn"
-import { TextP } from "../components/shared/Layout"
+import { TextP } from "./shared/Layout"
 import { STEEL_BLUE } from "../utils/constants"
-import {Text} from "./shared/Typography";
 
 
 const ImagineGrid = s.div`
@@ -19,16 +17,18 @@ const EmphasizedText = s(TextP)`
 `
 
 const SolutionBox = s.div`
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: white;
-	-webkit-text-stroke: 1px ${STEEL_BLUE};
+	-webkit-text-stroke: 1.25px ${STEEL_BLUE};
 	border: 1px solid ${STEEL_BLUE};
   display: table;
   text-align: center;
   vertical-align: middle;
   border-radius: 10px;
+  padding: 10px;
   width: 100%;
   height: 100%;
+  }
 `
 
 const ImagineLayout = () => (

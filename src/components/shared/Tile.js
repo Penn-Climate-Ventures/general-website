@@ -5,12 +5,11 @@ import { TextP } from "./Layout"
 
 
 export const TileBox = s.div`
-  font-size: 0.85rem;
-  line-height: 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1rem;
   padding: 15px 10px;
-  border: 2px solid ${STEEL_BLUE};
   border-radius: 10px;
-  // box-shadow: 0 5px 10px 1px #ddd;
+  box-shadow: 0 5px 10px 1px #ddd;
   text-align: center;
   width: 150px;
 `
@@ -23,10 +22,14 @@ const TileTopText = s(TextP)`
 
 const TileMidText = s.a`
   color: #05052C;
-  font-weight: bold;
+  font-weight: 600;
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+  
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 const TileBotText = s.p`

@@ -1,7 +1,7 @@
 import React from "react"
 import s from "styled-components"
-import { BoxSectionHeading, BoxColumn } from "../components/shared/BoxColumn"
-import { TextP, Email } from "../components/shared/Layout"
+import { BoxColumn } from "./shared/BoxColumn"
+import {TextP, Email, SectionHeader} from "./shared/Layout"
 import { GREEN } from "../utils/constants"
 
 
@@ -171,7 +171,7 @@ const Member = ({ position, name }) => (
 
 const TeamLayout = () => (
   <div>
-    <BoxSectionHeading>Join a Team</BoxSectionHeading>
+    <SectionHeader left={"left"}>Join a Team</SectionHeader>
     <TextP>Recruitment for Class, Fellowships, Prize, and Community Teams is open
        at the Penn SAC Fairs for all current Penn students.</TextP>
     <TextP>If you are interested in Advising, Partnerships, Sponsorships, or Press,

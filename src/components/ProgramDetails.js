@@ -4,7 +4,8 @@ import { SectionHeader, TextP, Email } from "./shared/Layout";
 
 
 const TabLayout = s.div`
-  margin-top: 60px;
+  max-width: 800px;
+  margin: 45px auto 90px auto;
   box-shadow: 0 3px 25px 1px #ddd;
   border-radius: 20px;
   overflow: hidden;
@@ -23,7 +24,7 @@ const TabButton = s.div`
 `
 const TabContent = s.div`
   margin: 0;
-  padding: 30px 15px 15px 15px;
+  padding: 30px 25px 25px 25px;
 `
 
 

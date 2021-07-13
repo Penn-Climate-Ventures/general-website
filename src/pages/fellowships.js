@@ -52,12 +52,12 @@ export default class ClassPage extends Component {
           broader climate space while delivering value to companies.
         </TextP>
 
-        <LearnMore>
-          <Link to={'sectionRef'} smooth={true} offset={-100}>
-            <TextP center={'center'}>Learn More</TextP>
-            <FiChevronDown fontSize={'32px'}/>
-          </Link>
-        </LearnMore>
+        <Link to={'sectionRef'} smooth={true} offset={-100}>
+            <LearnMore>
+              <TextP center={'center'}>Learn More</TextP>
+              <FiChevronDown fontSize={'32px'}/>
+          </LearnMore>
+        </Link>
 
         <div id="sectionRef">
           <ProgramDetails id={'sectionRef'}/>

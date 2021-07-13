@@ -14,7 +14,7 @@ export const PageTitle = s.h1`
 export const SectionHeader = s.h2`
   font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
+  text-align: ${({ left }) => ( left ? "left" : "center")};
   // text-shadow: 3px 3px 5px #bbdddddd;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
@@ -23,7 +23,8 @@ export const SectionHeader = s.h2`
 export const TextP = s.p`
   font-weight: ${({ bold }) => ( bold ? "bold" : "normal")};
   text-align: ${({ center }) => ( center ? "center" : "left")};
-  line-height: 1.15rem;
+  font-size: 1.05rem;
+  line-height: 1.3rem;
   margin-bottom: 1rem;
 `
 

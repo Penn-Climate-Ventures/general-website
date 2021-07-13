@@ -1,12 +1,13 @@
 import React from "react"
 import s from "styled-components"
-import { BoxSectionHeading, BoxHeading, BoxColumn } from "../components/shared/BoxColumn"
+import { BoxHeading, BoxColumn } from "./shared/BoxColumn"
+import {SectionHeader} from "./shared/Layout";
 import { STEEL_BLUE, MIDNIGHT_BLUE } from "../utils/constants"
 
 
 const OrientationGrid = s.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
 `
 
@@ -36,7 +37,7 @@ const OrientationButton = s.a`
 
 const OrientationLayout = () => (
   <div>
-    <BoxSectionHeading>Orientation</BoxSectionHeading>
+    <SectionHeader left={"left"}>Orientation</SectionHeader>
     <OrientationGrid>
       <BoxColumn round="true">
         <BoxHeading>Where we see ourselves in 2025:</BoxHeading>

@@ -1,6 +1,7 @@
 import React from "react"
 import s from "styled-components"
-import { BoxSectionHeading, BoxHeading, BoxColumn } from "../components/shared/BoxColumn"
+import { BoxHeading, BoxColumn } from "./shared/BoxColumn"
+import { SectionHeader } from "./shared/Layout"
 import Button from "../components/shared/Button"
 import { MIDNIGHT_BLUE } from "../utils/constants"
 
@@ -27,10 +28,9 @@ const CommunityText = s.p`
 
 const CommunityButton = s(Button)`
   font-size: 0.9rem;
-  text-align: left;
   padding: 10px 15px;
   border: 2px solid ${MIDNIGHT_BLUE};
-  border-radius: 15px;
+  border-radius: 30px;
   width: 100%;
   z-index: 1;
 `
@@ -38,7 +38,7 @@ const CommunityButton = s(Button)`
 
 const CommunityLayout = () => (
   <div>
-    <BoxSectionHeading>Stay Up to Date On All Things PCV</BoxSectionHeading>
+    <SectionHeader left={"left"}>Stay Up to Date On All Things PCV</SectionHeader>
     <CommunityGrid>
       <BoxColumn center="true">
         <div>
@@ -47,17 +47,22 @@ const CommunityLayout = () => (
             Sporadically Sent Out When We Have Interesting News and
             Opportunities to Share
            </CommunityText>
-          <CommunityButton href="/">email</CommunityButton>
+          <CommunityButton
+            href="https://forms.zohopublic.com/pennclimateventures/form/EmailSubscription/formperma/suTHSE8lKXPjRple25l_HDNqV5aRkGcZo4K3NjWTQzE"
+            rel="noreferrer noopener "
+            target="_blank">
+            Sign Up
+          </CommunityButton>
         </div>
       </BoxColumn>
       <BoxColumn center="true">
         <div>
-            <BoxHeading>Join Our Discord Community</BoxHeading>
-            <CommunityText>
-              Featuring discussions about climate policy, finance energy, waste,
-              agriculture, and the venture landscape.
-            </CommunityText>
-            <CommunityButton href="/">request access</CommunityButton>
+          <BoxHeading>Join Our Discord Community</BoxHeading>
+          <CommunityText>
+            Featuring discussions about climate policy, finance energy, waste,
+            agriculture, and the venture landscape.
+          </CommunityText>
+          <CommunityButton href="/">Invite Link</CommunityButton>
          </div>
       </BoxColumn>
       {/*<BoxColumn center="true">*/}

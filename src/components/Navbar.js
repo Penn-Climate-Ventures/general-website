@@ -3,6 +3,7 @@ import s from "styled-components"
 import Logo from '../images/logo.png'
 import { MIDNIGHT_BLUE, GREEN } from "../utils/constants"
 import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
+import {navLinks, smLinks} from "../data/navigation";
 
 
 export const NavWrapper = s.nav`
@@ -214,29 +215,18 @@ export class Navbar extends Component {
                       style={this.getOpened() ? navOverlayOpenedStyle : null}/>
           <NavMenu style={this.getOpened() ? navMenuOpenedStyle : null}>
             <NavLinks style={this.getOpened() ? navLinksOpenedStyle : null}>
-              <NavButton rel="noreferrer noopener" href='/membership'>Membership</NavButton>
-              {/*<NavButton rel="noreferrer noopener" href='/calendar'>Calendar</NavButton>*/}
-              <NavButton rel="noreferrer noopener" href='/class'>Class</NavButton>
-              <NavButton rel="noreferrer noopener" href='/fellowships'>Fellowships</NavButton>
-              <NavButton rel="noreferrer noopener" href='/prize'>Prize</NavButton>
-              <NavButton rel="noreferrer noopener" href='/collaborate'>Collaborate</NavButton>
+              { navLinks.map( navLink => (
+                <NavButton rel="noreferrer noopener" href={navLink.url} >
+                  {navLink.linkName}
+                </NavButton>
+              )) }
             </NavLinks>
             <NavLinks style={this.getOpened() ? navIconsOpenedStyle : null}>
-              <NavButton target="_blank"
-                         rel="noreferrer noopener"
-                         href='https://www.instagram.com/pennclimateventures/'>
-                <FaInstagram fontSize={'20px'}/>
-              </NavButton>
-              <NavButton target="_blank"
-                         rel="noreferrer noopener"
-                         href='https://www.facebook.com/pennclimateventures/'>
-                <FaFacebookF fontSize={'20px'}/>
-              </NavButton>
-              <NavButton target="_blank"
-                         rel="noreferrer noopener"
-                         href='https://www.linkedin.com/company/penn-climate-ventures/'>
-                <FaLinkedinIn fontSize={'20px'}/>
-              </NavButton>
+              { smLinks.map( smLink => (
+                <NavButton target="_blank" rel="noreferrer noopener" href={smLink.url} >
+                  {smLink.icon}
+                </NavButton>
+              )) }
             </NavLinks>
           </NavMenu>
         </NavWrapper>
