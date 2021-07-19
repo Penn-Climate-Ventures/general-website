@@ -2,7 +2,6 @@ import React, {Component } from 'react'
 import s from "styled-components"
 import Logo from '../images/logo.png'
 import { MIDNIGHT_BLUE, GREEN } from "../utils/constants"
-import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
 import {navLinks, smLinks} from "../data/navigation";
 
 
@@ -114,7 +113,7 @@ const NavLinks = s.div`
 export const NavButton = s.a`
   color: ${MIDNIGHT_BLUE};
   font-weight: 600;
-  margin: 5px 10px;
+  margin: 10px 10px;
   cursor: pointer;
   display: flex;
   
@@ -180,7 +179,9 @@ export class Navbar extends Component {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      paddingTop: '30px',
+      paddingBottom: '30px'
     }
     const navOverlayOpenedStyle = {
       backgroundColor: 'rgb(0, 0, 0)',
