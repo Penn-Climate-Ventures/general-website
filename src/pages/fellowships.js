@@ -15,6 +15,7 @@ import {
   Email,
   Footer, ProgramDetails,
 } from "../components"
+import {FellowshipsFAQ} from "../components/FellowshipsFAQ";
 
 const LearnMore = s.div`
   color: ${STEEL_BLUE};
@@ -62,6 +63,8 @@ export default class ClassPage extends Component {
         <div id="sectionRef">
           <ProgramDetails id={'sectionRef'}/>
         </div>
+
+        <FellowshipsFAQ/>
 
         <SectionHeader>Fall 2021 Projects and Partners</SectionHeader>
         <TextP>Projects announced August 31, check back then!</TextP>
