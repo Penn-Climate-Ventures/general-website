@@ -33,6 +33,7 @@ const CommunityButton = s(Button)`
   border-radius: 30px;
   width: 100%;
   z-index: 1;
+  transition: all ease-in-out 0.15s;
 `
 
 
@@ -49,7 +50,7 @@ const CommunityLayout = () => (
            </CommunityText>
           <CommunityButton
             href="https://forms.zohopublic.com/pennclimateventures/form/EmailSubscription/formperma/suTHSE8lKXPjRple25l_HDNqV5aRkGcZo4K3NjWTQzE"
-            rel="noreferrer noopener "
+            rel="noreferrer noopener"
             target="_blank">
             Sign Up
           </CommunityButton>
@@ -62,7 +63,7 @@ const CommunityLayout = () => (
             Featuring discussions about climate policy, finance energy, waste,
             agriculture, and the venture landscape.
           </CommunityText>
-          <CommunityButton href="/">Invite Link</CommunityButton>
+          <CommunityButton href="/membership">Invite Link</CommunityButton>
          </div>
       </BoxColumn>
       {/*<BoxColumn center="true">*/}

@@ -1,31 +1,13 @@
 import React, {Component} from "react"
 import Helmet from "react-helmet"
-import {Link} from 'react-scroll'
-import s from "styled-components"
-import {FiChevronDown} from "react-icons/Fi"
-import {STEEL_BLUE} from "../utils/constants";
 
 import {
   Layout,
   Navbar,
   PageTitle,
-  SectionHeader,
   TextP,
-  UrlLink,
-  Email,
-  Footer, ProgramDetails,
+  Footer,
 } from "../components"
-
-const LearnMore = s.div`
-  color: ${STEEL_BLUE};
-  text-align: center;
-  margin: 90px auto 120px auto;
-  
-  &:hover > * {
-    text-decoration: underline;
-    color: ${STEEL_BLUE}
-  }
-`
 
 export default class ClassPage extends Component {
   render() {
