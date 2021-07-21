@@ -128,6 +128,8 @@ export const NavButton = s.a`
   }
 `
 
+const isBrowser = typeof window !== "undefined"
+
 export class Navbar extends Component {
   state = {
     opened: false
@@ -153,7 +155,9 @@ export class Navbar extends Component {
 
   render() {
     // close navbar when window closes
-    window.addEventListener('resize', this.handleMenuClose)
+    if (isBrowser) {
+      window.addEventListener('resize', this.handleMenuClose)
+    }
 
     // for animating menu icon bars toggling
     const firstIconBarStyle = {
