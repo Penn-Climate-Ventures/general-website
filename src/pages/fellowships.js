@@ -32,7 +32,7 @@ export default class ClassPage extends Component {
   render() {
     return (
       <Layout>
-        <Helmet title="Penn Climate Ventures Prize" defer={false} />
+        <Helmet title="Penn Climate Ventures" defer={false} />
         <Navbar />
         <PageTitle>Fellowships</PageTitle>
         <TextP>

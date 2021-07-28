@@ -56,7 +56,7 @@ const PrizeButton = s.a`
 const PrizePage = () => {
   return (
     <Layout>
-      <Helmet title="Penn Climate Ventures Prize" defer={false} />
+      <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
       <PageTitle>Prize</PageTitle>
       <TextP bold="true">

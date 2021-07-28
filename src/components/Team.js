@@ -207,12 +207,12 @@ const TeamLayout = () => (
           <Member position={item.position} name={item.name} />
         )) }
       </BoxColumn>
-      <BoxColumn round="true">
+      {/* <BoxColumn round="true">
         <TeamName>Advising</TeamName>
         { advisingTeamData.map( item => (
           <Member position={item.position} name={item.name} />
         )) }
-      </BoxColumn>
+      </BoxColumn> */}
     </TeamGrid>
   </div>
 )
