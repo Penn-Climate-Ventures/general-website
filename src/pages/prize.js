@@ -70,7 +70,7 @@ const PrizePage = () => {
       <PrizeButtonContainer>
         <PrizeButton href={"/soon"}>PCV Ideathon</PrizeButton>
         <Rule />
-        <PrizeButton href={"/soon"}>PCV Prize Competition</PrizeButton>
+        <PrizeButton href={"https://prize.pennclimateventures.org"}>PCV Prize Competition</PrizeButton>
       </PrizeButtonContainer>
       <Footer />
     </Layout>
