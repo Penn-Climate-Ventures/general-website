@@ -1,38 +1,39 @@
 import React from "react"
 import s from "styled-components"
-import { SectionHeader } from "../components/shared/Layout"
+import { SectionHeader } from "./shared/Layout"
 import Tile from "../components/shared/Tile"
 import {useContainerDimensions} from "./shared/useContainerDimensions";
+import {ActionButton} from "./shared/Button";
 
 
 const cardItems = [
   {
-    top: "PCV",
+    top: "Life Cycle Assessment",
+    mid: "Sept. 17",
+    bot: "5-6:30 PM EST"
+  },
+  {
+    top: "Consulting Case Workshop",
+    mid: "Oct. 1",
+    bot: "6-8 PM EST"
+  },
+  {
+    top: "B Corp Certification",
+    mid: "Oct. 15",
+    bot: "6-7:30 PM EST"
+  },
+  {
+    top: "Blockchain Workshop",
     mid: "TBD",
     bot: "TBD"
   },
   {
-    top: "PCV",
+    top: "ESG Workshop",
     mid: "TBD",
     bot: "TBD"
   },
   {
-    top: "PCV",
-    mid: "TBD",
-    bot: "TBD"
-  },
-  {
-    top: "PCV",
-    mid: "TBD",
-    bot: "TBD"
-  },
-  {
-    top: "PCV",
-    mid: "TBD",
-    bot: "TBD"
-  },
-  {
-    top: "PCV",
+    top: "Sustainable Regulations Workshop",
     mid: "TBD",
     bot: "TBD"
   },
@@ -79,15 +80,20 @@ const UpcomingWorkshopsLayout = () => {
   const { width } = useContainerDimensions(componentRef)
 
   return (
-  <div ref={componentRef}>
-    <SectionHeader>Upcoming Workshops</SectionHeader>
-    <FlexContainer>
-      { cardItems.map( card => (
-        <Tile topText={card.top} midText={card.mid} botText={card.bot} />
-      )) }
-    </FlexContainer>
-  </div>
-)
+    <div ref={componentRef}>
+      <SectionHeader>Upcoming Workshops</SectionHeader>
+      <FlexContainer>
+        { cardItems.map( card => (
+          <Tile topText={card.top} midText={card.mid} botText={card.bot} />
+        )) }
+      </FlexContainer>
+      <div css={`display: flex; justify-content: center; margin-top: 60px;`}>
+        <ActionButton rel="noreferrer noopener"
+                      target="_blank"
+                      href="https://tinyurl.com/m5e7h4uj">RSVP Here!</ActionButton>
+      </div>
+    </div>
+  )
 }
 
 export const UpcomingWorkshops = s(UpcomingWorkshopsLayout)`

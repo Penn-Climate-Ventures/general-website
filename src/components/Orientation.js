@@ -16,7 +16,6 @@ const OrientationGoals = s.ul`
   line-height: 1.15rem;
   font-size: 0.9rem;
   list-style: circle outside none;
-  padding-left: 30px;
 `
 
 const OrientationButton = s.a`
@@ -42,10 +41,11 @@ const OrientationLayout = () => (
       <BoxColumn round="true">
         <BoxHeading>Where we see ourselves in 2025:</BoxHeading>
         <OrientationGoals>
-          <li>bullet point list of goals. this might be</li>
-          <li>kinda scary and ambitious</li>
-          <li>but maybe it will help pull in ppl for the long run</li>
-          <li>also funding</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </OrientationGoals>
         <OrientationButton href="/values">Our Values</OrientationButton>
       </BoxColumn>
