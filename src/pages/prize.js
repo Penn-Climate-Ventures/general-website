@@ -10,8 +10,9 @@ import {
   TextP,
   Footer,
 } from "../components"
+import { ActionButton } from "../components/shared/Button"
 
-import { STEEL_BLUE, MIDNIGHT_BLUE } from "../utils/constants"
+import { STEEL_BLUE } from "../utils/constants"
 
 
 const PrizeButtonContainer = s.div`
@@ -36,23 +37,6 @@ const Rule = s.span`
   }
 `
 
-const PrizeButton = s.a`
-  color: ${MIDNIGHT_BLUE};
-  text-align: center;
-  width: 250px;
-  font-size: 1rem;
-  font-weight: bold;
-  border: 1.5px solid ${STEEL_BLUE};
-  border-radius: 25px;
-  padding: 10px 15px;
-  margin: auto;
-  display: span;
-
-  &:hover {
-    color: ${STEEL_BLUE};
-  }
-`
-
 const PrizePage = () => {
   return (
     <Layout>
@@ -68,9 +52,13 @@ const PrizePage = () => {
         spring.
       </TextP>
       <PrizeButtonContainer>
-        <PrizeButton href={"/soon"}>PCV Ideathon</PrizeButton>
+        <ActionButton href={"/soon"}>PCV Ideathon</ActionButton>
         <Rule />
-        <PrizeButton href={"https://prize.pennclimateventures.org"}>PCV Prize Competition</PrizeButton>
+        <ActionButton rel="noreferrer noopener"
+                      target="_blank"
+                      href="https://prize.pennclimateventures.org/">
+          PCV Prize Competition
+        </ActionButton>
       </PrizeButtonContainer>
       <Footer />
     </Layout>

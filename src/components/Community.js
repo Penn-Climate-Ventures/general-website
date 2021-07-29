@@ -45,9 +45,9 @@ const CommunityLayout = () => (
         <div>
           <BoxHeading>Subscribe to Our Newsletter</BoxHeading>
           <CommunityText>
-            Sporadically Sent Out When We Have Interesting News and
-            Opportunities to Share
-           </CommunityText>
+            Sporadically sent out when we have interesting news and
+            opportunities to share
+          </CommunityText>
           <CommunityButton
             href="https://forms.zohopublic.com/pennclimateventures/form/EmailSubscription/formperma/suTHSE8lKXPjRple25l_HDNqV5aRkGcZo4K3NjWTQzE"
             rel="noreferrer noopener"
@@ -64,7 +64,7 @@ const CommunityLayout = () => (
             agriculture, and the venture landscape.
           </CommunityText>
           <CommunityButton href="/membership">Invite Link</CommunityButton>
-         </div>
+        </div>
       </BoxColumn>
       {/*<BoxColumn center="true">*/}
       {/*  <div>*/}

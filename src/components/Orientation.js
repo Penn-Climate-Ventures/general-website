@@ -16,7 +16,6 @@ const OrientationGoals = s.ul`
   line-height: 1.15rem;
   font-size: 0.9rem;
   list-style: circle outside none;
-  padding-left: 30px;
 `
 
 const OrientationButton = s.a`

@@ -173,9 +173,9 @@ const TeamLayout = () => (
   <div>
     <SectionHeader left={"left"}>Join a Team</SectionHeader>
     <TextP>Recruitment for Class, Fellowships, Prize, and Community Teams is open
-       at the Penn SAC Fairs for all current Penn students.</TextP>
+      at the Penn SAC Fairs for all current Penn students.</TextP>
     <TextP>If you are interested in Advising, Partnerships, Sponsorships, or Press,
-       please shoot us an email at <Email/>.</TextP>
+      please shoot us an email at <Email/>.</TextP>
     <TeamGrid>
       <BoxColumn round="true">
         <TeamName>Class</TeamName>
@@ -207,12 +207,6 @@ const TeamLayout = () => (
           <Member position={item.position} name={item.name} />
         )) }
       </BoxColumn>
-      {/* <BoxColumn round="true">
-        <TeamName>Advising</TeamName>
-        { advisingTeamData.map( item => (
-          <Member position={item.position} name={item.name} />
-        )) }
-      </BoxColumn> */}
     </TeamGrid>
   </div>
 )
