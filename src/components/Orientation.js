@@ -39,18 +39,16 @@ const OrientationLayout = () => (
     <SectionHeader left={"left"}>Orientation</SectionHeader>
     <OrientationGrid>
       <BoxColumn round="true">
-        <BoxHeading>Where we see ourselves in 2025:</BoxHeading>
+        <BoxHeading>PCV in 2025:</BoxHeading>
         <OrientationGoals>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>A robust recruiting pipeline for climate startups</li>
+          <li>A movement to bake climate into our curriculum</li>
+          <li>Penn's springboard for climate action</li>
         </OrientationGoals>
         <OrientationButton href="/values">Our Values</OrientationButton>
       </BoxColumn>
       <BoxColumn round="true">
-        <BoxHeading>How to make the most of this website:</BoxHeading>
+        <BoxHeading>New to Penn? Start here.</BoxHeading>
         {/*<OrientationButton href="/">Massive Events Calendar</OrientationButton>*/}
         <OrientationButton href="https://docs.google.com/document/d/1BFwgQGAzPigndFDxPXGcU27a1QfNhiVtrrBfvqvpGc4/edit?usp=sharing">Startup Resources</OrientationButton>
         <OrientationButton href="https://docs.google.com/document/d/1zT0XivDJk6L21ThWqI46bug2xston4dPstrd-9ayJAQ/edit?usp=sharing">Institution Resources</OrientationButton>
@@ -58,12 +56,11 @@ const OrientationLayout = () => (
         <OrientationButton href="https://docs.google.com/document/d/1ysFC_p9UXTbkzFUL4lS-6KVQGch1qkahEwJXju9i9rM/edit?usp=sharing">Sustainability</OrientationButton>
       </BoxColumn>
       <BoxColumn round="true">
-        <BoxHeading>What our teams are currently working on:</BoxHeading>
+        <BoxHeading>What we're working on.</BoxHeading>
         <OrientationButton href="/class">Workshops</OrientationButton>
         <OrientationButton href="/fellowships">Consulting</OrientationButton>
-        <OrientationButton href="/soon">Prize Competition</OrientationButton>
+        <OrientationButton href="https://prize.pennclimateventures.org">Prize Competition</OrientationButton>
         <OrientationButton href="/soon">Ideathon</OrientationButton>
-        <OrientationButton href="/membership">Discord</OrientationButton>
         {/*<OrientationButton href="/">Office Hours</OrientationButton>*/}
       </BoxColumn>
     </OrientationGrid>
