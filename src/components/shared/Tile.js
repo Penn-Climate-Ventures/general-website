@@ -9,7 +9,7 @@ export const TileBox = s.div`
   line-height: 1rem;
   padding: 15px 10px;
   border-radius: 10px;
-  box-shadow: 0 5px 10px 1px #ddd;
+  box-shadow: 0 3px 15px 1px #00000016;
   text-align: center;
   width: 150px;
 `

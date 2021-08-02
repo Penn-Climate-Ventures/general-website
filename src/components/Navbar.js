@@ -6,8 +6,8 @@ import {navLinks, smLinks} from "../data/navigation";
 
 
 export const NavWrapper = s.nav`
-  background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.97);
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
   height: 75px;
   width: 100%;
   padding: 15px 30px;

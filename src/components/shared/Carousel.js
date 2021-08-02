@@ -87,7 +87,7 @@ const Carousel = (props) => {
           </div>
         </CarouselContent>
         {
-          currIndex < (length - show) &&
+          currIndex < (length - Math.floor(show)) &&
           <NavArrow
             onClick={next}
             css={`right: 0; border-left: 20px solid ${STEEL_BLUE};`}
