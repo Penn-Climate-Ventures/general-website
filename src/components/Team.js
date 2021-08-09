@@ -41,10 +41,6 @@ const fellowshipsTeamData = [
 ]
 const prizeTeamData = [
   {
-    position: "Outreach",
-    name: "Omar Ben Kaddour",
-  },
-  {
     position: "Marketing",
     name: "Christiana Guan",
   },
