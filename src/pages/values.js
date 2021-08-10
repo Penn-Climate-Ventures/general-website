@@ -18,10 +18,10 @@ export default class ClassPage extends Component {
         <PageTitle>Our Values</PageTitle>
 
         <TextP>
-          As a student-led group at Penn, PCV’s mission is to support Penn students in catalyzing climate action. 
-          Our long-term vision is to build a climate tech career recruiting pipeline at Penn, comparable to those 
-          of consulting and investment banking that currently exist. Our central thesis is that we CAN act to combat 
-          the climate crisis and larger anthropogenic issues in our environment. 
+        As a student-led group at Penn, PCV’s mission is to support Penn students in catalyzing climate action. 
+        Our long-term vision is to build a climate tech career recruiting pipeline at Penn, comparable to those 
+        of consulting and investment banking that currently exist. Our central thesis is that we CAN act to combat 
+        the climate crisis and larger anthropogenic issues in our environment. 
         </TextP>
 
         <TextP>
