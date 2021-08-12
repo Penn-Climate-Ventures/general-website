@@ -2,7 +2,7 @@ import React from "react"
 import s from "styled-components"
 import { BoxHeading, BoxColumn } from "./shared/BoxColumn"
 import {SectionHeader} from "./shared/Layout";
-import { STEEL_BLUE, MIDNIGHT_BLUE } from "../utils/constants"
+import { STEEL_BLUE} from "../utils/constants"
 import {useContainerDimensions} from "./shared/useContainerDimensions";
 import Carousel from "./shared/Carousel";
 
@@ -19,7 +19,7 @@ const OrientationGoals = s.ul`
 `
 
 const OrientationButton = s.a`
-  color: ${MIDNIGHT_BLUE};
+  color: ${STEEL_BLUE};
   opacity: 0.8;
   font-size: 0.8rem;
   font-weight: 600;
@@ -64,7 +64,7 @@ const OrientationLayout = () =>  {
           <OrientationButton href="/class">Workshops</OrientationButton>
           <OrientationButton href="/fellowships">Consulting</OrientationButton>
           <OrientationButton href="https://prize.pennclimateventures.org">Prize Competition</OrientationButton>
-          <OrientationButton href="/soon">Ideathon</OrientationButton>
+          <OrientationButton hrSTEELn">Ideathon</OrientationButton>
           {/*<OrientationButton href="/">Office Hours</OrientationButton>*/}
         </OrientationColumn>
       </Carousel>

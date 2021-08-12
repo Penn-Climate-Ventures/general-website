@@ -1,27 +1,45 @@
 import React, {Component} from "react"
 import Helmet from "react-helmet"
+import {Link} from 'react-scroll'
+import s from "styled-components"
+import {FiChevronDown} from "react-icons/Fi"
+import {STEEL_BLUE} from "../utils/constants";
 
 import {
   Layout,
   Navbar,
   PageTitle,
+  SectionHeader,
   TextP,
-  Footer,
+  UrlLink,
+  Email,
+  Footer, ProgramDetails,
 } from "../components"
+
+const LearnMore = s.div`
+  color: ${STEEL_BLUE};
+  text-align: center;
+  margin: 90px auto 120px auto;
+  
+  &:hover > * {
+    text-decoration: underline;
+    color: ${STEEL_BLUE}
+  }
+`
 
 export default class ClassPage extends Component {
   render() {
     return (
       <Layout>
-        <Helmet title="Penn Climate Ventures" defer={false} />
+        <Helmet title="Penn Climate Ventures Prize" defer={false} />
         <Navbar />
         <PageTitle>Our Values</PageTitle>
 
         <TextP>
-        As a student-led group at Penn, PCV’s mission is to support Penn students in catalyzing climate action. 
-        Our long-term vision is to build a climate tech career recruiting pipeline at Penn, comparable to those 
-        of consulting and investment banking that currently exist. Our central thesis is that we CAN act to combat 
-        the climate crisis and larger anthropogenic issues in our environment. 
+          As a student-led group at Penn, PCV’s mission is to support Penn students in catalyzing climate action. 
+          Our long-term vision is to build a climate tech career recruiting pipeline at Penn, comparable to those 
+          of consulting and investment banking that currently exist. Our central thesis is that we CAN act to combat 
+          the climate crisis and larger anthropogenic issues in our environment. 
         </TextP>
 
         <TextP>

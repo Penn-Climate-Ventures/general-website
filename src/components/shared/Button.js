@@ -1,13 +1,13 @@
 import s from 'styled-components'
-import {MIDNIGHT_BLUE, mediaMaxWidth, STEEL_BLUE} from "../../utils/constants"
+import {STEEL_BLUE, mediaMaxWidth, STEEL_BLUE} from "../../utils/constants"
 
 const Button = s.a`
     background-color: transparent;
-    border: .2rem solid ${MIDNIGHT_BLUE};
+    border: .2rem solid ${STEEL_BLUE};
     outline: none;
     float: ${({ right }) => right ? "right" : "left"};
     padding: 1rem 4.5rem 1rem 4.5rem;
-    color: ${MIDNIGHT_BLUE};
+    color: ${STEEL_BLUE};
     cursor: pointer;
     border-radius: 999px;
     z-index: -1;
@@ -16,7 +16,7 @@ const Button = s.a`
     font-weight: bold;
 
     :hover {
-        background-color: ${MIDNIGHT_BLUE};
+        background-color: ${STEEL_BLUE};
         color: white;
     }
 
@@ -26,7 +26,7 @@ const Button = s.a`
 `
 
 export const ActionButton = s.a`
-  color: ${MIDNIGHT_BLUE};
+  color: ${STEEL_BLUE};
   text-align: center;
   width: 250px;
   font-size: 1rem;

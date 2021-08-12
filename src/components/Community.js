@@ -3,7 +3,7 @@ import s from "styled-components"
 import { BoxHeading, BoxColumn } from "./shared/BoxColumn"
 import { SectionHeader } from "./shared/Layout"
 import Button from "../components/shared/Button"
-import { MIDNIGHT_BLUE } from "../utils/constants"
+import { STEEL_BLUE } from "../utils/constants"
 import Carousel from "./shared/Carousel";
 import {useContainerDimensions} from "./shared/useContainerDimensions";
 
@@ -22,7 +22,7 @@ const CommunityText = s.p`
 const CommunityButton = s(Button)`
   font-size: 0.9rem;
   padding: 10px 15px;
-  border: 2px solid ${MIDNIGHT_BLUE};
+  border: 2px solid ${STEEL_BLUE};
   border-radius: 30px;
   width: 100%;
   z-index: 1;

@@ -1,7 +1,7 @@
 import React, {Component } from 'react'
 import s from "styled-components"
 import Logo from '../images/logo.png'
-import { MIDNIGHT_BLUE, GREEN } from "../utils/constants"
+import { STEEL_BLUE, GREEN } from "../utils/constants"
 import {navLinks, smLinks} from "../data/navigation";
 
 
@@ -50,7 +50,7 @@ const ToggleMenuButton = s.button`
 `
 
 const IconBar = s.span`
-  background-color: ${MIDNIGHT_BLUE};
+  background-color: ${STEEL_BLUE};
   height: 2px;
   width: 25px;
   margin: 3px;
@@ -111,7 +111,7 @@ const NavLinks = s.div`
 `
 
 export const NavButton = s.a`
-  color: ${MIDNIGHT_BLUE};
+  color: ${STEEL_BLUE};
   font-weight: 600;
   margin: 10px 10px;
   cursor: pointer;
