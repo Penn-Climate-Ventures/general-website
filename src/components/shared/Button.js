@@ -1,5 +1,5 @@
 import s from 'styled-components'
-import {STEEL_BLUE, mediaMaxWidth, STEEL_BLUE} from "../../utils/constants"
+import {STEEL_BLUE, mediaMaxWidth} from "../../utils/constants"
 
 const Button = s.a`
     background-color: transparent;

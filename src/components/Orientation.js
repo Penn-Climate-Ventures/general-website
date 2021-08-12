@@ -64,7 +64,7 @@ const OrientationLayout = () =>  {
           <OrientationButton href="/class">Workshops</OrientationButton>
           <OrientationButton href="/fellowships">Consulting</OrientationButton>
           <OrientationButton href="https://prize.pennclimateventures.org">Prize Competition</OrientationButton>
-          <OrientationButton hrSTEELn">Ideathon</OrientationButton>
+          <OrientationButton href="https://ideathon.pennclimateventures.org">Ideathon</OrientationButton>
           {/*<OrientationButton href="/">Office Hours</OrientationButton>*/}
         </OrientationColumn>
       </Carousel>

@@ -2,7 +2,6 @@ import React, {Component} from "react"
 import Helmet from "react-helmet"
 import {Link} from 'react-scroll'
 import s from "styled-components"
-import {FiChevronDown} from "react-icons/Fi"
 import {STEEL_BLUE} from "../utils/constants";
 
 import {
