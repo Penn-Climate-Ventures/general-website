@@ -35,14 +35,14 @@ const ImagineLayout = () => (
   <div>
     <ImagineGrid>
       <div>
-        <TextP>Imagine a campus where students line up to work for the biggest moveers in climate innovation.</TextP>
+        <TextP>Imagine a campus where students line up to work for the biggest movers in climate innovation.</TextP>
         <TextP>Imagine a campus where sustainability and climate analyses are integrated into our course plans, just like intro statistics or calulus.</TextP>
         <EmphasizedText>Imagine a campus where climate is just... common sense.</EmphasizedText>
       </div>
       <SolutionBox>
         <div css={`display: table-cell; vertical-align: middle; `}>
-        <p>That's what we're building.</p>
-        <p>Let's push Penn into climate.</p>
+          <p>That's what we're building.</p>
+          <p>Let's push Penn into climate.</p>
         </div>
       </SolutionBox>
     </ImagineGrid>

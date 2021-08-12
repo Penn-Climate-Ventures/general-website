@@ -24,7 +24,7 @@ export const TextP = s.p`
   font-weight: ${({ bold }) => ( bold ? "bold" : "normal")};
   text-align: ${({ center }) => ( center ? "center" : "left")};
   font-size: 1.05rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   margin-bottom: 1rem;
 `
 

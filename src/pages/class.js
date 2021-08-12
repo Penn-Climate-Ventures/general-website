@@ -16,7 +16,7 @@ import {
 const ClassPage = () => {
   return (
     <Layout>
-      <Helmet title="Penn Climate Ventures Prize" defer={false} />
+      <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
       <PageTitle>Class</PageTitle>
       <TextP bold="true" center={"center"}>

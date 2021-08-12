@@ -1,5 +1,5 @@
 import s from 'styled-components'
-import { MIDNIGHT_BLUE, mediaMaxWidth } from "../../utils/constants"
+import {MIDNIGHT_BLUE, mediaMaxWidth, STEEL_BLUE} from "../../utils/constants"
 
 const Button = s.a`
     background-color: transparent;
@@ -23,6 +23,22 @@ const Button = s.a`
     ${mediaMaxWidth("768px")} {
         padding: .5rem 1.25rem .5rem 1.25rem;
     }
+`
+
+export const ActionButton = s.a`
+  color: ${MIDNIGHT_BLUE};
+  text-align: center;
+  width: 250px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1.5px solid ${STEEL_BLUE};
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin: auto;
+
+  &:hover {
+    color: ${STEEL_BLUE};
+  }
 `
 
 export default Button

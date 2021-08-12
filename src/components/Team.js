@@ -3,6 +3,8 @@ import s from "styled-components"
 import { BoxColumn } from "./shared/BoxColumn"
 import {TextP, Email, SectionHeader} from "./shared/Layout"
 import { GREEN } from "../utils/constants"
+import Carousel from "./shared/Carousel";
+import {useContainerDimensions} from "./shared/useContainerDimensions";
 
 
 const classTeamData = [
@@ -130,24 +132,8 @@ const advisingTeamData = [
   },
 ]
 
-const TeamGrid = s.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  grid-gap: 1rem;
-  justify-content: center;
-  margin: 15px auto;
-  
-  @media (min-width: 576px) {
-    grid-template-columns: 70%;
-  }
-
-  @media (min-width: 768px) {
-    grid-template-columns: 45% 45%;
-  }
-
-  @media (min-width: 992px) {
-    grid-template-columns: 30% 30% 30%;
-  }
+const TeamColumn = s(BoxColumn)`
+    width: 200px;
 `
 
 const TeamName = s.p`
@@ -160,58 +146,57 @@ const TeamName = s.p`
 
 const Member = ({ position, name }) => (
   <div css={`margin: 10px auto;`}>
-    <p><b>{( position )}</b></p>
+    <p css={`margin-bottom: 0 !important;`}><b>{( position )}</b></p>
     <p>{( name )}</p>
   </div>
 )
 
-const TeamLayout = () => (
-  <div>
-    <SectionHeader left={"left"}>Join a Team</SectionHeader>
-    <TextP>Recruitment for Class, Fellowships, Prize, and Community Teams is open
-       at the Penn SAC Fairs for all current Penn students.</TextP>
-    <TextP>If you are interested in Advising, Partnerships, Sponsorships, or Press,
-       please shoot us an email at <Email/>.</TextP>
-    <TeamGrid>
-      <BoxColumn round="true">
-        <TeamName>Class</TeamName>
-        { classTeamData.map( item => (
-          <Member position={item.position} name={item.name} />
-        )) }
-      </BoxColumn>
-      <BoxColumn round="true">
-        <TeamName>Fellowships</TeamName>
-        { fellowshipsTeamData.map( item => (
-          <Member position={item.position} name={item.name} />
-        )) }
-      </BoxColumn>
-      <BoxColumn round="true">
-        <TeamName>Prize</TeamName>
-        { prizeTeamData.map( item => (
-          <Member position={item.position} name={item.name} />
-        )) }
-      </BoxColumn>
-      <BoxColumn round="true">
-        <TeamName>Community</TeamName>
-        { communityTeamData.map( item => (
-          <Member position={item.position} name={item.name} />
-        )) }
-      </BoxColumn>
-      <BoxColumn round="true">
-        <TeamName>Development</TeamName>
-        { developmentTeamData.map( item => (
-          <Member position={item.position} name={item.name} />
-        )) }
-      </BoxColumn>
-      <BoxColumn round="true">
-        <TeamName>Advising</TeamName>
-        { advisingTeamData.map( item => (
-          <Member position={item.position} name={item.name} />
-        )) }
-      </BoxColumn>
-    </TeamGrid>
-  </div>
-)
+const TeamLayout = () => {
+  const componentRef = React.useRef()
+  const { width } = useContainerDimensions(componentRef)
+
+  return (
+    <div ref={componentRef}>
+      <SectionHeader left={"left"}>Join a Team</SectionHeader>
+      <TextP>Recruitment for Class, Fellowships, Prize, and Community Teams is open
+        at the Penn SAC Fairs for all current Penn students.</TextP>
+      <TextP>If you are interested in Advising, Partnerships, Sponsorships, or Press,
+        please shoot us an email at <Email/>.</TextP>
+      <Carousel show={width / 240}>
+        <TeamColumn round="true">
+          <TeamName>Class</TeamName>
+          { classTeamData.map( item => (
+            <Member position={item.position} name={item.name} />
+          )) }
+        </TeamColumn>
+        <TeamColumn round="true">
+          <TeamName>Fellowships</TeamName>
+          { fellowshipsTeamData.map( item => (
+            <Member position={item.position} name={item.name} />
+          )) }
+        </TeamColumn>
+        <TeamColumn round="true">
+          <TeamName>Prize</TeamName>
+          { prizeTeamData.map( item => (
+            <Member position={item.position} name={item.name} />
+          )) }
+        </TeamColumn>
+        <TeamColumn round="true">
+          <TeamName>Community</TeamName>
+          { communityTeamData.map( item => (
+            <Member position={item.position} name={item.name} />
+          )) }
+        </TeamColumn>
+        <TeamColumn round="true">
+          <TeamName>Development</TeamName>
+          { developmentTeamData.map( item => (
+            <Member position={item.position} name={item.name} />
+          )) }
+        </TeamColumn>
+      </Carousel>
+    </div>
+  )
+}
 
 export const Team = s(TeamLayout)`
 `

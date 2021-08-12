@@ -9,27 +9,29 @@ export const TileBox = s.div`
   line-height: 1rem;
   padding: 15px 10px;
   border-radius: 10px;
-  box-shadow: 0 5px 10px 1px #ddd;
+  box-shadow: 0 3px 15px 1px #00000016;
   text-align: center;
   width: 150px;
 `
 
 const TileTopText = s(TextP)`
   color: ${STEEL_BLUE};
+  line-height: 1.15rem;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
 `
 
-const TileMidText = s.a`
+const TileMidText = s.p`
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`
+const TileMidLink= s.a`
   color: #05052C;
   font-weight: 600;
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
-  
-  &:hover {
-    text-decoration: underline;
-  }
 `
 
 const TileBotText = s.p`
@@ -39,11 +41,16 @@ const TileBotText = s.p`
 
 
 const Tile = ({ topText, midText, midLink, botText }) => (
-    <TileBox>
-        <TileTopText>{( topText )}</TileTopText>
-        <TileMidText href={midLink}>{( midText )}</TileMidText>
-        <TileBotText>{( botText )}</TileBotText>
-    </TileBox>
+  <TileBox>
+    <TileTopText>{( topText )}</TileTopText>
+    {midLink &&
+    <TileMidLink href={midLink}>{( midText )}</TileMidLink>
+    }
+    {!midLink &&
+    <TileMidText>{( midText )}</TileMidText>
+    }
+    <TileBotText>{( botText )}</TileBotText>
+  </TileBox>
 )
 
 export default Tile

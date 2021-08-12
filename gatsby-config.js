@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "PCV Prize Website",
+    title: "PCV Website",
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Penn Climate Ventures Prize",
-        short_name: "PCV Prize",
+        name: "Penn Climate Ventures",
+        short_name: "PCV",
         start_url: "/",
         background_color: "#ffffff",
         theme_color: "#3083BC",

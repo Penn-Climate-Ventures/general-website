@@ -11,7 +11,7 @@ export const BoxHeading = s.p`
 
 export const BoxColumn = s.div`
     border-radius: ${({ round }) => ( round ? "10px" : "0")};
-    box-shadow: 0 3px 15px 1px #ddd;
+    box-shadow: 0 3px 15px 1px #00000016;
     margin: 10px;
     padding: 30px 20px;
     text-align: ${({ alignLeft }) => ( alignLeft ? "left" : "center")};

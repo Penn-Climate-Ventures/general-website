@@ -1,5 +1,9 @@
-import {FaFacebookF, FaInstagram, FaLinkedinIn} from "react-icons/fa";
+import Facebook from "../images/socials/facebook.png"
+import Instagram from "../images/socials/instagram.png"
+import LinkedIn from "../images/socials/linkedin.png"
+
 import React from "react";
+import s from "styled-components"
 
 export const navLinks = [
   {
@@ -28,17 +32,22 @@ export const navLinks = [
   },
 ]
 
+const SocialMedia = s.img`
+  height: 1.25rem;
+  object-fit: cover;
+`
+
 export const smLinks = [
   {
-    icon: <FaInstagram fontSize={'20px'}/>,
+    icon: <SocialMedia src={Instagram} alt="Instagram"/>,
     url: "https://www.instagram.com/pennclimateventures/"
   },
   {
-    icon: <FaFacebookF fontSize={'20px'}/>,
+    icon: <SocialMedia src={Facebook} alt="Facebook"/>,
     url: "https://www.facebook.com/pennclimateventures/"
   },
   {
-    icon: <FaLinkedinIn fontSize={'20px'}/>,
+    icon: <SocialMedia src={LinkedIn} alt="LinkedIn"/>,
     url: "https://www.linkedin.com/company/penn-climate-ventures/"
   },
 ]

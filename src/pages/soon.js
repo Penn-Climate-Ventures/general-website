@@ -12,7 +12,7 @@ export default class Soon extends Component {
   render() {
     return (
       <Layout>
-        <Helmet title="Penn Climate Ventures Prize" defer={false} />
+        <Helmet title="Penn Climate Ventures" defer={false} />
         <Navbar />
         <PageTitle>This page is coming soon!</PageTitle>
         <Footer />

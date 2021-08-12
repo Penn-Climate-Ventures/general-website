@@ -2,13 +2,12 @@ import React, {Component } from 'react'
 import s from "styled-components"
 import Logo from '../images/logo.png'
 import { MIDNIGHT_BLUE, GREEN } from "../utils/constants"
-import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
 import {navLinks, smLinks} from "../data/navigation";
 
 
 export const NavWrapper = s.nav`
-  background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.97);
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
   height: 75px;
   width: 100%;
   padding: 15px 30px;
@@ -114,7 +113,7 @@ const NavLinks = s.div`
 export const NavButton = s.a`
   color: ${MIDNIGHT_BLUE};
   font-weight: 600;
-  margin: 5px 10px;
+  margin: 10px 10px;
   cursor: pointer;
   display: flex;
   
@@ -128,6 +127,8 @@ export const NavButton = s.a`
     align-items: center;
   }
 `
+
+const isBrowser = typeof window !== "undefined"
 
 export class Navbar extends Component {
   state = {
@@ -154,7 +155,9 @@ export class Navbar extends Component {
 
   render() {
     // close navbar when window closes
-    window.addEventListener('resize', this.handleMenuClose)
+    if (isBrowser) {
+      window.addEventListener('resize', this.handleMenuClose)
+    }
 
     // for animating menu icon bars toggling
     const firstIconBarStyle = {
@@ -180,7 +183,9 @@ export class Navbar extends Component {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      paddingTop: '30px',
+      paddingBottom: '30px'
     }
     const navOverlayOpenedStyle = {
       backgroundColor: 'rgb(0, 0, 0)',
