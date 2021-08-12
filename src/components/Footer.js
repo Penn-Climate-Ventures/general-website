@@ -1,7 +1,7 @@
 import React from 'react'
 import s from "styled-components"
 
-import { MIDNIGHT_BLUE, GREEN } from "../utils/constants"
+import { STEEL_BLUE, GREEN } from "../utils/constants"
 import { navLinks, smLinks } from "../data/navigation"
 
 
@@ -22,7 +22,7 @@ const FooterMenu = s.div`
 `
 
 const NavButton = s.a`
-  color: ${MIDNIGHT_BLUE};
+  color: ${STEEL_BLUE};
   font-weight: 600;
   margin: 5px 10px;
   cursor: pointer;
