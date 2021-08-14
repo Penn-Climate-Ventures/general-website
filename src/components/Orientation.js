@@ -49,7 +49,6 @@ const OrientationLayout = () =>  {
             <li>A movement to bake climate into our curriculum</li>
             <li>Penn's springboard for climate action</li>
           </OrientationGoals>
-          <OrientationButton href="/values">Our Values</OrientationButton>
         </OrientationColumn>
         <OrientationColumn round="true">
           <BoxHeading>New to Penn? Start here.</BoxHeading>
