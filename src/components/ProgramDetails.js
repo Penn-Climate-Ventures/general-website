@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import s from "styled-components"
 import { SectionHeader, TextP, Email } from "./shared/Layout";
-
+import { LIGHT_BLUE } from "../utils/constants"
 
 const TabLayout = s.div`
   max-width: 800px;
@@ -17,10 +17,11 @@ const TabHeader = s.div`
 
 const TabButton = s.div`
   text-align: center;
-  text-decoration: underline;
+  // text-decoration: underline;
   padding: 10px 0;
   width: 50%;
   cursor: pointer;
+  color: ${LIGHT_BLUE};
 `
 const TabContent = s.div`
   margin: 0;

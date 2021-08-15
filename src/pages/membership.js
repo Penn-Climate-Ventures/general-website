@@ -10,7 +10,7 @@ import {
   Footer, SectionHeader,
 } from "../components"
 
-import { STEEL_BLUE, MIDNIGHT_BLUE } from "../utils/constants"
+import { LIGHT_BLUE } from "../utils/constants"
 
 
 const CenterButtonContainer = s.div`
@@ -20,19 +20,19 @@ const CenterButtonContainer = s.div`
 `
 
 const ApplyButton = s.a`
-  color: ${MIDNIGHT_BLUE};
+  color: black;
   text-align: center;
   width: 150px;
   font-size: 1rem;
   font-weight: bold;
-  border: 1.5px solid ${STEEL_BLUE};
+  border: 1.5px solid ${LIGHT_BLUE};
   border-radius: 25px;
   padding: 10px 15px;
   margin: auto;
   display: block;
 
   &:hover {
-    color: ${STEEL_BLUE};
+    color: ${LIGHT_BLUE};
   }
 `
 
@@ -69,7 +69,7 @@ const MembershipPage = () => {
 
       <SectionHeader>
         <a href={"https://airtable.com/shrCCh7SJrYNsjeWT"}
-           css={`color: ${STEEL_BLUE}`}
+           css={`color: ${LIGHT_BLUE}`}
            target="_blank"
            rel="noreferrer noopener">
           Apply Here!

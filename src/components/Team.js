@@ -2,10 +2,9 @@ import React from "react"
 import s from "styled-components"
 import { BoxColumn } from "./shared/BoxColumn"
 import {TextP, Email, SectionHeader} from "./shared/Layout"
-import { STEEL_BLUE} from "../utils/constants"
+import { LIGHT_BLUE } from "../utils/constants"
 import Carousel from "./shared/Carousel";
 import {useContainerDimensions} from "./shared/useContainerDimensions";
-
 
 const classTeamData = [
   {
@@ -137,8 +136,9 @@ const TeamColumn = s(BoxColumn)`
 `
 
 const TeamName = s.p`
-    color: ${STEEL_BLUE};
+    color: ${LIGHT_BLUE};
     font-size: 1.2rem;
+    // text-decoration: underline;
     margin: 10px auto;
     font-weight: bold;
 `

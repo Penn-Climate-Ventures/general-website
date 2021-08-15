@@ -10,7 +10,7 @@ import {
   Footer,
 } from "../components"
 
-import {STEEL_BLUE, MIDNIGHT_BLUE, GREEN} from "../utils/constants"
+import {LIGHT_BLUE, DARK_BLUE } from "../utils/constants"
 
 
 const CenterButtonContainer = s.div`
@@ -20,19 +20,19 @@ const CenterButtonContainer = s.div`
 `
 
 const CalendarButton = s.a`
-  color: ${MIDNIGHT_BLUE};
+  color: black;
   text-align: center;
   width: 150px;
   font-size: 1rem;
   font-weight: bold;
-  border: 1.5px solid ${STEEL_BLUE};
+  border: 1.5px solid ${LIGHT_BLUE};
   border-radius: 25px;
   padding: 10px 15px;
   margin: auto;
   display: block;
 
   &:hover {
-    color: ${STEEL_BLUE};
+    color: ${LIGHT_BLUE};
   }
 `
 
@@ -41,11 +41,11 @@ const TextLink = s.a`
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  color: ${GREEN};
+  color: ${LIGHT_BLUE};
   font-weight: bold;
   
   &:hover {
-    color: ${GREEN};
+    color: ${DARK_BLUE};
   }
 `
 
