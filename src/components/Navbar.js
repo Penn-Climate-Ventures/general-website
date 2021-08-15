@@ -5,7 +5,6 @@ import { LIGHT_BLUE, DARK_BLUE } from "../utils/constants"
 // import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
 import {navLinks, smLinks} from "../data/navigation";
 
-
 export const NavWrapper = s.nav`
   background-color: rgba(255,255,255,0.97);
   box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
