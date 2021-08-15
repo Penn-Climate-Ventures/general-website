@@ -2,7 +2,7 @@ import React, {Component } from 'react'
 import s from "styled-components"
 import Logo from '../images/logo.png'
 import { LIGHT_BLUE, DARK_BLUE } from "../utils/constants"
-import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
+// import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
 import {navLinks, smLinks} from "../data/navigation";
 
 
