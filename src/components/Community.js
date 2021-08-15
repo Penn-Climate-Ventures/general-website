@@ -3,10 +3,9 @@ import s from "styled-components"
 import { BoxHeading, BoxColumn } from "./shared/BoxColumn"
 import { SectionHeader } from "./shared/Layout"
 import Button from "../components/shared/Button"
-import { STEEL_BLUE } from "../utils/constants"
+import { LIGHT_BLUE } from "../utils/constants"
 import Carousel from "./shared/Carousel";
 import {useContainerDimensions} from "./shared/useContainerDimensions";
-
 
 const CommunityColumn = s(BoxColumn)`
   width: 300px;
@@ -22,9 +21,9 @@ const CommunityText = s.p`
 const CommunityButton = s(Button)`
   font-size: 0.9rem;
   padding: 10px 15px;
-  border: 2px solid ${STEEL_BLUE};
+  border: 2px solid ${LIGHT_BLUE};
   border-radius: 30px;
-  width: 100%;
+  width: 70%;
   z-index: 1;
   transition: all ease-in-out 0.15s;
 `

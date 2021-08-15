@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import s from "styled-components"
 import { SectionHeader, TextP, Email } from "./shared/Layout";
-import {STEEL_BLUE} from "../utils/constants";
+import {LIGHT_BLUE} from "../utils/constants";
 
 
 const Question = s.summary`
@@ -16,7 +16,7 @@ const Question = s.summary`
   transition: all ease-in-out 0.15s;
   
   &:hover {
-    color: ${STEEL_BLUE}
+    color: ${LIGHT_BLUE}
   }
 `
 

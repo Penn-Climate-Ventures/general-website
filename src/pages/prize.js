@@ -12,7 +12,7 @@ import {
 } from "../components"
 import { ActionButton } from "../components/shared/Button"
 
-import { STEEL_BLUE } from "../utils/constants"
+import { LIGHT_BLUE } from "../utils/constants"
 
 
 const PrizeButtonContainer = s.div`
@@ -30,7 +30,7 @@ const PrizeButtonContainer = s.div`
 const Rule = s.span`
   height: 100%;
   width: 2px;
-  background-color: ${STEEL_BLUE};
+  background-color: ${LIGHT_BLUE};
   
   @media screen and (max-width: 768px) {
     opacity: 0;
@@ -52,7 +52,9 @@ const PrizePage = () => {
         spring.
       </TextP>
       <PrizeButtonContainer>
-        <ActionButton href={"/soon"}>PCV Ideathon</ActionButton>
+        <ActionButton rel="noreferrer noopener"
+                      target="_blank"
+                      href="https://ideathon.pennclimateventures.org/">PCV Ideathon</ActionButton>
         <Rule />
         <ActionButton rel="noreferrer noopener"
                       target="_blank"

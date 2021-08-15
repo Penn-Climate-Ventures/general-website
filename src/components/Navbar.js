@@ -1,7 +1,8 @@
 import React, {Component } from 'react'
 import s from "styled-components"
 import Logo from '../images/logo.png'
-import { STEEL_BLUE, GREEN } from "../utils/constants"
+import { LIGHT_BLUE, DARK_BLUE } from "../utils/constants"
+import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
 import {navLinks, smLinks} from "../data/navigation";
 
 
@@ -25,7 +26,8 @@ const NavBrand = s.a`
 `
 
 const NavBrandImg = s.img`
-  height: 45px;
+  margin-top: 10px;
+  height: 25px;
   width: auto;
 `
 
@@ -41,7 +43,7 @@ const ToggleMenuButton = s.button`
   flex-direction: column;
   
   &:hover > *, &:focus > * {
-    background-color: ${GREEN};
+    background-color: ${LIGHT_BLUE};
   }
   
   @media screen and (min-width: 780px) {
@@ -50,7 +52,7 @@ const ToggleMenuButton = s.button`
 `
 
 const IconBar = s.span`
-  background-color: ${STEEL_BLUE};
+  background-color: black;
   height: 2px;
   width: 25px;
   margin: 3px;
@@ -111,14 +113,15 @@ const NavLinks = s.div`
 `
 
 export const NavButton = s.a`
-  color: ${STEEL_BLUE};
+  color: black;
   font-weight: 600;
   margin: 10px 10px;
   cursor: pointer;
   display: flex;
+  transition: 0.2s;
   
   &:hover {
-    color: ${GREEN};
+    color: ${LIGHT_BLUE};
   }
   
   @media screen and (min-width: 780px) {

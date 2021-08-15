@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import s from "styled-components"
 import './carousel-styles.scss'
-import { STEEL_BLUE } from "../../utils/constants"
+import { LIGHT_BLUE } from "../../utils/constants"
 
 const CarouselContainer = s.div`
   position: relative;
@@ -77,7 +77,7 @@ const Carousel = (props) => {
           currIndex > 0 &&
           <NavArrow
             onClick={prev}
-            css={`left: 0; border-right: 20px solid ${STEEL_BLUE};`}
+            css={`left: 0; border-right: 20px solid ${LIGHT_BLUE};`}
           />
         }
         <CarouselContent onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
@@ -90,7 +90,7 @@ const Carousel = (props) => {
           currIndex < (length - Math.floor(show)) &&
           <NavArrow
             onClick={next}
-            css={`right: 0; border-left: 20px solid ${STEEL_BLUE};`}
+            css={`right: 0; border-left: 20px solid ${LIGHT_BLUE};`}
           />
         }
     </CarouselContainer>

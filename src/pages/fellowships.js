@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import {Link} from 'react-scroll'
 import s from "styled-components"
 import Chevron from "../images/svg/chevron.svg"
-import {MIDNIGHT_BLUE, STEEL_BLUE} from "../utils/constants";
+import {LIGHT_BLUE} from "../utils/constants";
 
 import {
   Layout,
@@ -18,13 +18,14 @@ import {
 import {FellowshipsFAQ} from "../components/FellowshipsFAQ";
 
 const LearnMore = s.div`
-  color: ${MIDNIGHT_BLUE};
+  color: black;
   text-align: center;
   margin: 90px auto 120px auto;
+  transition: 0.2s;
   
   &:hover > * {
-    text-decoration: underline;
-    color: ${MIDNIGHT_BLUE}
+    // text-decoration: underline;
+    color: ${LIGHT_BLUE}
   }
 `
 
@@ -53,7 +54,7 @@ export default class ClassPage extends Component {
           broader climate space while delivering value to companies.
         </TextP>
 
-        <Link to={'sectionRef'} smooth={true} offset={-100}>
+        <Link to={'sectionRef'} offset={-100}>
             <LearnMore>
               <TextP center={'center'}>Learn More</TextP>
               <Chevron css={'height: 0.8rem'}/>

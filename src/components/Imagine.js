@@ -1,7 +1,7 @@
 import React from "react"
 import s from "styled-components"
 import { TextP } from "./shared/Layout"
-import { STEEL_BLUE } from "../utils/constants"
+import { LIGHT_BLUE } from "../utils/constants"
 
 
 const ImagineGrid = s.div`
@@ -19,8 +19,8 @@ const EmphasizedText = s(TextP)`
 const SolutionBox = s.div`
   font-size: 1.75rem;
   color: white;
-	-webkit-text-stroke: 1.25px ${STEEL_BLUE};
-	border: 1px solid ${STEEL_BLUE};
+	-webkit-text-stroke: 1.25px ${LIGHT_BLUE};
+	border: 1px solid ${LIGHT_BLUE};
   display: table;
   text-align: center;
   vertical-align: middle;

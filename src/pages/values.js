@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import Helmet from "react-helmet"
 import {Link} from 'react-scroll'
 import s from "styled-components"
-import {STEEL_BLUE} from "../utils/constants";
+import {LIGHT_BLUE} from "../utils/constants";
 
 import {
   Layout,
@@ -16,13 +16,13 @@ import {
 } from "../components"
 
 const LearnMore = s.div`
-  color: ${STEEL_BLUE};
+  color: ${LIGHT_BLUE};
   text-align: center;
   margin: 90px auto 120px auto;
   
   &:hover > * {
     text-decoration: underline;
-    color: ${STEEL_BLUE}
+    color: ${LIGHT_BLUE}
   }
 `
 

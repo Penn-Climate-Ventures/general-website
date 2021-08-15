@@ -1,6 +1,6 @@
 import React from 'react'
 import s from "styled-components"
-import { GREEN, STEEL_BLUE } from "../../utils/constants"
+import { GREEN, LIGHT_BLUE } from "../../utils/constants"
 import { TextP } from "./Layout"
 
 
@@ -15,8 +15,7 @@ export const TileBox = s.div`
 `
 
 const TileTopText = s(TextP)`
-  color: ${STEEL_BLUE};
-  line-height: 1.15rem;
+  color: ${LIGHT_BLUE};
   text-align: center;
   font-weight: 500;
 `
@@ -27,7 +26,7 @@ const TileMidText = s.p`
   margin-bottom: 10px;
 `
 const TileMidLink= s.a`
-  color: #05052C;
+  color: black;
   font-weight: 600;
   display: block;
   margin-top: 10px;
@@ -35,7 +34,7 @@ const TileMidLink= s.a`
 `
 
 const TileBotText = s.p`
-  color: ${GREEN};
+  color: ${LIGHT_BLUE};
   font-weight: bold;
 `
 

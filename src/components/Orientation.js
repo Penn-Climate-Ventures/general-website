@@ -2,10 +2,9 @@ import React from "react"
 import s from "styled-components"
 import { BoxHeading, BoxColumn } from "./shared/BoxColumn"
 import {SectionHeader} from "./shared/Layout";
-import { STEEL_BLUE} from "../utils/constants"
-import {useContainerDimensions} from "./shared/useContainerDimensions";
+import { LIGHT_BLUE } from "../utils/constants"
 import Carousel from "./shared/Carousel";
-
+import {useContainerDimensions} from "./shared/useContainerDimensions";
 
 const OrientationColumn = s(BoxColumn)`
   width: 230px;
@@ -13,24 +12,25 @@ const OrientationColumn = s(BoxColumn)`
 
 const OrientationGoals = s.ul`
   text-align: left;
-  line-height: 1.15rem;
+  line-height: 1.2rem;
   font-size: 0.9rem;
   list-style: circle outside none;
 `
 
 const OrientationButton = s.a`
-  color: ${STEEL_BLUE};
+  color: black;
   opacity: 0.8;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  border: 1px solid ${STEEL_BLUE};
+  border: 1px solid ${LIGHT_BLUE};
   border-radius: 25px;
   padding: 3px 15px;
   margin: 20px auto;
   display: block;
+  transition: 0.2s;
 
   &:hover {
-    color: ${STEEL_BLUE};
+    color: ${LIGHT_BLUE};
   }
 `
 
