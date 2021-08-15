@@ -2,9 +2,8 @@ import React, {Component } from 'react'
 import s from "styled-components"
 import Logo from '../images/logo.png'
 import { LIGHT_BLUE, DARK_BLUE } from "../utils/constants"
-import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa"
-import {navLinks, smLinks} from "../data/navigation"
-
+// import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
+import {navLinks, smLinks} from "../data/navigation";
 
 export const NavWrapper = s.nav`
   background-color: rgba(255,255,255,0.97);
