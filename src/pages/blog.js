@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 import "./styles.scss"
 import s from "styled-components"
+import {Text} from "../components/shared/Typography"
 
 import {
   WideLayout,
@@ -28,11 +29,12 @@ const BlogPage = ({ data }) => {
       <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
       <PageTitle>Blog</PageTitle>
-      <BlogCardLayout>
+      <Text center>Coming soon!</Text>
+      {/* <BlogCardLayout>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <BlogCard node={node} />
         ))}
-      </BlogCardLayout>
+      </BlogCardLayout> */}
       <Footer />
     </WideLayout>
   )
