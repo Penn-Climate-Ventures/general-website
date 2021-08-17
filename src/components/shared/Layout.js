@@ -57,7 +57,7 @@ export const Email = () => {
 
 export const Layout = s.div`
   padding: 2rem 1rem;
-  margin: 0 auto;
+  margin: 75px auto 0 auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

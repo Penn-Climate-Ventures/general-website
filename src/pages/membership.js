@@ -36,12 +36,12 @@ const ApplyButton = s.a`
   }
 `
 
-
 const MembershipPage = () => {
   return (
+    <>
+    <Helmet title="Penn Climate Ventures" defer={false} />
+    <Navbar />
     <Layout>
-      <Helmet title="Penn Climate Ventures" defer={false} />
-      <Navbar />
       <PageTitle>Membership</PageTitle>
       <TextP bold="true">
         All students or professionals with Penn affiliation interested or
@@ -91,6 +91,7 @@ const MembershipPage = () => {
       </TextP>
       <Footer />
     </Layout>
+    </>
   )
 }
 

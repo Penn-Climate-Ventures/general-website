@@ -52,9 +52,10 @@ const TextLink = s.a`
 
 const CalendarPage = () => {
   return (
+    <>
+    <Helmet title="Penn Climate Ventures" defer={false} />
+    <Navbar />
     <Layout>
-      <Helmet title="Penn Climate Ventures" defer={false} />
-      <Navbar />
       <PageTitle>Calendar</PageTitle>
       <TextP bold="true" center={"center"}>
         Your one stop for all climate and entrepreneurship events at Penn.
@@ -68,6 +69,7 @@ const CalendarPage = () => {
       <TextLink>Apply for membership</TextLink>
       <Footer />
     </Layout>
+    </>
   )
 }
 export default CalendarPage

@@ -24,9 +24,10 @@ const BlogCardLayout = s.div`
 
 const BlogPage = ({ data }) => {
   return (
+    <>
+    <Helmet title="Penn Climate Ventures" defer={false} />
+    <Navbar />
     <WideLayout>
-      <Helmet title="Penn Climate Ventures" defer={false} />
-      <Navbar />
       <PageTitle>Blog</PageTitle>
       <BlogCardLayout>
         {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -35,6 +36,7 @@ const BlogPage = ({ data }) => {
       </BlogCardLayout>
       <Footer />
     </WideLayout>
+    </>
   )
 }
 

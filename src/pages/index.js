@@ -5,7 +5,6 @@ import "./styles.scss"
 import {
   Layout,
   Navbar,
-  Imagine,
   Orientation,
   News,
   Community,
@@ -13,18 +12,22 @@ import {
   Footer,
 } from "../components"
 
+import Imagine from "../components/Imagine";
+
 const IndexPage = () => {
   return (
-    <Layout>
+    <>
       <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
       <Imagine />
-      <Orientation />
-      <News />
-      <Community />
-      <Team />
-      <Footer />
-    </Layout>
+      <Layout >
+        <Orientation />
+        <News />
+        <Community />
+        <Team />
+        <Footer />
+      </Layout>
+    </>
   )
 }
 export default IndexPage
