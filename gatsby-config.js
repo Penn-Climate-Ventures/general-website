@@ -6,6 +6,7 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -17,11 +18,27 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown`,
-        path: `${__dirname}/src/markdown`,
+        name: `blog`,
+        path: `${__dirname}/blog`,
+        ignore: [`**/\.*`]
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              linkImagesToOriginal: false,
+              maxWidth: 1000,
+              withWebp: true,
+            },
+          },
+        ],
+      },
+    },
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
