@@ -11,12 +11,14 @@ import {
 export default class Soon extends Component {
   render() {
     return (
+      <>
+      <Helmet title="Penn Climate Ventures" defer={false} />
+      <Navbar />
       <Layout>
-        <Helmet title="Penn Climate Ventures" defer={false} />
-        <Navbar />
         <PageTitle>This page is coming soon!</PageTitle>
         <Footer />
       </Layout>
+      </>
     )
   }
 }

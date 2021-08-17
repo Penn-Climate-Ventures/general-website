@@ -32,9 +32,10 @@ const LearnMore = s.div`
 export default class ClassPage extends Component {
   render() {
     return (
+      <>
+      <Helmet title="Penn Climate Ventures" defer={false} />
+      <Navbar />
       <Layout>
-        <Helmet title="Penn Climate Ventures" defer={false} />
-        <Navbar />
         <PageTitle>Fellowships</PageTitle>
         <TextP>
           PCV is launching our first flight of projects Fall 2021. To stay updated, sign up for our
@@ -81,6 +82,7 @@ export default class ClassPage extends Component {
 
         <Footer />
       </Layout>
+      </>
     )
   }
 }

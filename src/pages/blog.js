@@ -25,9 +25,10 @@ const BlogCardLayout = s.div`
 
 const BlogPage = ({ data }) => {
   return (
+    <>
+    <Helmet title="Penn Climate Ventures" defer={false} />
+    <Navbar />
     <WideLayout>
-      <Helmet title="Penn Climate Ventures" defer={false} />
-      <Navbar />
       <PageTitle>Blog</PageTitle>
       <Text center>Coming soon!</Text>
       {/* <BlogCardLayout>
@@ -37,6 +38,7 @@ const BlogPage = ({ data }) => {
       </BlogCardLayout> */}
       <Footer />
     </WideLayout>
+    </>
   )
 }
 

@@ -15,9 +15,10 @@ import {
 
 const CollaboratePage = () => {
   return (
+    <>
+    <Helmet title="Penn Climate Ventures" defer={false} />
+    <Navbar />
     <Layout>
-      <Helmet title="Penn Climate Ventures" defer={false} />
-      <Navbar />
       <PageTitle>Collaborate</PageTitle>
       <TextP bold="true">
         Club Co-Sponsor, Speak/Mentor/Judge/Advise Interest, Corporate Sponsor Interest, Donate
@@ -30,6 +31,7 @@ const CollaboratePage = () => {
       <News />
       <Footer />
     </Layout>
+    </>
   )
 }
 export default CollaboratePage

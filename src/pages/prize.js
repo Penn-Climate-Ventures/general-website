@@ -39,9 +39,10 @@ const Rule = s.span`
 
 const PrizePage = () => {
   return (
+    <>
+    <Helmet title="Penn Climate Ventures" defer={false} />
+    <Navbar />
     <Layout>
-      <Helmet title="Penn Climate Ventures" defer={false} />
-      <Navbar />
       <PageTitle>Prize</PageTitle>
       <TextP bold="true">
         Catalyzing climate innovation at Penn.
@@ -64,6 +65,7 @@ const PrizePage = () => {
       </PrizeButtonContainer>
       <Footer />
     </Layout>
+    </>
   )
 }
 export default PrizePage
