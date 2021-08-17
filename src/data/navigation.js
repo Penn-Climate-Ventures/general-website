@@ -30,6 +30,10 @@ export const navLinks = [
     linkName: "Collaborate",
     url: "/collaborate"
   },
+  {
+    linkName: "Blog",
+    url: "/blog"
+  },
 ]
 
 const SocialMedia = s.img`
