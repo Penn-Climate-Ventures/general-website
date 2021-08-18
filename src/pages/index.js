@@ -20,13 +20,15 @@ const IndexPage = () => {
       <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
       <Imagine />
-      <Layout >
-        <Orientation />
-        <News />
-        <Community />
-        <Team />
-        <Footer />
-      </Layout>
+      <div style={{background: 'white'}}>
+        <Layout >
+          <Orientation />
+          <News />
+          <Community />
+          <Team />
+          <Footer />
+        </Layout>
+      </div>
     </>
   )
 }
