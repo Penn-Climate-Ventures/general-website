@@ -15,9 +15,10 @@ import {
 
 const ClassPage = () => {
   return (
+    <>
+    <Helmet title="Penn Climate Ventures" defer={false} />
+    <Navbar />
     <Layout>
-      <Helmet title="Penn Climate Ventures" defer={false} />
-      <Navbar />
       <PageTitle>Class</PageTitle>
       <TextP bold="true" center={"center"}>
           Providing students with practical climate and business knowledge to
@@ -35,6 +36,7 @@ const ClassPage = () => {
       {/*<PastWorkshops />*/}
       <Footer />
     </Layout>
+    </>
   )
 }
 export default ClassPage

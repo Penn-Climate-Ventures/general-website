@@ -5,7 +5,9 @@ export const STEEL_BLUE = `#3083BC`;
 export const MIDNIGHT_BLUE = `#07004D`;
 export const OXFORD_BLUE = `#05052C`;
 export const LIGHT_BLUE = `#3A8EFB`;
-export const DARK_BLUE = `#1C78EE`;
+export const DARK_BLUE = `#1c78ee`;
+export const TEXT_MUTED = `#75787a`;
+export const TEXT = `#333333`;
 
 export const mediaMinWidth = (width) =>
   `@media screen and (min-width: ${width})`

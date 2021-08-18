@@ -208,7 +208,7 @@ export class Navbar extends Component {
     }
 
     return (
-      <nav css={`margin-top: 90px`}>
+      <nav>
         <NavWrapper>
           <NavBrand rel="noreferrer noopener" href='/'>
             <NavBrandImg src={Logo}/>
