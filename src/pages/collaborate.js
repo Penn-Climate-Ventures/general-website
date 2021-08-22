@@ -9,7 +9,7 @@ import {
   TextP,
   Email,
   News,
-  Footer,
+  Footer, UrlLink,
 } from "../components"
 
 
@@ -28,6 +28,10 @@ const CollaboratePage = () => {
         statement of your area of interest and your involvement capacities.
       </TextP>
       <TextP>If you have press inquiries, please contact us at <Email/>.</TextP>
+      <TextP>
+        If you would like to submit a piece to the blog, please email{' '}
+        <UrlLink href={'mailto:preeths@sas.upenn.edu'}>preeths@sas.upenn.edu</UrlLink>.
+      </TextP>
       <News />
       <Footer />
     </Layout>
