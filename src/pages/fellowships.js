@@ -12,10 +12,11 @@ import {
   SectionHeader,
   TextP,
   Email,
-  Footer, ProgramDetails,
+  Footer, ProgramDetails, UrlLink,
 } from "../components"
 import {ProjectsAndPartners} from "../components/ProjectsAndPartners";
 import {FellowshipsFAQ} from "../components/FellowshipsFAQ";
+import {Banner} from "../components/shared/Banner";
 
 const LearnMore = s.div`
   color: black;
@@ -49,12 +50,25 @@ export default class ClassPage extends Component {
           connections to the broader climate space while delivering value to companies.
         </TextP>
 
-        <Link to={'sectionRef'} offset={-100}>
-            <LearnMore>
-              <TextP center={'center'}>Learn More</TextP>
-              <Chevron css={'height: 0.8rem'}/>
-          </LearnMore>
-        </Link>
+        <Banner>
+          <TextP bold>
+            Consulting Applications: <UrlLink href="https://tinyurl.com/PCVF21Consulting"
+                                              target="_blank" rel="noreferrer noopener">
+            https://tinyurl.com/PCVF21Consulting</UrlLink>
+          </TextP>
+          <TextP bold>
+            Intern Applications: <UrlLink href="https://tinyurl.com/PCVF21Internships"
+                                          target="_blank" rel="noreferrer noopener">
+            https://tinyurl.com/PCVF21Internships</UrlLink>
+          </TextP>
+        </Banner>
+
+        {/*<Link to={'sectionRef'} offset={-100}>*/}
+        {/*    <LearnMore>*/}
+        {/*      <TextP center={'center'}>Learn More</TextP>*/}
+        {/*      <Chevron css={'height: 0.8rem'}/>*/}
+        {/*  </LearnMore>*/}
+        {/*</Link>*/}
 
         <div id="sectionRef">
           <ProgramDetails id={'sectionRef'}/>
@@ -64,9 +78,19 @@ export default class ClassPage extends Component {
 
         <SectionHeader>Application</SectionHeader>
         <TextP>
-          Applications are now open and consulting applications close September 18 at 11:59pm ET
+          Applications are now open and consulting applications close September 15 at 11:59pm ET
           while internship applications are reviewed on a rolling basis. Make sure to get yours in
           soon and we look forward to getting to know you!
+        </TextP>
+        <TextP bold>
+          Consulting Applications: <UrlLink href="https://tinyurl.com/PCVF21Consulting"
+                                            target="_blank" rel="noreferrer noopener">
+          https://tinyurl.com/PCVF21Consulting</UrlLink>
+        </TextP>
+        <TextP bold>
+          Intern Applications: <UrlLink href="https://tinyurl.com/PCVF21Internships"
+                                        target="_blank" rel="noreferrer noopener">
+          https://tinyurl.com/PCVF21Internships</UrlLink>
         </TextP>
 
         <FellowshipsFAQ/>

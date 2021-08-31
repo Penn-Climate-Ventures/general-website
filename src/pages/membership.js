@@ -7,10 +7,11 @@ import {
   Navbar,
   PageTitle,
   TextP,
-  Footer, SectionHeader,
+  Footer, SectionHeader, UrlLink,
 } from "../components"
 
 import { LIGHT_BLUE } from "../utils/constants"
+import {Banner} from "../components/shared/Banner";
 
 
 const CenterButtonContainer = s.div`
@@ -43,7 +44,30 @@ const MembershipPage = () => {
     <Navbar />
     <Layout>
       <PageTitle>Membership</PageTitle>
-      <TextP bold="true">
+
+      <Banner>
+        <TextP bold>
+          Board Applications: <UrlLink href="https://tinyurl.com/PCVF21BoardApplication"
+                                       target="_blank" rel="noreferrer noopener">
+          https://tinyurl.com/PCVF21BoardApplication</UrlLink>
+        </TextP>
+      </Banner>
+
+      <SectionHeader>Board Membership</SectionHeader>
+      <TextP>
+        If you are a Penn student and interested in getting involved in the behind-the-scenes of
+        PCV, active recruitment of Class, Fellowships, Prize, and PR Teams is OPEN. Applications are
+        DUE September 15th at 11:59pm ET.
+      </TextP>
+      <TextP bold>
+        Board Applications: <UrlLink href="https://tinyurl.com/PCVF21BoardApplication"
+                                     target="_blank" rel="noreferrer noopener">
+        https://tinyurl.com/PCVF21BoardApplication</UrlLink>
+      </TextP>
+
+      <SectionHeader>General Membership</SectionHeader>
+
+      <TextP bold>
         All students or professionals with Penn affiliation interested or
         involved in climate and entrepreneurship are eligible for general
         membership.
@@ -83,12 +107,6 @@ const MembershipPage = () => {
         height="550"
         css="background: transparent; border: 1px solid #ccc; margin: 10px auto 30px auto"
       />
-      <TextP>
-        If you are a Penn student and interested in getting involved in the behind-the-scenes of
-        PCV, active recruitment of Class, Fellowships, Prize, and PR Teams is open at the Penn SAC
-        Fairs - please find us on Penn Clubs! We also hold rolling recruitment year-round although
-        space is much more limited - please email us if strongly interested.
-      </TextP>
       <Footer />
     </Layout>
     </>
