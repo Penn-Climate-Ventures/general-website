@@ -7,6 +7,7 @@ export * from './Team'
 export * from './Footer'
 
 export * from './shared/Layout'
+export * from './shared/Banner'
 // class.js
 export * from './UpcomingWorkshops'
 export * from './PastWorkshops'
