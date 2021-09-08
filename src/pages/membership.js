@@ -75,10 +75,6 @@ const MembershipPage = () => {
       <TextP>
         General membership consists of:
         <ul>
-          <li>
-            access to our Discord server, featuring discussion, news, and events surrounding
-            climate policy, finance, energy, waste, agriculture, and the venture landscape
-          </li>
           <li>access to PCV's alumni network</li>
           <li>opportunity to contribute to our newsletter or blog</li>
         </ul>
@@ -91,14 +87,14 @@ const MembershipPage = () => {
         </ul>
       </TextP>
 
-      <SectionHeader>
+      <TextP bold>
         <a href={"https://airtable.com/shrCCh7SJrYNsjeWT"}
-           css={`color: ${LIGHT_BLUE}`}
+           css={`color: inherit`}
            target="_blank"
            rel="noreferrer noopener">
-          Apply Here!
+          Use the form below to join our listserve!
         </a>
-      </SectionHeader>
+      </TextP>
       <iframe
         className="airtable-embed"
         src="https://airtable.com/embed/shrCCh7SJrYNsjeWT?backgroundColor=red"

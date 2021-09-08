@@ -5,6 +5,13 @@ import {TextP, Email, SectionHeader} from "./shared/Layout"
 import { LIGHT_BLUE } from "../utils/constants"
 import Carousel from "./shared/Carousel";
 import {useContainerDimensions} from "./shared/useContainerDimensions";
+import {ActionButton} from "./shared/Button";
+
+const JoinButton = s(ActionButton)`
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+`
 
 const classTeamData = [
   {
@@ -197,6 +204,9 @@ const TeamLayout = () => {
         at the Penn SAC Fairs for all current Penn students.</TextP>
       <TextP>If you are interested in Advising, Partnerships, Sponsorships, or Press,
         please shoot us an email at <Email/>.</TextP>
+      <div style={{textAlign: `center`, margin: `30px 0`}}>
+        <JoinButton href="/membership">Join here!</JoinButton>
+      </div>
       <Carousel show={width / 240}>
         <TeamColumn round="true">
           <TeamName>Class</TeamName>

@@ -55,13 +55,13 @@ export class ProjectsAndPartners extends Component {
           <Partner imageSrc={BanyanInfrastructure} name="Banyan Infrastructure" wide
                    desc="Research into project finance and energy"/>
           <Partner imageSrc={ConEdison} name="Con Edison" wide
-                   desc="Direct air capture (DAC) factory planning + design"/>
+                   desc="Carbon capture + decarbonization of steam energy system"/>
           <Partner imageSrc={CuriatiCollective} name="Curiati Collective" tall
                    desc="Business development on circular economy"/>
           <Partner imageSrc={PowerAdvocate} name="PowerAdvocate" wide
-                   desc="Carbon capture + decarbonization of steam energy system"/>
-          <Partner imageSrc={CarbonInfinity} name="CarbonInfinity" wide
                    desc="Assessing supply chain emissions"/>
+          <Partner imageSrc={CarbonInfinity} name="CarbonInfinity" wide
+                   desc="Direct air capture (DAC) factory planning + design"/>
         </PartnersLayout>
 
         <TextP bold>Internships</TextP>

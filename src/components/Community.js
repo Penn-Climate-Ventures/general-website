@@ -8,7 +8,9 @@ import Carousel from "./shared/Carousel";
 import { useContainerDimensions } from "./shared/useContainerDimensions";
 
 const CommunityColumn = s(BoxColumn)`
-  width: 300px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const CommunityText = s.p`
@@ -37,7 +39,6 @@ const CommunityLayout = () => {
       <SectionHeader left={"left"}>
         Stay Up to Date On All Things PCV
       </SectionHeader>
-      <Carousel show={width / 320}>
         <CommunityColumn center="true">
           <div>
             <BoxHeading>Subscribe to Our Newsletter</BoxHeading>
@@ -54,16 +55,6 @@ const CommunityLayout = () => {
             </CommunityButton>
           </div>
         </CommunityColumn>
-        <CommunityColumn center="true">
-          <div>
-            <BoxHeading>Join Our Discord Community</BoxHeading>
-            <CommunityText>
-              Featuring discussions about climate policy, finance energy, waste,
-              agriculture, and the venture landscape.
-            </CommunityText>
-            <CommunityButton href="/membership">Invite Link</CommunityButton>
-          </div>
-        </CommunityColumn>
         {/*<BoxColumn center="true">*/}
         {/*  <div>*/}
         {/*    <BoxHeading>Subscribe to Prize Updates</BoxHeading>*/}
@@ -74,7 +65,6 @@ const CommunityLayout = () => {
         {/*    <CommunityButton href="/">email</CommunityButton>*/}
         {/*  </div>*/}
         {/*</BoxColumn>*/}
-      </Carousel>
     </div>
   );
 };
