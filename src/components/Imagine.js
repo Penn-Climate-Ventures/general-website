@@ -1,5 +1,4 @@
-import React from "react"
-import {InView} from 'react-intersection-observer';
+import React, {useEffect, useRef, useState} from "react"
 import s from "styled-components"
 import { TextP } from "./shared/Layout"
 import homeBg1 from "../images/home-backgrounds/home-bg-6.jpg"
@@ -47,77 +46,86 @@ const SlideContent  = s.div`
 const ImagineText = s(TextP)`
   font-family: "Metropolis";
   color: white;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
   font-size: 1.5rem;
   line-height: 2rem;
   margin: 0 5vw;
   max-width: 500px;
 `
 
+function useOnScreen(ref) {
+  const [isIntersecting, setIntersecting] = useState(false)
+
+  let observer = null
+
+  useEffect(() => {
+    observer = new IntersectionObserver(
+      ([entry]) => setIntersecting(entry.isIntersecting)
+    )
+    observer.observe(ref.current)
+    // Remove the observer as soon as the component is unmounted
+    return () => { observer.disconnect() }
+  }, [])
+
+  return isIntersecting
+}
+
 const Imagine = () => {
+  const slideRef1 = useRef()
+  const slideRef2 = useRef()
+  const slideRef3 = useRef()
+  const slideRef4 = useRef()
+  const slide1IsVis = useOnScreen(slideRef1)
+  const slide2IsVis = useOnScreen(slideRef2)
+  const slide3IsVis = useOnScreen(slideRef3)
+  const slide4IsVis = useOnScreen(slideRef4)
+
   return (
     <>
       <Buffer/>
-      <InView threshold={0}>
-        {({ inView, ref, entry }) => (
-          <Slide ref={ref}>
-            <SlideImage style={{opacity: inView ? 1 : 0,
-                                transform: inView ? "scale(1.1)" : "scale(1.0)",
-                                backgroundImage: `url(${homeBg1})`}} />
-            <SlideContent className={inView ? 'is-visible' : ''}>
-              <ImagineText>
-                Imagine a campus where students line up to work for the biggest movers in climate
-                innovation.
-              </ImagineText>
-            </SlideContent>
-          </Slide>
-        )}
-      </InView>
+      <Slide ref={slideRef1}>
+        <SlideImage style={{opacity: slide1IsVis ? 1 : 0,
+          transform: slide1IsVis ? "scale(1.1)" : "scale(1.0)",
+          backgroundImage: `url(${homeBg1})`}} />
+        <SlideContent className={slide1IsVis ? 'is-visible' : ''}>
+          <ImagineText>
+            Imagine a campus where students line up to work for the biggest movers in climate
+            innovation.
+          </ImagineText>
+        </SlideContent>
+      </Slide>
       <Buffer/>
-      <InView threshold={0}>
-        {({ inView, ref, entry }) => (
-          <Slide ref={ref}>
-            <SlideImage style={{opacity: inView ? 1 : 0,
-                                transform: inView ? "scale(1.1)" : "scale(1.0)",
-                                backgroundImage: `url(${homeBg2})`}} />
-            <SlideContent className={inView ? 'is-visible' : ''}>
-              <ImagineText>
-                Imagine a campus where sustainability and climate analyses are integrated into our
-                course plans, just like intro statistics or calculus.
-              </ImagineText>
-            </SlideContent>
-          </Slide>
-        )}
-      </InView>
+      <Slide ref={slideRef2}>
+        <SlideImage style={{opacity: slide2IsVis ? 1 : 0,
+          transform: slide2IsVis ? "scale(1.1)" : "scale(1.0)",
+          backgroundImage: `url(${homeBg2})`}} />
+        <SlideContent className={slide2IsVis ? 'is-visible' : ''}>
+          <ImagineText>
+            Imagine a campus where sustainability and climate analyses are integrated into our
+            course plans, just like intro statistics or calculus.
+          </ImagineText>
+        </SlideContent>
+      </Slide>
       <Buffer/>
-      <InView threshold={0}>
-        {({ inView, ref, entry }) => (
-          <Slide ref={ref} >
-            <SlideImage style={{opacity: inView ? 1 : 0,
-                                transform: inView ? "scale(1.1)" : "scale(1.0)",
-                                backgroundImage: `url(${homeBg3})`}} />
-            <SlideContent className={inView ? 'is-visible' : ''}>
-              <ImagineText>
-                Imagine a campus where climate is just... common sense.
-              </ImagineText>
-            </SlideContent>
-          </Slide>
-        )}
-      </InView>
+      <Slide ref={slideRef3} >
+        <SlideImage style={{opacity: slide3IsVis ? 1 : 0,
+          transform: slide3IsVis ? "scale(1.1)" : "scale(1.0)",
+          backgroundImage: `url(${homeBg3})`}} />
+        <SlideContent className={slide3IsVis ? 'is-visible' : ''}>
+          <ImagineText>
+            Imagine a campus where climate is just... common sense.
+          </ImagineText>
+        </SlideContent>
+      </Slide>
       <Buffer/>
-      <InView threshold={0}>
-        {({ inView, ref, entry }) => (
-          <Slide ref={ref}>
-            <SlideImage style={{opacity: inView ? 1 : 0,
-                                transform: inView ? "scale(1.1)" : "scale(1.0)",
-                                backgroundImage: `url(${homeBg4})`}} />
-            <SlideContent className={inView ? 'is-visible' : ''}>
-              <ImagineText>That's what we're building.</ImagineText>
-              <ImagineText>Let's push Penn into climate.</ImagineText>
-            </SlideContent>
-          </Slide>
-        )}
-      </InView>
+      <Slide ref={slideRef4}>
+        <SlideImage style={{opacity: slide4IsVis ? 1 : 0,
+          transform: slide4IsVis ? "scale(1.1)" : "scale(1.0)",
+          backgroundImage: `url(${homeBg4})`}} />
+        <SlideContent className={slide4IsVis ? 'is-visible' : ''}>
+          <ImagineText>That's what we're building.</ImagineText>
+          <ImagineText>Let's push Penn into climate.</ImagineText>
+        </SlideContent>
+      </Slide>
     </>
   )
 }

@@ -61,7 +61,7 @@ const OrientationLayout = () =>  {
         <OrientationColumn round="true">
           <BoxHeading>What we're working on.</BoxHeading>
           <OrientationButton href="/class">Workshops</OrientationButton>
-          <OrientationButton href="/fellowships">Consulting</OrientationButton>
+          <OrientationButton href="/fellowships">Fellowship Programs</OrientationButton>
           <OrientationButton href="https://prize.pennclimateventures.org">Prize Competition</OrientationButton>
           <OrientationButton href="https://ideathon.pennclimateventures.org">Ideathon</OrientationButton>
           {/*<OrientationButton href="/">Office Hours</OrientationButton>*/}

@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import s from "styled-components"
-import { SectionHeader, TextP, Email } from "./shared/Layout";
+import { SectionHeader, TextP } from "./shared/Layout";
 import {LIGHT_BLUE} from "../utils/constants";
 
 
@@ -63,9 +63,17 @@ export class FellowshipsFAQ extends Component {
                 with PCV → decision
               </li>
               <li>
-                Fast-Track Internship:  Initial written application → second round in-person or
+                Fast-Track Internship: Initial written application → second round in-person or
                 Zoom interview with PCV → final round interview with founder → decision
               </li>
+            </ul>
+          </TextP>
+        </details>
+
+        <details>
+          <Question>When will applications be released?</Question>
+          <TextP>
+            <ul>
               <li>
                 Fall 2021 applications will be released August 31!
               </li>
@@ -78,7 +86,8 @@ export class FellowshipsFAQ extends Component {
           <TextP>
             <ul>
               <li>
-                Yes, but you will only be assigned 1 in the end (for both tracks).
+                Yes, however, you will only be assigned to one opportunity based on which
+                opportunity fits the best with your interests!.
               </li>
             </ul>
           </TextP>
