@@ -88,56 +88,6 @@ export class ProgramDetails extends Component {
           </ul>
         </TextP>
 
-        <TextP bold>Fast-Track Internship</TextP>
-        <TextP>
-          <ul>
-            <li>
-              1-2 students are selected to work closely with a founder in the climate space
-            </li>
-            <li>
-              Founders tell us what kind of skills and support they’re looking for, but
-              specific projects and commitments are discussed between you and the founder
-            </li>
-            <li>
-              Minimum 10 weeks commitment
-            </li>
-            <li>
-              Applications involve a written application, an interview with PCV, and an
-              interview with the founder
-            </li>
-          </ul>
-        </TextP>
-
-        <TextP bold>Fast-Track Internship</TextP>
-        <TextP>
-          <ul>
-            <li>
-              1-2 students are selected to work closely with a founder in the climate space
-            </li>
-            <li>
-              Founders tell us what kind of skills and support they’re looking for, but
-              specific projects and commitments are discussed between you and the founder
-            </li>
-            <li>
-              Minimum 10 weeks commitment
-            </li>
-            <li>
-              Applications involve a written application, an interview with PCV, and an
-              interview with the founder
-            </li>
-          </ul>
-        </TextP>
-
-        <TextP>
-          Please note that this program is separate from our leadership team. While leadership is a
-          minimum year-long commitment, our Fellowships program is a semester long commitment - your
-          commitment is tied to your project. We do this because our selection of projects varies
-          greatly and may require completely different skills cohort to cohort. However, as a
-          consultant and intern participating in our Fellowships program, you will have access to
-          our Discord/all internal happenings/alum network, be invited to all socials and internal
-          activities, and find a lifelong community of students passionate about climate,
-          technology, and innovation.
-        </TextP>
       </div>
     )
   }
