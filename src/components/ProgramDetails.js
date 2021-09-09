@@ -88,7 +88,7 @@ export class ProgramDetails extends Component {
           </ul>
         </TextP>
 
-        <TextP>Fast-Track Internship</TextP>
+        <TextP bold>Fast-Track Internship</TextP>
         {/*<TextP>*/}
           <ul>
             <li>
