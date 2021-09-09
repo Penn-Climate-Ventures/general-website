@@ -88,8 +88,8 @@ export class ProgramDetails extends Component {
           </ul>
         </TextP>
 
-        <TextP>Fast-Track Internship</TextP>
-        <TextP bold>
+        <TextP bold>Fast-Track Internship</TextP>
+        <TextP>
           <ul>
             <li>
               1-2 students are selected to work closely with a founder in the climate space
