@@ -89,7 +89,7 @@ export class ProgramDetails extends Component {
         </TextP>
 
         <TextP bold>Fast-Track Internship</TextP>
-        {/*<TextP>*/}
+        <TextP>
           <ul>
             <li>
               1-2 students are selected to work closely with a founder in the climate space
@@ -106,7 +106,7 @@ export class ProgramDetails extends Component {
               interview with the founder
             </li>
           </ul>
-        {/*</TextP>*/}
+        </TextP>
 
         <TextP>
           Please note that this program is separate from our leadership team. While leadership is a
