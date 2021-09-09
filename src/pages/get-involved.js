@@ -26,6 +26,14 @@ const GetInvolvedPage = () => {
                                        target="_blank" rel="noreferrer noopener">
           https://tinyurl.com/PCVF21BoardApplication</UrlLink>
         </TextP>
+        <TextP>Roles we're actively recruiting for our Board:</TextP>
+        <ul>
+          <li>Head of People Ops</li>
+          <li>Prize Committee Members</li>
+          <li>Fellowships Committee Members</li>
+          <li>Designers</li>
+          <li>Content Writers</li>
+        </ul>
       </Banner>
 
       <SectionHeader>Board Membership</SectionHeader>

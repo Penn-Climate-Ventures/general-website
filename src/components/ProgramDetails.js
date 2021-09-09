@@ -107,6 +107,17 @@ export class ProgramDetails extends Component {
             </li>
           </ul>
         </TextP>
+
+        <TextP>
+          Please note that this program is separate from our leadership team. While leadership is a
+          minimum year-long commitment, our Fellowships program is a semester long commitment - your
+          commitment is tied to your project. We do this because our selection of projects varies
+          greatly and may require completely different skills cohort to cohort. However, as a
+          consultant and intern participating in our Fellowships program, you will have access to
+          our Discord/all internal happenings/alum network, be invited to all socials and internal
+          activities, and find a lifelong community of students passionate about climate,
+          technology, and innovation.
+        </TextP>
       </div>
     )
   }

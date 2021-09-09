@@ -42,12 +42,14 @@ export default class ClassPage extends Component {
 
         <TextP>
           Penn doesn't have any on-campus recruiting (OCR) for climate innovation, making it
-          difficult to break into climate. We aim to change that through our fellowships program.
+          difficult to break into climate. We aim to change that. Through our fellowships program,
+          students apply to work with cutting-edge climate startups/companies, gaining exposure,
+          hands-on experience, and connections to the broader climate space while delivering value
+          to companies. Our inaugural Fellowships program launches Fall 2021 - continue reading to
+          learn more and apply.
         </TextP>
         <TextP>
-          Starting the Fall of 2021, students will have the opportunity to work on projects for
-          cutting-edge climate startups and companies, gaining exposure, hands-on experience, and
-          connections to the broader climate space while delivering value to companies.
+          Applications for Fall 2021 are OPEN and close September 15th at 11:59pm ET.
         </TextP>
 
         <Banner>
