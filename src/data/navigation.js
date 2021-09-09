@@ -7,8 +7,8 @@ import s from "styled-components"
 
 export const navLinks = [
   {
-    linkName: "Membership",
-    url: "/membership"
+    linkName: "Get Involved",
+    url: "/get-involved"
   },
   // {
   //   linkName: "Calendar",
@@ -34,6 +34,10 @@ export const navLinks = [
     linkName: "Blog",
     url: "/blog"
   },
+  {
+    linkName: "About",
+    url: "/about"
+  }
 ]
 
 const SocialMedia = s.img`

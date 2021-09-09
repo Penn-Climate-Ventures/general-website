@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import Helmet from "react-helmet"
 import "./styles.scss"
 import s from "styled-components"
@@ -15,27 +15,53 @@ import {
 } from "../components"
 
 import Imagine from "../components/Imagine";
+import {LIGHT_BLUE} from "../utils/constants";
 
 const ImportantBanner = s(Banner)`
   position: fixed;
   border-width: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 90%;
   top: 90px;
   left: 50%;
   z-index: 200;
+  display: flex;
+  justify-content: space-between;
   transform: translate(-50%, 0%);
 `
 
-const IndexPage = () => {
+const BannerCloseBtn = s.button`
+  cursor: pointer;
+  border: none;
+  background: transparent;
+
+  -webkit-user-select: none;
+  -webkit-touch-callout : none
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  
+  &:hover {
+    color: ${LIGHT_BLUE};
+  }
+`
+
+export default function IndexPage() {
+  const [hidden, setHidden] = useState(false)
+
   return (
     <>
       <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
-      <ImportantBanner>
-        <TextP>
-          ⚠️ Fall recruitment is open! Apply <a href="membership">here</a> now.
-        </TextP>
-      </ImportantBanner>
+      { !hidden &&
+        <ImportantBanner>
+          <TextP>
+            ⚠️ Fall recruitment is open! Apply <UrlLink href="/get-involved">here</UrlLink> now.
+          </TextP>
+          <BannerCloseBtn onClick={() => setHidden(true)}>X</BannerCloseBtn>
+        </ImportantBanner>
+      }
       <Imagine />
       <div style={{background: 'white'}}>
         <Layout >
@@ -49,4 +75,3 @@ const IndexPage = () => {
     </>
   )
 }
-export default IndexPage

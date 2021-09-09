@@ -1,8 +1,7 @@
 import React, {Component } from 'react'
 import s from "styled-components"
 import Logo from '../images/logo.png'
-import { LIGHT_BLUE, DARK_BLUE } from "../utils/constants"
-// import {FaInstagram, FaFacebookF, FaLinkedinIn} from "react-icons/Fa";
+import { LIGHT_BLUE } from "../utils/constants"
 import {navLinks, smLinks} from "../data/navigation";
 
 export const NavWrapper = s.nav`
@@ -45,7 +44,7 @@ const ToggleMenuButton = s.button`
     background-color: ${LIGHT_BLUE};
   }
   
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 820px) {
     display: none;
   }
 `
@@ -78,7 +77,7 @@ export const NavMenu = s.div`
   transition: all 0.3s ease-in-out;
   visibility: hidden;
   
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 820px) {
     all: unset;
     position: static;
     display: flex;
@@ -99,7 +98,7 @@ const NavLinks = s.div`
   align-items: center;
   justify-content: center;
   
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 820px) {
     all: unset;
     display: flex;
     flex-direction: row;
@@ -118,12 +117,13 @@ export const NavButton = s.a`
   cursor: pointer;
   display: flex;
   transition: 0.2s;
+  white-space: nowrap;
   
   &:hover {
     color: ${LIGHT_BLUE};
   }
   
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 820px) {
     margin: auto 10px;
     height: 100%;
     align-items: center;

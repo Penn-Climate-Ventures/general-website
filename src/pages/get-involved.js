@@ -1,6 +1,5 @@
 import React from "react"
 import Helmet from "react-helmet"
-import s from "styled-components"
 
 import {
   Layout,
@@ -10,40 +9,16 @@ import {
   Footer, SectionHeader, UrlLink,
 } from "../components"
 
-import { LIGHT_BLUE } from "../utils/constants"
-import {Banner} from "../components/shared/Banner";
+import {Banner} from "../components";
 
 
-const CenterButtonContainer = s.div`
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
-`
-
-const ApplyButton = s.a`
-  color: black;
-  text-align: center;
-  width: 150px;
-  font-size: 1rem;
-  font-weight: bold;
-  border: 1.5px solid ${LIGHT_BLUE};
-  border-radius: 25px;
-  padding: 10px 15px;
-  margin: auto;
-  display: block;
-
-  &:hover {
-    color: ${LIGHT_BLUE};
-  }
-`
-
-const MembershipPage = () => {
+const GetInvolvedPage = () => {
   return (
     <>
     <Helmet title="Penn Climate Ventures" defer={false} />
     <Navbar />
     <Layout>
-      <PageTitle>Membership</PageTitle>
+      <PageTitle>Get Involved</PageTitle>
 
       <Banner>
         <TextP bold>
@@ -109,4 +84,4 @@ const MembershipPage = () => {
   )
 }
 
-export default MembershipPage
+export default GetInvolvedPage
