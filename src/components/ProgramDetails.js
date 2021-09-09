@@ -88,7 +88,8 @@ export class ProgramDetails extends Component {
           </ul>
         </TextP>
 
-        <p>Fast-Track Internship</p>
+        <p><TextP bold>Fast-Track Internships:</TextP></p>
+        <p>
         <TextP>
           <ul>
             <li>
@@ -107,7 +108,9 @@ export class ProgramDetails extends Component {
             </li>
           </ul>
         </TextP>
+        </p>
 
+        <p>
         <TextP>
           Please note that this program is separate from our leadership team. While leadership is a
           minimum year-long commitment, our Fellowships program is a semester long commitment - your
@@ -118,6 +121,7 @@ export class ProgramDetails extends Component {
           activities, and find a lifelong community of students passionate about climate,
           technology, and innovation.
         </TextP>
+        </p>
       </div>
     )
   }
