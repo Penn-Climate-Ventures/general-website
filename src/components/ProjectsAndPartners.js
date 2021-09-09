@@ -12,6 +12,7 @@ import PowerAdvocate from "../images/partners/powerAdvocate.png"
 
 // internships
 import ClimateBase from "../images/partners/climateBase.png"
+import {LIGHT_BLUE} from "../utils/constants";
 
 const PartnersLayout = s.div`
   display: grid;
@@ -27,6 +28,20 @@ const PartnersLayout = s.div`
   }
 `
 
+const PartnerName = s.h2`
+  color: ${LIGHT_BLUE};
+  font-size: 1.5rem;
+  font-family: Georgia, serif;
+  font-weight: bold;
+`
+
+const PartnerDesc = s(TextP)`
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-top: 10px;
+`
+
 const Partner = ({imageSrc, name, desc, tall, wide}) => (
   <div style={{display: `flex`, flexDirection: `column`, height: 200 + `px`,
                justifyContent: `center`, alignItems: `center`}}>
@@ -36,10 +51,28 @@ const Partner = ({imageSrc, name, desc, tall, wide}) => (
     {tall &&
       <img src={imageSrc} alt={name} style={{display: `block`, width: `auto`, height: 100 + `%`}} />
     }
-    <TextP center style={{fontSize: 1 + `rem`, lineHeight: `1rem`, paddingTop: 10 + `px`}}>
-      <i>{desc}</i>
-    </TextP>
+    <PartnerDesc><i>{desc}</i></PartnerDesc>
   </div>
+)
+
+const PartnerCard = s.div`
+    border-radius: ${({ round }) => ( round ? "10px" : "0")};
+    box-shadow: 0 3px 15px 1px #00000016;
+    margin: 20px;
+    padding: 30px 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+`
+
+const PartnerNoImage = ({imageSrc, name, desc, tall, wide}) => (
+  <PartnerCard>
+    <div style={{marginTop: `auto`, marginBottom: `auto`}}>
+      <PartnerName>{name}</PartnerName>
+      <PartnerDesc><i>{desc}</i></PartnerDesc>
+    </div>
+  </PartnerCard>
 )
 
 export class ProjectsAndPartners extends Component {
@@ -68,6 +101,7 @@ export class ProjectsAndPartners extends Component {
         <PartnersLayout>
           <Partner imageSrc={ClimateBase} name="ClimateBase" wide
                    desc="Developer, Data Architect/Business Development"/>
+          {/*<PartnerNoImage name="No Logo Company" desc="Some description"/>*/}
         </PartnersLayout>
 
     <TextP>
