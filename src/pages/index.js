@@ -58,6 +58,7 @@ export default function IndexPage() {
         <ImportantBanner>
           <TextP>
             ⚠️ Fall recruitment is open! Apply <UrlLink href="/get-involved">here</UrlLink> now.
+            Applications are now due September 18th at 11:59 PM ET.
           </TextP>
           <BannerCloseBtn onClick={() => setHidden(true)}>X</BannerCloseBtn>
         </ImportantBanner>
