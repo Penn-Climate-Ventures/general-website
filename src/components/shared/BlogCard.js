@@ -26,6 +26,7 @@ const CoverImage = s.div`
 
 const Title = s.h2`
   font-size: 1.75rem;
+  line-height: 2rem;
   
   & > * {
     color: #333333;
@@ -67,7 +68,9 @@ const BlogCard = ({ node }) => {
         <Link to={node.fields.slug}>{fm.title}</Link>
       </Title>
 
-      <Description>{fm.desc}</Description>
+      {fm.desc &&
+        <Description>{fm.desc}</Description>
+      }
 
       {fm.author &&
         <PublishingInfo>
@@ -81,11 +84,11 @@ const BlogCard = ({ node }) => {
         </PublishingInfo>
       }
 
-      <div>
-        {fm.tags && fm.tags.map( (tag) => (
-          <span className="tag" css={`margin-right: 5px;`}>{tag}</span>
-        ))}
-      </div>
+      {/*<div>*/}
+      {/*  {fm.tags && fm.tags.map( (tag) => (*/}
+      {/*    <span className="tag" css={`margin-right: 5px;`}>{tag}</span>*/}
+      {/*  ))}*/}
+      {/*</div>*/}
     </CardLayout>
   )
 }

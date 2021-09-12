@@ -1,6 +1,6 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
-import {Footer, Layout, Navbar, PageTitle} from "../components"
+import {Footer, Layout, Navbar, PageTitle, TextP} from "../components"
 import Helmet from "react-helmet";
 import s from "styled-components"
 import {TEXT_MUTED} from "../utils/constants";
@@ -9,23 +9,31 @@ import {GatsbyImage, getImage} from "gatsby-plugin-image";
 import "./markdown.scss"
 
 const ArticleTitle = s(PageTitle)`
+  color: black;
+  text-align: left;
+  font-family: 'Lora', serif;
+  font-size: 2.25rem;
   margin-bottom: 0rem;
 `
 
-const PublishingInfo = s.p`
-  color: ${TEXT_MUTED};
+const PublishingInfo = s.div`
   font-size: 0.9rem;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  
+  & > p, & > div > p {
+    margin: 0;
+    font-size: inherit;
+  }
 `
 
 const CoverImage = s.div`
-  height: 300px;
-  padding: 0;
-  margin: 0px auto 15px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 5px;
   overflow: hidden;
 `
 
@@ -44,13 +52,17 @@ export default function BlogTemplate ({ data }) {
         </CoverImage>
       }
 
+      <article style={{fontFamily: `Georgia, serif`, fontSize: 1.15 + `rem`}}>
         <ArticleTitle>{fm.title}</ArticleTitle>
-        {fm.author &&
-          <PublishingInfo>By {fm.author}</PublishingInfo>
-        }
-        <PublishingInfo>{fm.date}</PublishingInfo>
 
-      <article>
+        <PublishingInfo>
+          <div>
+            <TextP>{fm.date}</TextP>
+            <TextP>{fm.readtime} min read; {fm.wordcount} words</TextP>
+          </div>
+          <TextP bold>Author: {fm.author}</TextP>
+        </PublishingInfo>
+
         <div dangerouslySetInnerHTML={{ __html: article.html }} />
       </article>
 
@@ -72,7 +84,9 @@ export const query = graphql`
           }
         }
         title
-        date(formatString: "D MMMM YYYY")
+        date(formatString: "MMMM D, YYYY")
+        readtime
+        wordcount
         author
       }
     }
