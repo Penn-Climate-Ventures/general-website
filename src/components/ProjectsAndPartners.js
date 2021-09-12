@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import s from "styled-components"
-import {SectionHeader, TextP} from "./shared/Layout";
+import {SectionHeader, TextP, UrlLink} from "./shared/Layout";
 import {SubText} from "./shared/Typography";
 
 // consulting
@@ -29,8 +29,10 @@ const PartnersLayout = s.div`
 `
 
 const PartnerName = s.h2`
-  color: ${LIGHT_BLUE};
-  font-size: 1.5rem;
+  color: black;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  margin-bottom: 1.15rem;
   font-family: Georgia, serif;
   font-weight: bold;
 `
@@ -55,24 +57,41 @@ const Partner = ({imageSrc, name, desc, tall, wide}) => (
   </div>
 )
 
-const PartnerCard = s.div`
-    border-radius: ${({ round }) => ( round ? "10px" : "0")};
-    box-shadow: 0 3px 15px 1px #00000016;
-    margin: 20px;
-    padding: 30px 20px;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+const InternshipsLayout = s.div`
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr;
+  
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `
 
-const PartnerNoImage = ({imageSrc, name, desc, tall, wide}) => (
-  <PartnerCard>
-    <div style={{marginTop: `auto`, marginBottom: `auto`}}>
+const InternshipCard = s.div`
+  border-radius: ${({ round }) => ( round ? "10px" : "0")};
+  box-shadow: 0 3px 15px 1px #00000016;
+  padding: 30px 20px;
+`
+
+const Company = ({imageSrc, name}) => (
+  <div>
+    {imageSrc &&
+      <img src={imageSrc} alt={name} style={{display: `block`}} />
+    }
+    {!imageSrc &&
       <PartnerName>{name}</PartnerName>
-      <PartnerDesc><i>{desc}</i></PartnerDesc>
-    </div>
-  </PartnerCard>
+    }
+  </div>
+)
+
+const InternshipList = s.ul`
+`
+
+const InfoLink = ({href}) => (
+  <>
+    <br/>
+    <TextP style={{marginBottom: 0}}><i>More info <UrlLink href={href}>here</UrlLink></i></TextP>
+  </>
 )
 
 export class ProjectsAndPartners extends Component {
@@ -98,16 +117,49 @@ export class ProjectsAndPartners extends Component {
         </PartnersLayout>
 
         <TextP bold>Internships</TextP>
-        <PartnersLayout>
-          <Partner imageSrc={ClimateBase} name="ClimateBase" wide
-                   desc="Developer, Data Architect/Business Development"/>
-          {/*<PartnerNoImage name="No Logo Company" desc="Some description"/>*/}
-        </PartnersLayout>
-
-    <TextP>
-          And many more such as Oasis Regenerative and The Sustainability Wiki with positions such
-          as Software Engineering Associate and Business Development Associate!
-        </TextP>
+        <InternshipsLayout>
+          <InternshipCard>
+            <Company name="Andurand Capital"/>
+            <InternshipList>
+              <li>Investment Stock Pitch (2)</li>
+            </InternshipList>
+            <InfoLink href="https://docs.google.com/document/d/12KKaM731NcFlDgC78BLNfDYpBuNROto1CJGfFCh7mB4/edit?usp=sharing"/>
+          </InternshipCard>
+          <InternshipCard>
+            <Company imageSrc={CarbonInfinity} name="Carbon Infinity"/>
+            <InternshipList>
+              <li>ML Intern for Material Discovery</li>
+            </InternshipList>
+            <InfoLink href="https://docs.google.com/document/d/1f1YeY4vg2cYWaPWLCpBPoIU9EOqwQeS7/edit"/>
+          </InternshipCard>
+          <InternshipCard>
+            <Company imageSrc={ClimateBase} name="ClimateBase"/>
+            <InternshipList>
+              <li>Developer</li>
+              <li>Data Architect/Business Development</li>
+            </InternshipList>
+            <InfoLink href="https://docs.google.com/document/d/1npCrjjOOUxpP6ppD4f0i7TlOL0Vz1vdqUo2KXCxkYeE/edit?usp=sharing"/>
+          </InternshipCard>
+          <InternshipCard>
+            <Company name="Oasis Regenerative"/>
+            <InternshipList>
+              <li>Creative Development Associate</li>
+              <li>Strategic Development Associate</li>
+              <li>Hardware Engineering Associate</li>
+              <li>Software Engineering Associate</li>
+              <li>Life SciencesAssociate</li>
+            </InternshipList>
+            <InfoLink href="https://docs.google.com/document/d/1wDn01SPb6pk_Vby0uRHoAWz-FfiPXvnynM3XroDHc9Q/edit?usp=sharing"/>
+          </InternshipCard>
+          <InternshipCard>
+            <Company name="The Sustainability Wiki"/>
+            <InternshipList>
+              <li>Data Architect/Business Development</li>
+              <li>Community Dev/Social Media Marketing</li>
+              <InfoLink href="https://docs.google.com/document/d/1SMZIi_XKCre_dMEt88N6GnUCgJ8F9VbkQgdKvo6ICX4/edit?usp=sharing"/>
+            </InternshipList>
+          </InternshipCard>
+        </InternshipsLayout>
 
       </div>
     )
