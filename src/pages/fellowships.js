@@ -49,7 +49,7 @@ export default class ClassPage extends Component {
           learn more and apply.
         </TextP>
         <TextP>
-          Applications for Fall 2021 are OPEN and close September 15th at 11:59pm ET.
+          Applications for Fall 2021 are OPEN and close September 18th at 11:59pm ET.
         </TextP>
 
         <Banner>

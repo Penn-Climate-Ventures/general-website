@@ -26,22 +26,23 @@ const GetInvolvedPage = () => {
                                        target="_blank" rel="noreferrer noopener">
           https://tinyurl.com/PCVF21BoardApplication</UrlLink>
         </TextP>
-        <TextP>Roles we're actively recruiting for our Board:</TextP>
-        <ul>
-          <li>Head of People Ops</li>
-          <li>Prize Committee Members</li>
-          <li>Fellowships Committee Members</li>
-          <li>Designers</li>
-          <li>Content Writers</li>
-        </ul>
       </Banner>
 
       <SectionHeader>Board Membership</SectionHeader>
       <TextP>
         If you are a Penn student and interested in getting involved in the behind-the-scenes of
         PCV, active recruitment of Class, Fellowships, Prize, and PR Teams is OPEN. Applications are
-        DUE September 15th at 11:59pm ET.
+        DUE September 18th at 11:59pm ET.
       </TextP>
+      <TextP>Roles we're actively recruiting for our Board:</TextP>
+      <ul>
+        <li>Head of People Ops</li>
+        <li>Prize Committee Members</li>
+        <li>Fellowships Committee Members</li>
+        <li>Designers</li>
+        <li>Content Writers</li>
+      </ul>
+      <br/>
       <TextP bold>
         Board Applications: <UrlLink href="https://tinyurl.com/PCVF21BoardApplication"
                                      target="_blank" rel="noreferrer noopener">
