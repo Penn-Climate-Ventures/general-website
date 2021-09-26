@@ -45,25 +45,8 @@ export default class ClassPage extends Component {
           difficult to break into climate. We aim to change that. Through our fellowships program,
           students apply to work with cutting-edge climate startups/companies, gaining exposure,
           hands-on experience, and connections to the broader climate space while delivering value
-          to companies. Our inaugural Fellowships program launches Fall 2021 - continue reading to
-          learn more and apply.
+          to companies.
         </TextP>
-        <TextP>
-          Applications for Fall 2021 are OPEN and close September 18th at 11:59pm ET.
-        </TextP>
-
-        <Banner>
-          <TextP bold>
-            Consulting Applications: <UrlLink href="https://tinyurl.com/PCVF21Consulting"
-                                              target="_blank" rel="noreferrer noopener">
-            https://tinyurl.com/PCVF21Consulting</UrlLink>
-          </TextP>
-          <TextP bold>
-            Intern Applications: <UrlLink href="https://tinyurl.com/PCVF21Internships"
-                                          target="_blank" rel="noreferrer noopener">
-            https://tinyurl.com/PCVF21Internships</UrlLink>
-          </TextP>
-        </Banner>
 
         {/*<Link to={'sectionRef'} offset={-100}>*/}
         {/*    <LearnMore>*/}
@@ -77,23 +60,6 @@ export default class ClassPage extends Component {
         </div>
 
         <ProjectsAndPartners/>
-
-        <SectionHeader>Application</SectionHeader>
-        <TextP>
-          Applications are now open and consulting applications close September 15 at 11:59pm ET
-          while internship applications are reviewed on a rolling basis. Make sure to get yours in
-          soon and we look forward to getting to know you!
-        </TextP>
-        <TextP bold>
-          Consulting Applications: <UrlLink href="https://tinyurl.com/PCVF21Consulting"
-                                            target="_blank" rel="noreferrer noopener">
-          https://tinyurl.com/PCVF21Consulting</UrlLink>
-        </TextP>
-        <TextP bold>
-          Intern Applications: <UrlLink href="https://tinyurl.com/PCVF21Internships"
-                                        target="_blank" rel="noreferrer noopener">
-          https://tinyurl.com/PCVF21Internships</UrlLink>
-        </TextP>
 
         <FellowshipsFAQ/>
 

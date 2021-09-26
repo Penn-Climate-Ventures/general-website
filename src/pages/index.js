@@ -54,6 +54,7 @@ export default function IndexPage() {
     <>
       <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
+      {/*
       { !hidden &&
         <ImportantBanner>
           <TextP>
@@ -63,6 +64,7 @@ export default function IndexPage() {
           <BannerCloseBtn onClick={() => setHidden(true)}>X</BannerCloseBtn>
         </ImportantBanner>
       }
+      */}
       <Imagine />
       <div style={{background: 'white'}}>
         <Layout >

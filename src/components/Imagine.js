@@ -5,6 +5,7 @@ import homeBg1 from "../images/home-backgrounds/home-bg-6.jpg"
 import homeBg2 from "../images/home-backgrounds/home-bg-2.jpg"
 import homeBg3 from "../images/home-backgrounds/home-bg-3.jpg"
 import homeBg4 from "../images/home-backgrounds/home-bg-4.jpg"
+import scrollDown from "../images/scroll-down.png"
 
 const Buffer = s.div`
   height: 40vh;
@@ -52,6 +53,22 @@ const ImagineText = s(TextP)`
   max-width: 500px;
 `
 
+const ScrollDownHint = s.div`
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 15%;
+  animation: bounce 4s infinite;
+  
+  @keyframes bounce {
+    0% {transform: translate(-50%, 0%);}
+    50% {transform: translate(-50%, 30%);}
+    100% {transform: translate(-50%, 0%);}
+  }
+`
+
 function useOnScreen(ref) {
   const [isIntersecting, setIntersecting] = useState(false)
 
@@ -92,6 +109,9 @@ const Imagine = () => {
             innovation.
           </ImagineText>
         </SlideContent>
+        <ScrollDownHint>
+          <img src={scrollDown} alt="scroll down"/>
+        </ScrollDownHint>
       </Slide>
       <Buffer/>
       <Slide ref={slideRef2}>
