@@ -9,7 +9,7 @@ import {
   Footer, SectionHeader, UrlLink,
 } from "../components"
 
-import {Banner} from "../components";
+import {Banner} from "../components"
 
 
 const GetInvolvedPage = () => {
