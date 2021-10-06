@@ -18,18 +18,13 @@ const cardItems = [
     bot: "6-8 PM EST"
   },
   {
-    top: "B Corp Certification",
-    mid: "Oct. 15",
-    bot: "6-7:30 PM EST"
-  },
-  {
     top: "Blockchain Workshop",
-    mid: "TBD",
-    bot: "TBD"
+    mid: "Oct. 29",
+    bot: "5-6 PM EST"
   },
   {
     top: "ESG Workshop",
-    mid: "TBD",
+    mid: "Nov. 12",
     bot: "TBD"
   },
   {
