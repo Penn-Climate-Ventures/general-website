@@ -38,6 +38,20 @@ ul {
     -webkit-padding-start: 40px;
 }
 
+ol {
+    margin-left: 1.5rem;
+    display: block;
+    -webkit-margin-before: 1.5rem;
+    -webkit-margin-after: 1.5rem;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 40px;
+
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
 body {
     color: #05052C;
     font-family: 'Lato', sans-serif;
