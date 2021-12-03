@@ -19,6 +19,10 @@ export const navLinks = [
     url: "/class"
   },
   {
+    linkName: "Internships",
+    url: "/internships"
+  },
+  {
     linkName: "Fellowships",
     url: "/fellowships"
   },
