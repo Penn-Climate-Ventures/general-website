@@ -65,6 +65,10 @@ const GetInvolvedPage = () => {
         height="550"
         css="background: transparent; border: 1px solid #ccc; margin: 10px auto 30px auto"
       />
+
+      <SectionHeader>Internships</SectionHeader>
+      <TextP>Click <a href="/internships">here</a> to see a list of available internships!</TextP>
+
       <Footer />
     </Layout>
     </>
