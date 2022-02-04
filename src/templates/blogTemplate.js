@@ -6,7 +6,7 @@ import s from "styled-components"
 import {TEXT_MUTED} from "../utils/constants";
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
 
-import "./markdown.scss"
+import "../styles/markdown.scss"
 
 const ArticleTitle = s(PageTitle)`
   color: black;

@@ -44,6 +44,11 @@ const SlideContent  = s.div`
   }
 `
 
+const ArrowImage = s.img`
+  height: 100%;
+  width: 100%;
+`
+
 const ImagineText = s(TextP)`
   font-family: "Metropolis";
   color: white;
@@ -110,7 +115,7 @@ const Imagine = () => {
           </ImagineText>
         </SlideContent>
         <ScrollDownHint>
-          <img src={scrollDown} alt="scroll down"/>
+          <ArrowImage src={scrollDown} alt="scroll down"/>
         </ScrollDownHint>
       </Slide>
       <Buffer/>

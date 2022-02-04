@@ -1,6 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
-import "./styles.scss"
+import "../styles/base.scss"
 
 import {
   Layout,

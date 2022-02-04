@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
-import "./styles.scss"
+import "../styles/base.scss"
 import s from "styled-components"
 
 import {
