@@ -1,6 +1,6 @@
-import Facebook from "../images/socials/facebook.png"
-import Instagram from "../images/socials/instagram.png"
-import LinkedIn from "../images/socials/linkedin.png"
+import Facebook from "../images/icons/facebook.png"
+import Instagram from "../images/icons/instagram.png"
+import LinkedIn from "../images/icons/linkedin.png"
 
 import React from "react";
 import s from "styled-components"

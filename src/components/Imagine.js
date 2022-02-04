@@ -5,7 +5,7 @@ import homeBg1 from "../images/home-backgrounds/home-bg-1.jpg"
 import homeBg2 from "../images/home-backgrounds/home-bg-2.jpg"
 import homeBg3 from "../images/home-backgrounds/home-bg-3.jpg"
 import homeBg4 from "../images/home-backgrounds/home-bg-4.jpg"
-import scrollDown from "../images/scroll-down.png"
+import scrollDown from "../images/icons/scroll-down.png"
 
 const Buffer = s.div`
   height: 40vh;

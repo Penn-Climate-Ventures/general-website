@@ -1,6 +1,6 @@
 import React, {Component } from 'react'
 import s from "styled-components"
-import Logo from '../images/logo.png'
+import Logo from '../images/pcv/logo.png'
 import { LIGHT_BLUE } from "../utils/constants"
 import {navLinks, smLinks} from "../data/navigation";
 
