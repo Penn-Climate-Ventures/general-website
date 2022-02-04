@@ -2,7 +2,6 @@ import React, {Component} from "react"
 import Helmet from "react-helmet"
 import {Link} from 'react-scroll'
 import s from "styled-components"
-import Chevron from "../images/svg/chevron.svg"
 import {LIGHT_BLUE} from "../utils/constants";
 
 import {
