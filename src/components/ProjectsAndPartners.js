@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import s from "styled-components"
-import {SectionHeader, TextP, UrlLink} from "./shared/Layout";
-import {SubText} from "./shared/Typography";
+import {Subtitle, Text, UrlLink} from "./shared/Typography";
 
 // consulting
 import BanyanInfrastructure from "../images/partners/banyanInfrastructure.png"
@@ -37,7 +36,7 @@ const PartnerName = s.h2`
   font-weight: bold;
 `
 
-const PartnerDesc = s(TextP)`
+const PartnerDesc = s(Text)`
   text-align: center;
   font-size: 1rem;
   line-height: 1rem;
@@ -90,7 +89,7 @@ const InternshipList = s.ul`
 const InfoLink = ({href}) => (
   <>
     <br/>
-    <TextP style={{marginBottom: 0}}><i>More info <UrlLink href={href}>here</UrlLink></i></TextP>
+    <Text style={{marginBottom: 0}}><i>More info <UrlLink href={href}>here</UrlLink></i></Text>
   </>
 )
 
@@ -100,9 +99,9 @@ export class ProjectsAndPartners extends Component {
 
     return (
       <div>
-        <SectionHeader>Fall 2021 Projects and Partners</SectionHeader>
+        <Subtitle>Fall 2021 Projects and Partners</Subtitle>
 
-        <TextP bold>Consulting</TextP>
+        <Text bold>Consulting</Text>
         <PartnersLayout>
           <Partner imageSrc={BanyanInfrastructure} name="Banyan Infrastructure" wide
                    desc="Research into project finance and energy"/>
@@ -116,7 +115,7 @@ export class ProjectsAndPartners extends Component {
                    desc="Direct air capture (DAC) factory planning + design"/>
         </PartnersLayout>
 
-        <TextP bold>Internships</TextP>
+        <Text bold>Internships</Text>
         <InternshipsLayout>
           <InternshipCard>
             <Company name="Andurand Capital"/>

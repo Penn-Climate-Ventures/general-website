@@ -1,8 +1,8 @@
 import React, {Component } from 'react'
 import s from "styled-components"
 import Logo from '../images/pcv/logo.png'
-import { LIGHT_BLUE } from "../utils/constants"
-import {navLinks, smLinks} from "../data/navigation";
+import {LIGHT_BLUE, TEXT_PRIMARY, TEXT_SECONDARY} from "../utils/constants"
+import {navLinks} from "../data/navigation";
 
 export const NavWrapper = s.div`
   background-color: rgba(255,255,255,0.97);
@@ -112,7 +112,7 @@ const NavLinks = s.div`
 `
 
 export const NavButton = s.a`
-  color: black;
+  color: ${TEXT_SECONDARY};
   font-weight: 600;
   margin: 10px 10px;
   cursor: pointer;
@@ -199,13 +199,6 @@ export class Navbar extends Component {
       padding: '1em',
       maxHeight: 'none',
       top: '0'
-    }
-    const navIconsOpenedStyle = {
-      padding: '1em',
-      maxHeight: 'none',
-      bottom: '0',
-      display: 'flex',
-      flexDirection: 'row'
     }
 
     return (

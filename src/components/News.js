@@ -1,9 +1,9 @@
 import React from "react"
 import s from "styled-components"
-import {SectionHeader} from "./shared/Layout";
 import Carousel from "../components/shared/Carousel"
 import { useContainerDimensions } from "./shared/useContainerDimensions"
 import Tile from "./shared/Tile";
+import {Subtitle} from "./shared/Typography";
 
 
 const articleItems = [
@@ -33,7 +33,7 @@ const NewsLayout = () => {
 
   return (
     <div ref={componentRef}>
-      <SectionHeader left={"left"}>In the News</SectionHeader>
+      <Subtitle left={"left"}>In the News</Subtitle>
       <Carousel show={Math.floor(width / 200)}>
           { articleItems.map( article => (
             <Tile topText={article.top}

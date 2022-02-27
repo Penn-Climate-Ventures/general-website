@@ -1,34 +1,55 @@
 import s from "styled-components"
-import { LIGHT_BLUE, DARK_BLUE } from "../../utils/constants"
+import {DARK_BLUE, LIGHT_BLUE, TEXT_PRIMARY} from "../../utils/constants"
+import React from "react";
 
 
 export const Title = s.h1`
-  font-size:${({ fontSize }) => fontSize || `3.5rem`};
-  font-family: Lato;
-  font-weight: bold;
+  font-size:${({ fontSize }) => fontSize || `1.7rem`};
   color: ${LIGHT_BLUE};
-  padding-bottom: 8px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
 `
 
 export const Subtitle = s.h2`
-  font-size:${({ fontSize }) => fontSize || `1.5rem`};
-  font-family: Lato;
-  font-weight: bold;
+  font-size:${({ fontSize }) => fontSize || `1.3rem`};
+  color: ${LIGHT_BLUE};
+  ${({bold}) => bold && `font-weight: bold`};
   ${({center}) => center && `text-align: center`};
   text-transform: uppercase;
-  letter-spacing: 8px;
-  color: #3A8EFB;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 `
 
 export const Text = s.p`
-  font-size:${({ fontSize }) => fontSize || `1.1rem`};
-  font-family: Lato;
-  color: ${({fontColor}) => fontColor || `black`};
+  font-size:${({ fontSize }) => fontSize || `1rem`};
+  color: ${({fontColor}) => fontColor || TEXT_PRIMARY};
   ${({bold}) => bold && `font-weight: bold`};
   ${({center}) => center && `text-align: center`};
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
 `
 
 export const SubText = s.p`
-  font-size:${({ fontSize }) => fontSize || `1.1rem`};
-  font-family: Lato;
+  font-size:${({ fontSize }) => fontSize || `1rem`};
+  ${({center}) => center && `text-align: center`};
 `
+
+export const UrlLink = s.a`
+  color: ${LIGHT_BLUE};
+  ${({bold}) => bold && `font-weight: bold`};
+  ${({center}) => center && `text-align: center`};
+  margin-bottom: 1rem;
+  transition: 0.2s;
+  
+  &:hover {
+    color: ${DARK_BLUE};
+    cursor: pointer;
+  }
+`
+
+export const Email = () => {
+  return (
+    <UrlLink href={'mailto:pennclimateventures@gmail.com'}>pennclimateventures@gmail.com</UrlLink>
+  )
+}

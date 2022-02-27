@@ -10,8 +10,8 @@ import {
   News,
   Community,
   Team,
-  Footer, TextP,
-  Banner, UrlLink,
+  Footer,
+  Banner
 } from "../components"
 
 import Imagine from "../components/Imagine";

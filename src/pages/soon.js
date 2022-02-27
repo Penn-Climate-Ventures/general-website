@@ -4,9 +4,9 @@ import Helmet from "react-helmet"
 import {
   Layout,
   Navbar,
-  PageTitle,
   Footer
 } from "../components"
+import {Title} from "../components/shared/Typography";
 
 export default class Soon extends Component {
   render() {
@@ -15,7 +15,7 @@ export default class Soon extends Component {
       <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
       <Layout>
-        <PageTitle>This page is coming soon!</PageTitle>
+        <Title>This page is coming soon!</Title>
         <Footer />
       </Layout>
       </>

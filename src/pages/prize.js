@@ -6,13 +6,12 @@ import "../styles/base.scss"
 import {
   Layout,
   Navbar,
-  PageTitle,
-  TextP,
   Footer,
 } from "../components"
 import { ActionButton } from "../components/shared/Button"
 
 import { LIGHT_BLUE } from "../utils/constants"
+import {Text, Title} from "../components/shared/Typography";
 
 
 const PrizeButtonContainer = s.div`
@@ -43,15 +42,15 @@ const PrizePage = () => {
     <Helmet title="Penn Climate Ventures" defer={false} />
     <Navbar />
     <Layout>
-      <PageTitle>Prize</PageTitle>
-      <TextP bold="true">
+      <Title>Prize</Title>
+      <Text bold>
         Catalyzing climate innovation at Penn.
-      </TextP>
-      <TextP>
+      </Text>
+      <Text>
         The prize team organizes (1) a Penn-only competition focused on climate
         tech ideation in the Fall and (2) a global pitch competition in the
         spring.
-      </TextP>
+      </Text>
       <PrizeButtonContainer>
         <ActionButton rel="noreferrer noopener"
                       target="_blank"

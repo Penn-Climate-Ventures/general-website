@@ -1,7 +1,7 @@
 import React from 'react'
 import s from "styled-components"
 import { GREEN, LIGHT_BLUE } from "../../utils/constants"
-import { TextP } from "./Layout"
+import { Text} from "./Typography"
 
 
 export const TileBox = s.div`
@@ -14,7 +14,7 @@ export const TileBox = s.div`
   width: 150px;
 `
 
-const TileTopText = s(TextP)`
+const TileTopText = s(Text)`
   color: ${LIGHT_BLUE};
   text-align: center;
   font-weight: 500;

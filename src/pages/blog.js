@@ -7,11 +7,11 @@ import s from "styled-components"
 import {
   WideLayout,
   Navbar,
-  PageTitle,
   Footer,
 } from "../components"
 
 import BlogCard from "../components/shared/BlogCard";
+import {Title} from "../components/shared/Typography";
 
 const BlogCardLayout = s.div`
   margin: 30px auto auto auto;
@@ -28,7 +28,7 @@ const BlogPage = ({ data }) => {
     <Helmet title="Penn Climate Ventures" defer={false} />
     <Navbar />
     <WideLayout>
-      <PageTitle>Blog</PageTitle>
+      <Title>Blog</Title>
       <BlogCardLayout>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <BlogCard node={node} />

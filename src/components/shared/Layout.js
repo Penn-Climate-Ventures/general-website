@@ -1,59 +1,6 @@
 import React from "react"
 import s from "styled-components"
-import { LIGHT_BLUE, DARK_BLUE } from "../../utils/constants"
 
-
-export const PageTitle = s.h1`
-  color: ${LIGHT_BLUE};
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 1.5rem;
-`
-
-export const SectionHeader = s.h2`
-  // font-size: 1.5rem;
-  // font-weight: bold;
-  // text-align: ${({ left }) => ( left ? "left" : "center")};
-  // text-shadow: 3px 3px 5px #bbdddddd;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-
-  font-size:${({ fontSize }) => fontSize || `1.3rem`};
-  font-family: Lato;
-  font-weight: bold;
-  ${({center}) => center && `text-align: center`};
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  color: ${LIGHT_BLUE};
-`
-
-export const TextP = s.p`
-  font-weight: ${({ bold }) => ( bold ? "bold" : "normal")};
-  text-align: ${({ center }) => ( center ? "center" : "left")};
-  font-size: 1.05rem;
-  line-height: 1.5rem;
-  margin-bottom: 1rem;
-`
-
-export const UrlLink = s.a`
-  color: ${LIGHT_BLUE};
-  font-weight: ${({ bold }) => ( bold ? "bold" : "normal")};
-  text-align: ${({ center }) => ( center ? "center" : "left")};
-  margin-bottom: 1rem;
-  transition: 0.2s;
-  
-  &:hover {
-    color: ${DARK_BLUE};
-    cursor: pointer;
-  }
-`
-
-export const Email = () => {
-  return (
-    <UrlLink href={'mailto:pennclimateventures@gmail.com'}>pennclimateventures@gmail.com</UrlLink>
-  )
-}
 
 export const Layout = s.div`
   padding: 2rem 1rem;

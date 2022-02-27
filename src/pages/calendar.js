@@ -5,12 +5,11 @@ import s from "styled-components"
 import {
   Layout,
   Navbar,
-  PageTitle,
-  TextP,
   Footer,
 } from "../components"
 
 import {LIGHT_BLUE, DARK_BLUE } from "../utils/constants"
+import {Text, Title} from "../components/shared/Typography";
 
 
 const CenterButtonContainer = s.div`
@@ -56,13 +55,13 @@ const CalendarPage = () => {
     <Helmet title="Penn Climate Ventures" defer={false} />
     <Navbar />
     <Layout>
-      <PageTitle>Calendar</PageTitle>
-      <TextP bold="true" center={"center"}>
+      <Title>Calendar</Title>
+      <Text bold center>
         Your one stop for all climate and entrepreneurship events at Penn.
-      </TextP>
-      <TextP center={"center"}>
+      </Text>
+      <Text center>
         Please apply for general membership to access our events calendar.
-      </TextP>
+      </Text>
       <CenterButtonContainer>
         <CalendarButton href="/">Go to Calendar</CalendarButton>
       </CenterButtonContainer>

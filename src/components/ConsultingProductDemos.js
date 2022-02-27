@@ -1,9 +1,9 @@
 import React from "react"
 import s from "styled-components"
-import { SectionHeader, TextP, Email } from "./shared/Layout"
 import Carousel from "../components/shared/Carousel"
 import Tile from "../components/shared/Tile"
 import {useContainerDimensions} from "./shared/useContainerDimensions";
+import {Email, Subtitle, Text} from "./shared/Typography";
 
 
 const cardItems = [
@@ -41,10 +41,10 @@ const ConsultingProductDemosLayout = () => {
 
   return (
     <div ref={componentRef}>
-      <SectionHeader>Consulting Product Demos</SectionHeader>
-      <TextP center={"center"}>
+      <Subtitle>Consulting Product Demos</Subtitle>
+      <Text center>
         If your startup is interested in our services, please contact us at <Email/>.
-      </TextP>
+      </Text>
       <Carousel show={Math.floor(width / 200)}>
         { cardItems.map( card => (
           <Tile topText={card.top} midText={card.mid} botText={card.bot} />

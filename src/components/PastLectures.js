@@ -1,9 +1,9 @@
 import React from "react"
 import s from "styled-components"
-import { SectionHeader } from "../components/shared/Layout"
 import Carousel from "../components/shared/Carousel"
 import Tile from "../components/shared/Tile"
 import {useContainerDimensions} from "./shared/useContainerDimensions";
+import {Subtitle} from "./shared/Typography";
 
 
 const cardItems = [
@@ -36,7 +36,7 @@ const PastLecturesLayout = () => {
 
   return (
     <div ref={componentRef}>
-      <SectionHeader>Past Lectures</SectionHeader>
+      <Subtitle>Past Lectures</Subtitle>
       <Carousel show={Math.floor(width / 200)}>
         { cardItems.map( card => (
           <Tile topText={card.top} midText={card.mid} botText={card.bot} />

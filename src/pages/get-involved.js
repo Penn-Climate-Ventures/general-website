@@ -4,14 +4,10 @@ import Helmet from "react-helmet"
 import {
   Layout,
   Navbar,
-  PageTitle,
-  TextP,
   Footer,
-  SectionHeader,
-  UrlLink,
 } from "../components"
 
-import { Banner } from "../components";
+import {Subtitle, Text, Title, UrlLink} from "../components/shared/Typography";
 
 const GetInvolvedPage = () => {
   return (
@@ -19,10 +15,10 @@ const GetInvolvedPage = () => {
       <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
       <Layout>
-        <PageTitle>Get Involved</PageTitle>
+        <Title>Get Involved</Title>
 
-        <SectionHeader>Board Membership</SectionHeader>
-        <TextP>
+        <Subtitle>Board Membership</Subtitle>
+        <Text>
           Our applications for board membership are now open for spring
           recruitment! If you are a Penn student and interested in getting
           involved in the behind-the-scenes of PCV, click
@@ -35,42 +31,39 @@ const GetInvolvedPage = () => {
             here
           </a>
           .
-        </TextP>
+        </Text>
 
-        <SectionHeader>General Membership</SectionHeader>
+        <Subtitle>General Membership</Subtitle>
 
-        <TextP bold>
+        <Text bold>
           All students or professionals with Penn affiliation interested or
           involved in climate and entrepreneurship are eligible for general
           membership.
-        </TextP>
-        <TextP>
+        </Text>
+        <Text>
           General membership consists of:
           <ul>
             <li>access to PCV's alumni network</li>
             <li>opportunity to contribute to our newsletter or blog</li>
           </ul>
-        </TextP>
-        <TextP>
+        </Text>
+        <Text>
           We'll also add you to (with opportunity to opt-out):
           <ul>
             <li>our general listserv</li>
             <li>our Ideathon & Prize listservs</li>
           </ul>
-        </TextP>
+        </Text>
 
-        <TextP bold>
-          <a
+        <Text bold>
+          <UrlLink
             href={"https://airtable.com/shrCCh7SJrYNsjeWT"}
-            css={`
-              color: inherit;
-            `}
             target="_blank"
             rel="noreferrer noopener"
           >
             Use the form below to join our listserve!
-          </a>
-        </TextP>
+          </UrlLink>
+        </Text>
         <iframe
           className="airtable-embed"
           src="https://airtable.com/embed/shrCCh7SJrYNsjeWT?backgroundColor=red"
@@ -80,11 +73,11 @@ const GetInvolvedPage = () => {
           css="background: transparent; border: 1px solid #ccc; margin: 10px auto 30px auto"
         />
 
-        <SectionHeader>Internships</SectionHeader>
-        <TextP>
+        <Subtitle>Internships</Subtitle>
+        <Text>
           Click <a href="/internships">here</a> to see a list of available
           internships!
-        </TextP>
+        </Text>
 
         <Footer />
       </Layout>

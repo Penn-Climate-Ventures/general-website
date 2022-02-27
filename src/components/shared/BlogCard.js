@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import s from "styled-components"
 import {TEXT, TEXT_MUTED} from "../../utils/constants";
+import {SubText, Text} from "./Typography";
 
 const CardLayout = s.div`
   border-top: 1px solid #e6e6e6;
@@ -74,13 +75,13 @@ const BlogCard = ({ node }) => {
 
       {fm.author &&
         <PublishingInfo>
-          <p>By {fm.author}</p>
-          <p>{fm.date}</p>
+          <SubText>By {fm.author}</SubText>
+          <SubText>{fm.date}</SubText>
         </PublishingInfo>
       }
       {!fm.author &&
         <PublishingInfo>
-          <p>{fm.date}</p>
+          <SubText>{fm.date}</SubText>
         </PublishingInfo>
       }
 

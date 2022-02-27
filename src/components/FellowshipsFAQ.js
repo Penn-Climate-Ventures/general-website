@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import s from "styled-components"
-import { SectionHeader, TextP } from "./shared/Layout";
 import {LIGHT_BLUE} from "../utils/constants";
+import {Subtitle, Text} from "./shared/Typography";
 
 
 const Question = s.summary`
@@ -26,10 +26,10 @@ export class FellowshipsFAQ extends Component {
 
     return (
       <div>
-        <SectionHeader>FAQ's</SectionHeader>
+        <Subtitle>FAQ's</Subtitle>
         <details>
           <Question>What’s the time commitment like?</Question>
-          <TextP>
+          <Text>
             <ul>
               <li>
                 Consulting: 4-5 hrs / wk for 1 semester
@@ -38,12 +38,12 @@ export class FellowshipsFAQ extends Component {
                 Internship: determined by you and the founder
               </li>
             </ul>
-          </TextP>
+          </Text>
         </details>
 
         <details>
           <Question>What are the projects like?</Question>
-          <TextP>
+          <Text>
             <ul>
               <li>
                 Projects depend on the companies we partner with and their needs. We do our best to
@@ -51,12 +51,12 @@ export class FellowshipsFAQ extends Component {
                 projects we end up offering.
               </li>
             </ul>
-          </TextP>
+          </Text>
         </details>
 
         <details>
           <Question>What’s the application process like?</Question>
-          <TextP>
+          <Text>
             <ul>
               <li>
                 Consulting: Initial written application → second round in-person or Zoom interview
@@ -67,30 +67,30 @@ export class FellowshipsFAQ extends Component {
                 Zoom interview with PCV → final round interview with founder → decision
               </li>
             </ul>
-          </TextP>
+          </Text>
         </details>
 
         <details>
           <Question>When will applications be released?</Question>
-          <TextP>
+          <Text>
             <ul>
               <li>
                 Fall 2021 applications will be released August 31!
               </li>
             </ul>
-          </TextP>
+          </Text>
         </details>
 
         <details>
           <Question>Can I apply for multiple consulting projects and/or internships?</Question>
-          <TextP>
+          <Text>
             <ul>
               <li>
                 Yes, however, you will only be assigned to one opportunity based on which
                 opportunity fits the best with your interests!.
               </li>
             </ul>
-          </TextP>
+          </Text>
         </details>
       </div>
     )

@@ -1,14 +1,14 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
-import {Footer, Layout, Navbar, PageTitle, TextP} from "../components"
+import {Footer, Layout, Navbar} from "../components"
 import Helmet from "react-helmet";
 import s from "styled-components"
-import {TEXT_MUTED} from "../utils/constants";
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
 
 import "../styles/markdown.scss"
+import {Text, Title} from "../components/shared/Typography";
 
-const ArticleTitle = s(PageTitle)`
+const ArticleTitle = s(Title)`
   color: black;
   text-align: left;
   font-family: 'Lora', serif;
@@ -58,10 +58,10 @@ export default function BlogTemplate ({ data }) {
 
         <PublishingInfo>
           <div>
-            <TextP>{fm.date}</TextP>
-            <TextP>{fm.readtime} min read; {fm.wordcount} words</TextP>
+            <Text>{fm.date}</Text>
+            <Text>{fm.readtime} min read; {fm.wordcount} words</Text>
           </div>
-          <TextP bold>Author: {fm.author}</TextP>
+          <Text bold>Author: {fm.author}</Text>
         </PublishingInfo>
 
         <div dangerouslySetInnerHTML={{ __html: article.html }} />

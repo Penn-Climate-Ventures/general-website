@@ -1,9 +1,9 @@
 import React from "react"
 import s from "styled-components"
-import { SectionHeader } from "./shared/Layout"
 import Tile from "../components/shared/Tile"
 import {useContainerDimensions} from "./shared/useContainerDimensions";
 import {ActionButton} from "./shared/Button";
+import {Subtitle} from "./shared/Typography";
 
 
 const cardItems = [
@@ -76,7 +76,7 @@ const UpcomingWorkshopsLayout = () => {
 
   return (
     <div ref={componentRef}>
-      <SectionHeader>Upcoming Workshops</SectionHeader>
+      <Subtitle>Upcoming Workshops</Subtitle>
       <FlexContainer>
         { cardItems.map( card => (
           <Tile topText={card.top} midText={card.mid} botText={card.bot} />

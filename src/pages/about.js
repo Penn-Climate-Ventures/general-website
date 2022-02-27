@@ -5,15 +5,14 @@ import "../styles/base.scss"
 import {
   Layout,
   Navbar,
-  PageTitle,
-  TextP,
-  Footer, SectionHeader,
+  Footer
 } from "../components"
 import Carousel from "../components/shared/Carousel";
 import {useContainerDimensions} from "../components/shared/useContainerDimensions";
 import s from "styled-components";
 import {BoxColumn} from "../components/shared/BoxColumn";
 import {LIGHT_BLUE} from "../utils/constants";
+import {Subtitle, Title} from "../components/shared/Typography";
 
 const classTeamData = [
   {
@@ -204,8 +203,8 @@ const AboutPage = () => {
       <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
       <Layout>
-        <PageTitle>About Us</PageTitle>
-        <SectionHeader>People</SectionHeader>
+        <Title>About Us</Title>
+        <Subtitle>People</Subtitle>
         <div ref={componentRef}>
           <Carousel show={width / 240}>
             <TeamColumn round="true">

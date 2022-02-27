@@ -2,11 +2,11 @@ import React from "react"
 import Helmet from "react-helmet"
 
 import {
-  Layout,
+  WideLayout,
   Navbar,
-  PageTitle,
-  Footer, TextP, Email, WideLayout
+  Footer
 } from "../components"
+import {Email, Text, Title} from "../components/shared/Typography";
 
 const InternshipsPage = () => {
   return (
@@ -14,13 +14,13 @@ const InternshipsPage = () => {
       <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
       <WideLayout>
-        <PageTitle>Internships</PageTitle>
+        <Title>Internships</Title>
         <br/>
-        <TextP>
+        <Text>
           Explore hand-picked internships in the climate and sustainability space, ranging from
           non-profits to established companies. Contact <Email/> if you wish to add your company or
           organization's opportunities.
-        </TextP>
+        </Text>
         <br/><br/>
         <iframe className="airtable-embed"
           src="https://airtable.com/embed/shrfKreaRwGs2N50J?backgroundColor=cyan&layout=card&viewControls=on"

@@ -1,11 +1,11 @@
 import React, {useEffect, useRef, useState} from "react"
 import s from "styled-components"
-import { TextP } from "./shared/Layout"
 import homeBg1 from "../images/home-backgrounds/home-bg-1.jpg"
 import homeBg2 from "../images/home-backgrounds/home-bg-2.jpg"
 import homeBg3 from "../images/home-backgrounds/home-bg-3.jpg"
 import homeBg4 from "../images/home-backgrounds/home-bg-4.jpg"
 import scrollDown from "../images/icons/scroll-down.png"
+import {Text} from "./shared/Typography";
 
 const Buffer = s.div`
   height: 40vh;
@@ -49,7 +49,7 @@ const ArrowImage = s.img`
   width: 100%;
 `
 
-const ImagineText = s(TextP)`
+const ImagineText = s(Text)`
   font-family: "Metropolis";
   color: white;
   font-size: 1.5rem;
