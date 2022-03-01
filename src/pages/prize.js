@@ -8,7 +8,7 @@ import {
   Navbar,
   Footer,
 } from "../components"
-import { ActionButton } from "../components/shared/Button"
+import { Button } from "../components/shared/Button"
 
 import { LIGHT_BLUE } from "../utils/constants"
 import {Text, Title} from "../components/shared/Typography";
@@ -52,15 +52,15 @@ const PrizePage = () => {
         spring.
       </Text>
       <PrizeButtonContainer>
-        <ActionButton rel="noreferrer noopener"
+        <Button rel="noreferrer noopener"
                       target="_blank"
-                      href="https://ideathon.pennclimateventures.org/">PCV Ideathon</ActionButton>
+                      href="https://ideathon.pennclimateventures.org/">PCV Ideathon</Button>
         <Rule />
-        <ActionButton rel="noreferrer noopener"
+        <Button rel="noreferrer noopener"
                       target="_blank"
                       href="https://prize.pennclimateventures.org/">
           PCV Prize Competition
-        </ActionButton>
+        </Button>
       </PrizeButtonContainer>
       <Footer />
     </Layout>

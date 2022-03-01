@@ -1,9 +1,9 @@
 import React from "react"
 import s from "styled-components"
-import {ActionButton} from "./shared/Button";
+import {Button} from "./shared/Button";
 import {Email, Subtitle, Text} from "./shared/Typography";
 
-const JoinButton = s(ActionButton)`
+const JoinButton = s(Button)`
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;

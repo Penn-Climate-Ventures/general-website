@@ -19,7 +19,7 @@ const BlogCardLayout = s.div`
   display: inline-flex;
   flex-wrap: wrap;
   column-gap: 60px;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 `
 
 const BlogPage = ({ data }) => {

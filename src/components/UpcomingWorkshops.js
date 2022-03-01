@@ -2,7 +2,7 @@ import React from "react"
 import s from "styled-components"
 import Tile from "../components/shared/Tile"
 import {useContainerDimensions} from "./shared/useContainerDimensions";
-import {ActionButton} from "./shared/Button";
+import {Button} from "./shared/Button";
 import {Subtitle} from "./shared/Typography";
 
 
@@ -83,9 +83,9 @@ const UpcomingWorkshopsLayout = () => {
         )) }
       </FlexContainer>
       <div css={`display: flex; justify-content: center; margin-top: 60px;`}>
-        <ActionButton rel="noreferrer noopener"
+        <Button rel="noreferrer noopener"
                       target="_blank"
-                      href="https://tinyurl.com/m5e7h4uj">RSVP Here!</ActionButton>
+                      href="https://tinyurl.com/m5e7h4uj">RSVP Here!</Button>
       </div>
     </div>
   )
