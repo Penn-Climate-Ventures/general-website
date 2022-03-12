@@ -1,8 +1,8 @@
 {
-  "name": "pcv-prize-website",
+  "name": "pcv-website",
   "version": "1.0.0",
   "private": true,
-  "description": "PCV Prize Website",
+  "description": "Penn Climate Ventures",
   "author": "PCV",
   "keywords": [
     "climate",

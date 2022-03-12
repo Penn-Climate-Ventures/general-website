@@ -15,7 +15,7 @@ export default class ClassPage extends Component {
   render() {
     return (
       <>
-      <Helmet title="Penn Climate Ventures" defer={false} />
+      <Helmet title="Penn Climate Ventures | Fellowships" defer={false} />
       <Navbar />
       <Layout>
         <Title>Fellowships</Title>

@@ -13,7 +13,7 @@ export default class ValuesPage extends Component {
   render() {
     return (
       <Layout>
-        <Helmet title="Penn Climate Ventures Prize" defer={false} />
+        <Helmet title="Penn Climate Ventures | Values" defer={false} />
         <Navbar />
         <Title>Our Values</Title>
 

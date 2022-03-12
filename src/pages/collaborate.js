@@ -14,7 +14,7 @@ import {Email, Text, Title, UrlLink} from "../ui/Typography";
 const CollaboratePage = () => {
   return (
     <>
-    <Helmet title="Penn Climate Ventures" defer={false} />
+    <Helmet title="Penn Climate Ventures | Collaborate" defer={false} />
     <Navbar />
     <Layout>
       <Title>Collaborate</Title>

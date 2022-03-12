@@ -14,7 +14,7 @@ import {Text, Title} from "../ui/Typography";
 const ClassPage = () => {
   return (
     <>
-    <Helmet title="Penn Climate Ventures" defer={false} />
+    <Helmet title="Penn Climate Ventures | Class" defer={false} />
     <Navbar />
     <Layout>
       <Title>Class</Title>
@@ -37,4 +37,5 @@ const ClassPage = () => {
     </>
   )
 }
+
 export default ClassPage

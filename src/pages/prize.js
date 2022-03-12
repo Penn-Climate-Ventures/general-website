@@ -39,7 +39,7 @@ const Rule = s.span`
 const PrizePage = () => {
   return (
     <>
-    <Helmet title="Penn Climate Ventures" defer={false} />
+    <Helmet title="Penn Climate Ventures | Prize" defer={false} />
     <Navbar />
     <Layout>
       <Title>Prize</Title>

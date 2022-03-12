@@ -12,7 +12,7 @@ import {Subtitle, Text, Title, UrlLink} from "../ui/Typography";
 const GetInvolvedPage = () => {
   return (
     <>
-      <Helmet title="Penn Climate Ventures" defer={false} />
+      <Helmet title="Penn Climate Ventures | Get Involved" defer={false} />
       <Navbar />
       <Layout>
         <Title>Get Involved</Title>

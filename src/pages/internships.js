@@ -11,7 +11,7 @@ import {Email, Text, Title} from "../ui/Typography";
 const InternshipsPage = () => {
   return (
     <>
-      <Helmet title="Penn Climate Ventures" defer={false} />
+      <Helmet title="Penn Climate Ventures | Internships" defer={false} />
       <Navbar />
       <Layout>
         <Title>Internships</Title>

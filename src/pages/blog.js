@@ -26,7 +26,7 @@ const BlogCardLayout = s.div`
 const BlogPage = ({ data }) => {
   return (
     <>
-    <Helmet title="Penn Climate Ventures" defer={false} />
+    <Helmet title="Penn Climate Ventures | Blog" defer={false} />
     <Navbar />
     <Layout>
       <Title>Blog</Title>

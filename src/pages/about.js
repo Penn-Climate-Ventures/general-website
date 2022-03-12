@@ -200,7 +200,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <Helmet title="Penn Climate Ventures" defer={false} />
+      <Helmet title="Penn Climate Ventures | About" defer={false} />
       <Navbar />
       <Layout>
         <Title>About Us</Title>

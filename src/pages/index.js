@@ -20,7 +20,7 @@ import {LIGHT_BLUE} from "../utils/constants";
 export default function IndexPage() {
   return (
     <>
-      <Helmet title="Penn Climate Ventures" defer={false} />
+      <Helmet title="Penn Climate Ventures | Home" defer={false} />
       <Navbar />
       <Hero/>
       <WideLayout><About/></WideLayout>
