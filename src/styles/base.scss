@@ -30,8 +30,11 @@
 :root {
   --c-accent-primary: #217CFF;
   --c-accent-secondary: #217CFF;
-  --c-text-primary: #333;
-  --c-text-secondary: #333;
+  --c-text-primary: #333333;
+  --c-text-primary-inverted: #efefef;
+  --c-text-primary-muted: #75787a;
+  --c-text-secondary: #707070;
+  --c-text-secondary-inverted: #333;
   --c-text-accent-primary: #333;
   --c-text-accent-secondary: #333;
   --c-text-warning: #333;
@@ -39,9 +42,9 @@
   --c-text-link-unclicked: #3A8EFB;
   --c-text-link-hover: #1c78ee;
   --c-text-link-clicked: #333;
-  --c-bg-0: #333;
-  --c-bg-1: #333;
-  --c-bg-2: #333;
+  --c-bg-0: #fff;
+  --c-bg-1: #ddd;
+  --c-bg-2: #bbb;
   --c-bg-warning: #333;
   --c-bg-disabled: #333;
   --c-bg-overlay: #333;

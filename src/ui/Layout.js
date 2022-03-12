@@ -21,14 +21,10 @@ export const Layout = s.div`
   @media (min-width: 992px) {
     max-width: 960px;
   }
-
-  @media (min-width: 1200px) {
-    padding: 2rem 5rem;
-    max-width: 1140px;
-  }
 `
 
 export const WideLayout = s.div`
+  padding: 2rem 1rem;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -44,6 +40,10 @@ export const WideLayout = s.div`
 
   @media (min-width: 992px) {
     max-width: 960px;
+  }
+  
+  @media (min-width: 1200px) {
+    max-width: 1140px;
   }
 `
 

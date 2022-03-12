@@ -1,26 +1,25 @@
 import s from 'styled-components'
-import {LIGHT_BLUE, WHITE} from "../utils/constants"
 
 export const Button = s.a`
-  background-color: ${WHITE};
-  color: ${LIGHT_BLUE};
+  background-color: var(--c-bg-0);
+  color: var(--c-text-link-unclicked);
   text-align: center;
   margin: auto;
   padding: 10px 30px;
-  border: 2px solid ${LIGHT_BLUE};
+  border: 2px solid var(--c-accent-primary);
   border-radius: 30px;
   transition: all ease-in-out 0.15s;
   cursor: pointer;
   z-index: 10;
   
   :hover {
-    background-color: ${LIGHT_BLUE};
+    background-color: var(--c-accent-primary);
     color: white;
   }
 `
 
 export const ButtonInverted = s(Button)`
-  border: 2px solid ${WHITE};
+  border: 2px solid var(--c-bg-0);
 `
 
 export default Button

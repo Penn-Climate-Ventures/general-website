@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import {
   WideLayout,
   Navbar,
-  Footer
+  Footer, Layout
 } from "../components"
 import {Email, Text, Title} from "../ui/Typography";
 
@@ -13,7 +13,7 @@ const InternshipsPage = () => {
     <>
       <Helmet title="Penn Climate Ventures" defer={false} />
       <Navbar />
-      <WideLayout>
+      <Layout>
         <Title>Internships</Title>
         <br/>
         <Text>
@@ -21,7 +21,8 @@ const InternshipsPage = () => {
           non-profits to established companies. Contact <Email/> if you wish to add your company or
           organization's opportunities.
         </Text>
-        <br/><br/>
+      </Layout>
+      <WideLayout>
         <iframe className="airtable-embed"
           src="https://airtable.com/embed/shrfKreaRwGs2N50J?backgroundColor=cyan&layout=card&viewControls=on"
           frameBorder="0" onmousewheel="" width="100%"

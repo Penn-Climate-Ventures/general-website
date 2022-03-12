@@ -1,11 +1,11 @@
 import s from "styled-components"
-import {DARK_BLUE, LIGHT_BLUE, TEXT_PRIMARY} from "../utils/constants"
+import {LIGHT_BLUE} from "../utils/constants"
 import React from "react";
 
 
 export const Title = s.h1`
   font-size:${({ fontSize }) => fontSize || `1.7rem`};
-  color: ${({fontColor}) => fontColor || TEXT_PRIMARY};
+  color: ${({fontColor}) => fontColor || 'var(--c-text-primary)'};
   font-weight: bold;
   text-align: center;
   margin-bottom: 1.5rem;
@@ -23,7 +23,7 @@ export const Subtitle = s.h2`
 
 export const Text = s.p`
   font-size:${({ fontSize }) => fontSize || `1rem`};
-  color: ${({fontColor}) => fontColor || TEXT_PRIMARY};
+  color: ${({fontColor}) => fontColor || 'var(--c-text-primary)'};
   ${({bold}) => bold && `font-weight: bold`};
   ${({center}) => center && `text-align: center`};
   line-height: 1.5rem;
@@ -43,7 +43,7 @@ export const UrlLink = s.a`
   transition: 0.2s;
   
   &:hover {
-    color: ${DARK_BLUE};
+    color: var(--c-text-link-hover);
     cursor: pointer;
   }
 `

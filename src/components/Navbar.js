@@ -1,7 +1,7 @@
 import React, {Component } from 'react'
 import s from "styled-components"
 import Logo from '../images/pcv/logo.png'
-import {LIGHT_BLUE, TEXT_SECONDARY} from "../utils/constants"
+import {LIGHT_BLUE} from "../utils/constants"
 import {navLinks} from "../data/navigation";
 
 export const NavWrapper = s.div`
@@ -112,7 +112,7 @@ const NavLinks = s.div`
 `
 
 export const NavButton = s.a`
-  color: ${TEXT_SECONDARY};
+  color: var(--c-text-secondary);
   font-weight: 600;
   margin: 10px 10px;
   cursor: pointer;

@@ -12,9 +12,10 @@ import {
 
 import BlogCard from "../ui/BlogCard";
 import {Title} from "../ui/Typography";
+import {Layout} from "../ui/Layout";
 
 const BlogCardLayout = s.div`
-  margin: 30px auto auto auto;
+  margin: auto;
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
@@ -27,15 +28,17 @@ const BlogPage = ({ data }) => {
     <>
     <Helmet title="Penn Climate Ventures" defer={false} />
     <Navbar />
-    <WideLayout>
+    <Layout>
       <Title>Blog</Title>
+    </Layout>
+    <WideLayout>
       <BlogCardLayout>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <BlogCard node={node} />
         ))}
       </BlogCardLayout>
-      <Footer />
     </WideLayout>
+    <Footer />
     </>
   )
 }

@@ -2,12 +2,12 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import s from "styled-components"
-import {TEXT_PRIMARY, TEXT_MUTED} from "../utils/constants";
 import {SubText} from "./Typography";
 
 const CardLayout = s.div`
   border-top: 1px solid #e6e6e6;
   width: 100%;
+  max-width: 600px;
   padding-top: 30px;
   padding-bottom: 30px;
   flex: 0 0 auto;
@@ -45,12 +45,11 @@ const PublishingInfo = s.div`
     
   & > p {
     font-size: .85rem;
-    color: ${TEXT_MUTED};
+    color: var(--c-text-primary-muted);
   }
 `
 
 const Description = s.p`
-  color: ${TEXT_PRIMARY};
 `
 
 const BlogCard = ({ node }) => {
