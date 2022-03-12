@@ -8,7 +8,7 @@ import {
 } from "../components"
 import {ProjectsAndPartners} from "../components/ProjectsAndPartners";
 import {FellowshipsFAQ} from "../components/FellowshipsFAQ";
-import {Email, Subtitle, Text, Title} from "../components/shared/Typography";
+import {Email, Subtitle, Text, Title} from "../ui/Typography";
 
 
 export default class ClassPage extends Component {

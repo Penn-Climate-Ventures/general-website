@@ -9,7 +9,7 @@ import {
 } from "../components"
 
 import {LIGHT_BLUE, DARK_BLUE } from "../utils/constants"
-import {Text, Title} from "../components/shared/Typography";
+import {Text, Title} from "../ui/Typography";
 
 
 const CenterButtonContainer = s.div`

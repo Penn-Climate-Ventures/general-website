@@ -6,7 +6,7 @@ import {
   Navbar,
   Footer
 } from "../components"
-import {Email, Text, Title} from "../components/shared/Typography";
+import {Email, Text, Title} from "../ui/Typography";
 
 const InternshipsPage = () => {
   return (

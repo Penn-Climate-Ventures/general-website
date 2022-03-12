@@ -1,7 +1,6 @@
-import React, {useState} from "react"
+import React from "react"
 import Helmet from "react-helmet"
 import "../styles/base.scss"
-import s from "styled-components"
 
 import {
   WideLayout,
@@ -15,7 +14,7 @@ import {UpcomingEvents} from "../components/UpcomingEvents";
 import {GetInvolved} from "../components/GetInvolved";
 import {Hero} from "../components/Hero";
 import {About} from "../components/About";
-import {LIGHT_BLUE, WHITE} from "../utils/constants";
+import {LIGHT_BLUE} from "../utils/constants";
 
 
 export default function IndexPage() {

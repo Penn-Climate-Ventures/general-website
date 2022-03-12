@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import s from "styled-components"
 import './carousel-styles.scss'
-import { LIGHT_BLUE } from "../../utils/constants"
+import { LIGHT_BLUE } from "../utils/constants"
 
 const CarouselContainer = s.div`
   position: relative;

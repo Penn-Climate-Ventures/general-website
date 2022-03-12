@@ -8,7 +8,7 @@ import {
   News,
   Footer
 } from "../components"
-import {Email, Text, Title, UrlLink} from "../components/shared/Typography";
+import {Email, Text, Title, UrlLink} from "../ui/Typography";
 
 
 const CollaboratePage = () => {

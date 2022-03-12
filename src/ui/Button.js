@@ -1,5 +1,5 @@
 import s from 'styled-components'
-import {mediaMaxWidth, LIGHT_BLUE, WHITE} from "../../utils/constants"
+import {LIGHT_BLUE, WHITE} from "../utils/constants"
 
 export const Button = s.a`
   background-color: ${WHITE};

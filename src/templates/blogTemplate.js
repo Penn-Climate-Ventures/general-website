@@ -1,12 +1,13 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
-import {Footer, Layout, Navbar} from "../components"
-import Helmet from "react-helmet";
+import {Footer, Navbar} from "../Components"
+import {Layout} from "../ui/Layout"
+import Helmet from "react-helmet"
 import s from "styled-components"
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
 
 import "../styles/markdown.scss"
-import {Text, Title} from "../components/shared/Typography";
+import {Text, Title} from "../ui/Typography";
 
 const ArticleTitle = s(Title)`
   color: black;

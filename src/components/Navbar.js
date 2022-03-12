@@ -1,7 +1,7 @@
 import React, {Component } from 'react'
 import s from "styled-components"
 import Logo from '../images/pcv/logo.png'
-import {LIGHT_BLUE, TEXT_PRIMARY, TEXT_SECONDARY} from "../utils/constants"
+import {LIGHT_BLUE, TEXT_SECONDARY} from "../utils/constants"
 import {navLinks} from "../data/navigation";
 
 export const NavWrapper = s.div`

@@ -1,9 +1,9 @@
 import React from 'react'
 import s from "styled-components"
 
-import { LIGHT_BLUE, DARK_BLUE } from "../utils/constants"
+import { LIGHT_BLUE } from "../utils/constants"
 import { navLinks, smLinks } from "../data/navigation"
-import {WideLayout} from "./shared/Layout";
+import {WideLayout} from "../ui/Layout";
 
 
 const FooterWrapper = s.footer`

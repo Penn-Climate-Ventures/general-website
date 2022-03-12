@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import s from "styled-components"
-import {Subtitle, Text, UrlLink} from "./shared/Typography";
+import {Subtitle, Text, UrlLink} from "../ui/Typography";
 
 // consulting
 import BanyanInfrastructure from "../images/partners/banyanInfrastructure.png"
@@ -11,7 +11,6 @@ import PowerAdvocate from "../images/partners/powerAdvocate.png"
 
 // internships
 import ClimateBase from "../images/partners/climateBase.png"
-import {LIGHT_BLUE} from "../utils/constants";
 
 const PartnersLayout = s.div`
   display: grid;

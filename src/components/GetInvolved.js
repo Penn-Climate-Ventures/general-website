@@ -1,8 +1,7 @@
 import React from "react";
-import s from "styled-components";
-import { useContainerDimensions } from "./shared/useContainerDimensions";
-import {Subtitle, Text, Title} from "./shared/Typography";
-import Button, {ButtonInverted} from "./shared/Button";
+import { useContainerDimensions } from "../ui/useContainerDimensions";
+import {Subtitle} from "../ui/Typography";
+import {ButtonInverted} from "../ui/Button";
 import {TEXT_PRIMARY_INV} from "../utils/constants";
 
 export const GetInvolved = () => {

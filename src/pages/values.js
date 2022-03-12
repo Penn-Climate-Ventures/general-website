@@ -6,7 +6,7 @@ import {
   Navbar,
   Footer
 } from "../components"
-import {Text, Title} from "../components/shared/Typography";
+import {Text, Title} from "../ui/Typography";
 
 
 export default class ValuesPage extends Component {

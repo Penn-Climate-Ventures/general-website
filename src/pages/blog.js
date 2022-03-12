@@ -10,8 +10,8 @@ import {
   Footer,
 } from "../components"
 
-import BlogCard from "../components/shared/BlogCard";
-import {Title} from "../components/shared/Typography";
+import BlogCard from "../ui/BlogCard";
+import {Title} from "../ui/Typography";
 
 const BlogCardLayout = s.div`
   margin: 30px auto auto auto;

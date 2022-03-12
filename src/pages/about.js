@@ -7,12 +7,12 @@ import {
   Navbar,
   Footer
 } from "../components"
-import Carousel from "../components/shared/Carousel";
-import {useContainerDimensions} from "../components/shared/useContainerDimensions";
+import Carousel from "../ui/Carousel";
+import {useContainerDimensions} from "../ui/useContainerDimensions";
 import s from "styled-components";
-import {BoxColumn} from "../components/shared/BoxColumn";
+import {BoxColumn} from "../ui/BoxColumn";
 import {LIGHT_BLUE} from "../utils/constants";
-import {Subtitle, Title} from "../components/shared/Typography";
+import {Subtitle, Title} from "../ui/Typography";
 
 const classTeamData = [
   {

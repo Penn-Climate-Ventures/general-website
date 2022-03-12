@@ -1,7 +1,7 @@
 import React from "react"
 import s from "styled-components"
-import {Button} from "./shared/Button";
-import {Email, Subtitle, Text} from "./shared/Typography";
+import {Button} from "../ui/Button";
+import {Email, Subtitle, Text} from "../ui/Typography";
 
 const JoinButton = s(Button)`
   margin: auto;

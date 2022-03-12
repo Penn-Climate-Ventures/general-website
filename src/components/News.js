@@ -1,9 +1,9 @@
 import React from "react"
 import s from "styled-components"
-import Carousel from "../components/shared/Carousel"
-import { useContainerDimensions } from "./shared/useContainerDimensions"
-import Tile from "./shared/Tile";
-import {Subtitle} from "./shared/Typography";
+import Carousel from "../ui/Carousel"
+import { useContainerDimensions } from "../ui/useContainerDimensions"
+import Tile from "../ui/Tile";
+import {Subtitle} from "../ui/Typography";
 
 
 const articleItems = [

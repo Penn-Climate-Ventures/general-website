@@ -7,7 +7,7 @@ import {
   Footer,
 } from "../components"
 
-import {Subtitle, Text, Title, UrlLink} from "../components/shared/Typography";
+import {Subtitle, Text, Title, UrlLink} from "../ui/Typography";
 
 const GetInvolvedPage = () => {
   return (

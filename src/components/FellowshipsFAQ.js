@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import s from "styled-components"
 import {LIGHT_BLUE} from "../utils/constants";
-import {Subtitle, Text} from "./shared/Typography";
+import {Subtitle, Text} from "../ui/Typography";
 
 
 const Question = s.summary`

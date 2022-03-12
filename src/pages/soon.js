@@ -6,7 +6,7 @@ import {
   Navbar,
   Footer
 } from "../components"
-import {Title} from "../components/shared/Typography";
+import {Title} from "../ui/Typography";
 
 export default class Soon extends Component {
   render() {

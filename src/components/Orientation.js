@@ -1,10 +1,10 @@
 import React from "react"
 import s from "styled-components"
-import { BoxHeading, BoxColumn } from "./shared/BoxColumn"
+import { BoxHeading, BoxColumn } from "../ui/BoxColumn"
 import { LIGHT_BLUE } from "../utils/constants"
-import Carousel from "./shared/Carousel";
-import {useContainerDimensions} from "./shared/useContainerDimensions";
-import {Subtitle} from "./shared/Typography";
+import Carousel from "../ui/Carousel";
+import {useContainerDimensions} from "../ui/useContainerDimensions";
+import {Subtitle} from "../ui/Typography";
 
 const OrientationColumn = s(BoxColumn)`
   width: 230px;

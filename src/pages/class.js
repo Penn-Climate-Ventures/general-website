@@ -5,11 +5,10 @@ import "../styles/base.scss"
 import {
   Layout,
   Navbar,
-  PastWorkshops,
   UpcomingWorkshops,
   Footer,
 } from "../components"
-import {Text, Title} from "../components/shared/Typography";
+import {Text, Title} from "../ui/Typography";
 
 
 const ClassPage = () => {

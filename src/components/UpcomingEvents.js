@@ -1,7 +1,6 @@
 import React from "react";
-import s from "styled-components";
-import { useContainerDimensions } from "./shared/useContainerDimensions";
-import {Subtitle, Text, Title} from "./shared/Typography";
+import { useContainerDimensions } from "../ui/useContainerDimensions";
+import {Subtitle} from "../ui/Typography";
 
 export const UpcomingEvents = () => {
   const componentRef = React.useRef();

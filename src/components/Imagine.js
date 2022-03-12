@@ -5,7 +5,7 @@ import homeBg2 from "../images/home-backgrounds/home-bg-2.jpg"
 import homeBg3 from "../images/home-backgrounds/home-bg-3.jpg"
 import homeBg4 from "../images/home-backgrounds/home-bg-4.jpg"
 import scrollDown from "../images/icons/scroll-down.png"
-import {Text} from "./shared/Typography";
+import {Text} from "../ui/Typography";
 
 const Buffer = s.div`
   height: 40vh;

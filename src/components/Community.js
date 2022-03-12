@@ -1,10 +1,10 @@
 import React from "react";
 import s from "styled-components";
-import { BoxHeading, BoxColumn } from "./shared/BoxColumn";
-import Button from "../components/shared/Button";
+import { BoxHeading, BoxColumn } from "../ui/BoxColumn";
+import Button from "../ui/Button";
 import { LIGHT_BLUE } from "../utils/constants";
-import { useContainerDimensions } from "./shared/useContainerDimensions";
-import {Subtitle, Text} from "./shared/Typography";
+import { useContainerDimensions } from "../ui/useContainerDimensions";
+import {Subtitle, Text} from "../ui/Typography";
 
 const CommunityColumn = s(BoxColumn)`
   width: 450px;

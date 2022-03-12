@@ -1,6 +1,6 @@
 import React from 'react'
 import s from "styled-components"
-import { GREEN, LIGHT_BLUE } from "../../utils/constants"
+import { LIGHT_BLUE } from "../utils/constants"
 import { Text} from "./Typography"
 
 

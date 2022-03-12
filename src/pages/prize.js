@@ -8,10 +8,10 @@ import {
   Navbar,
   Footer,
 } from "../components"
-import { Button } from "../components/shared/Button"
+import { Button } from "../ui/Button"
 
 import { LIGHT_BLUE } from "../utils/constants"
-import {Text, Title} from "../components/shared/Typography";
+import {Text, Title} from "../ui/Typography";
 
 
 const PrizeButtonContainer = s.div`

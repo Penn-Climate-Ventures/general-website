@@ -2,8 +2,8 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import s from "styled-components"
-import {TEXT, TEXT_MUTED} from "../../utils/constants";
-import {SubText, Text} from "./Typography";
+import {TEXT_PRIMARY, TEXT_MUTED} from "../utils/constants";
+import {SubText} from "./Typography";
 
 const CardLayout = s.div`
   border-top: 1px solid #e6e6e6;
@@ -50,7 +50,7 @@ const PublishingInfo = s.div`
 `
 
 const Description = s.p`
-  color: ${TEXT};
+  color: ${TEXT_PRIMARY};
 `
 
 const BlogCard = ({ node }) => {

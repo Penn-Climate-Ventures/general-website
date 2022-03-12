@@ -1,5 +1,5 @@
 import s from "styled-components"
-import {DARK_BLUE, LIGHT_BLUE, TEXT_PRIMARY} from "../../utils/constants"
+import {DARK_BLUE, LIGHT_BLUE, TEXT_PRIMARY} from "../utils/constants"
 import React from "react";
 
 

@@ -1,9 +1,9 @@
 import React from "react"
 import s from "styled-components"
-import Tile from "../components/shared/Tile"
-import {useContainerDimensions} from "./shared/useContainerDimensions";
-import {Button} from "./shared/Button";
-import {Subtitle} from "./shared/Typography";
+import Tile from "../ui/Tile"
+import {useContainerDimensions} from "../ui/useContainerDimensions";
+import {Button} from "../ui/Button";
+import {Subtitle} from "../ui/Typography";
 
 
 const cardItems = [
