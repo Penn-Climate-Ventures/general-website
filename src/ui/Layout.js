@@ -60,7 +60,7 @@ export const Wave = ({color, rotation}) => {
   return (
     <WaveWrapper color={color} style={{transform: "scale(" + rotation + ")"}}>
       <svg viewBox="0 0 500 100" preserveAspectRatio="xMinYMin meet">
-        <path d="M0,50 C100,150 300,0 500,50 L500,00 L0,0 Z" style={{stroke: "none", fill: color}}></path>
+        <path d="M0,50 C100,100 300,0 500,50 L500,00 L0,0 Z" style={{stroke: "none", fill: color}}></path>
       </svg>
     </WaveWrapper>
   )

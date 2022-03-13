@@ -1,6 +1,6 @@
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import React from "react"
-import {Footer, Navbar} from "../Components"
+import {Footer, Navbar} from "../components"
 import {Layout} from "../ui/Layout"
 import Helmet from "react-helmet"
 import s from "styled-components"
