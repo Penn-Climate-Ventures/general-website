@@ -16,12 +16,14 @@ export const Subtitle = s.h2`
   color: ${({fontColor}) => fontColor || LIGHT_BLUE};
   ${({bold}) => bold && `font-weight: bold`};
   ${({center}) => center && `text-align: center`};
+  letter-spacing: 0.05ch;
   text-transform: uppercase;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 `
 
 export const Text = s.p`
+  font-family: 'Montserrat';
   font-size:${({ fontSize }) => fontSize || `1rem`};
   color: ${({fontColor}) => fontColor || 'var(--c-text-primary)'};
   ${({bold}) => bold && `font-weight: bold`};

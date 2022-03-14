@@ -7,7 +7,8 @@ import {TEXT_PRIMARY_INV} from "../utils/constants";
 import getinvolved1 from "../images/getinvolved1.png";
 import getinvolved2 from "../images/getinvolved2.png";
 
-const Involvements = s.div`
+const InvolvementWrapper = s.div`
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16,12 +17,17 @@ const Involvements = s.div`
 `
 
 const Involvement = s.div`
-  border: 1px solid red; // temp to see bounds of the div
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 30px;
   align-items: center;
+`
+
+const InvolvementImage = s.img`
+  height: auto;
+  width: ${({ width }) => width || `90px`};
 `
 
 export const GetInvolved = () => {
@@ -31,16 +37,16 @@ export const GetInvolved = () => {
   return (
     <div ref={componentRef}>
       <Subtitle fontColor={TEXT_PRIMARY_INV}>Get Involved</Subtitle>
-      <Involvements>
+      <InvolvementWrapper>
         <Involvement>
-          <img src={getinvolved1}/>
+          <InvolvementImage src={getinvolved1}/>
           <ButtonInverted href="" target="_blank" rel="noreferrer noopener">Sign up for our newsletter</ButtonInverted>
         </Involvement>
         <Involvement>
-          <img src={getinvolved2}/>
+          <InvolvementImage src={getinvolved2} width="100px"/>
           <ButtonInverted href="" target="_blank" rel="noreferrer noopener">Join a team</ButtonInverted>
         </Involvement>
-      </Involvements>
+      </InvolvementWrapper>
     </div>
   );
 };

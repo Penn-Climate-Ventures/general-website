@@ -40,7 +40,7 @@ const HeroTextWrapper = s.div`
 const HeroText = s(Subtitle)`
   font-size: 1.5rem;
   text-transform: none;
-  margin: 10px 1ch 10px 0;
+  margin: 10px 0.75ch 10px 0;
   padding: 0 0;
 `
 
@@ -68,9 +68,13 @@ const TextSpinner = s.div`
     100% { -webkit-transform: rotateY(360deg); }
   }
   @keyframes rotateText {
+    20%  { -ms-transform: rotateX(90deg);   transform: rotateX(90deg);  }
     25%  { -ms-transform: rotateX(90deg);   transform: rotateX(90deg);  }
+    45%  { -ms-transform: rotateX(180deg);  transform: rotateX(180deg); }
     50%  { -ms-transform: rotateX(180deg);  transform: rotateX(180deg); }
+    70%  { -ms-transform: rotateX(270deg);  transform: rotateX(270deg); }
     75%  { -ms-transform: rotateX(270deg);  transform: rotateX(270deg); }
+    95%  { -ms-transform: rotateX(360deg);  transform: rotateX(360deg); }
     100% { -ms-transform: rotateX(360deg);  transform: rotateX(360deg); }
   }
 `

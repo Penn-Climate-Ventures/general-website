@@ -4,6 +4,7 @@ import './carousel-styles.scss'
 import { LIGHT_BLUE } from "../utils/constants"
 
 const CarouselContainer = s.div`
+  margin-top: 60px;
   position: relative;
   -webkit-user-select: none;
   -khtml-user-select: none;
