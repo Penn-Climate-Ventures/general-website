@@ -26,6 +26,12 @@ const Rectangle = s.div`
   background: #FFFFFF;
   box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.2);
   border-radius: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 `
 
 export const WhatWeDo = () => {
