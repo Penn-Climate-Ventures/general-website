@@ -1,7 +1,7 @@
 import React from "react";
 import s from "styled-components";
 import { useContainerDimensions } from "../ui/useContainerDimensions";
-import {Subtitle, Text} from "../ui/Typography";
+import {Subtitle, Text, UrlLink} from "../ui/Typography";
 import {LIGHT_BLUE, TEXT_PRIMARY_INV} from "../utils/constants";
 import whatwedo1 from "../images/whatwedo1.png";
 import whatwedo2 from "../images/whatwedo2.png";
@@ -22,13 +22,20 @@ const DoBox = s.div`
   background: var(--c-bg-0);
   box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  padding: 15px 30px;
+  padding: 15px 30px 30px 30px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  
+  transition: all 0.3s;
+  
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px 10px rgba(0, 0, 0, 0.2);
+  }
 `
 
 const DoLabel = s.div`
@@ -57,19 +64,19 @@ export const WhatWeDo = () => {
       <Subtitle fontColor={TEXT_PRIMARY_INV}>What We Do</Subtitle>
       <DoWrapper>
         <DoBox>
-          <DoLabel><Text fontColor={LIGHT_BLUE}>Workshops</Text></DoLabel>
+          <DoLabel><Text><UrlLink href="/class">Workshops</UrlLink></Text></DoLabel>
           <DoImage src={whatwedo1}/>
-          <Text>Brief description</Text>
+          {/*<Text>Brief description</Text>*/}
         </DoBox>
         <DoBox>
-          <DoLabel><Text fontColor={LIGHT_BLUE}>Competitions</Text></DoLabel>
+          <DoLabel><Text><UrlLink href="/prize">Competitions</UrlLink></Text></DoLabel>
           <DoImage src={whatwedo2}/>
-          <Text>Brief description</Text>
+          {/*<Text>Brief description</Text>*/}
         </DoBox>
         <DoBox>
-          <DoLabel><Text fontColor={LIGHT_BLUE}>Fellowships</Text></DoLabel>
+          <DoLabel><Text><UrlLink href="/fellowships">Fellowships</UrlLink></Text></DoLabel>
           <DoImage src={whatwedo3}/>
-          <Text>Brief description</Text>
+          {/*<Text>Brief description</Text>*/}
         </DoBox>
       </DoWrapper>
     </div>

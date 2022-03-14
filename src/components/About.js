@@ -12,6 +12,7 @@ const GoalWrapper = s.div`
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 60px;
+  row-gap: 30px;
   justify-content: space-evenly;
 `
 
