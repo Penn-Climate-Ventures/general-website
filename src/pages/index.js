@@ -15,6 +15,7 @@ import {GetInvolved} from "../components/GetInvolved";
 import {Hero} from "../components/Hero";
 import {About} from "../components/About";
 import {LIGHT_BLUE} from "../utils/constants";
+import {Testimonials} from "../components/Testimonials";
 
 
 export default function IndexPage() {
@@ -28,6 +29,7 @@ export default function IndexPage() {
       <WideLayout><UpcomingEvents/></WideLayout>
       <WavyLayout color={LIGHT_BLUE}><GetInvolved/></WavyLayout>
       <WideLayout><News/></WideLayout>
+      <WavyLayout color={LIGHT_BLUE}><Testimonials/></WavyLayout>
       <Footer />
     </>
   )
