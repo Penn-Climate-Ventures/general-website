@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 
 import {
   Layout,
@@ -8,11 +7,12 @@ import {
 } from "../components"
 
 import {Subtitle, Text, Title, UrlLink} from "../ui/Typography";
+import SEO from "../components/seo";
 
 const GetInvolvedPage = () => {
   return (
     <>
-      <Helmet title="Penn Climate Ventures | Get Involved" defer={false} />
+      <SEO title="Get Involved" defer={false} />
       <Navbar />
       <Layout>
         <Title>Get Involved</Title>

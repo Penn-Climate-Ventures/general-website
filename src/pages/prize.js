@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import s from "styled-components"
 import "../styles/base.scss"
 
@@ -12,6 +11,7 @@ import { Button } from "../ui/Button"
 
 import { LIGHT_BLUE } from "../utils/constants"
 import {Text, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 
 const PrizeButtonContainer = s.div`
@@ -39,7 +39,7 @@ const Rule = s.span`
 const PrizePage = () => {
   return (
     <>
-    <Helmet title="Penn Climate Ventures | Prize" defer={false} />
+    <SEO title="Prize" defer={false} />
     <Navbar />
     <Layout>
       <Title>Prize</Title>

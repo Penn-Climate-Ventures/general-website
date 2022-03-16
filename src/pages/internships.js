@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 
 import {
   WideLayout,
@@ -7,11 +6,12 @@ import {
   Footer, Layout
 } from "../components"
 import {Email, Text, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 const InternshipsPage = () => {
   return (
     <>
-      <Helmet title="Penn Climate Ventures | Internships" defer={false} />
+      <SEO title="Internships" defer={false} />
       <Navbar />
       <Layout>
         <Title>Internships</Title>

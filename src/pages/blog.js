@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Helmet from "react-helmet"
 import "../styles/base.scss"
 import s from "styled-components"
 
@@ -13,6 +12,7 @@ import {
 import BlogCard from "../ui/BlogCard";
 import {Title} from "../ui/Typography";
 import {Layout} from "../ui/Layout";
+import SEO from "../components/seo";
 
 const BlogCardLayout = s.div`
   margin: auto;
@@ -26,7 +26,7 @@ const BlogCardLayout = s.div`
 const BlogPage = ({ data }) => {
   return (
     <>
-    <Helmet title="Penn Climate Ventures | Blog" defer={false} />
+    <SEO title="Blog" defer={false} />
     <Navbar />
     <Layout>
       <Title>Blog</Title>

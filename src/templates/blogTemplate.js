@@ -2,12 +2,12 @@ import { graphql } from "gatsby"
 import React from "react"
 import {Footer, Navbar} from "../components"
 import {Layout} from "../ui/Layout"
-import Helmet from "react-helmet"
 import s from "styled-components"
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
 
 import "../styles/markdown.scss"
 import {Text, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 const ArticleTitle = s(Title)`
   color: black;
@@ -46,7 +46,7 @@ export default function BlogTemplate ({ data }) {
 
   return (
     <Layout>
-      <Helmet title="Penn Climate Ventures" defer={false} />
+      <SEO title={fm.title} defer={false} />
       <Navbar />
       {coverImageData &&
         <CoverImage>

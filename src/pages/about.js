@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import "../styles/base.scss"
 
 import {
@@ -13,6 +12,7 @@ import s from "styled-components";
 import {BoxColumn} from "../ui/BoxColumn";
 import {LIGHT_BLUE} from "../utils/constants";
 import {Subtitle, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 const classTeamData = [
   {
@@ -200,7 +200,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <Helmet title="Penn Climate Ventures | About" defer={false} />
+      <SEO title="About" defer={false} />
       <Navbar />
       <Layout>
         <Title>About Us</Title>

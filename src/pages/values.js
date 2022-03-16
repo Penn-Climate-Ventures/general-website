@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import Helmet from "react-helmet"
 
 import {
   Layout,
@@ -7,13 +6,14 @@ import {
   Footer
 } from "../components"
 import {Text, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 
 export default class ValuesPage extends Component {
   render() {
     return (
       <Layout>
-        <Helmet title="Penn Climate Ventures | Values" defer={false} />
+        <SEO title="Values" defer={false} />
         <Navbar />
         <Title>Our Values</Title>
 

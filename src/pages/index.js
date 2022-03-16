@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import "../styles/base.scss"
 
 import {
@@ -16,12 +15,13 @@ import {Hero} from "../components/Hero";
 import {About} from "../components/About";
 import {LIGHT_BLUE} from "../utils/constants";
 import {Testimonials} from "../components/Testimonials";
+import SEO from "../components/seo";
 
 
 export default function IndexPage() {
   return (
     <>
-      <Helmet title="Penn Climate Ventures | Home" defer={false} />
+      <SEO title="Home" defer={false} />
       <Navbar />
       <Hero/>
       <WideLayout><About/></WideLayout>

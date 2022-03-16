@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import Helmet from "react-helmet"
 
 import {
   Layout,
@@ -9,13 +8,14 @@ import {
 import {ProjectsAndPartners} from "../components/ProjectsAndPartners";
 import {FellowshipsFAQ} from "../components/FellowshipsFAQ";
 import {Email, Subtitle, Text, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 
 export default class ClassPage extends Component {
   render() {
     return (
       <>
-      <Helmet title="Penn Climate Ventures | Fellowships" defer={false} />
+      <SEO title="Fellowships" defer={false} />
       <Navbar />
       <Layout>
         <Title>Fellowships</Title>

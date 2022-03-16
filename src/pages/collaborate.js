@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import "../styles/base.scss"
 
 import {
@@ -9,12 +8,13 @@ import {
   Footer
 } from "../components"
 import {Email, Text, Title, UrlLink} from "../ui/Typography";
+import SEO from "../components/seo";
 
 
 const CollaboratePage = () => {
   return (
     <>
-    <Helmet title="Penn Climate Ventures | Collaborate" defer={false} />
+    <SEO title="Collaborate" defer={false} />
     <Navbar />
     <Layout>
       <Title>Collaborate</Title>

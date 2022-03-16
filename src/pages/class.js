@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import "../styles/base.scss"
 
 import {
@@ -9,12 +8,13 @@ import {
   Footer,
 } from "../components"
 import {Text, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 
 const ClassPage = () => {
   return (
     <>
-    <Helmet title="Penn Climate Ventures | Class" defer={false} />
+    <SEO title="Class" defer={false} />
     <Navbar />
     <Layout>
       <Title>Class</Title>

@@ -1,13 +1,13 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Helmet from "react-helmet";
 import {Footer, Layout, Navbar} from "../components";
 import {Text, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 const NotFoundPage = () => {
   return (
     <>
-      <Helmet title="Penn Climate Ventures | Not Found" defer={false} />
+      <SEO title="Not Found" defer={false} />
       <Navbar />
       <Layout>
         <Title>404 Not Found</Title>
