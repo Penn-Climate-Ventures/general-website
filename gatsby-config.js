@@ -11,7 +11,7 @@ module.exports = {
       "tech",
       "Penn"
     ],
-    image: "src/images/pcv/logo.png"
+    image: "/web_preview.png"
   },
   plugins: [
     "gatsby-plugin-styled-components",
