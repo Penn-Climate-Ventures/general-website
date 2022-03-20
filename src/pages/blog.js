@@ -1,41 +1,44 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Helmet from "react-helmet"
-import "./styles.scss"
+import "../styles/base.scss"
 import s from "styled-components"
 
 import {
   WideLayout,
   Navbar,
-  PageTitle,
   Footer,
 } from "../components"
 
-import BlogCard from "../components/shared/BlogCard";
+import BlogCard from "../ui/BlogCard";
+import {Title} from "../ui/Typography";
+import {Layout} from "../ui/Layout";
+import SEO from "../components/seo";
 
 const BlogCardLayout = s.div`
-  margin: 30px auto auto auto;
+  margin: auto;
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
   column-gap: 60px;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 `
 
 const BlogPage = ({ data }) => {
   return (
     <>
-    <Helmet title="Penn Climate Ventures" defer={false} />
+    <SEO title="Blog" defer={false} />
     <Navbar />
+    <Layout>
+      <Title>Blog</Title>
+    </Layout>
     <WideLayout>
-      <PageTitle>Blog</PageTitle>
       <BlogCardLayout>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <BlogCard node={node} />
         ))}
       </BlogCardLayout>
-      <Footer />
     </WideLayout>
+    <Footer />
     </>
   )
 }

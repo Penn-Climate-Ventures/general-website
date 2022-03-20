@@ -1,11 +1,11 @@
 import React, {useEffect, useRef, useState} from "react"
 import s from "styled-components"
-import { TextP } from "./shared/Layout"
-import homeBg1 from "../images/home-backgrounds/home-bg-6.jpg"
+import homeBg1 from "../images/home-backgrounds/home-bg-1.jpg"
 import homeBg2 from "../images/home-backgrounds/home-bg-2.jpg"
 import homeBg3 from "../images/home-backgrounds/home-bg-3.jpg"
 import homeBg4 from "../images/home-backgrounds/home-bg-4.jpg"
-import scrollDown from "../images/scroll-down.png"
+import scrollDown from "../images/icons/scroll-down.png"
+import {Text} from "../ui/Typography";
 
 const Buffer = s.div`
   height: 40vh;
@@ -44,7 +44,12 @@ const SlideContent  = s.div`
   }
 `
 
-const ImagineText = s(TextP)`
+const ArrowImage = s.img`
+  height: 100%;
+  width: 100%;
+`
+
+const ImagineText = s(Text)`
   font-family: "Metropolis";
   color: white;
   font-size: 1.5rem;
@@ -110,7 +115,7 @@ const Imagine = () => {
           </ImagineText>
         </SlideContent>
         <ScrollDownHint>
-          <img src={scrollDown} alt="scroll down"/>
+          <ArrowImage src={scrollDown} alt="scroll down"/>
         </ScrollDownHint>
       </Slide>
       <Buffer/>

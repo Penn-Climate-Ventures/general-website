@@ -1,21 +1,21 @@
 import React, {Component} from "react"
-import Helmet from "react-helmet"
 
 import {
   Layout,
   Navbar,
-  PageTitle,
   Footer
 } from "../components"
+import {Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 export default class Soon extends Component {
   render() {
     return (
       <>
-      <Helmet title="Penn Climate Ventures" defer={false} />
+      <SEO title="Coming Soon!" defer={false} />
       <Navbar />
       <Layout>
-        <PageTitle>This page is coming soon!</PageTitle>
+        <Title>This page is coming soon!</Title>
         <Footer />
       </Layout>
       </>

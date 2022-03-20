@@ -1,37 +1,35 @@
 import React from "react"
-import Helmet from "react-helmet"
-import "./styles.scss"
+import "../styles/base.scss"
 
 import {
   Layout,
   Navbar,
-  PageTitle,
-  TextP,
-  Email,
   News,
-  Footer, UrlLink,
+  Footer
 } from "../components"
+import {Email, Text, Title, UrlLink} from "../ui/Typography";
+import SEO from "../components/seo";
 
 
 const CollaboratePage = () => {
   return (
     <>
-    <Helmet title="Penn Climate Ventures" defer={false} />
+    <SEO title="Collaborate" defer={false} />
     <Navbar />
     <Layout>
-      <PageTitle>Collaborate</PageTitle>
-      <TextP bold="true">
+      <Title>Collaborate</Title>
+      <Text bold>
         Club Co-Sponsor, Speak/Mentor/Judge/Advise Interest, Corporate Sponsor Interest, Donate
-      </TextP>
-      <TextP>
+      </Text>
+      <Text>
         If you or your group would like to support us, please contact us at <Email/> with a
         statement of your area of interest and your involvement capacities.
-      </TextP>
-      <TextP>If you have press inquiries, please contact us at <Email/>.</TextP>
-      <TextP>
+      </Text>
+      <Text>If you have press inquiries, please contact us at <Email/>.</Text>
+      <Text>
         If you would like to submit a piece to the blog, please email{' '}
         <UrlLink href={'mailto:preeths@sas.upenn.edu'}>preeths@sas.upenn.edu</UrlLink>.
-      </TextP>
+      </Text>
       <News />
       <Footer />
     </Layout>

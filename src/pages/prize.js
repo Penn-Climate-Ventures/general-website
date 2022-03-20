@@ -1,18 +1,17 @@
 import React from "react"
-import Helmet from "react-helmet"
 import s from "styled-components"
-import "./styles.scss"
+import "../styles/base.scss"
 
 import {
   Layout,
   Navbar,
-  PageTitle,
-  TextP,
   Footer,
 } from "../components"
-import { ActionButton } from "../components/shared/Button"
+import { Button } from "../ui/Button"
 
 import { LIGHT_BLUE } from "../utils/constants"
+import {Text, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 
 const PrizeButtonContainer = s.div`
@@ -40,28 +39,28 @@ const Rule = s.span`
 const PrizePage = () => {
   return (
     <>
-    <Helmet title="Penn Climate Ventures" defer={false} />
+    <SEO title="Prize" defer={false} />
     <Navbar />
     <Layout>
-      <PageTitle>Prize</PageTitle>
-      <TextP bold="true">
+      <Title>Prize</Title>
+      <Text bold>
         Catalyzing climate innovation at Penn.
-      </TextP>
-      <TextP>
+      </Text>
+      <Text>
         The prize team organizes (1) a Penn-only competition focused on climate
         tech ideation in the Fall and (2) a global pitch competition in the
         spring.
-      </TextP>
+      </Text>
       <PrizeButtonContainer>
-        <ActionButton rel="noreferrer noopener"
+        <Button rel="noreferrer noopener"
                       target="_blank"
-                      href="https://ideathon.pennclimateventures.org/">PCV Ideathon</ActionButton>
+                      href="https://ideathon.pennclimateventures.org/">PCV Ideathon</Button>
         <Rule />
-        <ActionButton rel="noreferrer noopener"
+        <Button rel="noreferrer noopener"
                       target="_blank"
                       href="https://prize.pennclimateventures.org/">
           PCV Prize Competition
-        </ActionButton>
+        </Button>
       </PrizeButtonContainer>
       <Footer />
     </Layout>

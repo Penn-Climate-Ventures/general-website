@@ -1,15 +1,14 @@
 import React, {Component } from 'react'
 import s from "styled-components"
-import Logo from '../images/logo.png'
-import { LIGHT_BLUE } from "../utils/constants"
-import {navLinks, smLinks} from "../data/navigation";
+import Logo from '../images/pcv/logo.png'
+import {LIGHT_BLUE} from "../utils/constants"
+import {navLinks} from "../data/navigation";
 
-export const NavWrapper = s.nav`
+export const NavWrapper = s.div`
   background-color: rgba(255,255,255,0.97);
   box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
   height: 75px;
   width: 100%;
-  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,10 +20,10 @@ export const NavWrapper = s.nav`
 `
 
 const NavBrand = s.a`
+  margin-left: 30px;
 `
 
 const NavBrandImg = s.img`
-  margin-top: 10px;
   height: 25px;
   width: auto;
 `
@@ -35,6 +34,7 @@ const ToggleMenuButton = s.button`
   background-color: transparent;
   width: 40px;
   height: 40px;
+  margin-right: 30px;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -107,11 +107,12 @@ const NavLinks = s.div`
     height: 100%;
     align-items: center;
     padding: 0;
+    padding-right: 30px;
   }
 `
 
 export const NavButton = s.a`
-  color: black;
+  color: var(--c-text-secondary);
   font-weight: 600;
   margin: 10px 10px;
   cursor: pointer;
@@ -199,13 +200,6 @@ export class Navbar extends Component {
       maxHeight: 'none',
       top: '0'
     }
-    const navIconsOpenedStyle = {
-      padding: '1em',
-      maxHeight: 'none',
-      bottom: '0',
-      display: 'flex',
-      flexDirection: 'row'
-    }
 
     return (
       <nav>
@@ -225,13 +219,6 @@ export class Navbar extends Component {
               { navLinks.map( navLink => (
                 <NavButton rel="noreferrer noopener" href={navLink.url} >
                   {navLink.linkName}
-                </NavButton>
-              )) }
-            </NavLinks>
-            <NavLinks style={this.getOpened() ? navIconsOpenedStyle : null}>
-              { smLinks.map( smLink => (
-                <NavButton target="_blank" rel="noreferrer noopener" href={smLink.url} >
-                  {smLink.icon}
                 </NavButton>
               )) }
             </NavLinks>

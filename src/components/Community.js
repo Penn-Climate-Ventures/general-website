@@ -1,23 +1,15 @@
 import React from "react";
 import s from "styled-components";
-import { BoxHeading, BoxColumn } from "./shared/BoxColumn";
-import { SectionHeader } from "./shared/Layout";
-import Button from "../components/shared/Button";
+import { BoxHeading, BoxColumn } from "../ui/BoxColumn";
+import Button from "../ui/Button";
 import { LIGHT_BLUE } from "../utils/constants";
-import Carousel from "./shared/Carousel";
-import { useContainerDimensions } from "./shared/useContainerDimensions";
+import { useContainerDimensions } from "../ui/useContainerDimensions";
+import {Subtitle, Text} from "../ui/Typography";
 
 const CommunityColumn = s(BoxColumn)`
   width: 450px;
   margin-left: auto;
   margin-right: auto;
-`;
-
-const CommunityText = s.p`
-  font-size: 1rem;
-  line-height: 1rem;
-  margin-top: 10px;
-  margin-bottom: 20px;
 `;
 
 const CommunityButton = s(Button)`
@@ -36,16 +28,16 @@ const CommunityLayout = () => {
 
   return (
     <div ref={componentRef}>
-      <SectionHeader left={"left"}>
+      <Subtitle>
         Stay Up to Date On All Things PCV
-      </SectionHeader>
+      </Subtitle>
         <CommunityColumn center="true">
           <div>
             <BoxHeading>Subscribe to Our Newsletter</BoxHeading>
-            <CommunityText>
+            <Text>
               Sporadically sent out when we have interesting news and
               opportunities to share
-            </CommunityText>
+            </Text>
             <CommunityButton
               href="https://airtable.com/shrCCh7SJrYNsjeWT"
               rel="noreferrer noopener"
@@ -55,16 +47,6 @@ const CommunityLayout = () => {
             </CommunityButton>
           </div>
         </CommunityColumn>
-        {/*<BoxColumn center="true">*/}
-        {/*  <div>*/}
-        {/*    <BoxHeading>Subscribe to Prize Updates</BoxHeading>*/}
-        {/*    <CommunityText>*/}
-        {/*      Up to date news about the latest that's happening with our Prize*/}
-        {/*      Competition.*/}
-        {/*     </CommunityText>*/}
-        {/*    <CommunityButton href="/">email</CommunityButton>*/}
-        {/*  </div>*/}
-        {/*</BoxColumn>*/}
     </div>
   );
 };

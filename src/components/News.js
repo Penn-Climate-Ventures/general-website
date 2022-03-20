@@ -1,31 +1,43 @@
 import React from "react"
 import s from "styled-components"
-import {SectionHeader} from "./shared/Layout";
-import Carousel from "../components/shared/Carousel"
-import { useContainerDimensions } from "./shared/useContainerDimensions"
-import Tile from "./shared/Tile";
+import Carousel from "../ui/Carousel"
+import { useContainerDimensions } from "../ui/useContainerDimensions"
+import Tile from "../ui/Tile";
+import {Subtitle} from "../ui/Typography";
 
 
 const articleItems = [
   {
-    top: "PCV",
-    mid: "Penn Climate Ventures holds inaugural environmental tech startup competition",
-    midLink: "https://www.thedp.com/article/2021/04/penn-climate-ventures-impossible-foods",
-    bot: "Daily Pennsylvanian"
+    imgLink: "https://snworksceo.imgix.net/dpn/17408c7b-dbab-4f87-8ede-db45b8933a46.sized-1000x1000.jpg?w=800",
+    title: "Penn Climate Ventures holds inaugural environmental tech startup competition",
+    link: "https://www.thedp.com/article/2021/04/penn-climate-ventures-impossible-foods",
+    publisher: "Daily Pennsylvanian",
+    date: "Apr 26, 2021"
   },
   {
-    top: "PCV",
-    mid: "New student group looks to design Penn course on business solutions to climate crisis",
-    midLink: "https://www.thedp.com/article/2021/01/penn-climate-ventures-innovation-environment-sustainable",
-    bot: "Daily Pennsylvanian"
+    imgLink: "https://snworksceo.imgix.net/dpn/4ad60ade-ed53-436a-bb12-cd235b84bfd5.sized-1000x1000.jpg?w=800",
+    title: "New student group looks to design Penn course on business solutions to climate crisis",
+    link: "https://www.thedp.com/article/2021/01/penn-climate-ventures-innovation-environment-sustainable",
+    publisher: "Daily Pennsylvanian",
+    date: "Jan 29, 2021"
   },
   {
-    top: "Speaker",
-    mid: "How We Can Better Predict Weather Catastrophes",
-    midLink: "https://www.nytimes.com/2021/02/25/opinion/weather-forecast-climate-change.html",
-    bot: "New York Times"
+    imgLink: "https://static01.nyt.com/images/2021/02/24/opinion/24chatterjee/24chatterjee-facebookJumbo.jpg?year=2021&h=550&w=1050&s=3318cdf5414524ac4cfb0b6bd9f71fe4cdc13d13a77e290b369e4e2bf3181968&k=ZQJBKqZ0VN",
+    title: "How We Can Better Predict Weather Catastrophes",
+    link: "https://www.nytimes.com/2021/02/25/opinion/weather-forecast-climate-change.html",
+    publisher: "New York Times",
+    date: "Feb 25, 2021"
   },
 ]
+
+const FlexBox = s.div`
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+`
 
 const NewsLayout = () => {
   const componentRef = React.useRef()
@@ -33,15 +45,16 @@ const NewsLayout = () => {
 
   return (
     <div ref={componentRef}>
-      <SectionHeader left={"left"}>In the News</SectionHeader>
-      <Carousel show={Math.floor(width / 200)}>
+      <Subtitle left={"left"}>In the News</Subtitle>
+      <FlexBox>
           { articleItems.map( article => (
-            <Tile topText={article.top}
-                  midText={article.mid}
-                  midLink={article.midLink}
-                  botText={article.bot} />
+            <Tile imgLink={article.imgLink}
+                  topText={article.publisher}
+                  midText={article.title}
+                  midLink={article.link}
+                  botText={article.date} />
           )) }
-      </Carousel>
+      </FlexBox>
     </div>
   )
 }

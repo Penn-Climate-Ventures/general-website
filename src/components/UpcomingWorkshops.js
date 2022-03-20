@@ -1,9 +1,9 @@
 import React from "react"
 import s from "styled-components"
-import { SectionHeader } from "./shared/Layout"
-import Tile from "../components/shared/Tile"
-import {useContainerDimensions} from "./shared/useContainerDimensions";
-import {ActionButton} from "./shared/Button";
+import Tile from "../ui/Tile"
+import {useContainerDimensions} from "../ui/useContainerDimensions";
+import {Button} from "../ui/Button";
+import {Subtitle} from "../ui/Typography";
 
 
 const cardItems = [
@@ -76,16 +76,16 @@ const UpcomingWorkshopsLayout = () => {
 
   return (
     <div ref={componentRef}>
-      <SectionHeader>Upcoming Workshops</SectionHeader>
+      <Subtitle>Upcoming Workshops</Subtitle>
       <FlexContainer>
         { cardItems.map( card => (
           <Tile topText={card.top} midText={card.mid} botText={card.bot} />
         )) }
       </FlexContainer>
       <div css={`display: flex; justify-content: center; margin-top: 60px;`}>
-        <ActionButton rel="noreferrer noopener"
+        <Button rel="noreferrer noopener"
                       target="_blank"
-                      href="https://tinyurl.com/m5e7h4uj">RSVP Here!</ActionButton>
+                      href="https://tinyurl.com/m5e7h4uj">RSVP Here!</Button>
       </div>
     </div>
   )

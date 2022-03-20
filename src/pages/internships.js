@@ -1,27 +1,28 @@
 import React from "react"
-import Helmet from "react-helmet"
 
 import {
-  Layout,
+  WideLayout,
   Navbar,
-  PageTitle,
-  Footer, TextP, Email, WideLayout
+  Footer, Layout
 } from "../components"
+import {Email, Text, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 const InternshipsPage = () => {
   return (
     <>
-      <Helmet title="Penn Climate Ventures" defer={false} />
+      <SEO title="Internships" defer={false} />
       <Navbar />
-      <WideLayout>
-        <PageTitle>Internships</PageTitle>
+      <Layout>
+        <Title>Internships</Title>
         <br/>
-        <TextP>
+        <Text>
           Explore hand-picked internships in the climate and sustainability space, ranging from
           non-profits to established companies. Contact <Email/> if you wish to add your company or
           organization's opportunities.
-        </TextP>
-        <br/><br/>
+        </Text>
+      </Layout>
+      <WideLayout>
         <iframe className="airtable-embed"
           src="https://airtable.com/embed/shrfKreaRwGs2N50J?backgroundColor=cyan&layout=card&viewControls=on"
           frameBorder="0" onmousewheel="" width="100%"

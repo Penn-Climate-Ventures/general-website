@@ -6,8 +6,8 @@ export * from './Community'
 export * from './Team'
 export * from './Footer'
 
-export * from './shared/Layout'
-export * from './shared/Banner'
+export * from '../ui/Layout'
+export * from '../ui/Banner'
 // class.js
 export * from './UpcomingWorkshops'
 export * from './PastWorkshops'

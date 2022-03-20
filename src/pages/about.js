@@ -1,19 +1,18 @@
 import React from "react"
-import Helmet from "react-helmet"
-import "./styles.scss"
+import "../styles/base.scss"
 
 import {
   Layout,
   Navbar,
-  PageTitle,
-  TextP,
-  Footer, SectionHeader,
+  Footer
 } from "../components"
-import Carousel from "../components/shared/Carousel";
-import {useContainerDimensions} from "../components/shared/useContainerDimensions";
+import Carousel from "../ui/Carousel";
+import {useContainerDimensions} from "../ui/useContainerDimensions";
 import s from "styled-components";
-import {BoxColumn} from "../components/shared/BoxColumn";
+import {BoxColumn} from "../ui/BoxColumn";
 import {LIGHT_BLUE} from "../utils/constants";
+import {Subtitle, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
 const classTeamData = [
   {
@@ -201,11 +200,11 @@ const AboutPage = () => {
 
   return (
     <>
-      <Helmet title="Penn Climate Ventures" defer={false} />
+      <SEO title="About" defer={false} />
       <Navbar />
       <Layout>
-        <PageTitle>About Us</PageTitle>
-        <SectionHeader>People</SectionHeader>
+        <Title>About Us</Title>
+        <Subtitle>People</Subtitle>
         <div ref={componentRef}>
           <Carousel show={width / 240}>
             <TeamColumn round="true">

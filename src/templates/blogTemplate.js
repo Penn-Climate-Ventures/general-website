@@ -1,14 +1,15 @@
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import React from "react"
-import {Footer, Layout, Navbar, PageTitle, TextP} from "../components"
-import Helmet from "react-helmet";
+import {Footer, Navbar} from "../components"
+import {Layout} from "../ui/Layout"
 import s from "styled-components"
-import {TEXT_MUTED} from "../utils/constants";
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
 
-import "./markdown.scss"
+import "../styles/markdown.scss"
+import {Text, Title} from "../ui/Typography";
+import SEO from "../components/seo";
 
-const ArticleTitle = s(PageTitle)`
+const ArticleTitle = s(Title)`
   color: black;
   text-align: left;
   font-family: 'Lora', serif;
@@ -45,7 +46,7 @@ export default function BlogTemplate ({ data }) {
 
   return (
     <Layout>
-      <Helmet title="Penn Climate Ventures" defer={false} />
+      <SEO title={fm.title} defer={false} />
       <Navbar />
       {coverImageData &&
         <CoverImage>
@@ -58,10 +59,10 @@ export default function BlogTemplate ({ data }) {
 
         <PublishingInfo>
           <div>
-            <TextP>{fm.date}</TextP>
-            <TextP>{fm.readtime} min read; {fm.wordcount} words</TextP>
+            <Text>{fm.date}</Text>
+            <Text>{fm.readtime} min read; {fm.wordcount} words</Text>
           </div>
-          <TextP bold>Author: {fm.author}</TextP>
+          <Text bold>Author: {fm.author}</Text>
         </PublishingInfo>
 
         <div dangerouslySetInnerHTML={{ __html: article.html }} />

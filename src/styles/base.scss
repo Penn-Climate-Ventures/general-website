@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora-Medium.ttf");
+  font-style: normal;
+}
+
+// Colors
+
+:root {
+  --c-accent-primary: #217CFF;
+  --c-accent-secondary: #217CFF;
+  --c-text-primary: #333333;
+  --c-text-primary-inverted: #efefef;
+  --c-text-primary-muted: #75787a;
+  --c-text-secondary: #707070;
+  --c-text-secondary-inverted: #333;
+  --c-text-accent-primary: #333;
+  --c-text-accent-secondary: #333;
+  --c-text-warning: #333;
+  --c-text-disabled: #75787a;
+  --c-text-link-unclicked: #3A8EFB;
+  --c-text-link-hover: #1c78ee;
+  --c-text-link-clicked: #333;
+  --c-bg-0: #fff;
+  --c-bg-1: #ddd;
+  --c-bg-2: #bbb;
+  --c-bg-warning: #333;
+  --c-bg-disabled: #333;
+  --c-bg-overlay: #333;
+}
+
+// Default CSS styling
+
+body {
+  font-family: 'Lato', Avenir, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: var(--c-text-primary);
+}
+
+a {
+  color: var(--c-text-link-unclicked);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--c-text-link-hover);
+  }
+}

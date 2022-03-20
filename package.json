@@ -1,11 +1,16 @@
 {
-  "name": "pcv-prize-website",
+  "name": "pcv-website",
   "version": "1.0.0",
   "private": true,
-  "description": "PCV Prize Website",
-  "author": "sigmachirality",
+  "description": "Penn Climate Ventures",
+  "author": "PCV",
   "keywords": [
-    "gatsby"
+    "climate",
+    "environment",
+    "startup",
+    "venture",
+    "tech",
+    "Penn"
   ],
   "scripts": {
     "develop": "gatsby develop",
@@ -16,8 +21,6 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
-    "bulma": "^0.9.2",
-    "clear": "^0.1.0",
     "gatsby": "^3.11.1",
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-manifest": "^3.11.0",
@@ -38,5 +41,8 @@
     "react-scroll": "^1.8.2",
     "sass": "^1.32.8",
     "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "prop-types": "^15.8.1"
   }
 }

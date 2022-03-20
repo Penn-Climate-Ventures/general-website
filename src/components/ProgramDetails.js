@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import s from "styled-components"
-import { SectionHeader, TextP, Email } from "./shared/Layout";
 import { LIGHT_BLUE } from "../utils/constants"
+import {Subtitle, Text} from "../ui/Typography";
 
 const TabLayout = s.div`
   max-width: 800px;
@@ -64,11 +64,11 @@ export class ProgramDetails extends Component {
 
     return (
       <div>
-        <SectionHeader>Program Details</SectionHeader>
-        <TextP>PCV offers 2 tracks for students:</TextP>
+        <Subtitle>Program Details</Subtitle>
+        <Text>PCV offers 2 tracks for students:</Text>
 
-        <TextP bold>Consulting</TextP>
-        <TextP>
+        <Text bold>Consulting</Text>
+        <Text>
           <ul>
             <li>
               Groups of 4-5 students work on a semester-long project for a climate tech
@@ -86,11 +86,10 @@ export class ProgramDetails extends Component {
               Applications involve a written application and an interview with PCV
             </li>
           </ul>
-        </TextP>
+        </Text>
 
-        <p><TextP bold>Fast-Track Internships:</TextP></p>
-        <p>
-        <TextP>
+        <Text bold>Fast-Track Internships:</Text>
+        <Text>
           <ul>
             <li>
               1-2 students are selected to work closely with a founder in the climate space
@@ -107,11 +106,9 @@ export class ProgramDetails extends Component {
               interview with the founder
             </li>
           </ul>
-        </TextP>
-        </p>
+        </Text>
 
-        <p>
-        <TextP>
+        <Text>
           Please note that this program is separate from our leadership team. While leadership is a
           minimum year-long commitment, our Fellowships program is a semester long commitment - your
           commitment is tied to your project. We do this because our selection of projects varies
@@ -120,8 +117,7 @@ export class ProgramDetails extends Component {
           our Discord/all internal happenings/alum network, be invited to all socials and internal
           activities, and find a lifelong community of students passionate about climate,
           technology, and innovation.
-        </TextP>
-        </p>
+        </Text>
       </div>
     )
   }

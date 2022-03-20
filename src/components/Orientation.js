@@ -1,10 +1,10 @@
 import React from "react"
 import s from "styled-components"
-import { BoxHeading, BoxColumn } from "./shared/BoxColumn"
-import {SectionHeader} from "./shared/Layout";
+import { BoxHeading, BoxColumn } from "../ui/BoxColumn"
 import { LIGHT_BLUE } from "../utils/constants"
-import Carousel from "./shared/Carousel";
-import {useContainerDimensions} from "./shared/useContainerDimensions";
+import Carousel from "../ui/Carousel";
+import {useContainerDimensions} from "../ui/useContainerDimensions";
+import {Subtitle} from "../ui/Typography";
 
 const OrientationColumn = s(BoxColumn)`
   width: 230px;
@@ -40,7 +40,7 @@ const OrientationLayout = () =>  {
 
   return (
     <div ref={componentRef}>
-      <SectionHeader left={"left"}>Orientation</SectionHeader>
+      <Subtitle>Orientation</Subtitle>
       <Carousel show={width / 300}>
         <OrientationColumn round="true">
           <BoxHeading>PCV in 2025:</BoxHeading>
