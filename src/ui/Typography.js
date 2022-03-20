@@ -4,7 +4,7 @@ import React from "react";
 
 
 export const Title = s.h1`
-  font-size:${({ fontSize }) => fontSize || `1.7rem`};
+  font-size:${({ fontSize }) => fontSize || `2.5rem`};
   color: ${({fontColor}) => fontColor || 'var(--c-text-primary)'};
   font-weight: bold;
   text-align: center;
@@ -12,12 +12,11 @@ export const Title = s.h1`
 `
 
 export const Subtitle = s.h2`
-  font-size:${({ fontSize }) => fontSize || `1.3rem`};
+  font-size:${({ fontSize }) => fontSize || `1.8rem`};
   color: ${({fontColor}) => fontColor || LIGHT_BLUE};
   ${({bold}) => bold && `font-weight: bold`};
   ${({center}) => center && `text-align: center`};
   letter-spacing: 0.05ch;
-  text-transform: uppercase;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 `

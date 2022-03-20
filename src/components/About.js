@@ -37,7 +37,21 @@ export const About = () => {
   return (
     <div ref={componentRef}>
       <Subtitle>About Us</Subtitle>
-        <Text>Brief description to make it really obvious what PCV is and what its main purpose is</Text>
+      <Text>
+        Imagine a campus where students line up to work for the biggest movers in climate innovation.
+      </Text>
+      <Text>
+        Imagine a campus where sustainability and climate analyses are integrated into our course plans, just like intro statistics or calculus.
+      </Text>
+      <Text>
+        Imagine a campus where climate is just... common sense.
+      </Text>
+      <Text>
+        That's what we're building.
+      </Text>
+      <Text>
+        Let's push Penn into climate.
+      </Text>
       <Subtitle>Our Goals</Subtitle>
       <GoalWrapper>
         <Goal>

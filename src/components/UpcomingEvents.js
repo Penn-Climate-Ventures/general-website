@@ -1,6 +1,6 @@
 import React from "react";
 import { useContainerDimensions } from "../ui/useContainerDimensions";
-import {Subtitle} from "../ui/Typography";
+import {Subtitle, Text} from "../ui/Typography";
 
 export const UpcomingEvents = () => {
   const componentRef = React.useRef();
@@ -10,6 +10,7 @@ export const UpcomingEvents = () => {
     <div ref={componentRef}>
       <Subtitle>Upcoming Events</Subtitle>
       {/* insert iframe with link to Google Calendar */}
+      <Text>Coming soon, stay tuned!</Text>
     </div>
   );
 };

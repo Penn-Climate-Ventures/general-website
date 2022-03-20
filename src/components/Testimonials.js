@@ -14,7 +14,7 @@ const data = [
 ]
 
 const TestimonialWrapper = s.div`
-  margin: auto;
+  margin: 60px auto auto auto;
   display: flex;
   justify-content: center;
   max-width: 760px;

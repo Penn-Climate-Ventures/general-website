@@ -1,7 +1,7 @@
 import React from 'react'
 import s from "styled-components"
 import { LIGHT_BLUE } from "../utils/constants"
-import { Text} from "./Typography"
+import {Text, UrlLink} from "./Typography"
 
 
 export const TileBox = s.div`
@@ -11,7 +11,12 @@ export const TileBox = s.div`
   border-radius: 10px;
   box-shadow: 0 3px 15px 1px #00000016;
   text-align: center;
-  width: 150px;
+  width: 300px;
+  height: 100%;
+`
+
+const TileImage = s.img`
+  width: 100%;
 `
 
 const TileTopText = s(Text)`
@@ -20,13 +25,13 @@ const TileTopText = s(Text)`
   font-weight: 500;
 `
 
-const TileMidText = s.p`
+const TileMidText = s(Text)`
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 10px;
 `
-const TileMidLink= s.a`
-  color: black;
+const TileMidLink= s(UrlLink)`
+  color: var(--c-text-primary);
   font-weight: 600;
   display: block;
   margin-top: 10px;
@@ -34,13 +39,15 @@ const TileMidLink= s.a`
 `
 
 const TileBotText = s.p`
-  color: ${LIGHT_BLUE};
-  font-weight: bold;
+  color: var(--c-text-primary);
 `
 
 
-const Tile = ({ topText, midText, midLink, botText }) => (
+const Tile = ({ imgLink, topText, midText, midLink, botText }) => (
   <TileBox>
+    {imgLink &&
+      <TileImage src={imgLink} alt={topText}/>
+    }
     <TileTopText>{( topText )}</TileTopText>
     {midLink &&
     <TileMidLink href={midLink}>{( midText )}</TileMidLink>

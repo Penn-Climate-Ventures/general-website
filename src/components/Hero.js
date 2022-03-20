@@ -6,7 +6,7 @@ import {LIGHT_BLUE} from "../utils/constants";
 import HeroNodes from "../images/home-backgrounds/hero-nodes.png"
 
 const HeroLayout = s.div`
-  padding: 150px 0 30px 0;
+  padding: 200px 0 50px 0;
   background-color: ${LIGHT_BLUE};
   width: 100%;
 `
@@ -121,9 +121,9 @@ const HeroWave = () => {
   return (
     <div style={{marginTop: -10}}>
       <svg viewBox="0 0 500 80">
-        <path fill={LIGHT_BLUE} fill-opacity="1" d="M0.00,29.98 C160.27,94.97 219.52,21.08 500.00,29.98 L500.00,0.00 L0.00,0.00 Z"></path>
-        <path fill={LIGHT_BLUE} fill-opacity="0.6" d="M-1.12,68.32 C115.69,50.55 393.34,101.87 501.69,28.83 L500.00,0.00 L0.00,0.00 Z"></path>
-        <path fill={LIGHT_BLUE} fill-opacity="0.3" d="M0.00,54.37 C150.43,86.60 376.97,79.03 501.12,60.28 L500.00,0.00 L0.00,0.00 Z"></path>
+        <path fill={LIGHT_BLUE} fill-opacity="1" d="M0.00,19.98 C160.27,74.97 219.52,18.08 500.00,23.98 L500.00,0.00 L0.00,0.00 Z"></path>
+        <path fill={LIGHT_BLUE} fill-opacity="0.6" d="M-1.12,48.32 C115.69,30.55 393.34,81.87 501.69,8.83 L500.00,0.00 L0.00,0.00 Z"></path>
+        <path fill={LIGHT_BLUE} fill-opacity="0.3" d="M0.00,34.37 C150.43,66.60 376.97,59.03 501.12,40.28 L500.00,0.00 L0.00,0.00 Z"></path>
       </svg>
     </div>
   )
