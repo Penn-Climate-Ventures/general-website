@@ -5,6 +5,21 @@ import { Subtitle, Text } from "../ui/Typography";
 import goal1 from "../images/goal1.png";
 import goal2 from "../images/goal2.png";
 import goal3 from "../images/goal3.png";
+import {ImageFormatType} from "gatsby-plugin-image/graphql-utils";
+import gbmImage from "../images/gallery/gbm-2022-02-20.jpg"
+
+const AboutImageWrapper = s.div`
+  display: flex;
+  align-items: center;
+`
+
+const AboutImage = s.img`
+  width: 100%;
+  max-width: 800px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+`
 
 const GoalWrapper = s.div`
   margin-top: 60px;
@@ -37,6 +52,9 @@ export const About = () => {
   return (
     <div ref={componentRef}>
       <Subtitle>About Us</Subtitle>
+      <AboutImageWrapper>
+        <AboutImage src={gbmImage}/>
+      </AboutImageWrapper>
       <Text>
         Imagine a campus where students line up to work for the biggest movers in climate innovation.
       </Text>
