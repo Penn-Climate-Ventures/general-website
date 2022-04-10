@@ -4,9 +4,8 @@ import "../styles/base.scss"
 import {
   Layout,
   Navbar,
-  Footer
+  Footer, WavyHeader, PageLayout
 } from "../components"
-import {useContainerDimensions} from "../ui/useContainerDimensions";
 import s from "styled-components";
 import {Subtitle, Text, Title, UrlLink} from "../ui/Typography";
 import SEO from "../components/seo";
@@ -53,20 +52,18 @@ const Member = ({ member }) => (
 
 const AboutPage = () => {
   return (
-    <>
-      <SEO title="About" defer={false} />
-      <Navbar />
-      <Layout>
-        <Title>About Us</Title>
-        <Subtitle>People</Subtitle>
-        <TeamGallery>
-          {teamData.map(member => (
-            <Member member={member}/>
-          ))}
-        </TeamGallery>
-      </Layout>
-      <Footer />
-    </>
+    <PageLayout pageTitle="About Us" title="About">
+      <Subtitle>Mission & Vision</Subtitle>
+
+      <Subtitle>Our Story</Subtitle>
+
+      <Subtitle>People</Subtitle>
+      <TeamGallery>
+        {teamData.map(member => (
+          <Member member={member}/>
+        ))}
+      </TeamGallery>
+    </PageLayout>
   )
 }
 

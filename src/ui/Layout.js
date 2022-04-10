@@ -1,5 +1,9 @@
 import React from "react"
 import s from "styled-components"
+import {LIGHT_BLUE} from "../utils/constants";
+import {Footer, Navbar} from "../components";
+import {Title} from "./Typography";
+import SEO from "../components/seo";
 
 
 export const Layout = s.div`
@@ -66,6 +70,18 @@ export const Wave = ({color, rotation}) => {
   )
 }
 
+const FancyWave = () => {
+  return (
+    <div style={{marginTop: -10}}>
+      <svg viewBox="0 0 500 80">
+        <path fill={"var(--c-accent-primary)"} fill-opacity="1" d="M0.00,19.98 C160.27,74.97 219.52,18.08 500.00,23.98 L500.00,0.00 L0.00,0.00 Z"></path>
+        <path fill={"var(--c-accent-primary)"} fill-opacity="0.6" d="M-1.12,48.32 C115.69,30.55 393.34,81.87 501.69,8.83 L500.00,0.00 L0.00,0.00 Z"></path>
+        <path fill={"var(--c-accent-primary)"} fill-opacity="0.3" d="M0.00,34.37 C150.43,66.60 376.97,59.03 501.12,40.28 L500.00,0.00 L0.00,0.00 Z"></path>
+      </svg>
+    </div>
+  )
+}
+
 export const WavyLayout = (props) => {
   return (
     <>
@@ -76,6 +92,32 @@ export const WavyLayout = (props) => {
       </WideLayout>
     </div>
     <Wave color={props.color}/>
+    </>
+  )
+}
+
+const HeaderWrapper = s.div`
+  padding: 120px 0 0 0;
+  background-color: var(--c-accent-primary);
+  overflow: hidden;
+`
+
+export const PageLayout = (props) => {
+  return (
+    <>
+      <SEO title={props.title} defer={false} />
+      <Navbar/>
+
+      <HeaderWrapper>
+        <Title fontColor="var(--c-text-primary-inverted)">{props.pageTitle}</Title>
+      </HeaderWrapper>
+      <FancyWave/>
+
+      <Layout>
+        {props.children}
+      </Layout>
+
+      <Footer/>
     </>
   )
 }

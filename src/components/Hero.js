@@ -128,6 +128,7 @@ const HeroWave = () => {
     </div>
   )
 }
+
 export const Hero = () => {
   const componentRef = React.useRef();
   const { width } = useContainerDimensions(componentRef);
