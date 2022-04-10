@@ -1,6 +1,5 @@
 import React from "react"
 import s from "styled-components"
-import Carousel from "../ui/Carousel"
 import { useContainerDimensions } from "../ui/useContainerDimensions"
 import Tile from "../ui/Tile";
 import {Subtitle} from "../ui/Typography";

@@ -5,7 +5,6 @@ import { Subtitle, Text } from "../ui/Typography";
 import goal1 from "../images/goal1.png";
 import goal2 from "../images/goal2.png";
 import goal3 from "../images/goal3.png";
-import {ImageFormatType} from "gatsby-plugin-image/graphql-utils";
 import gbmImage from "../images/gallery/gbm-2022-02-20.jpg"
 
 const AboutImageWrapper = s.div`
