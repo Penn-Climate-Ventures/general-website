@@ -25,11 +25,11 @@ export default function IndexPage() {
       <Navbar />
       <Hero/>
       <WideLayout><About/></WideLayout>
-      <WavyLayout color={LIGHT_BLUE}><WhatWeDo/></WavyLayout>
+      <WavyLayout color={'var(--c-accent-primary)'}><WhatWeDo/></WavyLayout>
       <WideLayout><UpcomingEvents/></WideLayout>
-      <WavyLayout color={LIGHT_BLUE}><GetInvolved/></WavyLayout>
+      <WavyLayout color={'var(--c-accent-primary)'}><GetInvolved/></WavyLayout>
       <WideLayout><News/></WideLayout>
-      <WavyLayout color={LIGHT_BLUE}><Testimonials/></WavyLayout>
+      <WavyLayout color={'var(--c-accent-primary)'}><Testimonials/></WavyLayout>
       <Footer />
     </>
   )

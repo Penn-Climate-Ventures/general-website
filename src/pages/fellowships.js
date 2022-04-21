@@ -3,13 +3,16 @@ import React, {Component} from "react"
 import {
   Layout,
   Navbar,
-  Footer, ProgramDetails
+  Footer, ProgramDetails, WavyLayout
 } from "../components"
-import {ProjectsAndPartners} from "../components/ProjectsAndPartners";
 import {FellowshipsFAQ} from "../components/FellowshipsFAQ";
 import {Email, Subtitle, Text, Title} from "../ui/Typography";
 import SEO from "../components/seo";
+import {Testimonials} from "../components/Testimonials";
+import {Clients} from "../components/Clients";
 
+import {pastClientsData} from "../data/pastClients"
+import {currentClientsData} from "../data/currentClients"
 
 export default class ClassPage extends Component {
   render() {
@@ -30,11 +33,18 @@ export default class ClassPage extends Component {
           to companies.
         </Text>
 
-        <div id="sectionRef">
-          <ProgramDetails id={'sectionRef'}/>
-        </div>
+        <ProgramDetails/>
+      </Layout>
 
-        <ProjectsAndPartners/>
+      <WavyLayout color={'var(--c-accent-primary)'}>
+        <Testimonials/>
+      </WavyLayout>
+
+      <Layout>
+        <Clients clientsData={currentClientsData}/>
+        <Clients clientsData={pastClientsData}/>
+
+        {/* Project Showcase */}
 
         <FellowshipsFAQ/>
 
