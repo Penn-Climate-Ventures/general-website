@@ -9,7 +9,7 @@ import {
 } from "../components"
 
 import {WhatWeDo} from "../components/WhatWeDo";
-import {UpcomingEvents} from "../components/UpcomingEvents";
+import {Calendar} from "../components/Calendar";
 import {GetInvolved} from "../components/GetInvolved";
 import {Hero} from "../components/Hero";
 import {About} from "../components/About";
@@ -25,7 +25,7 @@ export default function IndexPage() {
       <Hero/>
       <Container wide><About/></Container>
       <WavyLayout color={'var(--c-accent-primary)'}><WhatWeDo/></WavyLayout>
-      <Container wide><UpcomingEvents/></Container>
+      <Container wide><Calendar/></Container>
       <WavyLayout color={'var(--c-accent-primary)'}><GetInvolved/></WavyLayout>
       <Container wide><News/></Container>
       <WavyLayout color={'var(--c-accent-primary)'}><Testimonials/></WavyLayout>

@@ -30,8 +30,6 @@ const ClassPage = () => {
           Workshop, A Guide to B-Corp Certification, Sustainable Finance 101,
           etc.)
       </Text>
-      <UpcomingWorkshops />
-      {/*<PastWorkshops />*/}
       <Footer />
     </Container>
     </>

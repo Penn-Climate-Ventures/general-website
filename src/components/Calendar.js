@@ -1,7 +1,6 @@
 import React from "react";
 import s from "styled-components"
-import { useContainerDimensions } from "../ui/useContainerDimensions";
-import {Subtitle, Text} from "../ui/Typography";
+import {Subtitle} from "../ui/Typography"
 
 const CalendarWrapper = s.div`
   display: flex;
@@ -9,12 +8,9 @@ const CalendarWrapper = s.div`
   margin-top: 60px;
 `
 
-export const UpcomingEvents = () => {
-  const componentRef = React.useRef();
-  const { width } = useContainerDimensions(componentRef);
-
+export const Calendar = () => {
   return (
-    <div ref={componentRef}>
+    <div>
       <Subtitle>Upcoming Events</Subtitle>
       <CalendarWrapper>
         <iframe
