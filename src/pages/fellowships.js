@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 
 import {
-  Layout,
+  Container,
   Navbar,
   Footer, ProgramDetails, WavyLayout
 } from "../components"
@@ -20,7 +20,7 @@ export default class ClassPage extends Component {
       <>
       <SEO title="Fellowships" defer={false} />
       <Navbar />
-      <Layout>
+      <Container>
         <Title>Fellowships</Title>
 
         <Text bold>Breaking the Barriers to Climate. Your Launchpad into Climate Tech.</Text>
@@ -34,13 +34,13 @@ export default class ClassPage extends Component {
         </Text>
 
         <ProgramDetails/>
-      </Layout>
+      </Container>
 
       <WavyLayout color={'var(--c-accent-primary)'}>
         <Testimonials/>
       </WavyLayout>
 
-      <Layout>
+      <Container>
         <Clients clientsData={currentClientsData}/>
         <Clients clientsData={pastClientsData}/>
 
@@ -56,7 +56,7 @@ export default class ClassPage extends Component {
         </Text>
 
         <Footer />
-      </Layout>
+      </Container>
       </>
     )
   }

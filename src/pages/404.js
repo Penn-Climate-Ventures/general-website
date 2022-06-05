@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import {Footer, Layout, Navbar} from "../components";
+import {Footer, Container, Navbar} from "../components";
 import {Text, Title} from "../ui/Typography";
 import SEO from "../components/seo";
 
@@ -9,7 +9,7 @@ const NotFoundPage = () => {
     <>
       <SEO title="Not Found" defer={false} />
       <Navbar />
-      <Layout>
+      <Container>
         <Title>404 Not Found</Title>
         <Text bold>
           The page you were looking for was not found.
@@ -18,7 +18,7 @@ const NotFoundPage = () => {
           Return to the home page <Link to={'/'}>here</Link>.
         </Text>
         <Footer/>
-      </Layout>
+      </Container>
     </>
   )
 }

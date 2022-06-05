@@ -2,7 +2,7 @@ import React from "react"
 import "../styles/base.scss"
 
 import {
-  WideLayout,
+  Container,
   Navbar,
   News,
   Footer, WavyLayout
@@ -13,7 +13,6 @@ import {UpcomingEvents} from "../components/UpcomingEvents";
 import {GetInvolved} from "../components/GetInvolved";
 import {Hero} from "../components/Hero";
 import {About} from "../components/About";
-import {LIGHT_BLUE} from "../utils/constants";
 import {Testimonials} from "../components/Testimonials";
 import SEO from "../components/seo";
 
@@ -24,11 +23,11 @@ export default function IndexPage() {
       <SEO title="Home" defer={false} />
       <Navbar />
       <Hero/>
-      <WideLayout><About/></WideLayout>
+      <Container wide><About/></Container>
       <WavyLayout color={'var(--c-accent-primary)'}><WhatWeDo/></WavyLayout>
-      <WideLayout><UpcomingEvents/></WideLayout>
+      <Container wide><UpcomingEvents/></Container>
       <WavyLayout color={'var(--c-accent-primary)'}><GetInvolved/></WavyLayout>
-      <WideLayout><News/></WideLayout>
+      <Container wide><News/></Container>
       <WavyLayout color={'var(--c-accent-primary)'}><Testimonials/></WavyLayout>
       <Footer />
     </>

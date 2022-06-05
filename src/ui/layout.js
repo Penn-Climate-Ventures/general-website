@@ -1,55 +1,57 @@
 import React from "react"
 import s from "styled-components"
-import {LIGHT_BLUE} from "../utils/constants";
-import {Footer, Navbar} from "../components";
-import {Title} from "./Typography";
-import SEO from "../components/seo";
+
+import {Title} from "./Typography"
+
+import SEO from "../components/seo"
+import {Footer, Navbar} from "../components"
 
 
-export const Layout = s.div`
-  padding: 2rem 1rem;
-  margin: 75px auto 0 auto;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-
-  @media (min-width: 576px) {
-    max-width: 540px;
-  }
-
-  @media (min-width: 768px) {
-    padding: 2rem 3rem;
-    max-width: 720px;
-  }
-
-  @media (min-width: 992px) {
-    max-width: 960px;
-  }
-`
-
-export const WideLayout = s.div`
+export const Container = s.div`
+  background-color: ${props => (props.color ? props.color : `none`)};
   padding: 2rem 1rem;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
+  
   @media (min-width: 576px) {
     max-width: 540px;
   }
-
+  
   @media (min-width: 768px) {
     max-width: 720px;
   }
-
+  
   @media (min-width: 992px) {
     max-width: 960px;
   }
   
-  @media (min-width: 1200px) {
-    max-width: 1140px;
-  }
+   ${props => (props.wide || props.superwide
+    ? `
+      @media (min-width: 1250px) {
+        max-width: 1200px;
+      }
+      
+      @media (min-width: 1500px) {
+        max-width: 1440px;
+      }`
+    : ``
+)} 
+
+  ${props => (props.superwide
+    ? `
+      @media (min-width: 1750px) {
+        max-width: 1700px;
+      }
+      
+      @media (min-width: 2000px) {
+        max-width: 1950px;
+      }`
+    : ``
+)}
 `
+
 
 export const WaveWrapper = s.div`
   display: inline-block;
@@ -87,19 +89,33 @@ export const WavyLayout = (props) => {
     <>
     <Wave color={props.color} rotation={-1}/>
     <div style={{backgroundColor: props.color, overflow: "hidden"}}>
-      <WideLayout>
+      <Container>
         {props.children}
-      </WideLayout>
+      </Container>
     </div>
     <Wave color={props.color}/>
     </>
   )
 }
 
+export const GridContainer = s.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(${props => (props.childWidth
+  ? props.childWidth : 300)}px, max-content));
+  grid-gap: 60px 45px;
+  justify-content: center;
+  padding: initial;
+`
+
 const HeaderWrapper = s.div`
   padding: 120px 0 0 0;
   background-color: var(--c-accent-primary);
   overflow: hidden;
+`
+
+const MainWrapper = s.main`
+  padding-top: 120px;
+  min-height: 50vh;
 `
 
 export const PageLayout = (props) => {
@@ -111,11 +127,12 @@ export const PageLayout = (props) => {
       <HeaderWrapper>
         <Title fontColor="var(--c-text-primary-inverted)">{props.pageTitle}</Title>
       </HeaderWrapper>
+
       <FancyWave/>
 
-      <Layout>
+      <MainWrapper>
         {props.children}
-      </Layout>
+      </MainWrapper>
 
       <Footer/>
     </>

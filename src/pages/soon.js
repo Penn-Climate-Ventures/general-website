@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 
 import {
-  Layout,
+  Container,
   Navbar,
   Footer
 } from "../components"
@@ -14,10 +14,10 @@ export default class Soon extends Component {
       <>
       <SEO title="Coming Soon!" defer={false} />
       <Navbar />
-      <Layout>
+      <Container>
         <Title>This page is coming soon!</Title>
         <Footer />
-      </Layout>
+      </Container>
       </>
     )
   }

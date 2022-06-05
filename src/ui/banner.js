@@ -1,4 +1,4 @@
-import s from "styled-components";
+import s from "styled-components"
 
 export const Banner = s.div`
   background-color: #fff3cd;

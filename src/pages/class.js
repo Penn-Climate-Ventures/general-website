@@ -2,7 +2,7 @@ import React from "react"
 import "../styles/base.scss"
 
 import {
-  Layout,
+  Container,
   Navbar,
   UpcomingWorkshops,
   Footer,
@@ -16,7 +16,7 @@ const ClassPage = () => {
     <>
     <SEO title="Class" defer={false} />
     <Navbar />
-    <Layout>
+    <Container>
       <Title>Class</Title>
       <Text bold center>
           Providing students with practical climate and business knowledge to
@@ -33,7 +33,7 @@ const ClassPage = () => {
       <UpcomingWorkshops />
       {/*<PastWorkshops />*/}
       <Footer />
-    </Layout>
+    </Container>
     </>
   )
 }

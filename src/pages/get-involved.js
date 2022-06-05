@@ -1,7 +1,7 @@
 import React from "react"
 
 import {
-  Layout,
+  Container,
   Navbar,
   Footer,
 } from "../components"
@@ -14,7 +14,7 @@ const GetInvolvedPage = () => {
     <>
       <SEO title="Get Involved" defer={false} />
       <Navbar />
-      <Layout>
+      <Container>
         <Title>Get Involved</Title>
 
         <Subtitle>Board Membership</Subtitle>
@@ -80,7 +80,7 @@ const GetInvolvedPage = () => {
         </Text>
 
         <Footer />
-      </Layout>
+      </Container>
     </>
   )
 }

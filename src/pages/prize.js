@@ -3,7 +3,7 @@ import s from "styled-components"
 import "../styles/base.scss"
 
 import {
-  Layout,
+  Container,
   Navbar,
   Footer,
 } from "../components"
@@ -41,7 +41,7 @@ const PrizePage = () => {
     <>
     <SEO title="Prize" defer={false} />
     <Navbar />
-    <Layout>
+    <Container>
       <Title>Prize</Title>
       <Text bold>
         Catalyzing climate innovation at Penn.
@@ -63,7 +63,7 @@ const PrizePage = () => {
         </Button>
       </PrizeButtonContainer>
       <Footer />
-    </Layout>
+    </Container>
     </>
   )
 }

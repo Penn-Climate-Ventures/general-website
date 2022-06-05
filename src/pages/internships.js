@@ -1,9 +1,9 @@
 import React from "react"
 
 import {
-  WideLayout,
+  Container,
   Navbar,
-  Footer, Layout
+  Footer
 } from "../components"
 import {Email, Text, Title} from "../ui/Typography";
 import SEO from "../components/seo";
@@ -13,7 +13,7 @@ const InternshipsPage = () => {
     <>
       <SEO title="Internships" defer={false} />
       <Navbar />
-      <Layout>
+      <Container>
         <Title>Internships</Title>
         <br/>
         <Text>
@@ -21,14 +21,14 @@ const InternshipsPage = () => {
           non-profits to established companies. Contact <Email/> if you wish to add your company or
           organization's opportunities.
         </Text>
-      </Layout>
-      <WideLayout>
+      </Container>
+      <Container wide>
         <iframe className="airtable-embed"
           src="https://airtable.com/embed/shrfKreaRwGs2N50J?backgroundColor=cyan&layout=card&viewControls=on"
           frameBorder="0" onmousewheel="" width="100%"
           style={{background: 'transparent', border: '1px solid #ccc', height: '90vh'}}/>
         <Footer />
-      </WideLayout>
+      </Container>
     </>
   )
 }

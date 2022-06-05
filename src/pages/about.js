@@ -2,7 +2,7 @@ import React from "react"
 import "../styles/base.scss"
 
 import {
-  Layout,
+  Container,
   Navbar,
   Footer, WavyHeader, PageLayout
 } from "../components"

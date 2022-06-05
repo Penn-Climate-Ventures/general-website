@@ -3,7 +3,7 @@ import s from "styled-components"
 
 import { LIGHT_BLUE } from "../utils/constants"
 import { navLinks, smLinks } from "../data/navigation"
-import {WideLayout} from "../ui/Layout";
+import {Container} from "../ui/layout";
 
 
 const FooterWrapper = s.footer`
@@ -35,7 +35,7 @@ const NavButton = s.a`
 `
 
 export const FooterLayout = () => (
-  <WideLayout>
+  <Container wide>
   <FooterWrapper>
     <FooterMenu>
       { navLinks.map( navLink => (
@@ -51,7 +51,7 @@ export const FooterLayout = () => (
       )) }
     </FooterMenu>
   </FooterWrapper>
-  </WideLayout>
+  </Container>
 )
 
 export const Footer = s(FooterLayout)`

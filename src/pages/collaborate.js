@@ -2,7 +2,7 @@ import React from "react"
 import "../styles/base.scss"
 
 import {
-  Layout,
+  Container,
   Navbar,
   News,
   Footer
@@ -16,7 +16,7 @@ const CollaboratePage = () => {
     <>
     <SEO title="Collaborate" defer={false} />
     <Navbar />
-    <Layout>
+    <Container>
       <Title>Collaborate</Title>
       <Text bold>
         Club Co-Sponsor, Speak/Mentor/Judge/Advise Interest, Corporate Sponsor Interest, Donate
@@ -32,7 +32,7 @@ const CollaboratePage = () => {
       </Text>
       <News />
       <Footer />
-    </Layout>
+    </Container>
     </>
   )
 }

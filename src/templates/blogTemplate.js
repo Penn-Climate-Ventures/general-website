@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 import React from "react"
 import {Footer, Navbar} from "../components"
-import {Layout} from "../ui/Layout"
+import {Container} from "../ui/layout"
 import s from "styled-components"
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
 
@@ -45,7 +45,7 @@ export default function BlogTemplate ({ data }) {
   const coverImageData = getImage(fm.image)
 
   return (
-    <Layout>
+    <Container>
       <SEO title={fm.title} defer={false} />
       <Navbar />
       {coverImageData &&
@@ -69,7 +69,7 @@ export default function BlogTemplate ({ data }) {
       </article>
 
       <Footer/>
-    </Layout>
+    </Container>
   )
 }
 

@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 
 import {
-  Layout,
+  Container,
   Navbar,
   Footer
 } from "../components"
@@ -12,7 +12,7 @@ import SEO from "../components/seo";
 export default class ValuesPage extends Component {
   render() {
     return (
-      <Layout>
+      <Container>
         <SEO title="Values" defer={false} />
         <Navbar />
         <Title>Our Values</Title>
@@ -64,7 +64,7 @@ export default class ValuesPage extends Component {
         </ul>
 
         <Footer />
-      </Layout>
+      </Container>
     )
   }
 }
