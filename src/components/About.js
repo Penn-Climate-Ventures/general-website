@@ -1,11 +1,13 @@
-import React from "react";
-import s from "styled-components";
-import { useContainerDimensions } from "../ui/useContainerDimensions";
-import { Subtitle, Text } from "../ui/Typography";
-import goal1 from "../images/goal1.png";
-import goal2 from "../images/goal2.png";
-import goal3 from "../images/goal3.png";
+import React from "react"
+import s from "styled-components"
+
+import { Subtitle, Text } from "../ui/Typography"
+
+import goal1 from "../images/goal1.png"
+import goal2 from "../images/goal2.png"
+import goal3 from "../images/goal3.png"
 import gbmImage from "../images/gallery/gbm-2022-02-20.jpg"
+
 
 const AboutImageWrapper = s.div`
   display: flex;
@@ -45,11 +47,8 @@ const GoalImage = s.img`
 `
 
 export const About = () => {
-  const componentRef = React.useRef();
-  const { width } = useContainerDimensions(componentRef);
-
   return (
-    <div ref={componentRef}>
+    <>
       <Subtitle>About Us</Subtitle>
       <AboutImageWrapper>
         <AboutImage src={gbmImage}/>
@@ -84,7 +83,7 @@ export const About = () => {
           <Text center>Penn's springboard for climate action</Text>
         </Goal>
       </GoalWrapper>
-    </div>
+    </>
   );
 };
 

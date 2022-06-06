@@ -1,22 +1,13 @@
 import React from "react"
 
-import {
-  Container,
-  Navbar,
-  Footer,
-} from "../components"
+import {Subtitle, Text, UrlLink} from "../ui/Typography"
+import {Container, PageLayout} from "../ui/layout"
 
-import {Subtitle, Text, Title, UrlLink} from "../ui/Typography";
-import SEO from "../components/seo";
 
 const GetInvolvedPage = () => {
   return (
-    <>
-      <SEO title="Get Involved" defer={false} />
-      <Navbar />
+    <PageLayout title="Get Involved">
       <Container>
-        <Title>Get Involved</Title>
-
         <Subtitle>Board Membership</Subtitle>
         <Text>
           Our applications for board membership are now open for spring
@@ -65,6 +56,7 @@ const GetInvolvedPage = () => {
           </UrlLink>
         </Text>
         <iframe
+          title="Listserve"
           className="airtable-embed"
           src="https://airtable.com/embed/shrCCh7SJrYNsjeWT?backgroundColor=red"
           frameBorder="0"
@@ -78,10 +70,8 @@ const GetInvolvedPage = () => {
           Click <a href="/internships">here</a> to see a list of available
           internships!
         </Text>
-
-        <Footer />
       </Container>
-    </>
+    </PageLayout>
   )
 }
 

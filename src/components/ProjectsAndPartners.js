@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import s from "styled-components"
-import {Subtitle, Text, UrlLink} from "../ui/Typography";
+import {Subtitle, Text, UrlLink} from "../ui/Typography"
 
 // consulting
 import BanyanInfrastructure from "../images/partners/banyanInfrastructure.png"

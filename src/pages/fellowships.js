@@ -1,29 +1,19 @@
-import React, {Component} from "react"
+import React from "react"
 
-import {
-  Container,
-  Navbar,
-  Footer, WavyLayout
-} from "../components"
+import {Container, PageLayout, WavyLayout} from "../ui/layout"
+import {Email, Subtitle, Text} from "../ui/Typography"
 import {FellowshipsFAQ} from "../components/FellowshipsFAQ"
-import {Email, Subtitle, Text, Title} from "../ui/Typography"
-import SEO from "../components/seo"
 import {Testimonials} from "../components/Testimonials"
-import {Clients} from "../components/Clients"
 import {ProgramDetails} from "../components/ProgramDetails"
+import {Clients} from "../components/Clients"
 
 import {pastClientsData} from "../data/pastClients"
 import {currentClientsData} from "../data/currentClients"
 
-export default class ClassPage extends Component {
-  render() {
+const Fellowships = () => {
     return (
-      <>
-      <SEO title="Fellowships" defer={false} />
-      <Navbar />
+    <PageLayout title="Fellowships">
       <Container>
-        <Title>Fellowships</Title>
-
         <Text bold>Breaking the Barriers to Climate. Your Launchpad into Climate Tech.</Text>
 
         <Text>
@@ -56,9 +46,9 @@ export default class ClassPage extends Component {
           back to you shortly.
         </Text>
 
-        <Footer />
       </Container>
-      </>
-    )
-  }
+    </PageLayout>
+  )
 }
+
+export default Fellowships

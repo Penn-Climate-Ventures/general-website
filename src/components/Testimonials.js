@@ -1,9 +1,10 @@
-import React, {useEffect, useState} from "react";
-import s from "styled-components";
-import { useContainerDimensions } from "../ui/useContainerDimensions";
-import { Subtitle, Text } from "../ui/Typography";
-import {TEXT_PRIMARY_INV} from "../utils/constants";
-import {ButtonInverted} from "../ui/Button";
+import React, {useEffect, useState} from "react"
+import s from "styled-components"
+
+import { Subtitle, Text } from "../ui/Typography"
+import {ButtonInverted} from "../ui/Button"
+import {TEXT_PRIMARY_INV} from "../utils/constants"
+
 
 const data = [
   {
@@ -86,9 +87,6 @@ const LearnMoreWrapper = s.div`
 `
 
 export const Testimonials = () => {
-  const componentRef = React.useRef();
-  const { width } = useContainerDimensions(componentRef);
-
   const [ind, setInd] = useState(0)
 
   useEffect(() => {
@@ -100,7 +98,7 @@ export const Testimonials = () => {
   })
 
   return (
-    <div ref={componentRef}>
+    <>
       <Subtitle fontColor={TEXT_PRIMARY_INV}>Testimonials</Subtitle>
       <TestimonialWrapper>
         <div>
@@ -130,6 +128,6 @@ export const Testimonials = () => {
         <ButtonInverted href="/collaborate">Learn more</ButtonInverted>
         <Text fontColor={TEXT_PRIMARY_INV} center>Click here to learn more about working with us!</Text>
       </LearnMoreWrapper>
-    </div>
+    </>
   );
 };

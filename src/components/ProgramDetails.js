@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import s from "styled-components"
+
 import { LIGHT_BLUE } from "../utils/constants"
-import {Subtitle, Text} from "../ui/Typography";
+import {Subtitle, Text} from "../ui/Typography"
 
 const TabLayout = s.div`
   max-width: 800px;
@@ -56,7 +57,6 @@ export class ProgramDetails extends Component {
 
 
   render() {
-
     const inactiveTabStyle = {
       textDecoration: 'none',
       background: '#f2f2f2',

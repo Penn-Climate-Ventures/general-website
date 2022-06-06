@@ -1,16 +1,11 @@
 import React from "react"
-import "../styles/base.scss"
+import s from "styled-components"
 
-import {
-  Container,
-  Navbar,
-  Footer, WavyHeader, PageLayout
-} from "../components"
-import s from "styled-components";
-import {Subtitle, Text, Title, UrlLink} from "../ui/Typography";
-import SEO from "../components/seo";
+import {Subtitle, Text, UrlLink} from "../ui/Typography"
+import {Container, PageLayout} from "../ui/layout"
 
 import {teamData} from "../data/team"
+
 
 const TeamGallery = s.div`
   display: flex;
@@ -52,17 +47,19 @@ const Member = ({ member }) => (
 
 const AboutPage = () => {
   return (
-    <PageLayout pageTitle="About Us" title="About">
-      <Subtitle>Mission & Vision</Subtitle>
+    <PageLayout title="About">
+      <Container>
+        <Subtitle>Mission & Vision</Subtitle>
 
-      <Subtitle>Our Story</Subtitle>
+        <Subtitle>Our Story</Subtitle>
 
-      <Subtitle>People</Subtitle>
-      <TeamGallery>
-        {teamData.map(member => (
-          <Member member={member}/>
-        ))}
-      </TeamGallery>
+        <Subtitle>People</Subtitle>
+        <TeamGallery>
+          {teamData.map(member => (
+            <Member member={member}/>
+          ))}
+        </TeamGallery>
+      </Container>
     </PageLayout>
   )
 }

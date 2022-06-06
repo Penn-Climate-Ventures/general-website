@@ -1,8 +1,10 @@
-import React, {Component } from 'react'
+import React, {Component } from "react"
 import s from "styled-components"
-import Logo from '../images/pcv/logo.png'
+
 import {LIGHT_BLUE} from "../utils/constants"
-import {navLinks} from "../data/navigation";
+import {navLinks} from "../data/navigation"
+import Logo from "../images/pcv/logo.png"
+
 
 export const NavWrapper = s.div`
   background-color: rgba(255,255,255,0.97);

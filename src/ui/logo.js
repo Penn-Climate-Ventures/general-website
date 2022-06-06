@@ -1,4 +1,4 @@
-import s from "styled-components";
+import s from "styled-components"
 
 export const Logo = s.div`
   background-color: #fff3cd;

@@ -1,6 +1,7 @@
+import React from "react"
 import s from "styled-components"
+
 import {LIGHT_BLUE} from "../utils/constants"
-import React from "react";
 
 
 export const Title = s.h1`

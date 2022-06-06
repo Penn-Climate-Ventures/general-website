@@ -1,17 +1,11 @@
 import React from "react"
 import s from "styled-components"
-import "../styles/base.scss"
 
-import {
-  Container,
-  Navbar,
-  Footer,
-} from "../components"
+import {Container, PageLayout} from "../ui/layout"
+import {Text} from "../ui/Typography"
 import { Button } from "../ui/Button"
 
 import { LIGHT_BLUE } from "../utils/constants"
-import {Text, Title} from "../ui/Typography";
-import SEO from "../components/seo";
 
 
 const PrizeButtonContainer = s.div`
@@ -38,33 +32,29 @@ const Rule = s.span`
 
 const PrizePage = () => {
   return (
-    <>
-    <SEO title="Prize" defer={false} />
-    <Navbar />
-    <Container>
-      <Title>Prize</Title>
-      <Text bold>
-        Catalyzing climate innovation at Penn.
-      </Text>
-      <Text>
-        The prize team organizes (1) a Penn-only competition focused on climate
-        tech ideation in the Fall and (2) a global pitch competition in the
-        spring.
-      </Text>
-      <PrizeButtonContainer>
-        <Button rel="noreferrer noopener"
-                      target="_blank"
-                      href="https://ideathon.pennclimateventures.org/">PCV Ideathon</Button>
-        <Rule />
-        <Button rel="noreferrer noopener"
-                      target="_blank"
-                      href="https://prize.pennclimateventures.org/">
-          PCV Prize Competition
-        </Button>
-      </PrizeButtonContainer>
-      <Footer />
-    </Container>
-    </>
+    <PageLayout title="Prize">
+      <Container>
+        <Text bold>
+          Catalyzing climate innovation at Penn.
+        </Text>
+        <Text>
+          The prize team organizes (1) a Penn-only competition focused on climate
+          tech ideation in the Fall and (2) a global pitch competition in the
+          spring.
+        </Text>
+        <PrizeButtonContainer>
+          <Button rel="noreferrer noopener"
+                        target="_blank"
+                        href="https://ideathon.pennclimateventures.org/">PCV Ideathon</Button>
+          <Rule />
+          <Button rel="noreferrer noopener"
+                        target="_blank"
+                        href="https://prize.pennclimateventures.org/">
+            PCV Prize Competition
+          </Button>
+        </PrizeButtonContainer>
+      </Container>
+    </PageLayout>
   )
 }
 export default PrizePage

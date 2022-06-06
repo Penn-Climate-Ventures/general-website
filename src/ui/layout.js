@@ -1,10 +1,10 @@
 import React from "react"
 import s from "styled-components"
 
-import {Title} from "./Typography"
-
 import SEO from "../components/seo"
-import {Footer, Navbar} from "../components"
+import {Navbar} from "../components/Navbar"
+import {Footer} from "../components/Footer"
+import {Title} from "./Typography"
 
 
 export const Container = s.div`
@@ -114,8 +114,7 @@ const HeaderWrapper = s.div`
 `
 
 const MainWrapper = s.main`
-  padding-top: 120px;
-  min-height: 50vh;
+  min-height: 40vh;
 `
 
 export const PageLayout = (props) => {
@@ -125,7 +124,7 @@ export const PageLayout = (props) => {
       <Navbar/>
 
       <HeaderWrapper>
-        <Title fontColor="var(--c-text-primary-inverted)">{props.pageTitle}</Title>
+        <Title fontColor="var(--c-text-primary-inverted)">{props.title}</Title>
       </HeaderWrapper>
 
       <FancyWave/>

@@ -1,7 +1,8 @@
-import Helmet from "react-helmet";
+import React from "react"
+import Helmet from "react-helmet"
+import {graphql, useStaticQuery} from "gatsby"
 import PropTypes from "prop-types"
-import React from "react";
-import {graphql, useStaticQuery} from "gatsby";
+
 
 function SEO({ description, lang, meta, title, defer}) {
   const { site } = useStaticQuery(

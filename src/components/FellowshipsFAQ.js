@@ -1,7 +1,9 @@
 import React, { Component } from "react"
 import s from "styled-components"
-import {LIGHT_BLUE} from "../utils/constants";
-import {Subtitle, Text} from "../ui/Typography";
+
+import {Subtitle, Text} from "../ui/Typography"
+
+import {LIGHT_BLUE} from "../utils/constants"
 
 
 const Question = s.summary`
@@ -21,9 +23,7 @@ const Question = s.summary`
 `
 
 export class FellowshipsFAQ extends Component {
-
   render() {
-
     return (
       <div>
         <Subtitle>FAQ's</Subtitle>

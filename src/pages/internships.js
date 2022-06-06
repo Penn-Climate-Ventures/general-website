@@ -1,21 +1,13 @@
 import React from "react"
 
-import {
-  Container,
-  Navbar,
-  Footer
-} from "../components"
-import {Email, Text, Title} from "../ui/Typography";
-import SEO from "../components/seo";
+import {Container, PageLayout} from "../ui/layout"
+import {Email, Text} from "../ui/Typography"
+
 
 const InternshipsPage = () => {
   return (
-    <>
-      <SEO title="Internships" defer={false} />
-      <Navbar />
+    <PageLayout title="Internships">
       <Container>
-        <Title>Internships</Title>
-        <br/>
         <Text>
           Explore hand-picked internships in the climate and sustainability space, ranging from
           non-profits to established companies. Contact <Email/> if you wish to add your company or
@@ -27,9 +19,8 @@ const InternshipsPage = () => {
           src="https://airtable.com/embed/shrfKreaRwGs2N50J?backgroundColor=cyan&layout=card&viewControls=on"
           frameBorder="0" onmousewheel="" width="100%"
           style={{background: 'transparent', border: '1px solid #ccc', height: '90vh'}}/>
-        <Footer />
       </Container>
-    </>
+    </PageLayout>
   )
 }
 

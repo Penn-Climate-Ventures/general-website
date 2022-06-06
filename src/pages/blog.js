@@ -1,19 +1,11 @@
 import React from "react"
 import s from "styled-components"
-
 import {graphql, Link} from "gatsby"
-import {GatsbyImage, getImage} from "gatsby-plugin-image";
+import {GatsbyImage, getImage} from "gatsby-plugin-image"
 
-import {
-  Navbar,
-  Footer
-} from "../components"
+import {GridContainer, PageLayout} from "../ui/layout"
+import {SubText} from "../ui/Typography"
 
-import {SubText, Title} from "../ui/Typography";
-import {Container, GridContainer} from "../ui/layout";
-import SEO from "../components/seo";
-
-import "../styles/base.scss"
 
 
 const CardLayout = s.div`
@@ -108,19 +100,13 @@ const BlogCard = ({ card }) => {
 
 const BlogPage = ({ data }) => {
   return (
-    <>
-    <SEO title="Blog" defer={false} />
-    <Navbar />
-    <Container>
-      <Title>Blog</Title>
-    </Container>
-    <GridContainer childWidth="450">
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <BlogCard card={node} />
-      ))}
-    </GridContainer>
-    <Footer />
-    </>
+    <PageLayout title="Blog">
+      <GridContainer childWidth="450">
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <BlogCard card={node} />
+        ))}
+      </GridContainer>
+    </PageLayout>
   )
 }
 
