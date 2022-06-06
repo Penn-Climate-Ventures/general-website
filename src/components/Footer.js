@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react"
 import s from "styled-components"
+
+import {Container} from "../ui/layout"
 
 import { LIGHT_BLUE } from "../utils/constants"
 import { navLinks, smLinks } from "../data/navigation"
-import {WideLayout} from "../ui/Layout";
 
 
 const FooterWrapper = s.footer`
@@ -34,8 +35,8 @@ const NavButton = s.a`
   }
 `
 
-export const FooterLayout = () => (
-  <WideLayout>
+export const Footer = () => (
+  <Container wide>
   <FooterWrapper>
     <FooterMenu>
       { navLinks.map( navLink => (
@@ -51,8 +52,5 @@ export const FooterLayout = () => (
       )) }
     </FooterMenu>
   </FooterWrapper>
-  </WideLayout>
+  </Container>
 )
-
-export const Footer = s(FooterLayout)`
-`

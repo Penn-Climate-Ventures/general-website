@@ -1,25 +1,19 @@
-import React, {Component} from "react"
+import React from "react"
 
-import {
-  Layout,
-  Navbar,
-  Footer, ProgramDetails
-} from "../components"
-import {ProjectsAndPartners} from "../components/ProjectsAndPartners";
-import {FellowshipsFAQ} from "../components/FellowshipsFAQ";
-import {Email, Subtitle, Text, Title} from "../ui/Typography";
-import SEO from "../components/seo";
+import {Container, PageLayout, WavyLayout} from "../ui/layout"
+import {Email, Subtitle, Text} from "../ui/Typography"
+import {FellowshipsFAQ} from "../components/FellowshipsFAQ"
+import {Testimonials} from "../components/Testimonials"
+import {ProgramDetails} from "../components/ProgramDetails"
+import {Clients} from "../components/Clients"
 
+import {pastClientsData} from "../data/pastClients"
+import {currentClientsData} from "../data/currentClients"
 
-export default class ClassPage extends Component {
-  render() {
+const Fellowships = () => {
     return (
-      <>
-      <SEO title="Fellowships" defer={false} />
-      <Navbar />
-      <Layout>
-        <Title>Fellowships</Title>
-
+    <PageLayout title="Fellowships">
+      <Container>
         <Text bold>Breaking the Barriers to Climate. Your Launchpad into Climate Tech.</Text>
 
         <Text>
@@ -30,11 +24,18 @@ export default class ClassPage extends Component {
           to companies.
         </Text>
 
-        <div id="sectionRef">
-          <ProgramDetails id={'sectionRef'}/>
-        </div>
+        <ProgramDetails/>
+      </Container>
 
-        <ProjectsAndPartners/>
+      <WavyLayout color={'var(--c-accent-primary)'}>
+        <Testimonials/>
+      </WavyLayout>
+
+      <Container>
+        {/*<Clients clientsData={currentClientsData}/>*/}
+        {/*<Clients clientsData={pastClientsData}/>*/}
+
+        {/* Project Showcase */}
 
         <FellowshipsFAQ/>
 
@@ -45,9 +46,9 @@ export default class ClassPage extends Component {
           back to you shortly.
         </Text>
 
-        <Footer />
-      </Layout>
-      </>
-    )
-  }
+      </Container>
+    </PageLayout>
+  )
 }
+
+export default Fellowships

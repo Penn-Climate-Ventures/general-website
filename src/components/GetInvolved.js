@@ -1,11 +1,13 @@
-import React from "react";
-import s from "styled-components";
-import { useContainerDimensions } from "../ui/useContainerDimensions";
-import {Subtitle} from "../ui/Typography";
-import {ButtonInverted} from "../ui/Button";
-import {TEXT_PRIMARY_INV} from "../utils/constants";
-import getinvolved1 from "../images/getinvolved1.png";
-import getinvolved2 from "../images/getinvolved2.png";
+import React from "react"
+import s from "styled-components"
+
+import {Subtitle} from "../ui/Typography"
+import {ButtonInverted} from "../ui/Button"
+
+import {TEXT_PRIMARY_INV} from "../utils/constants"
+import getinvolved1 from "../images/getinvolved1.png"
+import getinvolved2 from "../images/getinvolved2.png"
+
 
 const InvolvementWrapper = s.div`
   margin-top: 60px;
@@ -31,11 +33,8 @@ const InvolvementImage = s.img`
 `
 
 export const GetInvolved = () => {
-  const componentRef = React.useRef();
-  const { width } = useContainerDimensions(componentRef);
-
   return (
-    <div ref={componentRef}>
+    <>
       <Subtitle fontColor={TEXT_PRIMARY_INV}>Get Involved</Subtitle>
       <InvolvementWrapper>
         <Involvement>
@@ -47,7 +46,7 @@ export const GetInvolved = () => {
           <ButtonInverted href="" target="_blank" rel="noreferrer noopener">Join a team</ButtonInverted>
         </Involvement>
       </InvolvementWrapper>
-    </div>
+    </>
   );
 };
 

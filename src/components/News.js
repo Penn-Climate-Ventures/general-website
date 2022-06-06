@@ -1,9 +1,8 @@
 import React from "react"
-import s from "styled-components"
-import Carousel from "../ui/Carousel"
-import { useContainerDimensions } from "../ui/useContainerDimensions"
-import Tile from "../ui/Tile";
-import {Subtitle} from "../ui/Typography";
+
+import {GridContainer} from "../ui/layout"
+import {Subtitle} from "../ui/Typography"
+import Tile from "../ui/Tile"
 
 
 const articleItems = [
@@ -37,23 +36,12 @@ const articleItems = [
   },
 ]
 
-const FlexBox = s.div`
-  margin-top: 60px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 45px;
-`
 
-const NewsLayout = () => {
-  const componentRef = React.useRef()
-  const { width } = useContainerDimensions(componentRef)
-
+export const News = () => {
   return (
-    <div ref={componentRef}>
+    <>
       <Subtitle left={"left"}>In the News</Subtitle>
-      <FlexBox>
+      <GridContainer childWidth="300">
           { articleItems.map( article => (
             <Tile imgLink={article.imgLink}
                   topText={article.publisher}
@@ -61,11 +49,7 @@ const NewsLayout = () => {
                   midLink={article.link}
                   botText={article.date} />
           )) }
-      </FlexBox>
-    </div>
+      </GridContainer>
+    </>
   )
 }
-
-
-export const News = s(NewsLayout)`
-`

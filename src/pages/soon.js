@@ -1,24 +1,14 @@
-import React, {Component} from "react"
+import React from "react"
 
-import {
-  Layout,
-  Navbar,
-  Footer
-} from "../components"
-import {Title} from "../ui/Typography";
-import SEO from "../components/seo";
+import {PageLayout} from "../ui/layout"
 
-export default class Soon extends Component {
-  render() {
-    return (
-      <>
-      <SEO title="Coming Soon!" defer={false} />
-      <Navbar />
-      <Layout>
-        <Title>This page is coming soon!</Title>
-        <Footer />
-      </Layout>
-      </>
-    )
-  }
+
+const Soon = () => {
+  return (
+    <PageLayout title="Coming Soon!">
+
+    </PageLayout>
+  )
 }
+
+export default Soon

@@ -1,22 +1,15 @@
+import React from "react"
+import s from "styled-components"
+
 import Facebook from "../images/icons/facebook.png"
 import Instagram from "../images/icons/instagram.png"
 import LinkedIn from "../images/icons/linkedin.png"
 
-import React from "react";
-import s from "styled-components"
 
 export const navLinks = [
   {
     linkName: "Get Involved",
     url: "/get-involved"
-  },
-  // {
-  //   linkName: "Calendar",
-  //   url: "/calendar"
-  // },
-  {
-    linkName: "Class",
-    url: "/class"
   },
   {
     linkName: "Internships",
@@ -38,10 +31,10 @@ export const navLinks = [
     linkName: "Blog",
     url: "/blog"
   },
-  {
-    linkName: "About",
-    url: "/about"
-  }
+  // {
+  //   linkName: "About",
+  //   url: "/about"
+  // }
 ]
 
 const SocialMedia = s.img`

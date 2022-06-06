@@ -1,8 +1,9 @@
-import React from "react";
-import s from "styled-components";
-import { useContainerDimensions } from "../ui/useContainerDimensions";
-import {Subtitle, Title} from "../ui/Typography";
-import {LIGHT_BLUE} from "../utils/constants";
+import React from "react"
+import s from "styled-components"
+
+import {Subtitle, Title} from "../ui/Typography"
+
+import {LIGHT_BLUE} from "../utils/constants"
 import HeroNodes from "../images/home-backgrounds/hero-nodes.png"
 
 const HeroLayout = s.div`
@@ -128,33 +129,31 @@ const HeroWave = () => {
     </div>
   )
 }
-export const Hero = () => {
-  const componentRef = React.useRef();
-  const { width } = useContainerDimensions(componentRef);
 
+export const Hero = () => {
   return (
     <>
-    <HeroLayout ref={componentRef}>
-      <HeroWrapper>
-        <HeroTitle fontColor="var(--c-text-primary-inverted)">Penn Climate Ventures</HeroTitle>
-        <HeroTextWrapper>
-          <HeroText fontColor="var(--c-text-primary-inverted)">Catalyzing</HeroText>
-          <HeroText fontColor="var(--c-text-primary-inverted)">climate</HeroText>
-          <HeroText fontColor="var(--c-text-primary-inverted)">action </HeroText>
-          <HeroText fontColor="var(--c-text-primary-inverted)">through</HeroText>
-          <TextSpinnerWrapper>
-            <TextSpinner>
-              <Word1><HeroText fontColor="var(--c-text-primary-inverted)">workshops</HeroText></Word1>
-              <Word2><HeroText fontColor="var(--c-text-primary-inverted)">fellowships</HeroText></Word2>
-              <Word3><HeroText fontColor="var(--c-text-primary-inverted)">competitions</HeroText></Word3>
-              <Word4><HeroText fontColor="var(--c-text-primary-inverted)">socials</HeroText></Word4>
-            </TextSpinner>
-          </TextSpinnerWrapper>
-        </HeroTextWrapper>
-      </HeroWrapper>
-    </HeroLayout>
-    <HeroWave color={LIGHT_BLUE}/>
-  </>
-);
+      <HeroLayout>
+        <HeroWrapper>
+          <HeroTitle fontColor="var(--c-text-primary-inverted)">Penn Climate Ventures</HeroTitle>
+          <HeroTextWrapper>
+            <HeroText fontColor="var(--c-text-primary-inverted)">Catalyzing</HeroText>
+            <HeroText fontColor="var(--c-text-primary-inverted)">climate</HeroText>
+            <HeroText fontColor="var(--c-text-primary-inverted)">action </HeroText>
+            <HeroText fontColor="var(--c-text-primary-inverted)">through</HeroText>
+            <TextSpinnerWrapper>
+              <TextSpinner>
+                <Word1><HeroText fontColor="var(--c-text-primary-inverted)">workshops</HeroText></Word1>
+                <Word2><HeroText fontColor="var(--c-text-primary-inverted)">fellowships</HeroText></Word2>
+                <Word3><HeroText fontColor="var(--c-text-primary-inverted)">competitions</HeroText></Word3>
+                <Word4><HeroText fontColor="var(--c-text-primary-inverted)">socials</HeroText></Word4>
+              </TextSpinner>
+            </TextSpinnerWrapper>
+          </HeroTextWrapper>
+        </HeroWrapper>
+      </HeroLayout>
+      <HeroWave color={LIGHT_BLUE}/>
+    </>
+  );
 };
 

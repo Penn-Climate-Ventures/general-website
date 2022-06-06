@@ -1,21 +1,17 @@
 import React from "react"
 import "../styles/base.scss"
 
-import {
-  WideLayout,
-  Navbar,
-  News,
-  Footer, WavyLayout
-} from "../components"
-
-import {WhatWeDo} from "../components/WhatWeDo";
-import {UpcomingEvents} from "../components/UpcomingEvents";
-import {GetInvolved} from "../components/GetInvolved";
-import {Hero} from "../components/Hero";
-import {About} from "../components/About";
-import {LIGHT_BLUE} from "../utils/constants";
-import {Testimonials} from "../components/Testimonials";
-import SEO from "../components/seo";
+import {WhatWeDo} from "../components/WhatWeDo"
+import {Calendar} from "../components/Calendar"
+import {GetInvolved} from "../components/GetInvolved"
+import {Hero} from "../components/Hero"
+import {About} from "../components/About"
+import {Testimonials} from "../components/Testimonials"
+import SEO from "../components/seo"
+import {Navbar} from "../components/Navbar"
+import {Container, WavyLayout} from "../ui/layout"
+import {News} from "../components/News"
+import {Footer} from "../components/Footer"
 
 
 export default function IndexPage() {
@@ -24,12 +20,12 @@ export default function IndexPage() {
       <SEO title="Home" defer={false} />
       <Navbar />
       <Hero/>
-      <WideLayout><About/></WideLayout>
-      <WavyLayout color={LIGHT_BLUE}><WhatWeDo/></WavyLayout>
-      <WideLayout><UpcomingEvents/></WideLayout>
-      <WavyLayout color={LIGHT_BLUE}><GetInvolved/></WavyLayout>
-      <WideLayout><News/></WideLayout>
-      <WavyLayout color={LIGHT_BLUE}><Testimonials/></WavyLayout>
+      <Container wide><About/></Container>
+      <WavyLayout color={'var(--c-accent-primary)'}><WhatWeDo/></WavyLayout>
+      <Container wide><Calendar/></Container>
+      <WavyLayout color={'var(--c-accent-primary)'}><GetInvolved/></WavyLayout>
+      <Container wide><News/></Container>
+      <WavyLayout color={'var(--c-accent-primary)'}><Testimonials/></WavyLayout>
       <Footer />
     </>
   )

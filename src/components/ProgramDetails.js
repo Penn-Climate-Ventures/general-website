@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import s from "styled-components"
+
 import { LIGHT_BLUE } from "../utils/constants"
-import {Subtitle, Text} from "../ui/Typography";
+import {Subtitle, Text} from "../ui/Typography"
 
 const TabLayout = s.div`
   max-width: 800px;
@@ -56,7 +57,6 @@ export class ProgramDetails extends Component {
 
 
   render() {
-
     const inactiveTabStyle = {
       textDecoration: 'none',
       background: '#f2f2f2',
@@ -65,9 +65,7 @@ export class ProgramDetails extends Component {
     return (
       <div>
         <Subtitle>Program Details</Subtitle>
-        <Text>PCV offers 2 tracks for students:</Text>
 
-        <Text bold>Consulting</Text>
         <Text>
           <ul>
             <li>
@@ -86,37 +84,6 @@ export class ProgramDetails extends Component {
               Applications involve a written application and an interview with PCV
             </li>
           </ul>
-        </Text>
-
-        <Text bold>Fast-Track Internships:</Text>
-        <Text>
-          <ul>
-            <li>
-              1-2 students are selected to work closely with a founder in the climate space
-            </li>
-            <li>
-              Founders tell us what kind of skills and support they’re looking for, but
-              specific projects and commitments are discussed between you and the founder
-            </li>
-            <li>
-              Minimum 10 weeks commitment
-            </li>
-            <li>
-              Applications involve a written application, an interview with PCV, and an
-              interview with the founder
-            </li>
-          </ul>
-        </Text>
-
-        <Text>
-          Please note that this program is separate from our leadership team. While leadership is a
-          minimum year-long commitment, our Fellowships program is a semester long commitment - your
-          commitment is tied to your project. We do this because our selection of projects varies
-          greatly and may require completely different skills cohort to cohort. However, as a
-          consultant and intern participating in our Fellowships program, you will have access to
-          our Discord/all internal happenings/alum network, be invited to all socials and internal
-          activities, and find a lifelong community of students passionate about climate,
-          technology, and innovation.
         </Text>
       </div>
     )

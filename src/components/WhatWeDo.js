@@ -1,11 +1,12 @@
 import React from "react";
 import s from "styled-components";
-import { useContainerDimensions } from "../ui/useContainerDimensions";
-import {Subtitle, Text, UrlLink} from "../ui/Typography";
-import {LIGHT_BLUE, TEXT_PRIMARY_INV} from "../utils/constants";
-import whatwedo1 from "../images/whatwedo1.png";
-import whatwedo2 from "../images/whatwedo2.png";
-import whatwedo3 from "../images/whatwedo3.png";
+
+import {Subtitle, Text, UrlLink} from "../ui/Typography"
+
+import {LIGHT_BLUE, TEXT_PRIMARY_INV} from "../utils/constants"
+import whatwedo1 from "../images/whatwedo1.png"
+import whatwedo2 from "../images/whatwedo2.png"
+import whatwedo3 from "../images/whatwedo3.png"
 
 
 const DoWrapper = s.div`
@@ -56,11 +57,8 @@ const DoImage = s.img`
 `
 
 export const WhatWeDo = () => {
-  const componentRef = React.useRef();
-  const { width } = useContainerDimensions(componentRef);
-
   return (
-    <div ref={componentRef} color={LIGHT_BLUE}>
+    <div color={LIGHT_BLUE}>
       <Subtitle fontColor={TEXT_PRIMARY_INV}>What We Do</Subtitle>
       <DoWrapper>
         <DoBox>

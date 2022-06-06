@@ -1,13 +1,14 @@
 import { graphql } from "gatsby"
 import React from "react"
-import {Footer, Navbar} from "../components"
-import {Layout} from "../ui/Layout"
+import {Container} from "../ui/layout"
 import s from "styled-components"
-import {GatsbyImage, getImage} from "gatsby-plugin-image";
+import {GatsbyImage, getImage} from "gatsby-plugin-image"
 
 import "../styles/markdown.scss"
-import {Text, Title} from "../ui/Typography";
-import SEO from "../components/seo";
+import {Text, Title} from "../ui/Typography"
+import SEO from "../components/seo"
+import {Navbar} from "../components/Navbar"
+import {Footer} from "../components/Footer"
 
 const ArticleTitle = s(Title)`
   color: black;
@@ -33,6 +34,7 @@ const PublishingInfo = s.div`
 
 const CoverImage = s.div`
   width: 100%;
+  margin-top: 90px;
   margin-bottom: 30px;
   border-radius: 5px;
   overflow: hidden;
@@ -45,31 +47,34 @@ export default function BlogTemplate ({ data }) {
   const coverImageData = getImage(fm.image)
 
   return (
-    <Layout>
+    <>
       <SEO title={fm.title} defer={false} />
       <Navbar />
-      {coverImageData &&
-        <CoverImage>
-          <GatsbyImage alt={fm.title} image={coverImageData} />
-        </CoverImage>
-      }
 
-      <article style={{fontFamily: `Georgia, serif`, fontSize: 1.15 + `rem`}}>
-        <ArticleTitle>{fm.title}</ArticleTitle>
+      <Container>
+        {coverImageData &&
+          <CoverImage>
+            <GatsbyImage alt={fm.title} image={coverImageData} />
+          </CoverImage>
+        }
 
-        <PublishingInfo>
-          <div>
-            <Text>{fm.date}</Text>
-            <Text>{fm.readtime} min read; {fm.wordcount} words</Text>
-          </div>
-          <Text bold>Author: {fm.author}</Text>
-        </PublishingInfo>
+        <article style={{fontFamily: `Georgia, serif`, fontSize: 1.15 + `rem`}}>
+          <ArticleTitle>{fm.title}</ArticleTitle>
 
-        <div dangerouslySetInnerHTML={{ __html: article.html }} />
-      </article>
+          <PublishingInfo>
+            <div>
+              <Text>{fm.date}</Text>
+              <Text>{fm.readtime} min read; {fm.wordcount} words</Text>
+            </div>
+            <Text bold>Author: {fm.author}</Text>
+          </PublishingInfo>
+
+          <div dangerouslySetInnerHTML={{ __html: article.html }} />
+        </article>
+      </Container>
 
       <Footer/>
-    </Layout>
+    </>
   )
 }
 

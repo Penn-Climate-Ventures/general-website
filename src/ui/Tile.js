@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import s from "styled-components"
 import { LIGHT_BLUE } from "../utils/constants"
 import {Text, UrlLink} from "./Typography"
