@@ -3,6 +3,8 @@ import React from "react"
 import {Container, PageLayout} from "../ui/layout"
 import {Email, Text} from "../ui/Typography"
 
+import "../styles/base.scss"
+
 
 const InternshipsPage = () => {
   return (

@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import {Container, PageLayout} from "../ui/layout"
 import {Text} from "../ui/Typography"
 
+import "../styles/base.scss"
+
 
 const NotFoundPage = () => {
   return (

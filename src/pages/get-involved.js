@@ -3,6 +3,8 @@ import React from "react"
 import {Subtitle, Text, UrlLink} from "../ui/Typography"
 import {Container, PageLayout} from "../ui/layout"
 
+import "../styles/base.scss"
+
 
 const GetInvolvedPage = () => {
   return (

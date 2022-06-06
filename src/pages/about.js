@@ -6,6 +6,8 @@ import {Container, PageLayout} from "../ui/layout"
 
 import {teamData} from "../data/team"
 
+import "../styles/base.scss"
+
 
 const TeamGallery = s.div`
   display: flex;
