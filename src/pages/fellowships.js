@@ -10,6 +10,9 @@ import {Clients} from "../components/Clients"
 import {pastClientsData} from "../data/pastClients"
 import {currentClientsData} from "../data/currentClients"
 
+import "../styles/base.scss"
+
+
 const Fellowships = () => {
     return (
     <PageLayout title="Fellowships">

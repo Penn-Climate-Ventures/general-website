@@ -7,6 +7,8 @@ import { Button } from "../ui/Button"
 
 import { LIGHT_BLUE } from "../utils/constants"
 
+import "../styles/base.scss"
+
 
 const PrizeButtonContainer = s.div`
   margin-top: 60px;

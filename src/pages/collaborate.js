@@ -4,6 +4,8 @@ import {Container, PageLayout} from "../ui/layout"
 import {Email, Text, UrlLink} from "../ui/Typography"
 import {News} from "../components/News"
 
+import "../styles/base.scss"
+
 
 const CollaboratePage = () => {
   return (

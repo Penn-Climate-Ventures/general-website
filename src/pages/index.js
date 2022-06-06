@@ -13,6 +13,8 @@ import {Container, WavyLayout} from "../ui/layout"
 import {News} from "../components/News"
 import {Footer} from "../components/Footer"
 
+import "../styles/base.scss"
+
 
 export default function IndexPage() {
   return (

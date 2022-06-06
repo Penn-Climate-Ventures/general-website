@@ -6,6 +6,7 @@ import {GatsbyImage, getImage} from "gatsby-plugin-image"
 import {GridContainer, PageLayout} from "../ui/layout"
 import {SubText} from "../ui/Typography"
 
+import "../styles/base.scss"
 
 
 const CardLayout = s.div`
