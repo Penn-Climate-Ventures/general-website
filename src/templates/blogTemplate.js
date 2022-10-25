@@ -39,6 +39,7 @@ const CoverImage = s.div`
   border-radius: 5px;
   overflow: hidden;
   text-align: center;
+  opacity: 1;
 `
 
 export default function BlogTemplate ({ data }) {
