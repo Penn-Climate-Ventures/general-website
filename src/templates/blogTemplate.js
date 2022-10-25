@@ -55,7 +55,7 @@ export default function BlogTemplate ({ data }) {
       <Container>
         {coverImageData &&
           <CoverImage>
-            <GatsbyImage alt={fm.title} image={coverImageData} />
+            <GatsbyImage alt={fm.title} image={coverImageData} imgStyle={{ opacity: 1 }}/>
           </CoverImage>
         }
 

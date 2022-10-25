@@ -64,7 +64,7 @@ const BlogCard = ({ card }) => {
     <CardLayout>
       {coverImageData &&
         <CoverImage>
-          <GatsbyImage alt={fm.title} image={coverImageData} />
+          <GatsbyImage alt={fm.title} image={coverImageData} imgStyle={{ opacity: 1 }}/>
         </CoverImage>
       }
 
@@ -124,7 +124,7 @@ export const query = graphql`
             image {
               childImageSharp {
                 gatsbyImageData(
-                  placeholder: DOMINANT_COLOR
+                  placeholder: TRACED_SVG
                 )
               }
             }
