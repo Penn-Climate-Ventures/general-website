@@ -124,7 +124,7 @@ export const query = graphql`
             image {
               childImageSharp {
                 gatsbyImageData(
-                  placeholder: TRACED_SVG
+                  placeholder: DOMINANT_COLOR
                 )
               }
             }
