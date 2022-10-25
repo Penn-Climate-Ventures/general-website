@@ -27,6 +27,7 @@ const CoverImage = s.div`
   margin-bottom: 25px;
   border-radius: 5px;
   overflow: hidden;
+  opacity: 1;
 `
 
 const CardTitle = s.h2`
