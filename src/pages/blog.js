@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import s from "styled-components"
 import {graphql, Link} from "gatsby"
 import {GatsbyImage, getImage} from "gatsby-plugin-image"
 
 import {GridContainer, PageLayout} from "../ui/layout"
-import {SubText} from "../ui/Typography"
+import {SubText, Subtitle} from "../ui/Typography"
 
 import "../styles/base.scss"
 
@@ -54,7 +54,101 @@ const PublishingInfo = s.div`
   }
 `
 
+const TagSelectorWrapper = s.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 12px;
+  position: relative;
+  width: 365px;
+  height: 66px;
+  background: #F1F1F1;
+  border-radius: 58px;
+`
+
+const CRTagOption = s.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 23px;
+  gap: 10px;
+  width: 213px;
+  height: 48px;
+  background: #217CFF;
+  border-radius: 30px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`
+
+const BTagOption = s.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 36px;
+  gap: 10px;
+  width: 120px;
+  height: 48px;
+  background: #000000;
+  border-radius: 30px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`
+
+const CRTagText = s.div`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F1F1F1;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`
+
+const BTagText = s.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #217CFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`
+
+const TagSelectorOuterWrapper = s.div`
+  display: flex;
+  width = 100%;
+  align-items: center;
+  justify-content: center;
+`
+
 const Description = s.p``
+
+const TagSelector = ({ tag, setTag }) => {
+  return (
+    <TagSelectorOuterWrapper>
+      <TagSelectorWrapper>
+        <CRTagOption onClick={() => tag == "Climate Reports" ? setTag("") : setTag("Climate Reports")}>
+          <CRTagText>
+          Climate Reports
+          </CRTagText>
+        </CRTagOption>
+        <BTagOption onClick={() => tag == "Blog" ? setTag("") : setTag("Blog")}>
+          <BTagText>
+            Blog
+          </BTagText>
+        </BTagOption>
+      </TagSelectorWrapper>
+    </TagSelectorOuterWrapper>
+  )
+}
 
 const BlogCard = ({ card }) => {
   const fm = card.frontmatter
@@ -80,11 +174,13 @@ const BlogCard = ({ card }) => {
         <PublishingInfo>
           <SubText>By {fm.author}</SubText>
           <SubText>{fm.date}</SubText>
+          <SubText>Tags: {fm.tags}</SubText>
         </PublishingInfo>
       }
       {!fm.author &&
         <PublishingInfo>
           <SubText>{fm.date}</SubText>
+          <SubText>Tags: {fm.tags}</SubText>
         </PublishingInfo>
       }
 
@@ -101,11 +197,13 @@ const BlogCard = ({ card }) => {
 
 
 const BlogPage = ({ data }) => {
+  const [tag, setTag] = useState("")
   return (
     <PageLayout title="Blog">
+      <TagSelector tag={tag} setTag={setTag} />
       <GridContainer childWidth="450">
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <BlogCard card={node} />
+          (!tag || node.frontmatter.tags.includes(tag)) && <BlogCard card={node} />
         ))}
       </GridContainer>
     </PageLayout>
