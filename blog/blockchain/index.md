@@ -1,12 +1,12 @@
 ---
-image: ./cover.jpeg
+image: ./cover.jpg
 title: "Blockchain Energy"
 author: Daniel Van Rooyen
 date: 2022-10-26
 readtime: 4
 wordcount: 676
 desc: "Placing everyday citizens in charge of a co-created Energy Future."
-tags: ["Climate Reports"]
+tags: ["Energy Policy"]
 ---
 
 Vertically-integrated utilities have always sat in the middle of the energy system. They decided where and when to build generating capacity; they decided how to bridge the distance between generators and loads; they have kept the energy systems in balance. However, a global technological revolution has altered the relationship between centralized power authorities and consumers. The booming market in Distributed Energy Resources (DER) like solar photovoltaic systems (PV), batteries, microgrids and embedded networks has moved the power balance from central authorities to the edges of the grid, to where citizens have control.
