@@ -6,7 +6,7 @@ date: 2021-09-10
 readtime: 3.5
 wordcount: 839
 desc: ""
-tags: ['']
+tags: ["General"]
 ---
 
 Fifty years ago, the Green Revolution and the invention of industry-grade nitrogen fertilizers completely revolutionized agriculture as we know it today. However, in the years since, we have yet to see many advancements of the same scale. In our approach to land management, allocation of resources, transportation, and more, we’ve hit a tech gap. Agriculture, with its outdated industrial model, emphasizes large-scale farms with massive outputs while ignoring externalities from environmental impact, financial repercussions, and its human toll.

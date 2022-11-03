@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import s from "styled-components"
 import {graphql, Link} from "gatsby"
 import {GatsbyImage, getImage} from "gatsby-plugin-image"
 
 import {GridContainer, PageLayout} from "../ui/layout"
-import {SubText} from "../ui/Typography"
+import {SubText, Subtitle} from "../ui/Typography"
 
 import "../styles/base.scss"
 
@@ -54,7 +54,84 @@ const PublishingInfo = s.div`
   }
 `
 
+const TagSelectorWrapper = s.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 12px;
+  position: relative;
+  background: #F1F1F1;
+  border-radius: 58px;
+`
+
+const TagOption = s.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 25px;
+  gap: 10px;
+  background: white;
+  border-radius: 30px;
+  flex: none;
+  flex-grow: 0;
+`
+
+const TagText = s.div`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+`
+
+const TagSelectorOuterWrapper = s.div`
+  display: flex;
+  width = 100%;
+  align-items: center;
+  justify-content: center;
+`
+
 const Description = s.p``
+
+const optionClick = (tagType, tag, tagSetter, colorSetter, textColorSetter, index) => {
+  let tempColorArray = ['white', 'white']
+  let tempTextColorArray = ['#217CFF', '#217CFF']
+  if (tag == tagType) {
+    tagSetter("")
+    colorSetter(tempColorArray)
+    textColorSetter(tempTextColorArray)
+  } else {
+    tagSetter(tagType)
+    tempColorArray[index] = '#217CFF'
+    colorSetter(tempColorArray)
+    tempTextColorArray[index] = 'white'
+    textColorSetter(tempTextColorArray)
+  }
+}
+
+const TagSelector = ({ tag, setTag }) => {
+  const [colors, setColors] = useState(['white', 'white'])
+  const [textColors, setTextColors] = useState(['#217CFF', '#217CFF'])
+  return (
+    <TagSelectorOuterWrapper>
+      <TagSelectorWrapper>
+        <TagOption onClick={() => optionClick("Climate Reports", tag, setTag, setColors, setTextColors, 0)} style={{background: colors[0]}}>
+          <TagText style={{color: textColors[0]}}>
+            Climate Reports
+          </TagText>
+        </TagOption>
+        <TagOption onClick={() => optionClick("General", tag, setTag, setColors, setTextColors, 1)} style={{background: colors[1]}}>
+        <TagText style={{color: textColors[1]}}>
+            General
+          </TagText>
+        </TagOption>
+      </TagSelectorWrapper>
+    </TagSelectorOuterWrapper>
+  )
+}
 
 const BlogCard = ({ card }) => {
   const fm = card.frontmatter
@@ -80,11 +157,13 @@ const BlogCard = ({ card }) => {
         <PublishingInfo>
           <SubText>By {fm.author}</SubText>
           <SubText>{fm.date}</SubText>
+          <SubText>Tags: {fm.tags}</SubText>
         </PublishingInfo>
       }
       {!fm.author &&
         <PublishingInfo>
           <SubText>{fm.date}</SubText>
+          <SubText>Tags: {fm.tags}</SubText>
         </PublishingInfo>
       }
 
@@ -101,11 +180,13 @@ const BlogCard = ({ card }) => {
 
 
 const BlogPage = ({ data }) => {
+  const [tag, setTag] = useState("")
   return (
     <PageLayout title="Blog">
+      <TagSelector tag={tag} setTag={setTag} />
       <GridContainer childWidth="450">
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <BlogCard card={node} />
+          (!tag || node.frontmatter.tags.includes(tag)) && <BlogCard card={node} />
         ))}
       </GridContainer>
     </PageLayout>
