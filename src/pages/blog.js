@@ -126,9 +126,9 @@ const TagSelector = ({ tag, setTag }) => {
   return (
     <TagSelectorOuterWrapper>
       <TagSelectorWrapper>
-        <TagOption onClick={() => optionClick("Climate Reports", tag, setTag, setColors, setTextColors, 0)} style={{background: colors[0]}}>
+        <TagOption onClick={() => optionClick("Energy Policy", tag, setTag, setColors, setTextColors, 0)} style={{background: colors[0]}}>
           <TagText style={{color: textColors[0]}}>
-            Climate Reports
+            Energy Policy
           </TagText>
         </TagOption>
         <TagOption onClick={() => optionClick("General", tag, setTag, setColors, setTextColors, 1)} style={{background: colors[1]}}>

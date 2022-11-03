@@ -1,12 +1,12 @@
 ---
-image: ./cover.jpeg
+image: ./cover.jpg
 title: "Protecting Pockets and the Planet: Tackling the Climate and Housing Crises Simultaneously"
 author: Bronwyn Patterson
 date: 2022-10-25
 readtime: 3
 wordcount: 711
 desc: "Policy | How weatherizing affordable housing could save Philadelphians cash and the city its carbon footprint."
-tags: ["Climate Reports"]
+tags: ["Energy Policy"]
 ---
 
 Philadelphia has not escaped the sweeping and persistent casualties of the housing crisis bubble that arose in late 2006. Though historically more affordable than other major cities, the influx of new businesses and residents that has accompanied the city’s continued
