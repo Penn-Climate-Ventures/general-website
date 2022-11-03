@@ -75,7 +75,7 @@ const CRTagOption = s.div`
   gap: 10px;
   width: 213px;
   height: 48px;
-  background: #217CFF;
+  background: white;
   border-radius: 30px;
   flex: none;
   order: 0;
@@ -90,7 +90,7 @@ const BTagOption = s.div`
   gap: 10px;
   width: 120px;
   height: 48px;
-  background: #000000;
+  background: white;
   border-radius: 30px;
   flex: none;
   order: 1;
@@ -131,16 +131,29 @@ const TagSelectorOuterWrapper = s.div`
 
 const Description = s.p``
 
+const optionClick = (tagType, tag, tagSetter, colorSetter, index) => {
+  if (tag == tagType) {
+    tagSetter("")
+    colorSetter(['white', 'white'])
+  } else {
+    tagSetter(tagType)
+    let tempColorArray = ['white', 'white']
+    tempColorArray[index] = '#217CFF'
+    colorSetter(tempColorArray)
+  }
+
+}
 const TagSelector = ({ tag, setTag }) => {
+  const [colors, setColors] = useState(['white', 'white'])
   return (
     <TagSelectorOuterWrapper>
       <TagSelectorWrapper>
-        <CRTagOption onClick={() => tag == "Climate Reports" ? setTag("") : setTag("Climate Reports")}>
+        <CRTagOption onClick={() => optionClick("Climate Reports", tag, setTag, setColors, 0)} background={'Blue'}>
           <CRTagText>
-          Climate Reports
+            Climate Reports
           </CRTagText>
         </CRTagOption>
-        <BTagOption onClick={() => tag == "Blog" ? setTag("") : setTag("Blog")}>
+        <BTagOption onClick={() => optionClick("Blog", tag, setTag, setColors, 1)} background={colors[1]}>
           <BTagText>
             Blog
           </BTagText>

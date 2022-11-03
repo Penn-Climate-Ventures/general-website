@@ -5,7 +5,7 @@ import s from "styled-components"
 import {GatsbyImage, getImage} from "gatsby-plugin-image"
 
 import "../styles/markdown.scss"
-import {Text, Title} from "../ui/Typography"
+import {Text, Title, Subtitle} from "../ui/Typography"
 import SEO from "../components/seo"
 import {Navbar} from "../components/Navbar"
 import {Footer} from "../components/Footer"
@@ -15,6 +15,14 @@ const ArticleTitle = s(Title)`
   text-align: left;
   font-family: 'Lora', serif;
   font-size: 2.25rem;
+  margin-bottom: 0rem;
+`
+
+const ArticleDescription = s(Subtitle)`
+  color: black;
+  text-align: left;
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
   margin-bottom: 0rem;
 `
 
@@ -61,11 +69,12 @@ export default function BlogTemplate ({ data }) {
 
         <article style={{fontFamily: `Georgia, serif`, fontSize: 1.15 + `rem`}}>
           <ArticleTitle>{fm.title}</ArticleTitle>
-
+          <ArticleDescription>{fm.desc}</ArticleDescription>
           <PublishingInfo>
             <div>
               <Text>{fm.date}</Text>
               <Text>{fm.readtime} min read; {fm.wordcount} words</Text>
+              <Text>Tags: {fm.tags}</Text>
             </div>
             <Text bold>Author: {fm.author}</Text>
           </PublishingInfo>
@@ -96,6 +105,8 @@ export const query = graphql`
         readtime
         wordcount
         author
+        desc
+        tags
       }
     }
   }
