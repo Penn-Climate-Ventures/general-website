@@ -16,7 +16,7 @@ const CardLayout = s.div`
   padding-top: 30px;
   padding-bottom: 30px;
   flex: 0 0 auto;
-  
+
   @media (min-width: 1100px) {
     flex: 0 0 500px;
   }
@@ -33,12 +33,12 @@ const CoverImage = s.div`
 const CardTitle = s.h2`
   font-size: 1.75rem;
   line-height: 2rem;
-  
+
   & > * {
     color: #333333;
     font-weight: 900;
   }
-  
+
   &:hover > * {
     text-decoration: underline;
   }
@@ -47,7 +47,7 @@ const CardTitle = s.h2`
 const PublishingInfo = s.div`
   margin-top: 10px;
   margin-bottom: 10px;
-    
+
   & > p {
     font-size: .85rem;
     color: var(--c-text-primary-muted);
@@ -75,6 +75,13 @@ const TagOption = s.div`
   border-radius: 30px;
   flex: none;
   flex-grow: 0;
+  border: 1px solid white;
+
+  &:hover {
+	cursor: pointer;
+	border: 1px solid #217CFF;
+	transition: all ease-in-out 0.2s;
+  }
 `
 
 const TagText = s.div`
@@ -92,6 +99,7 @@ const TagSelectorOuterWrapper = s.div`
   width = 100%;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 `
 
 const Description = s.p``
