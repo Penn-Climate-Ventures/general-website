@@ -6,7 +6,7 @@ date: 2021-10-25
 readtime: 2.1
 wordcount: 544
 desc: ""
-tags: ["Blog"]
+tags: ["General"]
 ---
 
 Technological advances have increased the average human lifespan from a mere 50 years to almost 80 years today; however, not all generations are improving equally rapidly. In 2019, Nick Oseyko noticed the health of Ukrainian children seemed to be getting worse and worse with every generation. When he relayed this observation to a doctor, the doctor confirmed his counterintuitive observation and explained it was most likely due to global warming or rising carbon dioxide levels in the atmosphere. From this point forward, Oseyko made it his mission to help power the movement against global warming through Carbominer: a Ukrainian direct air capture (DAC) startup.

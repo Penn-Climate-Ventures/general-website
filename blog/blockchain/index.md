@@ -5,7 +5,7 @@ author: Daniel Van Rooyen
 date: 2022-10-26
 readtime: 4
 wordcount: 676
-desc: "Placing everyday citizens in charge of a Co-created Energy Future."
+desc: "Placing everyday citizens in charge of a co-created Energy Future."
 tags: ["Climate Reports"]
 ---
 

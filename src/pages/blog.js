@@ -61,62 +61,27 @@ const TagSelectorWrapper = s.div`
   padding: 10px;
   gap: 12px;
   position: relative;
-  width: 365px;
-  height: 66px;
   background: #F1F1F1;
   border-radius: 58px;
 `
 
-const CRTagOption = s.div`
+const TagOption = s.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 12px 23px;
+  padding: 12px 25px;
   gap: 10px;
-  width: 213px;
-  height: 48px;
   background: white;
   border-radius: 30px;
   flex: none;
-  order: 0;
   flex-grow: 0;
 `
 
-const BTagOption = s.div`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 12px 36px;
-  gap: 10px;
-  width: 120px;
-  height: 48px;
-  background: white;
-  border-radius: 30px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-`
-
-const CRTagText = s.div`
+const TagText = s.div`
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  color: #F1F1F1;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-`
-
-const BTagText = s.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #217CFF;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -131,33 +96,38 @@ const TagSelectorOuterWrapper = s.div`
 
 const Description = s.p``
 
-const optionClick = (tagType, tag, tagSetter, colorSetter, index) => {
+const optionClick = (tagType, tag, tagSetter, colorSetter, textColorSetter, index) => {
+  let tempColorArray = ['white', 'white']
+  let tempTextColorArray = ['#217CFF', '#217CFF']
   if (tag == tagType) {
     tagSetter("")
-    colorSetter(['white', 'white'])
+    colorSetter(tempColorArray)
+    textColorSetter(tempTextColorArray)
   } else {
     tagSetter(tagType)
-    let tempColorArray = ['white', 'white']
     tempColorArray[index] = '#217CFF'
     colorSetter(tempColorArray)
+    tempTextColorArray[index] = 'white'
+    textColorSetter(tempTextColorArray)
   }
-
 }
+
 const TagSelector = ({ tag, setTag }) => {
   const [colors, setColors] = useState(['white', 'white'])
+  const [textColors, setTextColors] = useState(['#217CFF', '#217CFF'])
   return (
     <TagSelectorOuterWrapper>
       <TagSelectorWrapper>
-        <CRTagOption onClick={() => optionClick("Climate Reports", tag, setTag, setColors, 0)} background={'Blue'}>
-          <CRTagText>
+        <TagOption onClick={() => optionClick("Climate Reports", tag, setTag, setColors, setTextColors, 0)} style={{background: colors[0]}}>
+          <TagText style={{color: textColors[0]}}>
             Climate Reports
-          </CRTagText>
-        </CRTagOption>
-        <BTagOption onClick={() => optionClick("Blog", tag, setTag, setColors, 1)} background={colors[1]}>
-          <BTagText>
-            Blog
-          </BTagText>
-        </BTagOption>
+          </TagText>
+        </TagOption>
+        <TagOption onClick={() => optionClick("General", tag, setTag, setColors, setTextColors, 1)} style={{background: colors[1]}}>
+        <TagText style={{color: textColors[1]}}>
+            General
+          </TagText>
+        </TagOption>
       </TagSelectorWrapper>
     </TagSelectorOuterWrapper>
   )

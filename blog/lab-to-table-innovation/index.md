@@ -6,7 +6,7 @@ date: 2021-11-22
 readtime: 6.5
 wordcount: 1503
 desc: ""
-tags: ["Blog"]
+tags: ["General"]
 ---
 
 With an anticipated [70% increase](http://www.fao.org/fileadmin/templates/wsfs/docs/Issues_papers/HLEF2050_Global_Agriculture.pdf) in global meat demand from [350 million tons](https://www.theworldcounts.com/challenges/consumption/foods-and-beverages/world-consumption-of-meat/story) to a whopping 570 million tons by 2050, we can not meet international meat demands in the coming decades. What’s more, the [land allocated](http://www.fao.org/3/ar591e/ar591e.pdf) for livestock cultivation is also purported to rise to a staggering 30% of the Earth’s surface by 2050. The situation is serious enough today—a [2020 survey](https://www.aspca.org/shopwithyourheart/business-and-farmer-resources/aspca-surveys) shows that 77% of consumers are concerned about inadequate livestock welfare in the meat industry. All this, while the emissions from livestock account for 14.5 percent of greenhouse gas emissions worldwide.
