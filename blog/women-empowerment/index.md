@@ -2,7 +2,7 @@
 image: ./cover.jpg
 title: "The Relationship between Women’s Empowerment and Climate Change"
 author: Lillian Miller
-date:
+date: 2022-11-04
 readtime: 5
 wordcount: 698
 desc: ""
