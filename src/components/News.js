@@ -1,7 +1,7 @@
 import React from "react"
 
 import {GridContainer} from "../ui/layout"
-import {Subtitle} from "../ui/Typography"
+import {CenteredSubtitle} from "../ui/Typography"
 import Tile from "../ui/Tile"
 
 
@@ -40,7 +40,7 @@ const articleItems = [
 export const News = () => {
   return (
     <>
-      <Subtitle left={"left"}>In the News</Subtitle>
+      <CenteredSubtitle left={"left"}>In the News</CenteredSubtitle>
       <GridContainer childWidth="300">
           { articleItems.map( article => (
             <Tile imgLink={article.imgLink}

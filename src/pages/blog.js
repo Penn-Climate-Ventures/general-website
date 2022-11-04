@@ -20,6 +20,10 @@ const CardLayout = s.div`
   @media (min-width: 1100px) {
     flex: 0 0 500px;
   }
+
+  @media (max-width: 1100px) {
+    width: 350px;
+  }
 `
 
 const CoverImage = s.div`

@@ -105,6 +105,11 @@ export const GridContainer = s.div`
   grid-gap: 60px 45px;
   justify-content: center;
   padding: initial;
+  @media (max-width: 1100px) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 const HeaderWrapper = s.div`

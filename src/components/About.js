@@ -1,7 +1,7 @@
 import React from "react"
 import s from "styled-components"
 
-import { Subtitle, Text } from "../ui/Typography"
+import { Text, CenteredSubtitle } from "../ui/Typography"
 
 import goal1 from "../images/goal1.png"
 import goal2 from "../images/goal2.png"
@@ -46,29 +46,34 @@ const GoalImage = s.img`
   width: 120px;
 `
 
+const IntroTextWrapper = s.div`
+`
+
 export const About = () => {
   return (
     <>
-      <Subtitle>About Us</Subtitle>
+      <CenteredSubtitle>About Us</CenteredSubtitle>
       <AboutImageWrapper>
         <AboutImage src={gbmImage}/>
       </AboutImageWrapper>
-      <Text>
-        Imagine a campus where students line up to work for the biggest movers in climate innovation.
-      </Text>
-      <Text>
-        Imagine a campus where sustainability and climate analyses are integrated into our course plans, just like intro statistics or calculus.
-      </Text>
-      <Text>
-        Imagine a campus where climate is just... common sense.
-      </Text>
-      <Text>
-        That's what we're building.
-      </Text>
-      <Text>
-        Let's push Penn into climate.
-      </Text>
-      <Subtitle>Our Goals</Subtitle>
+      <IntroTextWrapper>
+        <Text>
+          Imagine a campus where students line up to work for the biggest movers in climate innovation.
+        </Text>
+        <Text>
+          Imagine a campus where sustainability and climate analyses are integrated into our course plans, just like intro statistics or calculus.
+        </Text>
+        <Text>
+          Imagine a campus where climate is just... common sense.
+        </Text>
+        <Text>
+          That's what we're building.
+        </Text>
+        <Text>
+          Let's push Penn into climate.
+        </Text>
+      </IntroTextWrapper>
+      <CenteredSubtitle>Our Goals</CenteredSubtitle>
       <GoalWrapper>
         <Goal>
           <GoalImage src={goal1}/>

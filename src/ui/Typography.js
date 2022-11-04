@@ -22,6 +22,19 @@ export const Subtitle = s.h2`
   margin-bottom: 1.5rem;
 `
 
+export const CenteredSubtitle = s.h2`
+  font-size:${({ fontSize }) => fontSize || `1.8rem`};
+  color: ${({fontColor}) => fontColor || LIGHT_BLUE};
+  ${({bold}) => bold && `font-weight: bold`};
+  ${({center}) => center && `text-align: center`};
+  letter-spacing: 0.05ch;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
 export const Text = s.p`
   font-family: 'Montserrat';
   font-size:${({ fontSize }) => fontSize || `1rem`};

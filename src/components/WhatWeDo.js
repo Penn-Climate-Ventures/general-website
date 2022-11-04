@@ -1,7 +1,7 @@
 import React from "react";
 import s from "styled-components";
 
-import {Subtitle, Text, UrlLink} from "../ui/Typography"
+import {CenteredSubtitle, Text, UrlLink} from "../ui/Typography"
 
 import {LIGHT_BLUE, TEXT_PRIMARY_INV} from "../utils/constants"
 import whatwedo1 from "../images/whatwedo1.png"
@@ -59,7 +59,7 @@ const DoImage = s.img`
 export const WhatWeDo = () => {
   return (
     <div color={LIGHT_BLUE}>
-      <Subtitle fontColor={TEXT_PRIMARY_INV}>What We Do</Subtitle>
+      <CenteredSubtitle fontColor={TEXT_PRIMARY_INV}>What We Do</CenteredSubtitle>
       <DoWrapper>
         <DoBox>
           <DoLabel><Text><UrlLink href="/class">Workshops</UrlLink></Text></DoLabel>
