@@ -1,7 +1,7 @@
 import React from "react";
 import s from "styled-components"
 
-import {Subtitle} from "../ui/Typography"
+import {CenteredSubtitle} from "../ui/Typography"
 
 
 const CalendarWrapper = s.div`
@@ -13,7 +13,7 @@ const CalendarWrapper = s.div`
 export const Calendar = () => {
   return (
     <div>
-      <Subtitle>Upcoming Events</Subtitle>
+      <CenteredSubtitle>Upcoming Events</CenteredSubtitle>
       <CalendarWrapper>
         <iframe
           src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showCalendars=1&showPrint=0&title=Penn%20Climate%20Ventures&src=ZDVobTczNWdsNmM1dTF1Zzh2Ym1wZ2RtbG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23#217CFF"

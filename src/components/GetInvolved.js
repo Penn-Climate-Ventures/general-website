@@ -1,7 +1,7 @@
 import React from "react"
 import s from "styled-components"
 
-import {Subtitle} from "../ui/Typography"
+import {CenteredSubtitle} from "../ui/Typography"
 import {ButtonInverted} from "../ui/Button"
 
 import {TEXT_PRIMARY_INV} from "../utils/constants"
@@ -35,7 +35,7 @@ const InvolvementImage = s.img`
 export const GetInvolved = () => {
   return (
     <>
-      <Subtitle fontColor={TEXT_PRIMARY_INV}>Get Involved</Subtitle>
+      <CenteredSubtitle fontColor={TEXT_PRIMARY_INV}>Get Involved</CenteredSubtitle>
       <InvolvementWrapper>
         <Involvement>
           <InvolvementImage src={getinvolved1}/>

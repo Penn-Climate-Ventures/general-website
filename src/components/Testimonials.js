@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import s from "styled-components"
 
-import { Subtitle, Text } from "../ui/Typography"
+import { CenteredSubtitle, Text } from "../ui/Typography"
 import {ButtonInverted} from "../ui/Button"
 import {TEXT_PRIMARY_INV} from "../utils/constants"
 
@@ -99,7 +99,7 @@ export const Testimonials = () => {
 
   return (
     <>
-      <Subtitle fontColor={TEXT_PRIMARY_INV}>Testimonials</Subtitle>
+      <CenteredSubtitle fontColor={TEXT_PRIMARY_INV}>Testimonials</CenteredSubtitle>
       <TestimonialWrapper>
         <div>
           <QuoteWrapper>
