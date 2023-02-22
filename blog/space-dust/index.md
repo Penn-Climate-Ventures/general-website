@@ -1,0 +1,30 @@
+---
+image: ./cover.jpg
+title: "The Newest Method to Combat Climate Change - Space Dust?"
+author: Lillian Miller
+date: 2023-02-17
+readtime: 5
+wordcount: 702
+desc: "Could launching lunar dust from the moon be a feasible method to help mitigate climate change?"
+tags: ["Energy Policy"]
+---
+
+When preparing to spend a day outside, we have many methods to protect ourselves from the sun; we apply sunscreen, wear protective clothing, seek shelter under umbrellas, and look for shady spots to relax in. [Solar geoengineers](https://thehill.com/homenews/space/3849861-dust-from-the-moon-could-help-slow-climate-change-study-finds/) are trying to recreate this on a much larger scale. These scientists explore ways to scatter and reflect solar rays before they hit earth as a novel method to combat climate change. Climate change and the resultant rising temperatures are one of the foremost problems facing society today, with an expected [2.8°C rise by the end of the century](https://www.un.org/en/climatechange/what-is-climate-change). Climate change has numerous consequences including increasingly severe weather patterns, agricultural issues, and infrastructure damage, which will become increasingly challenging to deal with in the coming years. If humans are unable to cut back on fossil fuels usage to reduce warming, other methods to combat climate change are going to become essential.
+
+Recently, scientists from the University of Utah led a [study](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000133#abstract0) to determine the feasibility of using dust to shield the Earth from solar radiation. [Dust](https://www.washingtonpost.com/climate-environment/2023/02/08/space-dust-moon-climate-change/), which is very efficient at scattering sunlight, has played a large role in cooling Earth’s climate in the past. The [Little Ice Age](https://www.bbc.com/news/science-environment-16797075) (around 500- 700 years ago) was thought to be caused by a series of large volcanic eruptions that left large amounts of dust in the upper atmosphere. Creating dust clouds around the Earth could block out between [1-2% of solar radiation](https://www.sciencedaily.com/releases/2023/02/230208155658.htm), which would be enough to mitigate current human-caused warming.
+
+This study used sophisticated [computer simulations](https://www.washingtonpost.com/climate-environment/2023/02/08/space-dust-moon-climate-change/) to propose various methods of creating clouds of dust that would cool the Earth. The most effective method of creating this dust cloud could be to shoot dust off from [lagrange point 1 (L1)](https://www.washingtonpost.com/climate-environment/2023/02/08/space-dust-moon-climate-change/), an equilibrium point between the Earth and the Sun, where objects tend to stay still. However, the [costs](https://www.washingtonpost.com/climate-environment/2023/02/08/space-dust-moon-climate-change/) associated with creating a space platform at this point, and the constant supply of dust that would be needed to achieve this, is extraordinarily impractical. Alternatively, the study [authors](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000133#abstract0) propose launching lunar dust from the moon as a cheaper and more effective alternative to create a dust shield around the Earth.
+
+Lunar dust happens to have just the right [size and composition](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000133#abstract0) to produce a functional shade around the Earth. Additionally, building cannons on the moon would allow for the constant supply of dust needed to sustain this shield, as dust will [disperse](https://www.sciencedaily.com/releases/2023/02/230208155658.htm) from orbit after a few days and will require replacement.
+
+Building cannons on the Moon to cover Earth in a shield of dust may sound like science fiction, but it calls to question why such extreme methods are necessary to combat climate change.
+
+The lunar dust proposal would have minimal immediate [impact](https://www.washingtonpost.com/climate-environment/2023/02/08/space-dust-moon-climate-change/) on life on Earth; people would not be able to see or feel the shield, and since no aerosols are being released into Earth’s atmosphere, the direct environmental impact of the dust should be minimal. However, various [concerns](https://www.solargeoeng.org/non-use-agreement/open-letter/) have been raised about all proposed solar geoengineering projects, including the unknown impacts on weather patterns, agriculture, and water supplies, the inability to effectively and fairly govern such a program that affects the whole world, and the avoidance of taking responsibility for our impacts on the planet. These issues have been formalized by a group of 380 scientists who signed a [letter](https://www.solargeoeng.org/non-use-agreement/open-letter/) arguing that the international community should pledge to not consider solar geoengineering as a solution to climate change under any circumstances.
+
+Dr. Michael Mann, a climate scientist at the University of Pennsylvania, has made many [arguments against](https://thehill.com/homenews/space/3849861-dust-from-the-moon-could-help-slow-climate-change-study-finds/) the use of geoengineering, calling attention to the fact that cooling the climate through artificial means does not address the root cause of climate change: carbon emissions. He believes that the use of solar geoengineering is not a feasible solution to our current climate issues, and would likely result in a drastically different (even if cooler) climate than we know today.
+
+While a creative and radical option, using lunar dust to cool the Earth has many unknown consequences that could alter our environment in drastic ways. However, such bold programs may be necessary in the future if primary methods of combating climate change, such as reducing emissions and carbon capture programs, should fail.
+
+---
+
+_Lillian Miller is a sophomore studying Chemistry and Environmental Science at the University of Pennsylvania._
