@@ -13,11 +13,11 @@
     "Penn"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "develop": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby develop",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby develop",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby build",
+    "serve": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby serve",
+    "clean": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby clean"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",

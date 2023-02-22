@@ -16,8 +16,8 @@ export const navLinks = [
     url: "/internships"
   },
   {
-    linkName: "Fellowships",
-    url: "/fellowships"
+    linkName: "Consulting",
+    url: "/consulting"
   },
   {
     linkName: "Prize",
