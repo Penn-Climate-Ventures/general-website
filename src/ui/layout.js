@@ -102,7 +102,7 @@ export const GridContainer = s.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(${props => (props.childWidth
   ? props.childWidth : 300)}px, max-content));
-  grid-gap: 60px 45px;
+  grid-gap: 60px 85px;
   justify-content: center;
   padding: initial;
   @media (max-width: 1100px) {
