@@ -11,10 +11,10 @@ export const navLinks = [
     linkName: "Get Involved",
     url: "/get-involved"
   },
-  {
-    linkName: "Our Team",
-    url: "/our-team"
-  },
+  // {
+  //   linkName: "Our Team",
+  //   url: "/our-team"
+  // },
   {
     linkName: "Internships",
     url: "/internships"
