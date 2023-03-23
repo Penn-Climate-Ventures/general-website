@@ -16,6 +16,95 @@ const Headshot = s.img`
 
 // TODO: Edit MemberContainer to match Figma design
 const MemberContainer = s.div`
+width: min-content;
+  height: min-content;
+  padding: 42px 38px;
+  border-radius: 42px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 0px 25px 4px #00000008;
+`
+const Profile2  = s.div`
+width: min-content;
+height: min-content;
+align-self: flex-start;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+`
+const Image  = s.div`
+width: min-content;
+height: min-content;
+align-self: flex-start;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+`
+const firstlast  = s.div`
+width: min-content;
+height: min-content;
+align-self: flex-start;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+`
+const Bio  = s.div`
+width: min-content;
+height: min-content;
+align-self: flex-start;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+`
+
+
+const headofwebdev  = s.div`
+width: min-content;
+height: min-content;
+align-self: flex-start;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+`
+const b2  = s.div`
+width: min-content;
+height: min-content;
+align-self: flex-start;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+`
+const frame22  = s.div`
+width: min-content;
+height: min-content;
+align-self: flex-start;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+`
+const seas242  = s.div`
+width: min-content;
+height: min-content;
+align-self: flex-start;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+`
+const frame32  = s.div`
+width: min-content;
+height: min-content;
+align-self: flex-start;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+`
+const cis2  = s.div`
+width: min-content;
+height: min-content;
+align-self: flex-start;
+flex-direction: column;
+align-items: center;
+gap: 14px;
 `
 
 const MemberCard = ({ memberData }) => {
@@ -27,11 +116,21 @@ const MemberCard = ({ memberData }) => {
     // Feel free to make additional modifications as needed.
     return (
         <MemberContainer>
-            <Headshot src={headshotImage ?? "/team/GenericHeadshot.png"} alt={name}/>
-            <Text>{name}</Text>
-            <Text>{roles.join(", ")}</Text>
-            <Text>{year}</Text>
-            <Text>{student}</Text>
+            <Profile2>
+                <Image src={headshotImage= "/team/GenericHeadshot.png"} alt={name}/>
+                <Bio>
+                    <firstlast>{name}</firstlast>
+                    <headofwebdev>{roles.join(", ")}</headofwebdev>
+                    <b2>
+                    <frame22>
+                        <seas242>{year}</seas242>
+                    </frame22>
+                    <frame32>
+                        <cis2>{student}</cis2>
+                    </frame32>
+                    </b2>
+                </Bio>
+            </Profile2>
         </MemberContainer>
     )
 }
