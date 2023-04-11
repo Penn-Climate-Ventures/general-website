@@ -20,19 +20,22 @@ export const teamData = [
     teams: ["Dev Team", "Fellowships"],
   },
   {
-    name: "Ryoma Harris",
+    name: "Aditi Chintapalli",
     year: "SEAS '24",
     student: "Undergrad",
-    roles: ["Co-Director", "Sam's Minion"],
-    teams: ["Dev Team"],
+    roles: ["Member"],
+    teams: ["Fellowships"],
   },
   {
-    name: "Ryoma Harris",
-    year: "SEAS '24",
+    name: "Aliris	Tang",
+    year: "M&T '24",
     student: "Undergrad",
-    roles: ["Co-Director"],
+    roles: ["Founder"],
     teams: ["Dev Team"],
   },
+  
+
+
   // TODO: For each person in PCV, do the following:
   //    1. Download the image into the static/team folder, if it exists
   //        - Rename the image to "FirstnameLastname.jpg"
