@@ -8,6 +8,12 @@ import goal2 from "../images/goal2.png"
 import goal3 from "../images/goal3.png"
 import gbmImage from "../images/gallery/gbm-2022-02-20.jpg"
 
+import EmblaCarousel from './EmblaCarousel'
+import '../styles/embla.css'
+
+const OPTIONS = { loop: true }
+const SLIDES = [1, 2, 3, 4, 5]
+
 
 const AboutImageWrapper = s.div`
   display: flex;
@@ -53,9 +59,7 @@ export const About = () => {
   return (
     <>
       <CenteredSubtitle>About Us</CenteredSubtitle>
-      <AboutImageWrapper>
-        <AboutImage src={gbmImage}/>
-      </AboutImageWrapper>
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       <IntroTextWrapper>
         <Text>
           Imagine a campus where students line up to work for the biggest movers in climate innovation.

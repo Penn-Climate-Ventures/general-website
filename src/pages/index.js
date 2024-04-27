@@ -22,7 +22,7 @@ export default function IndexPage() {
       <SEO title="Home" defer={false} />
       <Navbar />
       <Hero/>
-      <Container wide><About/></Container>
+      <About/>
       <WavyLayout color={'var(--c-accent-primary)'}><WhatWeDo/></WavyLayout>
       <Container wide><Calendar/></Container>
       <WavyLayout color={'var(--c-accent-primary)'}><GetInvolved/></WavyLayout>
