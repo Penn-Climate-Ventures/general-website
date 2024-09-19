@@ -16,12 +16,12 @@ export const navLinks = [
   //   url: "/our-team"
   // },
   {
-    linkName: "Internships",
-    url: "/internships"
+    linkName: "Committees",
+    url: "/consulting"
   },
   {
-    linkName: "Consulting",
-    url: "/consulting"
+    linkName: "Internships",
+    url: "/internships"
   },
   {
     linkName: "Prize",

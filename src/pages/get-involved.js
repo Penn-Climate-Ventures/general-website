@@ -10,13 +10,15 @@ const GetInvolvedPage = () => {
   return (
     <PageLayout title="Get Involved">
       <Container>
-        <Subtitle>Board Membership</Subtitle>
+        <Subtitle>
+          Committee Membership
+        </Subtitle>
         <Text>
-          Our applications for board membership are now open for spring
+          Our applications for committee membership are now open for fall
           recruitment! If you are a Penn student and interested in getting
           involved in the behind-the-scenes of PCV, click
           <a
-            href="https://join.pennclimateventures.org"
+            href="https://forms.gle/2g91NgsrmesNG3cQ8"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -54,7 +56,7 @@ const GetInvolvedPage = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            Use the form below to join our listserve!
+            Use the form below to join our listserv!
           </UrlLink>
         </Text>
         <iframe

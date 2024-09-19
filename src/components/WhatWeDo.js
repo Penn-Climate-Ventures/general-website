@@ -62,7 +62,7 @@ export const WhatWeDo = () => {
       <CenteredSubtitle fontColor={TEXT_PRIMARY_INV}>What We Do</CenteredSubtitle>
       <DoWrapper>
         <DoBox>
-          <DoLabel><Text><UrlLink href="/class">Workshops</UrlLink></Text></DoLabel>
+          <DoLabel><Text><UrlLink href="/class">Events</UrlLink></Text></DoLabel>
           <DoImage src={whatwedo1}/>
           {/*<Text>Brief description</Text>*/}
         </DoBox>
@@ -72,7 +72,7 @@ export const WhatWeDo = () => {
           {/*<Text>Brief description</Text>*/}
         </DoBox>
         <DoBox>
-          <DoLabel><Text><UrlLink href="/fellowships">Fellowships</UrlLink></Text></DoLabel>
+          <DoLabel><Text><UrlLink href="/fellowships">Consulting</UrlLink></Text></DoLabel>
           <DoImage src={whatwedo3}/>
           {/*<Text>Brief description</Text>*/}
         </DoBox>

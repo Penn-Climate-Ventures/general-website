@@ -15,7 +15,7 @@ import "../styles/base.scss"
 
 const Fellowships = () => {
     return (
-    <PageLayout title="Consulting">
+    <PageLayout title="Committees">
       <Container>
         <ProgramDetails/>
       </Container>
@@ -25,8 +25,6 @@ const Fellowships = () => {
         {/*<Clients clientsData={pastClientsData}/>*/}
 
         {/* Project Showcase */}
-
-        <FellowshipsFAQ/>
 
         <Subtitle>Are you a company interested in partnering with us?</Subtitle>
         <Text>

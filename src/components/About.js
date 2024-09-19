@@ -6,8 +6,7 @@ import { Text, CenteredSubtitle } from "../ui/Typography"
 import goal1 from "../images/goal1.png"
 import goal2 from "../images/goal2.png"
 import goal3 from "../images/goal3.png"
-import gbmImage from "../images/gallery/gbm-2022-02-20.jpg"
-
+import gbmImage from "../images/gallery/149342B2-FC4D-4773-91F4-E84E8C3C171B.jpeg"
 
 const AboutImageWrapper = s.div`
   display: flex;
@@ -52,27 +51,19 @@ const IntroTextWrapper = s.div`
 export const About = () => {
   return (
     <>
-      <CenteredSubtitle>About Us</CenteredSubtitle>
+      <CenteredSubtitle>   <a
+            href="https://forms.gle/2g91NgsrmesNG3cQ8"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {" "}
+            <u>Apply Here!</u>
+          </a>
+            </CenteredSubtitle>
       <AboutImageWrapper>
         <AboutImage src={gbmImage}/>
       </AboutImageWrapper>
-      <IntroTextWrapper>
-        <Text>
-          Imagine a campus where students line up to work for the biggest movers in climate innovation.
-        </Text>
-        <Text>
-          Imagine a campus where sustainability and climate analyses are integrated into our course plans, just like intro statistics or calculus.
-        </Text>
-        <Text>
-          Imagine a campus where climate is just... common sense.
-        </Text>
-        <Text>
-          That's what we're building.
-        </Text>
-        <Text>
-          Let's push Penn into climate.
-        </Text>
-      </IntroTextWrapper>
+    
       <CenteredSubtitle>Our Goals</CenteredSubtitle>
       <GoalWrapper>
         <Goal>
