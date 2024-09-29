@@ -47,7 +47,7 @@ const articleItems = [
     imgLink: CNImg,
     title: "Co-Director of Consulting",
     publisher: "Chloe Ng",
-    date: "SEAS '26, CAS '26"
+    date: "SEAS '26 CAS '26"
   },{
     imgLink: SMImg,
     title: "Director of Policy",
