@@ -5,18 +5,24 @@ import {Text, UrlLink} from "./Typography"
 
 
 export const TileBox = s.div`
-  font-size: 0.9rem;
-  line-height: 1rem;
-  padding: 15px 10px;
-  border-radius: 10px;
-  box-shadow: 0 3px 15px 1px #00000016;
-  text-align: center;
-  width: 300px;
-  height: 100%;
+font-size: 0.9rem;
+line-height: 1rem;
+padding: 5px 5px;
+border-radius: 10px;
+box-shadow: 0 3px 15px 1px #00000016;
+text-align: center;
+width: 200px;
+height: 90%; // Increase height to accommodate larger images
+margin: 5px; // Reduce margin between tiles
+overflow: hidden; // Ensures any overflow content is hidden
 `
 
 const TileImage = s.img`
-  width: 100%;
+width: 100%;
+height: auto; // Maintain aspect ratio
+max-height: 60%; // Increase height for bigger images
+object-fit: cover; // Ensures the image covers the area
+border-radius: 10px 10px 0 0; // Rounds the top corners to match the TileBox
 `
 
 const TileTopText = s(Text)`

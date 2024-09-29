@@ -1,5 +1,16 @@
 import React from "react"
-
+import nicholasKwokImg from "../images/headshots/nicholas_kwok.png";
+import DLImg from "../images/headshots/daniel_lapinski.png";
+import ShSImg from "../images/headshots/shaurya_singhi.png";
+import LvKImg from "../images/headshots/lukas_koch.png";
+import AYImg from "../images/headshots/angela_ye.png";
+import CNImg from "../images/headshots/chloe_ng.png";
+import SMImg from "../images/headshots/sandro_mocciolo.png";
+import ESImg from "../images/headshots/emma_shockley.png";
+import KAImg from "../images/headshots/karam_alkaissy.png";
+import JLImg from "../images/headshots/jeff_li.png";
+import BHImg from "../images/headshots/brianna_hess.png";
+import KUImg from "../images/headshots/kana_urigame.png";
 import {GridContainer} from "../ui/layout"
 import {CenteredSubtitle} from "../ui/Typography"
 import Tile from "../ui/Tile"
@@ -7,63 +18,63 @@ import Tile from "../ui/Tile"
 
 const articleItems = [
   {
-    imgLink: "src/images/headshots/nicholas_kwok.png",
+    imgLink: nicholasKwokImg,
     title: "Executive President, CAS '27",
     publisher: "Nicholas Kwok",
     date: "CAS '27"
   },
   {
-    imgLink: "src/images/headshots/nicholas_kwok.png",
+    imgLink: DLImg,
     title: "Co-President and Director of Operations",
     publisher: "Daniel Lapinski",
     date: "CAS '27"
   },{
-    imgLink: "src/images/headshots/shaurya_singhi.png",
+    imgLink: ShSImg,
     title: "Vice President",
     publisher: "Shaurya Singhi",
     date: "CAS '27"
   },{
-    imgLink: "src/images/headshots/lukas_koch.png",
+    imgLink: LvKImg,
     title: "Co-Director of Consulting",
     publisher: "Lukas von Koch",
     date: "Wharton '26"
   },{
-    imgLink: "src/images/headshots/angela_ye.png",
+    imgLink: AYImg,
     title: "Co-Director of Consulting",
     publisher: "Angela Ye",
     date: "CAS '26"
   },{
-    imgLink: "src/images/headshots/chloe_ng.png",
+    imgLink: CNImg,
     title: "Co-Director of Consulting",
     publisher: "Chloe Ng",
     date: "SEAS '26 CAS '26"
   },{
-    imgLink: "src/images/headshots/sandro_mocciolo.png",
+    imgLink: SMImg,
     title: "Director of Policy",
     publisher: "Sandro Mocciolo",
     date: "CAS '27"
   },{
-    imgLink: "src/images/headshots/emma_shockley.png",
+    imgLink: ESImg,
     title: "Director of Marketing",
     publisher: "Emma Shockley",
     date: "CAS '25"
   },{
-    imgLink: "src/images/headshots/karam_alkaissy.png",
+    imgLink: KAImg,
     title: "Director of Operations",
     publisher: "Karam Alkaissy",
     date: "CAS '27"
   },{
-    imgLink: "src/images/headshots/nicholas_kwok.png",
+    imgLink: JLImg,
     title: "Co-Director of Prize",
     publisher: "Jeff Li",
     date: "CAS '27"
   },{
-    imgLink: "src/images/headshots/nicholas_kwok.png",
-    title: "ECo-Director of Prize",
+    imgLink: BHImg,
+    title: "Co-Director of Prize",
     publisher: "Brianna Hess",
     date: "CAS '27"
   },{
-    imgLink: "src/images/headshots/nicholas_kwok.png",
+    imgLink: KUImg,
     title: "Co-Director of Prize",
     link: "https://www.thedp.com/article/2022/03/climate-ventures-competition-prize-student-groups",
     publisher: "Kana Unigame",
@@ -76,8 +87,8 @@ const articleItems = [
 export const News = () => {
   return (
     <>
-      <CenteredSubtitle left={"left"}>In the News</CenteredSubtitle>
-      <GridContainer childWidth="200">
+
+      <GridContainer childWidth="150">
           { articleItems.map( article => (
             <Tile imgLink={article.imgLink}
                   topText={article.publisher}
@@ -85,6 +96,7 @@ export const News = () => {
                   botText={article.date} />
           )) }
       </GridContainer>
+      
     </>
   )
 }

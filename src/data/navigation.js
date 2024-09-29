@@ -28,8 +28,8 @@ export const navLinks = [
     url: "/prize"
   },
   {
-    linkName: "Collaborate",
-    url: "/collaborate"
+    linkName: "Meet The Board",
+    url: "/board"
   },
   {
     linkName: "Blog",

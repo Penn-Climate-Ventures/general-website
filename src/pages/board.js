@@ -7,7 +7,7 @@ import {News} from "../components/News"
 import "../styles/base.scss"
 
 
-const CollaboratePage = () => {
+const BoardPage = () => {
   return (
     <PageLayout title="Meet The Board">
       <Container>
@@ -16,4 +16,4 @@ const CollaboratePage = () => {
     </PageLayout>
   )
 }
-export default CollaboratePage
+export default BoardPage

@@ -124,10 +124,6 @@ export const Testimonials = () => {
         </div>
       </TestimonialWrapper>
 
-      <LearnMoreWrapper>
-        <ButtonInverted href="/collaborate">Learn more</ButtonInverted>
-        <Text fontColor={TEXT_PRIMARY_INV} center>Click here to learn more about working with us!</Text>
-      </LearnMoreWrapper>
     </>
   );
 };
