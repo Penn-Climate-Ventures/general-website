@@ -41,7 +41,7 @@ export const GetInvolved = () => {
     <InvolvementWrapper>
       <Involvement>
         <InvolvementImage src={getinvolved1}/>
-        <ButtonInverted href="" target="_blank" rel="noreferrer noopener">Sign up for our newsletter</ButtonInverted>
+        <ButtonInverted href="" target="_blank" rel="noreferrer noopener">Sign up for our newsletter!</ButtonInverted>
       </Involvement>
       <Involvement>
         <InvolvementImage src={getinvolved2} width="100px"/>
