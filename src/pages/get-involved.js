@@ -14,7 +14,7 @@ const GetInvolvedPage = () => {
           Committee Membership
         </Subtitle>
         <Text>
-          Our applications for committee membership are now closed for fall recruitment. Stay tuned for spring recuitment!
+          Our applications for committee membership are now closed for fall recruitment. Stay tuned for spring recuitment.
         </Text>
 
         <Subtitle>General Membership</Subtitle>
