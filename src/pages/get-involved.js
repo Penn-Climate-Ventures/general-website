@@ -14,18 +14,7 @@ const GetInvolvedPage = () => {
           Committee Membership
         </Subtitle>
         <Text>
-          Our applications for committee membership are now open for fall
-          recruitment! If you are a Penn student and interested in getting
-          involved in the behind-the-scenes of PCV, click
-          <a
-            href="https://forms.gle/2g91NgsrmesNG3cQ8"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            {" "}
-            here
-          </a>
-          .
+          Our applications for committee membership are now closed for fall recruitment. Stay tuned for spring recuitment!
         </Text>
 
         <Subtitle>General Membership</Subtitle>
@@ -52,22 +41,13 @@ const GetInvolvedPage = () => {
 
         <Text bold>
           <UrlLink
-            href={"https://airtable.com/shrCCh7SJrYNsjeWT"}
+            href={"https://docs.google.com/forms/d/e/1FAIpQLSdQpTXR40xkhbL05SoCG6p9_FmXjWuLLQ3z7hBFykpw9S5cUw/viewform"}
             target="_blank"
-            rel="noreferrer noopener"
+            rel="noreferrer noopener" 
           >
-            Use the form below to join our listserv!
+            Use this to join our listserv!
           </UrlLink>
         </Text>
-        <iframe
-          title="Listserve"
-          className="airtable-embed"
-          src="https://airtable.com/embed/shrCCh7SJrYNsjeWT?backgroundColor=red"
-          frameBorder="0"
-          width="100%"
-          height="550"
-          css="background: transparent; border: 1px solid #ccc; margin: 10px auto 30px auto"
-        />
 
         <Subtitle>Internships</Subtitle>
         <Text>

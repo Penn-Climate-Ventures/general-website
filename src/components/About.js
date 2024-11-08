@@ -6,7 +6,7 @@ import { Text, CenteredSubtitle } from "../ui/Typography"
 import goal1 from "../images/goal1.png"
 import goal2 from "../images/goal2.png"
 import goal3 from "../images/goal3.png"
-import gbmImage from "../images/gallery/149342B2-FC4D-4773-91F4-E84E8C3C171B.jpeg"
+import gbmImage from "../images/gallery/1-IMG_2544.jpg"
 
 const AboutImageWrapper = s.div`
   display: flex;
@@ -52,19 +52,19 @@ export const About = () => {
   return (
     <>
       <CenteredSubtitle>   <a
-            href="https://forms.gle/2g91NgsrmesNG3cQ8"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdQpTXR40xkhbL05SoCG6p9_FmXjWuLLQ3z7hBFykpw9S5cUw/viewform"
             target="_blank"
             rel="noreferrer noopener"
           >
             {" "}
-            <u>Apply Here!</u>
+            <u>Stay Connected!</u>
           </a>
             </CenteredSubtitle>
       <AboutImageWrapper>
         <AboutImage src={gbmImage}/>
       </AboutImageWrapper>
     
-      <CenteredSubtitle>Our Goals</CenteredSubtitle>
+      {/* <CenteredSubtitle>Our Goals</CenteredSubtitle>
       <GoalWrapper>
         <Goal>
           <GoalImage src={goal1}/>
@@ -78,7 +78,7 @@ export const About = () => {
           <GoalImage src={goal3}/>
           <Text center>Penn's springboard for climate action</Text>
         </Goal>
-      </GoalWrapper>
+      </GoalWrapper> */}
     </>
   );
 };

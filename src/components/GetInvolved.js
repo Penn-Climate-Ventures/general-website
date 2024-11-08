@@ -35,18 +35,20 @@ const InvolvementImage = s.img`
 export const GetInvolved = () => {
   return (
     <>
-      <CenteredSubtitle fontColor={TEXT_PRIMARY_INV}>Get Involved</CenteredSubtitle>
-      <InvolvementWrapper>
-        <Involvement>
-          <InvolvementImage src={getinvolved1}/>
-          <ButtonInverted href="" target="_blank" rel="noreferrer noopener">Sign up for our newsletter</ButtonInverted>
-        </Involvement>
-        <Involvement>
-          <InvolvementImage src={getinvolved2} width="100px"/>
-          <ButtonInverted href="" target="_blank" rel="noreferrer noopener">Join a team</ButtonInverted>
-        </Involvement>
-      </InvolvementWrapper>
-    </>
+    <CenteredSubtitle fontColor={TEXT_PRIMARY_INV} fontSize="48px">
+      Get Involved
+    </CenteredSubtitle>
+    <InvolvementWrapper>
+      <Involvement>
+        <InvolvementImage src={getinvolved1}/>
+        <ButtonInverted href="" target="_blank" rel="noreferrer noopener">Sign up for our newsletter</ButtonInverted>
+      </Involvement>
+      <Involvement>
+        <InvolvementImage src={getinvolved2} width="100px"/>
+        <ButtonInverted href="" target="_blank" rel="noreferrer noopener">Join a team</ButtonInverted>
+      </Involvement>
+    </InvolvementWrapper>
+  </>
   );
 };
 
