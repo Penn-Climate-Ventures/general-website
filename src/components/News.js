@@ -11,6 +11,7 @@ import KAImg from "../images/headshots/karam_alkaissy.png";
 import JLImg from "../images/headshots/jeff_li.png";
 import BHImg from "../images/headshots/brianna_hess.png";
 import KUImg from "../images/headshots/kana_urigame.png";
+import ADImg from "../images/headshots/anmol_dash.png";
 import {GridContainer} from "../ui/layout"
 import {CenteredSubtitle} from "../ui/Typography"
 import Tile from "../ui/Tile"
@@ -32,7 +33,7 @@ const articleItems = [
     imgLink: ShSImg,
     title: "Vice President",
     publisher: "Shaurya Singhi",
-    date: "CAS '27"
+    date: "Wharton '26"
   },{
     imgLink: LvKImg,
     title: "Co-Director of Consulting",
@@ -79,6 +80,11 @@ const articleItems = [
     link: "https://www.thedp.com/article/2022/03/climate-ventures-competition-prize-student-groups",
     publisher: "Kana Unigame",
     date: "CAS '27"
+  },{
+    imgLink: ADImg,
+    title: "Director of Web Development",
+    publisher: "Anmol Dash",
+    date: "CAS '26"
   },
   
 ]
