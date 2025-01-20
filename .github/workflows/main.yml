@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Gatsby Publish
-        # You may pin to the exact commit or the version.223
+        # You may pin to the exact commit or the version.2234
         # uses: enriikke/gatsby-gh-pages-action@854578ae3c66828334442d16ef54ef814f3a410a
         uses: enriikke/gatsby-gh-pages-action@v2
         with:
