@@ -52,12 +52,12 @@ export const About = () => {
   return (
     <>
       <CenteredSubtitle>   <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdQpTXR40xkhbL05SoCG6p9_FmXjWuLLQ3z7hBFykpw9S5cUw/viewform"
+            href="https://tinyurl.com/PCVSpring2025"
             target="_blank"
             rel="noreferrer noopener"
           >
             {" "}
-            <u>Stay Connected!</u>
+            <u>Apply Here!</u>
           </a>
             </CenteredSubtitle>
       <AboutImageWrapper>

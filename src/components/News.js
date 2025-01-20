@@ -25,15 +25,15 @@ const articleItems = [
     date: "CAS '27"
   },
   {
-    imgLink: DLImg,
-    title: "Co-President and Director of Operations",
-    publisher: "Daniel Lapinski",
-    date: "CAS '27"
-  },{
     imgLink: ShSImg,
-    title: "Vice President",
+    title: "Co-President",
     publisher: "Shaurya Singhi",
     date: "Wharton '26"
+  },{
+    imgLink: DLImg,
+    title: "Director of Operations",
+    publisher: "Daniel Lapinski",
+    date: "CAS '27"
   },{
     imgLink: LvKImg,
     title: "Co-Director of Consulting",
