@@ -23,7 +23,7 @@ jobs:
         # uses: enriikke/gatsby-gh-pages-action@854578ae3c66828334442d16ef54ef814f3a410a
         uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          # A personal access token needed to push your site after it has been built.2223
+          # A personal access token needed to push your site after it has been built.222334
           access-token: "${{ secrets.CLEAR_SKY}}"
           deploy-branch: deploy
           gatsby-args: --prefix-paths
