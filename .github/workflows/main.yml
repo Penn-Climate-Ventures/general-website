@@ -24,6 +24,6 @@ jobs:
         uses: enriikke/gatsby-gh-pages-action@v2
         with:
           # A personal access token needed to push your site after it has been built.
-          access-token: "${{ secrets.SNOWY_HILL}}"
+          access-token: "${{ secrets.MANETO}}"
           deploy-branch: deploy
           gatsby-args: --prefix-paths
