@@ -6,7 +6,7 @@ import LvKImg from "../images/headshots/lukas_koch.png";
 import AYImg from "../images/headshots/angela_ye.png";
 import CNImg from "../images/headshots/chloe_ng.png";
 import SMImg from "../images/headshots/sandro_mocciolo.png";
-import ESImg from "../images/headshots/emma_shockley.png";
+import ESImg from "../images/headshots/keya.png";
 import KAImg from "../images/headshots/karam_alkaissy.png";
 import JLImg from "../images/headshots/jeff_li.png";
 import BHImg from "../images/headshots/brianna_hess.png";
@@ -57,8 +57,8 @@ const articleItems = [
   },{
     imgLink: ESImg,
     title: "Director of Marketing",
-    publisher: "Emma Shockley",
-    date: "CAS '25"
+    publisher: "Keya Krishna",
+    date: "CAS '28"
   },{
     imgLink: KAImg,
     title: "Director of Operations",
