@@ -12,7 +12,7 @@ border-radius: 10px;
 box-shadow: 0 3px 15px 1px #00000016;
 text-align: center;
 width: 200px;
-height: 90%; // Increase height to accommodate larger images
+height: 95%; // Increase height to accommodate larger images
 margin: 5px; // Reduce margin between tiles
 overflow: hidden; // Ensures any overflow content is hidden
 `

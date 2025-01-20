@@ -69,7 +69,7 @@ export class ProgramDetails extends Component {
 
                 <Text>
                 The Operations Committee is responsible for facilitating and planning GBMs, preparing and executing recruitment, and managing finances. 
-                The Operations Committee collaborates with all of the committees of PCV to provide additional support. 
+                The Operations Committee actively collaborates with all of the committees of PCV to provide additional support. 
                 The team also designs PCV’s semesterly reports and monthly emails, working closely with the entire executive board. 
                 We are looking for people who enjoy collaboration and are interested in learning more about the climate space. 
 
