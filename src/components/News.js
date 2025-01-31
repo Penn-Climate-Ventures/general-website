@@ -30,11 +30,6 @@ const articleItems = [
     publisher: "Shaurya Singhi",
     date: "Wharton '26"
   },{
-    imgLink: DLImg,
-    title: "Director of Operations",
-    publisher: "Daniel Lapinski",
-    date: "CAS '27"
-  },{
     imgLink: LvKImg,
     title: "Co-Director of Consulting",
     publisher: "Lukas von Koch",
@@ -61,7 +56,7 @@ const articleItems = [
     date: "CAS '28"
   },{
     imgLink: KAImg,
-    title: "Director of Operations",
+    title: "Director of Events",
     publisher: "Karam Alkaissy",
     date: "CAS '27"
   },{
