@@ -1,68 +1,147 @@
-import React from "react"
-import s from "styled-components"
-import { LIGHT_BLUE } from "../utils/constants"
-import {Text, UrlLink} from "./Typography"
+import React from 'react';
 
+const styles = {
+  tileContainer: {
+    position: 'relative',
+    width: '200px',
+    height: '350px',
+    margin: '5px',
+    perspective: '1000px',
+    flexShrink: 0,
+    flexGrow: 0
+  },
+  tileInner: {
+    position: 'relative',
+    width: '100%',
+    height: '100%',
+    transition: 'transform 0.6s',
+    transformStyle: 'preserve-3d',
+    borderRadius: '10px',
+    boxShadow: '0 3px 15px 1px rgba(0, 0, 0, 0.1)'
+  },
+  face: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    backfaceVisibility: 'hidden',
+    backgroundColor: 'white',
+    borderRadius: '10px',
+    overflow: 'hidden',
+    display: 'flex',
+    flexDirection: 'column'
+  },
+  back: {
+    transform: 'rotateY(180deg)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '1rem'
+  },
+  image: {
+    width: '100%',
+    height: '250px',
+    objectFit: 'cover',
+    borderRadius: '10px 10px 0 0'
+  },
+  content: {
+    padding: '10px',
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between'
+  },
+  topText: {
+    color: '#3B82F6',
+    textAlign: 'center',
+    fontWeight: 500,
+    fontSize: '0.9rem',
+    margin: '0'
+  },
+  midText: {
+    color: '#111827',
+    fontWeight: 600,
+    margin: '8px 0',
+    fontSize: '0.9rem',
+    textAlign: 'center'
+  },
+  midLink: {
+    color: '#111827',
+    fontWeight: 600,
+    display: 'block',
+    margin: '8px 0',
+    fontSize: '0.9rem',
+    textDecoration: 'none',
+    transition: 'color 0.3s',
+    textAlign: 'center'
+  },
+  botText: {
+    color: '#374151',
+    fontSize: '0.9rem',
+    margin: '0',
+    textAlign: 'center'
+  },
+  backText: {
+    color: '#1F2937',
+    fontSize: '0.9rem',
+    textAlign: 'center'
+  }
+};
 
-export const TileBox = s.div`
-font-size: 0.9rem;
-line-height: 1rem;
-padding: 5px 5px;
-border-radius: 10px;
-box-shadow: 0 3px 15px 1px #00000016;
-text-align: center;
-width: 200px;
-height: 95%; // Increase height to accommodate larger images
-margin: 5px; // Reduce margin between tiles
-overflow: hidden; // Ensures any overflow content is hidden
-`
+const Tile = ({ imgLink, topText, midText, midLink, botText, email }) => {
+  const FrontContent = () => (
+    <>
+      {imgLink && (
+        <img 
+          src={imgLink} 
+          alt={topText}
+          style={styles.image}
+        />
+      )}
+      <div style={styles.content}>
+        <p style={styles.topText}>{topText}</p>
+        {midLink ? (
+          <a 
+            href={midLink}
+            style={styles.midLink}
+            onMouseEnter={(e) => e.currentTarget.style.color = '#3B82F6'}
+            onMouseLeave={(e) => e.currentTarget.style.color = '#111827'}
+          >
+            {midText}
+          </a>
+        ) : (
+          <p style={styles.midText}>{midText}</p>
+        )}
+        <p style={styles.botText}>{botText}</p>
+      </div>
+    </>
+  );
 
-const TileImage = s.img`
-width: 100%;
-height: auto; // Maintain aspect ratio
-max-height: 60%; // Increase height for bigger images
-object-fit: cover; // Ensures the image covers the area
-border-radius: 10px 10px 0 0; // Rounds the top corners to match the TileBox
-`
+  const BackContent = () => (
+    <div style={styles.backText}>
+      Contact: {email}
+    </div>
+  );
 
-const TileTopText = s(Text)`
-  color: ${LIGHT_BLUE};
-  text-align: center;
-  font-weight: 500;
-`
-
-const TileMidText = s(Text)`
-  font-weight: 600;
-  margin-top: 10px;
-  margin-bottom: 10px;
-`
-const TileMidLink= s(UrlLink)`
-  color: var(--c-text-primary);
-  font-weight: 600;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-`
-
-const TileBotText = s.p`
-  color: var(--c-text-primary);
-`
-
-
-const Tile = ({ imgLink, topText, midText, midLink, botText }) => (
-  <TileBox>
-    {imgLink &&
-      <TileImage src={imgLink} alt={topText}/>
-    }
-    <TileTopText>{( topText )}</TileTopText>
-    {midLink &&
-    <TileMidLink href={midLink}>{( midText )}</TileMidLink>
-    }
-    {!midLink &&
-    <TileMidText>{( midText )}</TileMidText>
-    }
-    <TileBotText>{( botText )}</TileBotText>
-  </TileBox>
-)
+  return (
+    <div 
+      style={styles.tileContainer}
+      onMouseEnter={(e) => {
+        e.currentTarget.querySelector('.tile-inner').style.transform = 'rotateY(180deg)';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.querySelector('.tile-inner').style.transform = 'rotateY(0deg)';
+      }}
+    >
+      <div className="tile-inner" style={styles.tileInner}>
+        <div style={styles.face}>
+          <FrontContent />
+        </div>
+        <div style={{...styles.face, ...styles.back}}>
+          <BackContent />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Tile
