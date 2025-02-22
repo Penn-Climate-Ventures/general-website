@@ -23,7 +23,7 @@ const articleItems = [
     imgLink: nicholasKwokImg,
     title: "Co-President",
     publisher: "Nicholas Kwok",
-    email:"anmold@sas.upenn.edu",
+    email:"nkwok822@sas.upenn.edu",
     date: "CAS '27"
   },
   {
