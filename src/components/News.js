@@ -1,6 +1,6 @@
 import React from "react"
 import nicholasKwokImg from "../images/headshots/nicholas_kwok.png";
-import DLImg from "../images/headshots/daniel_lapinski.png";
+import HCImg from "../images/headshots/helen_copple.png";
 import ShSImg from "../images/headshots/shaurya_singhi.png";
 import LvKImg from "../images/headshots/lukas_koch.png";
 import AYImg from "../images/headshots/angela_ye.png";
@@ -48,6 +48,11 @@ const articleItems = [
     imgLink: SMImg,
     title: "Director of Policy",
     publisher: "Sandro Mocciolo",
+    date: "CAS '27"
+  },{
+    imgLink: HCImg,
+    title: "Director of Operations",
+    publisher: "Helen Copple",
     date: "CAS '27"
   },{
     imgLink: ESImg,
