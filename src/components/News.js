@@ -4,7 +4,6 @@ import HCImg from "../images/headshots/helen_copple.png";
 import ShSImg from "../images/headshots/shaurya_singhi.png";
 import LvKImg from "../images/headshots/lukas_koch.png";
 import AYImg from "../images/headshots/angela_ye.png";
-import CNImg from "../images/headshots/chloe_ng.png";
 import SMImg from "../images/headshots/sandro_mocciolo.png";
 import ESImg from "../images/headshots/keya.png";
 import KAImg from "../images/headshots/karam_alkaissy.png";
@@ -45,12 +44,6 @@ const articleItems = [
     email:"angelaye@sas.upenn.edu",
     date: "CAS '26"
   },{
-    imgLink: CNImg,
-    title: "Co-Director of Consulting",
-    publisher: "Chloe Ng",
-    email:"ngchloe@seas.upenn.edu",
-    date: "SEAS '26 CAS '26"
-  },{
     imgLink: SMImg,
     title: "Director of Policy",
     publisher: "Sandro Mocciolo",
@@ -67,13 +60,13 @@ const articleItems = [
     title: "Director of Marketing",
     publisher: "Keya Krishna",
     email:"keyakris@wharton.upenn.edu",
-    date: "CAS '28"
+    date: "Wharton '28"
   },{
     imgLink: KAImg,
     title: "Director of Events",
     publisher: "Karam Alkaissy",
     email:"alkaissy@seas.upenn.edu",
-    date: "CAS '27"
+    date: "SEAS '27"
   },{
     imgLink: JLImg,
     title: "Co-Director of Prize",
