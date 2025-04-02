@@ -25,10 +25,15 @@ const InternshipsPage = () => {
         </Text>
       </Container>
       <Container wide>
-        <iframe className="airtable-embed"
-          src="https://airtable.com/embed/shrfKreaRwGs2N50J?backgroundColor=cyan&layout=card&viewControls=on"
-          frameBorder="0" onmousewheel="" width="100%"
-          style={{background: 'transparent', border: '1px solid #ccc', height: '90vh'}}/>
+      <iframe
+  className="airtable-embed"
+  src="https://airtable.com/embed/appqg6tL6sb9JR8zD/shrR8E3ycg6Ytf19K?layout=card&viewControls=on"
+  frameBorder="0"
+  onMouseWheel=""
+  width="100%"
+  height="533"
+  style={{ background: "transparent", border: "1px solid #ccc" }}
+></iframe>
       </Container>
     </PageLayout>
   )
