@@ -5,7 +5,7 @@ author: Sofie Neznek
 date: 2025-04-25
 readtime: 2.5
 wordcount: 380
-desc: "President Trump's push to make the U.S. the world’s "dominant seafood leader" has reshaped America's marine reserves."
+desc: "President Trump is reshaping America's marine reserves, threatening fragile ecosystems and endangered species."
 tags: ["Energy Policy"]
 ---
 
@@ -21,4 +21,4 @@ Many opposing Trump’s decisions have two main arguments as to why his statemen
 
 It is clear that these two executive orders are going to be extremely harmful to aquatic life in the Pacific Ocean. What is most fearful however is that these executive orders could be setting a precedent for the government overtaking previously protected lands and oceans across the United States. 
 
----220
+---
