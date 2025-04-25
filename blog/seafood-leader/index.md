@@ -5,7 +5,7 @@ author: Sofie Neznek
 date: 2025-04-25
 readtime: 2.5
 wordcount: 380
-desc: "President Trump's push to make the U.S. the world’s "dominant seafood leader" has led to executive orders reopening protected marine reserves to commercial fishing, threatening fragile ecosystems and endangered species."
+desc: "President Trump's push to make the U.S. the world’s "dominant seafood leader" has reshaped America's marine reserves."
 tags: ["Energy Policy"]
 ---
 
@@ -20,3 +20,5 @@ Maxx Phillips, director of Hawaii and Pacific Islands at the Center for Biologic
 Many opposing Trump’s decisions have two main arguments as to why his statements are incorrect. The first argument is that the ocean, especially the Pacific Ocean, is large enough to provide adequate fishing areas, even when there are protected areas like the Pacific Islands Heritage Marine National Monument. The second argument is that these heritage sites are actually helpful and necessary for commercial fishing because they provide an area where fish can accumulate and repopulate, thus ultimately creating a higher density of fish. 
 
 It is clear that these two executive orders are going to be extremely harmful to aquatic life in the Pacific Ocean. What is most fearful however is that these executive orders could be setting a precedent for the government overtaking previously protected lands and oceans across the United States. 
+
+---220

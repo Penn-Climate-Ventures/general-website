@@ -22,3 +22,5 @@ Chinese control extends beyond manufacturing alone; Chinese companies also hold 
 Rare earth elements are difficult to extract and refine, and the U.S. only has one operational rare earth mine. As a result, U.S. companies have been forced to stockpile rare earth materials, and shortages will likely begin in the upcoming months if China’s restrictions continue.
 
 Companies can theoretically acquire special licenses to import rare earth metals and magnets, but China has been slow in instituting a process for license distribution. It is unclear whether U.S. companies who need them will be able to acquire these licenses.
+
+---
