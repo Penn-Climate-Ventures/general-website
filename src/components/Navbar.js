@@ -7,8 +7,8 @@ import Logo from "../images/pcv/logo.png"
 
 
 export const NavWrapper = s.div`
-  background-color: rgba(255,255,255,0.97);
-  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+  background-color: rgba(0, 39, 89, 0.95);
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.15);
   height: 75px;
   width: 100%;
   display: flex;
@@ -114,7 +114,7 @@ const NavLinks = s.div`
 `
 
 export const NavButton = s.a`
-  color: var(--c-text-secondary);
+  color: white;  /* Changed from var(--c-text-secondary) to white */
   font-weight: 600;
   margin: 10px 10px;
   cursor: pointer;

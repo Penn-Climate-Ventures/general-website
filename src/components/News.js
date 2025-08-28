@@ -1,16 +1,15 @@
 import React from "react"
-import nicholasKwokImg from "../images/headshots/nicholas_kwok.png";
 import HCImg from "../images/headshots/helen_copple.png";
-import ShSImg from "../images/headshots/shaurya_singhi.png";
-import LvKImg from "../images/headshots/lukas_koch.png";
 import AYImg from "../images/headshots/angela_ye.png";
-import SMImg from "../images/headshots/sandro_mocciolo.png";
-import ESImg from "../images/headshots/keya.png";
+import ManyaTiwari from "../images/headshots/manya_tiwari.png";
 import KAImg from "../images/headshots/karam_alkaissy.png";
-import JLImg from "../images/headshots/jeff_li.png";
 import BHImg from "../images/headshots/brianna_hess.png";
-import KUImg from "../images/headshots/kana_urigame.png";
-import ADImg from "../images/headshots/anmol_dash.png";
+import JeffreyWang from "../images/headshots/jeffrey_wang.jpg";
+import GeorgePopovici from "../images/headshots/george_popovici.png";
+import BorisChen from "../images/headshots/boris_chen.png";
+import JoeyWu from "../images/headshots/joey_wu.png";
+import KaseyLee from "../images/headshots/kasey_lee.png";
+import SiyonaSingh from "../images/headshots/siyona_singh.png";
 import {GridContainer} from "../ui/layout"
 import {CenteredSubtitle} from "../ui/Typography"
 import Tile from "../ui/Tile"
@@ -19,80 +18,72 @@ import Tile from "../ui/Tile"
 
 const articleItems = [
   {
-    imgLink: nicholasKwokImg,
+    imgLink: BHImg,
     title: "Co-President",
-    publisher: "Nicholas Kwok",
-    email:"nkwok822@sas.upenn.edu",
-    date: "CAS '27"
-  },
-  {
-    imgLink: ShSImg,
-    title: "Co-President",
-    publisher: "Shaurya Singhi",
-    email:"ssinghi@sas.upenn.edu",
-    date: "Wharton '26"
+    publisher: "Brianna Hess",
+    email:"hesslb@sas.upenn.edu",
+    date: "CAS"
   },{
-    imgLink: LvKImg,
-    title: "Co-Director of Consulting",
-    publisher: "Lukas von Koch",
-    email:"lvonkoch@wharton.upenn.edu",
-    date: "Wharton '26"
+    imgLink: KAImg,
+    title: "Co-President",
+    publisher: "Karam Alkaissy",
+    email:"alkaissy@seas.upenn.edu",
+    date: "SEAS"
   },{
     imgLink: AYImg,
     title: "Co-Director of Consulting",
     publisher: "Angela Ye",
     email:"angelaye@sas.upenn.edu",
-    date: "CAS '26"
+    date: "CAS"
   },{
-    imgLink: SMImg,
-    title: "Director of Policy",
-    publisher: "Sandro Mocciolo",
-    email:"smocc@sas.upenn.edu",
-    date: "CAS '27"
+    imgLink: ManyaTiwari,
+    title: "Co-Director of Consulting",
+    publisher: "Manya Tiwari",
+    email:"angelaye@sas.upenn.edu",
+    date: "CAS"
   },{
     imgLink: HCImg,
     title: "Director of Operations",
     publisher: "Helen Copple",
     email:"coppleh@sas.upenn.edu",
-    date: "CAS '27"
+    date: "CAS"
   },{
-    imgLink: ESImg,
+    imgLink: JeffreyWang,
+    title: "Co-Director of Prize",
+    publisher: "Jeffrey Wang",
+    email:"jgw369@seas.upenn.edu",
+    date: "CAS"
+  },{
+    imgLink: GeorgePopovici,
+    title: "Co-Director of Prize",
+    publisher: "George Popovici",
+    email:"popovici@wharton.upenn.edu",
+    date: "Wharton"
+  },{
+    imgLink: BorisChen,
+    title: "Co-Director of Prize",
+    publisher: "Boris Chen",
+    email:"chenbor@wharton.upenn.edu",
+    date: "Wharton"
+  },{
+    imgLink: JoeyWu,
     title: "Director of Marketing",
-    publisher: "Keya Krishna",
-    email:"keyakris@wharton.upenn.edu",
-    date: "Wharton '28"
+    publisher: "Joey Wu",
+    email:"joeyw@seas.upenn.edu",
+    date: "SEAS"
   },{
-    imgLink: KAImg,
-    title: "Director of Events",
-    publisher: "Karam Alkaissy",
-    email:"alkaissy@seas.upenn.edu",
-    date: "SEAS '27"
+    imgLink: KaseyLee,
+    title: "Director of Policy",
+    publisher: "Kasey Lee",
+    email:"kaseylee@sas.upenn.edu",
+    date: "SAS"
   },{
-    imgLink: JLImg,
-    title: "Co-Director of Prize",
-    publisher: "Jeff Li",
-    email:"jeff1@seas.upenn.edu",
-    date: "CAS '27"
-  },{
-    imgLink: BHImg,
-    title: "Co-Director of Prize",
-    publisher: "Brianna Hess",
-    email:"hesslb@sas.upenn.edu",
-    date: "CAS '27"
-  },{
-    imgLink: KUImg,
-    title: "Co-Director of Prize",
-    link: "https://www.thedp.com/article/2022/03/climate-ventures-competition-prize-student-groups",
-    publisher: "Kana Unigame",
-    email:"unigamek@sas.upenn.edu",
-    date: "CAS '27"
-  },{
-    imgLink: ADImg,
-    title: "Director of Web Development",
-    publisher: "Anmol Dash",
-    date: "CAS '26",
-    email:"anmold@sas.upenn.edu"
-  },
+    imgLink: SiyonaSingh,
+    title: "Director of External",
+    publisher: "Siyona Singh",
+    email:"siyona@wharton.upenn.edu",
+    date: "Wharton"
+  }
   
 ]
 

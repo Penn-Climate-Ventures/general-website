@@ -51,8 +51,9 @@ const IntroTextWrapper = s.div`
 export const About = () => {
   return (
     <>
+      <CenteredSubtitle>Penn's Largest Sustainability Club!</CenteredSubtitle>
       <CenteredSubtitle>   <a
-            href="https://tinyurl.com/PCVSpring2025"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd4NF4zgFHbJnbXLSaQyg18bALXd1xdde3i4Azv53_P2kgI5Q/viewform?usp=header"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -64,7 +65,7 @@ export const About = () => {
         <AboutImage src={gbmImage}/>
       </AboutImageWrapper>
     
-      {/* <CenteredSubtitle>Our Goals</CenteredSubtitle>
+      <CenteredSubtitle>Our Goals</CenteredSubtitle>
       <GoalWrapper>
         <Goal>
           <GoalImage src={goal1}/>
@@ -78,7 +79,7 @@ export const About = () => {
           <GoalImage src={goal3}/>
           <Text center>Penn's springboard for climate action</Text>
         </Goal>
-      </GoalWrapper> */}
+      </GoalWrapper>
     </>
   );
 };

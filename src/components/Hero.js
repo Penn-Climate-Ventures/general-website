@@ -4,18 +4,37 @@ import s from "styled-components"
 import {Subtitle, Title} from "../ui/Typography"
 
 import {LIGHT_BLUE} from "../utils/constants"
+import HeroBackground from "../images/home-backgrounds/hero-bg.jpg" 
 import HeroNodes from "../images/home-backgrounds/hero-nodes.png"
 
 const HeroLayout = s.div`
-  padding: 200px 0 50px 0;
-  background-color: ${LIGHT_BLUE};
+  min-height: 300px;
   width: 100%;
+  position: relative;
+  padding: 200px 0 100px 0;
+  background-image: url(${HeroBackground});
+  background-size: cover;
+  background-position: center;
+  background-color: #002759; /* Fallback color if image doesn't load */
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 39, 89, 0.2); /* Translucent navy overlay */
+    z-index: 1;
+  }
 `
 
 const HeroWrapper = s.div`
   max-width: 900px;
   margin: auto;
   padding: 45px 1rem 90px 1rem;
+  position: relative;
+  z-index: 2;
   
   @media (min-width: 900px) {
     background-image: url(${HeroNodes});
@@ -30,6 +49,8 @@ const HeroTitle = s(Title)`
   font-size: 3.5rem;
   padding: 0;
   margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 `
 
 const HeroTextWrapper = s.div`
@@ -43,117 +64,81 @@ const HeroText = s(Subtitle)`
   text-transform: none;
   margin: 10px 0.75ch 10px 0;
   padding: 0 0;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 `
 
 const TextSpinnerWrapper = s.span`
   height: 40px;
   width: 150px;
+  position: relative;
+  perspective: 1000px;
 `
 
 const TextSpinner = s.div`
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  
-  -webkit-transform-origin: 20px 20px 0;
-  -ms-transform-origin: 20px 20px 0;
-  transform-origin: 20px 20px 0;
-  
-  -webkit-animation: rotateText 12s infinite;
+  transform-origin: 75px 20px 0;
   animation: rotateText 12s ease infinite;
+  height: 40px;
+  width: 150px;
+  position: relative;
   
-  @-webkit-keyframes rotateText {
-    25%  { -webkit-transform: rotateY(90deg);  }
-    50%  { -webkit-transform: rotateY(180deg); }
-    75%  { -webkit-transform: rotateY(270deg); }
-    100% { -webkit-transform: rotateY(360deg); }
-  }
   @keyframes rotateText {
-    20%  { -ms-transform: rotateX(90deg);   transform: rotateX(90deg);  }
-    25%  { -ms-transform: rotateX(90deg);   transform: rotateX(90deg);  }
-    45%  { -ms-transform: rotateX(180deg);  transform: rotateX(180deg); }
-    50%  { -ms-transform: rotateX(180deg);  transform: rotateX(180deg); }
-    70%  { -ms-transform: rotateX(270deg);  transform: rotateX(270deg); }
-    75%  { -ms-transform: rotateX(270deg);  transform: rotateX(270deg); }
-    95%  { -ms-transform: rotateX(360deg);  transform: rotateX(360deg); }
-    100% { -ms-transform: rotateX(360deg);  transform: rotateX(360deg); }
+    0%, 15% { transform: rotateX(0deg); }
+    20%, 40% { transform: rotateX(-90deg); }
+    45%, 65% { transform: rotateX(-180deg); }
+    70%, 90% { transform: rotateX(-270deg); }
+    95%, 100% { transform: rotateX(-360deg); }
   }
 `
 
 const Word = s.div`
-  background-color: ${LIGHT_BLUE};
+  position: absolute;
   height: 40px;
   width: 150px;
-  position: absolute;
-  display: table;
-  
-  & > * {
-    display: table-cell;
-    vertical-align: middle;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  backface-visibility: hidden;
 `
 
 const Word1 = s(Word)`
-  -webkit-transform: translateZ(20px);
-  -ms-transform: translateZ(20px);
   transform: translateZ(20px);
-  
 `
 
 const Word2 = s(Word)`
-  -webkit-transform: rotateX(-90deg) translateZ(20px); 
-  -ms-transform: rotateX(-90deg) translateZ(20px); 
-  transform: rotateX(-90deg) translateZ(20px); 
+  transform: rotateX(90deg) translateZ(20px);
 `
 
 const Word3 = s(Word)`
-  -webkit-transform: rotateY(180deg) rotateZ(180deg) translateZ(20px); 
-  -ms-transform: rotateY(180deg) rotateZ(180deg) translateZ(20px); 
-  transform: rotateY(180deg) rotateZ(180deg) translateZ(20px); 
+  transform: rotateX(180deg) translateZ(20px);
 `
 
 const Word4 = s(Word)`
-  -webkit-transform: rotateX(90deg) translateZ(20px); 
-  -ms-transform: rotateX(90deg) translateZ(20px); 
-  transform: rotateX(90deg) translateZ(20px); 
+  transform: rotateX(270deg) translateZ(20px);
 `
-
-const HeroWave = () => {
-  return (
-    <div style={{marginTop: -10}}>
-      <svg viewBox="0 0 500 80">
-        <path fill={LIGHT_BLUE} fill-opacity="1" d="M0.00,19.98 C160.27,74.97 219.52,18.08 500.00,23.98 L500.00,0.00 L0.00,0.00 Z"></path>
-        <path fill={LIGHT_BLUE} fill-opacity="0.6" d="M-1.12,48.32 C115.69,30.55 393.34,81.87 501.69,8.83 L500.00,0.00 L0.00,0.00 Z"></path>
-        <path fill={LIGHT_BLUE} fill-opacity="0.3" d="M0.00,34.37 C150.43,66.60 376.97,59.03 501.12,40.28 L500.00,0.00 L0.00,0.00 Z"></path>
-      </svg>
-    </div>
-  )
-}
 
 export const Hero = () => {
   return (
-    <>
-      <HeroLayout>
-        <HeroWrapper>
-          <HeroTitle fontColor="var(--c-text-primary-inverted)">Penn Climate Ventures</HeroTitle>
-          <HeroTextWrapper>
-            <HeroText fontColor="var(--c-text-primary-inverted)">Catalyzing</HeroText>
-            <HeroText fontColor="var(--c-text-primary-inverted)">climate</HeroText>
-            <HeroText fontColor="var(--c-text-primary-inverted)">action </HeroText>
-            <HeroText fontColor="var(--c-text-primary-inverted)">through</HeroText>
-            <TextSpinnerWrapper>
-              <TextSpinner>
-                <Word1><HeroText fontColor="var(--c-text-primary-inverted)">workshops</HeroText></Word1>
-                <Word2><HeroText fontColor="var(--c-text-primary-inverted)">fellowships</HeroText></Word2>
-                <Word3><HeroText fontColor="var(--c-text-primary-inverted)">competitions</HeroText></Word3>
-                <Word4><HeroText fontColor="var(--c-text-primary-inverted)">socials</HeroText></Word4>
-              </TextSpinner>
-            </TextSpinnerWrapper>
-          </HeroTextWrapper>
-        </HeroWrapper>
-      </HeroLayout>
-      <HeroWave color={LIGHT_BLUE}/>
-    </>
+    <HeroLayout>
+      <HeroWrapper>
+        <HeroTitle>Penn Climate Ventures</HeroTitle>
+        <HeroTextWrapper>
+          <HeroText>Catalyzing</HeroText>
+          <HeroText>climate</HeroText>
+          <HeroText>action</HeroText>
+          <HeroText>through</HeroText>
+          <TextSpinnerWrapper>
+            <TextSpinner>
+              <Word1><HeroText>workshops</HeroText></Word1>
+              <Word2><HeroText>fellowships</HeroText></Word2>
+              <Word3><HeroText>competitions</HeroText></Word3>
+              <Word4><HeroText>socials</HeroText></Word4>
+            </TextSpinner>
+          </TextSpinnerWrapper>
+        </HeroTextWrapper>
+      </HeroWrapper>
+    </HeroLayout>
   );
 };
 
