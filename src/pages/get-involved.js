@@ -14,7 +14,7 @@ const GetInvolvedPage = () => {
           Committee Membership
         </Subtitle>
         <Text>
-          Our applications are open for spring recruitment and due on January 27th! <a href="https://tinyurl.com/PCVSpring2025">Apply here!</a>
+          Our applications are open for fall recruitment and due on September 18th! <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4NF4zgFHbJnbXLSaQyg18bALXd1xdde3i4Azv53_P2kgI5Q/viewform?usp=header">Apply here!</a>
         </Text>
 
         <Subtitle>General Membership</Subtitle>

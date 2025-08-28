@@ -41,11 +41,11 @@ export const GetInvolved = () => {
     <InvolvementWrapper>
       <Involvement>
         <InvolvementImage src={getinvolved1}/>
-        <ButtonInverted href="" target="_blank" rel="noreferrer noopener">Sign up for our newsletter!</ButtonInverted>
+        <ButtonInverted href="https://docs.google.com/forms/d/e/1FAIpQLSeJPyW6VmbcfYHMFm9NpivXzgEOUMNX6DNY6ojWcg_PvS2LPA/viewform" target="_blank" rel="noreferrer noopener">Sign up for our newsletter!</ButtonInverted>
       </Involvement>
       <Involvement>
         <InvolvementImage src={getinvolved2} width="100px"/>
-        <ButtonInverted href="" target="_blank" rel="noreferrer noopener">Join a team</ButtonInverted>
+        <ButtonInverted href="/consulting" target="_blank" >Join a team</ButtonInverted>
       </Involvement>
     </InvolvementWrapper>
   </>
