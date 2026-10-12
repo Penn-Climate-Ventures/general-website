@@ -1,15 +1,12 @@
 import React from "react"
-import HCImg from "../images/headshots/helen_copple.png";
-import AYImg from "../images/headshots/angela_ye.png";
-import ManyaTiwari from "../images/headshots/manya_tiwari.png";
-import KAImg from "../images/headshots/karam_alkaissy.png";
-import BHImg from "../images/headshots/brianna_hess.png";
-import JeffreyWang from "../images/headshots/jeffrey_wang.jpg";
-import GeorgePopovici from "../images/headshots/george_popovici.png";
-import BorisChen from "../images/headshots/boris_chen.png";
-import JoeyWu from "../images/headshots/joey_wu.png";
-import KaseyLee from "../images/headshots/kasey_lee.png";
-import SiyonaSingh from "../images/headshots/siyona_singh.png";
+import KaseyLee from "../images/headshots/kasey_lee.jpg";
+import GeorgePopovici from "../images/headshots/george_popovici.jpg";
+import MargotSheridan from "../images/headshots/margot_sheridan.jpg";
+import LailaBapna from "../images/headshots/laila_bapna.jpg";
+import BridgetteWells from "../images/headshots/bridgette_wells.png";
+import LaylaNazif from "../images/headshots/layla_nazif.jpg";
+import DayliaLian from "../images/headshots/daylia_lian.jpg";
+import HarrisonTang from "../images/headshots/harrison_tang.jpg";
 import {GridContainer} from "../ui/layout"
 import {CenteredSubtitle} from "../ui/Typography"
 import Tile from "../ui/Tile"
@@ -18,73 +15,54 @@ import Tile from "../ui/Tile"
 
 const articleItems = [
   {
-    imgLink: BHImg,
+    imgLink: KaseyLee,
     title: "Co-President",
-    publisher: "Brianna Hess",
-    email:"hesslb@sas.upenn.edu",
-    date: "CAS"
-  },{
-    imgLink: KAImg,
-    title: "Co-President",
-    publisher: "Karam Alkaissy",
-    email:"alkaissy@seas.upenn.edu",
-    date: "SEAS"
-  },{
-    imgLink: AYImg,
-    title: "Co-Director of Consulting",
-    publisher: "Angela Ye",
-    email:"angelaye@sas.upenn.edu",
-    date: "CAS"
-  },{
-    imgLink: ManyaTiwari,
-    title: "Co-Director of Consulting",
-    publisher: "Manya Tiwari",
-    email:"angelaye@sas.upenn.edu",
-    date: "CAS"
-  },{
-    imgLink: HCImg,
-    title: "Director of Operations",
-    publisher: "Helen Copple",
-    email:"coppleh@sas.upenn.edu",
-    date: "CAS"
-  },{
-    imgLink: JeffreyWang,
-    title: "Co-Director of Prize",
-    publisher: "Jeffrey Wang",
-    email:"jgw369@seas.upenn.edu",
+    publisher: "Kasey Lee",
+    email:"kaseylee@sas.upenn.edu",
     date: "CAS"
   },{
     imgLink: GeorgePopovici,
-    title: "Co-Director of Prize",
+    title: "Co-President",
     publisher: "George Popovici",
     email:"popovici@wharton.upenn.edu",
     date: "Wharton"
   },{
-    imgLink: BorisChen,
-    title: "Co-Director of Prize",
-    publisher: "Boris Chen",
-    email:"chenbor@wharton.upenn.edu",
-    date: "Wharton"
-  },{
-    imgLink: JoeyWu,
+    imgLink: MargotSheridan,
     title: "Director of Marketing",
-    publisher: "Joey Wu",
-    email:"joeyw@seas.upenn.edu",
-    date: "SEAS"
+    publisher: "Margot Sheridan",
+    email:"margot28@sas.upenn.edu",
+    date: "CAS"
   },{
-    imgLink: KaseyLee,
+    imgLink: LailaBapna,
+    title: "Director of Ecoventure",
+    publisher: "Laila Bapna",
+    email:"bapna1@sas.upenn.edu",
+    date: "CAS"
+  },{
+    imgLink: BridgetteWells,
+    title: "Director of Events",
+    publisher: "Bridgette Wells",
+    email:"bvwells@sas.upenn.edu",
+    date: "CAS"
+  },{
+    imgLink: LaylaNazif,
     title: "Director of Policy",
-    publisher: "Kasey Lee",
-    email:"kaseylee@sas.upenn.edu",
-    date: "SAS"
+    publisher: "Layla Nazif",
+    email:"laylan@sas.upenn.edu",
+    date: "CAS"
   },{
-    imgLink: SiyonaSingh,
-    title: "Director of External",
-    publisher: "Siyona Singh",
-    email:"siyona@wharton.upenn.edu",
+    imgLink: DayliaLian,
+    title: "Director of Consulting",
+    publisher: "Daylia Lian",
+    email:"daylian@sas.upenn.edu",
+    date: "CAS"
+  },{
+    imgLink: HarrisonTang,
+    title: "Director of Consulting",
+    publisher: "Harrison Tang",
+    email:"ht118@wharton.upenn.edu",
     date: "Wharton"
   }
-  
 ]
 
 
